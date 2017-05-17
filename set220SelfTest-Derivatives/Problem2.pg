@@ -1,0 +1,46 @@
+##DESCRIPTION
+## Preview Test: Self Test Derivatives
+##ENDDESCRIPTION
+
+## Problem2
+
+########################################################################
+
+DOCUMENT();      
+
+loadMacros(
+   "PGstandard.pl",     # Standard macros for PG language
+   "MathObjects.pl",
+   #"source.pl",        # allows code to be displayed on certain sites.
+   #"PGcourse.pl",      # Customization file for the course
+   "parserRadioButtons.pl",
+);
+
+$mc = RadioButtons(
+    [ "\( (2, 6) \)", 
+"\( (-2, -6) \)", 
+"\( (2, -6) \)", 
+"\( (-2, 6) \)", 
+"At least two of the above",
+ "None of the above" ]
+    , "At least two of the above"
+    ,last => [ "\( (2, 6) \)", 
+"\( (-2, -6) \)", 
+"\( (2, -6) \)", 
+"\( (-2, 6) \)", 
+"At least two of the above",
+ "None of the above" ]
+    ,labels => "ABCDEF" );
+
+BEGIN_TEXT
+At what point(s) on the hyperbola \(xy = 12\) is the tangent line parallel to \(3x + y = 0\)?
+$BR
+\{ $mc->buttons() \}
+
+END_TEXT
+
+$showPartialCorrectAnswers = 0;
+
+ANS( $mc->cmp() );
+
+ENDDOCUMENT();

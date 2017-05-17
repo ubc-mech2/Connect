@@ -1,0 +1,53 @@
+DOCUMENT();
+
+loadMacros(
+"PGstandard.pl",
+"MathObjects.pl",
+"PGML.pl",
+"PGcourse.pl",
+"parserRadioButtons.pl",
+);
+
+TEXT(beginproblem());
+$showPartialCorrectAnswers = 1;
+
+Context('Matrix')->variables->add(u=>'Real',v=>'Real',x=>'Real',y=>'Real');
+
+$M1 = Matrix([['u'],['v']]);
+$M2 = Matrix([['x'],['y']]);
+
+$MA = Matrix([[0.554, 0.832],[-0.832, 0.554]]);
+$MA2 = Matrix([[0],[3]]);
+$MB = Matrix([[0.554, -0.832],[0.832, 0.554]]);
+$MB2 = Matrix([[0],[300]]);
+$MC = Matrix([[0.554, 0.832],[-0.832, 0.554]]);
+$MD = Matrix([[0.832, 0.554],[-0.554, 0.832]]);
+$ME = Matrix([[0.554, 0.832],[-0.832, 0.554]]);
+
+Context()->texStrings;
+ 
+$mc = RadioButtons(
+    [ "\($M1\) = \($MA\)\($M2\)+\($MA2\)",
+"\($M1\) = \($MB\)\($M2\)+\($MB2\)",
+"\($M1\) = \($MC\)\($M2\)+\($MB2\)",
+"\($M1\) = \($MD\)\($M2\)+\($MB2\)",
+"\($M1\) = \($ME\)\($M2\)" ]
+    , "\($M1\) = \($MC\)\($M2\)+\($MB2\)"
+    ,last => [ "\($M1\) = \($MA\)\($M2\)+\($MA2\)",
+"\($M1\) = \($MB\)\($M2\)+\($MB2\)",
+"\($M1\) = \($MC\)\($M2\)+\($MB2\)",
+"\($M1\) = \($MD\)\($M2\)+\($MB2\)",
+"\($M1\) = \($ME\)\($M2\)" ]
+    ,labels => "ABCDE" );
+
+BEGIN_TEXT
+
+What is the transformation between the x-y and u-v coordinate systems shown below? The u-v system uses measurements in centimetres and the x-y system uses measurements in metres. The intersection points on the u-v axes are shown (in units of centimetres). 
+$BR
+\{ image( "8.png", width=>150, height=>150) \}
+$BR
+\{ $mc->buttons() \}
+
+END_TEXT
+
+ENDDOCUMENT();

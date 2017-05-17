@@ -1,0 +1,52 @@
+##DESCRIPTION
+## Self Test - Linear Algebra 
+##ENDDESCRIPTION
+
+## Problem4
+
+########################################################################
+
+DOCUMENT();      
+
+loadMacros(
+   "PGstandard.pl",     # Standard macros for PG language
+   "MathObjects.pl",
+   #"source.pl",        # allows code to be displayed on certain sites.
+   #"PGcourse.pl",      # Customization file for the course
+   "parserRadioButtons.pl",
+   "contextFraction.pl"
+);
+
+$mc = RadioButtons(
+[ "\( -1, 1 \)", 
+"\( -2, 2 \)", 
+"\( -3, 3 \)", 
+"\( 1, 2 \)", 
+"\( 2, 3 \)", 
+"\( -2, 3 \)" ]
+    , "\( -1, 1 \)"
+    ,last => 
+[ "\( -1, 1 \)", 
+"\( -2, 2 \)", 
+"\( -3, 3 \)", 
+"\( 1, 2 \)", 
+"\( 2, 3 \)", 
+"\( -2, 3 \)" ]
+    ,labels => "ABCDEF" );
+
+Context("Matrix");
+Context()->texStrings;
+$M = Matrix([2,3],[-1,-2]);
+
+BEGIN_TEXT
+What are the eigenvalues of the matrix \($M\)?
+$BR
+\{ $mc->buttons() \}
+
+END_TEXT
+
+$showPartialCorrectAnswers = 0;
+
+ANS( $mc->cmp() );
+
+ENDDOCUMENT();

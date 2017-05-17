@@ -1,0 +1,47 @@
+##DESCRIPTION
+## Preview Test: Self Test - Kinematics 2
+##ENDDESCRIPTION
+
+## Problem4
+
+########################################################################
+
+DOCUMENT();      
+
+loadMacros(
+   "PGstandard.pl",     # Standard macros for PG language
+   "MathObjects.pl",
+   #"source.pl",        # allows code to be displayed on certain sites.
+   #"PGcourse.pl",      # Customization file for the course
+   "parserRadioButtons.pl",
+   "contextFraction.pl"
+);
+
+$mc = RadioButtons(
+[ "\( 155.9 m \)", 
+"\( 413 m \)", 
+"\( 563 m \)", 
+"\( 613 m \)", 
+"\( 1791 m \)" ]
+    , "\( 563 m \)"
+    ,last => 
+[ "\( 155.9 m \)", 
+"\( 413 m \)", 
+"\( 563 m \)", 
+"\( 613 m \)", 
+"\( 1791 m \)" ]
+    ,labels => "ABCDE" );
+
+BEGIN_TEXT
+
+For the projectile in the previous problem, what is the greatest elevation (above the landing location) that the projectile reaches?
+$BR
+\{ $mc->buttons() \}
+
+END_TEXT
+
+$showPartialCorrectAnswers = 0;
+
+ANS( $mc->cmp() );
+
+ENDDOCUMENT();

@@ -1,0 +1,52 @@
+##DESCRIPTION
+## Preview Test: Self Test - Integrals
+##ENDDESCRIPTION
+
+## Problem9
+
+########################################################################
+
+DOCUMENT();      
+
+loadMacros(
+   "PGstandard.pl",     # Standard macros for PG language
+   "MathObjects.pl",
+   #"source.pl",        # allows code to be displayed on certain sites.
+   #"PGcourse.pl",      # Customization file for the course
+   "parserRadioButtons.pl",
+   "contextFraction.pl"
+);
+
+Context("Fraction");
+
+$mc = RadioButtons(
+[ "\( 0.042 m \)", 
+"\( 0.125 m \)", 
+"\( 0.167 m \)", 
+"\( 0.250 m \)", 
+"\( 0.333 m \)",
+"\( 0.500 m \)" ]
+    , "\( 0.042 m \)"
+    ,last => 
+[ "\( 0.042 m \)", 
+"\( 0.125 m \)", 
+"\( 0.167 m \)", 
+"\( 0.250 m \)", 
+"\( 0.333 m \)",
+"\( 0.500 m \)" ]
+    ,labels => "ABCDEF" );
+
+BEGIN_TEXT
+A parabolic force distribution is applied to a beam as shown. The constant \(w_0\) is known to be \(100 N/m^2\). At what value of \(x_0\) should the \(200 N\) force be positioned in order to keep the beam in balance?
+$BR
+\{ image( "9.png", width=>150, height=>150 ) \}
+$BR
+\{ $mc->buttons() \}
+
+END_TEXT
+
+$showPartialCorrectAnswers = 0;
+
+ANS( $mc->cmp() );
+
+ENDDOCUMENT();

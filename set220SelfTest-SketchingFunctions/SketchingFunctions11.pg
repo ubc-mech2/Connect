@@ -1,0 +1,50 @@
+##DESCRIPTION
+## Preview Test: Self Test - Sketching functions
+##ENDDESCRIPTION
+
+## Problem11
+
+########################################################################
+
+DOCUMENT();      
+
+loadMacros(
+   "PGstandard.pl",     # Standard macros for PG language
+   "MathObjects.pl",
+   #"source.pl",        # allows code to be displayed on certain sites.
+   #"PGcourse.pl",      # Customization file for the course
+   "parserRadioButtons.pl",
+   "contextFraction.pl"
+);
+
+Context("Fraction");
+
+# Set up possible answers
+$mc = RadioButtons(
+[ "\( y = \frac{x^2}{x+2} \)", 
+"\( y = \frac{x^2}{x-2} \)", 
+"\( y = \frac{x^2}{\sqrt{x+2}} \)", 
+"\( y = \frac{x^2}{\sqrt{x-2}} \)", 
+"\( y = \frac{x^3}{x+2} \)" ]
+    , "\( y = \frac{x^2}{\sqrt{x+2}} \)" # correct answer
+    ,last => # indicate order of choices
+[ "\( y = \frac{x^2}{x+2} \)", 
+"\( y = \frac{x^2}{x-2} \)", 
+"\( y = \frac{x^2}{\sqrt{x+2}} \)", 
+"\( y = \frac{x^2}{\sqrt{x-2}} \)", 
+"\( y = \frac{x^3}{x+2} \)" ]
+    ,labels => "ABCDE" );
+
+BEGIN_TEXT
+Which function is described by the plot below?
+$BR 
+\{ $mc->buttons() \}
+
+
+END_TEXT
+
+$showPartialCorrectAnswers = 0;
+
+ANS( $mc->cmp() );
+
+ENDDOCUMENT();

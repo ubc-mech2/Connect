@@ -1,0 +1,52 @@
+##DESCRIPTION
+## Preview Test: Self Test - Sketching functions
+##ENDDESCRIPTION
+
+## Problem18
+
+########################################################################
+
+DOCUMENT();      
+
+loadMacros(
+   "PGstandard.pl",     # Standard macros for PG language
+   "MathObjects.pl",
+   #"source.pl",        # allows code to be displayed on certain sites.
+   #"PGcourse.pl",      # Customization file for the course
+   "parserRadioButtons.pl",
+   "contextFraction.pl"
+);
+
+Context("Fraction");
+
+# Set up possible answers
+$mc = RadioButtons(
+[ "\( \frac{x^2}{2} - \frac{y^2}{1} = 1 \)", 
+"\( \frac{x^2}{4} - \frac{y^2}{1} = 1 \)", 
+"\( \frac{x^2}{4} - \frac{y^2}{4} = 1 \)", 
+"\( \frac{y^2}{4} - \frac{x^2}{1} = 1 \)", 
+"\( \frac{y^2}{4} - \frac{x^2}{4} = 1 \)" ]
+    , "\( \frac{y^2}{4} - \frac{x^2}{4} = 1 \)" # correct answer
+    ,last => # indicate order of choices
+[ "\( \frac{x^2}{2} - \frac{y^2}{1} = 1 \)", 
+"\( \frac{x^2}{4} - \frac{y^2}{1} = 1 \)", 
+"\( \frac{x^2}{4} - \frac{y^2}{4} = 1 \)", 
+"\( \frac{y^2}{4} - \frac{x^2}{1} = 1 \)", 
+"\( \frac{y^2}{4} - \frac{x^2}{4} = 1 \)" ]
+    ,labels => "ABCDE" );
+
+BEGIN_TEXT
+Which function is described by the plot below?
+$BR 
+\{ image( "imagename.png", width=>150, height=>150 ) \}
+$BR
+\{ $mc->buttons() \}
+
+
+END_TEXT
+
+$showPartialCorrectAnswers = 0;
+
+ANS( $mc->cmp() );
+
+ENDDOCUMENT();

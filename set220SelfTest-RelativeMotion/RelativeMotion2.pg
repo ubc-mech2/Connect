@@ -1,0 +1,52 @@
+##DESCRIPTION
+## Self Test - Relative Motion
+##ENDDESCRIPTION
+
+## Problem2
+
+########################################################################
+
+DOCUMENT();      
+
+loadMacros(
+   "PGstandard.pl",     # Standard macros for PG language
+   "MathObjects.pl",
+   #"source.pl",        # allows code to be displayed on certain sites.
+   #"PGcourse.pl",      # Customization file for the course
+   "parserRadioButtons.pl",
+   "contextFraction.pl"
+);
+
+#Set up multiple choice buttons
+$mc = RadioButtons(
+#Options
+[ "\( (-349i + 958j) mm/s \)", 
+"\( (349i - 958j) mm/s \)", 
+"\( (149.6i - 411j) mm/s \)", 
+"\( (-149.6i + 411j) mm/s \)", 
+"\( (883i - 510j) mm/s \)",
+"\( (-883i + 510j) mm/s \)" ]
+,"\( (349i - 958j) mm/s \)" #This is the correct choice
+    ,last => #Display order
+[ "\( (-349i + 958j) mm/s \)", 
+"\( (349i - 958j) mm/s \)", 
+"\( (149.6i - 411j) mm/s \)", 
+"\( (-149.6i + 411j) mm/s \)", 
+"\( (883i - 510j) mm/s \)",
+"\( (-883i + 510j) mm/s \)" ]
+,labels => "ABCDEF" );
+
+BEGIN_TEXT
+Considering the linkage in Problem 1, what is the velocity of Collar B?
+$BR
+\{ image( "imagename.png", width=>150, height=>150 ) \}
+$BR
+\{ $mc->buttons() \}
+
+END_TEXT
+
+$showPartialCorrectAnswers = 0;
+
+ANS( $mc->cmp() );
+
+ENDDOCUMENT();

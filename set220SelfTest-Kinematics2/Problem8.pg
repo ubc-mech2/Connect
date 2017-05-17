@@ -1,0 +1,48 @@
+##DESCRIPTION
+## Preview Test: Self Test - Kinematics 2
+##ENDDESCRIPTION
+
+## Problem8
+
+########################################################################
+
+DOCUMENT();      
+
+loadMacros(
+   "PGstandard.pl",     # Standard macros for PG language
+   "MathObjects.pl",
+   #"source.pl",        # allows code to be displayed on certain sites.
+   #"PGcourse.pl",      # Customization file for the course
+   "parserRadioButtons.pl",
+   "contextFraction.pl"
+);
+
+$mc = RadioButtons(
+[ "\( v = b \cos \theta \)", 
+"\( v = b \cos^2 \theta \)", 
+"\( v = b \cos^2 \theta d\theta/dt \)", 
+"\( v = b \sec \theta \)", 
+"\( v = b \sec \theta d\theta/dt \)", 
+"\( v = b \sec^2 \theta d\theta/dt \)" ]
+    , "\( v = b \sec \theta d\theta/dt \)"
+    ,last => 
+[ "\( v = b \cos \theta \)", 
+"\( v = b \cos^2 \theta \)", 
+"\( v = b \cos^2 \theta d\theta/dt \)", 
+"\( v = b \sec \theta \)", 
+"\( v = b \sec \theta d\theta/dt \)", 
+"\( v = b \sec^2 \theta d\theta/dt \)" ]
+    ,labels => "ABCDEF" );
+
+BEGIN_TEXT
+A rocket is fired vertically from a launch pad  \(B\). Its flight is tracked by radar from point \(A\). Determine the velocity of the rocket in terms of \(b\), \(\theta\), and \(d\theta/dt\).
+$BR
+\{ $mc->buttons() \}
+
+END_TEXT
+
+$showPartialCorrectAnswers = 0;
+
+ANS( $mc->cmp() );
+
+ENDDOCUMENT();

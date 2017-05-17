@@ -1,0 +1,52 @@
+##DESCRIPTION
+## Self Test - Relative Motion
+##ENDDESCRIPTION
+
+## Problem4
+
+########################################################################
+
+DOCUMENT();      
+
+loadMacros(
+   "PGstandard.pl",     # Standard macros for PG language
+   "MathObjects.pl",
+   #"source.pl",        # allows code to be displayed on certain sites.
+   #"PGcourse.pl",      # Customization file for the course
+   "parserRadioButtons.pl",
+   "contextFraction.pl"
+);
+
+#Set up multiple choice buttons
+$mc = RadioButtons(
+#Options
+[ "\( (60i + 36j + 27k) m/s^2 \)", 
+"\( (-60i - 36j - 27k) m/s^2 \)", 
+"\( (-40i - 32j -24k) m/s^2 \)", 
+"\( (40i + 32j +24k) m/s^2 \)", 
+"\( (405i + 432j +324k) m/s^2 \)",
+"\( (-405i - 432j - 324k) m/s^2 \)" ]
+,"\( (-405i - 432j - 324k) m/s^2 \)" #This is the correct choice
+    ,last => #Display order
+[ "\( (60i + 36j + 27k) m/s^2 \)", 
+"\( (-60i - 36j - 27k) m/s^2 \)", 
+"\( (-40i - 32j -24k) m/s^2 \)", 
+"\( (40i + 32j +24k) m/s^2 \)", 
+"\( (405i + 432j +324k) m/s^2 \)",
+"\( (-405i - 432j - 324k) m/s^2 \)" ]
+,labels => "ABCDEF" );
+
+BEGIN_TEXT
+For the bent rod from Problem 3, what is the acceleration of corner B?
+$BR
+\{ image( "imagename.png", width=>150, height=>150 ) \}
+$BR
+\{ $mc->buttons() \}
+
+END_TEXT
+
+$showPartialCorrectAnswers = 0;
+
+ANS( $mc->cmp() );
+
+ENDDOCUMENT();

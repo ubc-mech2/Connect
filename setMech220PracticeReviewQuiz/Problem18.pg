@@ -1,0 +1,61 @@
+##DESCRIPTION
+## 220 Self Test - Constraints
+##ENDDESCRIPTION
+
+## Problem1
+
+########################################################################
+
+DOCUMENT();      
+
+loadMacros(
+   "PGstandard.pl",     # Standard macros for PG language
+   "MathObjects.pl",
+   #"source.pl",        # allows code to be displayed on certain sites.
+   #"PGcourse.pl",      # Customization file for the course
+   "parserRadioButtons.pl",
+   "contextFraction.pl",
+);
+
+$mc = RadioButtons(
+    [ "A", 
+	"B", 
+	"C", 
+	"D", 
+	"E",
+        "F" ]
+       ,"F",
+    last => [ "A", 
+	"B", 
+	"C", 
+	"D", 
+	"E",
+        "F" ]
+         ,labels => "ABCDEF" );
+
+BEGIN_TEXT
+\{ image( "18.png", width=>150, height=>150 \}
+$BR
+From the list below, select the vector that is NOT orthogonal (perpendicular) to the vector shown above:
+$BR
+\{ image( "A.png", width=>150, height=>150 \}
+$BR
+\{ image( "B.png", width=>150, height=>150 \}
+$BR
+\{ image( "C.png", width=>150, height=>150 \}
+$BR
+\{ image( "D.png", width=>150, height=>150 \}
+$BR
+\{ image( "E.png", width=>150, height=>150 \}
+$BR
+\{ image( "\F.png", width=>150, height=>150 \}
+$BR
+\{ $mc->buttons() \}
+
+END_TEXT
+
+$showPartialCorrectAnswers = 0;
+
+ANS( $mc->cmp() );
+
+ENDDOCUMENT();

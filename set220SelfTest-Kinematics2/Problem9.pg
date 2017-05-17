@@ -1,0 +1,46 @@
+##DESCRIPTION
+## Preview Test: Self Test - Kinematics 2
+##ENDDESCRIPTION
+
+## Problem9
+
+########################################################################
+
+DOCUMENT();      
+
+loadMacros(
+   "PGstandard.pl",     # Standard macros for PG language
+   "MathObjects.pl",
+   #"source.pl",        # allows code to be displayed on certain sites.
+   #"PGcourse.pl",      # Customization file for the course
+   "parserRadioButtons.pl",
+   "contextFraction.pl"
+);
+$deg = "".sprintf("%c",0xb0);
+$mc = RadioButtons(
+[ "\( 151 m/s \)", 
+"\( 205 m/s \)", 
+"\( 306 m/s \)", 
+"\( 325 m/s \)", 
+"\( 341 m/s \)" ]
+    , "\( 306 m/s \)"
+    ,last => 
+[ "\( 151 m/s \)", 
+"\( 205 m/s \)", 
+"\( 306 m/s \)", 
+"\( 325 m/s \)", 
+"\( 341 m/s \)" ]
+    ,labels => "ABCDE" );
+
+BEGIN_TEXT
+For the rocket in question 9, when the rocket is at point \(P\), the angle of elevation is \(\theta = 47.0\)$deg. At a time of \(0.5 s\) later, the angle is \(\theta = 48.0\)$deg. Knowing that \(b = 4 km\), determine approximately the speed of the rocket during the \(0.5\) second interval.
+$BR
+\{ $mc->buttons() \}
+
+END_TEXT
+
+$showPartialCorrectAnswers = 0;
+
+ANS( $mc->cmp() );
+
+ENDDOCUMENT();

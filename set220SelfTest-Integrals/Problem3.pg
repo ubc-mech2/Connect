@@ -1,0 +1,48 @@
+##DESCRIPTION
+## Preview Test: Self Test - Integrals
+##ENDDESCRIPTION
+
+## Problem2
+
+########################################################################
+
+DOCUMENT();      
+
+loadMacros(
+   "PGstandard.pl",     # Standard macros for PG language
+   "MathObjects.pl",
+   #"source.pl",        # allows code to be displayed on certain sites.
+   #"PGcourse.pl",      # Customization file for the course
+   "parserRadioButtons.pl",
+   "contextFraction.pl"
+);
+
+$mc = RadioButtons(
+[ "\( -x\sin(x) + C \)", 
+"\( x\sin(x) + C \)", 
+"\( x\sin(x) + cos(x) + C \)", 
+"\( x\sin(x) - cos(x) + C \)", 
+"\( x^2\sin(x) + C \)",
+"\( -x^2\sin(x) + C \)" ]
+    , "\( x\sin(x) + cos(x) + C \)"
+    ,last => 
+[ "\( -x\sin(x) + C \)", 
+"\( x\sin(x) + C \)", 
+"\( x\sin(x) + cos(x) + C \)", 
+"\( x\sin(x) - cos(x) + C \)", 
+"\( x^2\sin(x) + C \)",
+"\( -x^2\sin(x) + C \)" ]
+    ,labels => "ABCDEF" );
+
+BEGIN_TEXT
+What is the integral of \(y(x) = x\cos(x)\)?
+$BR
+\{ $mc->buttons() \}
+
+END_TEXT
+
+$showPartialCorrectAnswers = 0;
+
+ANS( $mc->cmp() );
+
+ENDDOCUMENT();

@@ -1,0 +1,45 @@
+##DESCRIPTION
+## 220 Self Test - Coordinates
+##ENDDESCRIPTION
+
+## Problem4
+
+########################################################################
+
+DOCUMENT();      
+
+loadMacros(
+   "PGstandard.pl",     # Standard macros for PG language
+   "MathObjects.pl",
+   #"source.pl",        # allows code to be displayed on certain sites.
+   #"PGcourse.pl",      # Customization file for the course
+   "parserRadioButtons.pl",
+   "contextFraction.pl",
+);
+
+$mc = RadioButtons(
+    [ "\( (2.23,0.134) \)", 
+	"\( (0.5,1) \)", 
+	"\( (0.87, 1.73) \)", 
+	"\( (1.87, 1.23) \)", 
+	"\( (-0.134, 2.23) \)" ]
+       ,"\( (-0.134, 2.23) \)",
+    last =>     [ "\( (2.23,0.134) \)", 
+	"\( (0.5,1) \)", 
+	"\( (0.87, 1.73) \)", 
+	"\( (1.87, 1.23) \)", 
+	"\( (-0.134, 2.23) \)" ]
+         ,labels => "ABCDE" );
+
+BEGIN_TEXT
+The point \((1,2)\) is in the x-y coordinate system. The p-q coordinate system uses the same origin and scale as the x-y system but the p-axis is rotated 30 degrees clockwise from the x-axis. (Similarly, the q-axis is rotated 30 degrees clockwise from the y-axis.) What are the coordinates of the point in the p-q system?
+$BR
+\{ $mc->buttons() \}
+
+END_TEXT
+
+$showPartialCorrectAnswers = 0;
+
+ANS( $mc->cmp() );
+
+ENDDOCUMENT();

@@ -1,0 +1,53 @@
+##DESCRIPTION
+## 220 Self Test - Constraints
+##ENDDESCRIPTION
+
+## Problem11
+
+DOCUMENT();  
+
+loadMacros(
+"PGstandard.pl",
+"PGchoicemacros.pl",
+"PGcourse.pl",
+);
+
+TEXT(beginproblem());
+
+$mc = new_checkbox_multiple_choice();
+$mc -> qa (
+"Consider a pirate's telescope, as shown. How degrees of freedom are there between the two ends of the telescope (ignore the motion of the middle portion)?", 
+"1 translation and 1 rotation$BR",
+);
+$mc -> extra(
+"1 translation$BR",
+"2 translations$BR",
+"3 translations$BR",
+"2 translations and 2 rotations$BR",
+"3 translations and 3 rotations$BR",
+);
+$mc -> makeLast(
+"1 translation$BR",
+"2 translations$BR",
+"3 translations$BR",
+"1 translation and 1 rotation$BR",
+"2 translations and 2 rotations$BR",
+"3 translations and 3 rotations$BR",
+);
+
+BEGIN_TEXT
+\{ $mc -> print_q() \}
+$BR 
+\{ image( "9.png", width=>150, height=>150 ) \}
+$BR
+\{ $mc -> print_a() \}
+
+END_TEXT
+
+install_problem_grader(~~&std_problem_grader);
+
+$showPartialCorrectAnswers = 0;
+
+ANS( checkbox_cmp( $mc->correct_ans() ) );
+
+ENDDOCUMENT();

@@ -1,0 +1,37 @@
+##DESCRIPTION
+## Preview Test: Mech 220 Practice Review Quiz
+##ENDDESCRIPTION
+
+## Problem10
+
+########################################################################
+
+DOCUMENT();      
+
+loadMacros(
+   "PGstandard.pl",     # Standard macros for PG language
+   "MathObjects.pl",
+   #"source.pl",        # allows code to be displayed on certain sites.
+   #"PGcourse.pl",      # Customization file for the course
+   "parserRadioButtons.pl",
+);
+
+$mc = RadioButtons(
+    [ "Momentum only", "Mass only", "Momentum and Mass only", "Momentum and Kinetic Energy only", "Mass, Momentum, and Kinetic Energy" ]
+    , "Mass, Momentum, and Kinetic Energy"
+    ,last => [ "Momentum only", "Mass only", "Momentum and Mass only", "Momentum and Kinetic Energy only", "Mass, Momentum, and Kinetic Energy" ]
+    ,labels => "ABCDE" );
+
+BEGIN_TEXT
+
+In an elastic collision between two bodies, which of the following best describes the properties that are conserved:
+$BR
+\{ $mc->buttons() \}
+
+END_TEXT
+
+$showPartialCorrectAnswers = 0;
+
+ANS( $mc->cmp() );
+
+ENDDOCUMENT();

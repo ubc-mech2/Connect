@@ -1,0 +1,43 @@
+##DESCRIPTION
+## Preview Test: Mech 220 Practice Review Quiz
+##ENDDESCRIPTION
+
+## Problem19
+
+########################################################################
+
+DOCUMENT();      
+
+loadMacros(
+   "PGstandard.pl",     # Standard macros for PG language
+   "MathObjects.pl",
+   #"source.pl",        # allows code to be displayed on certain sites.
+   #"PGcourse.pl",      # Customization file for the course
+   "parserRadioButtons.pl",
+);
+
+$mc = RadioButtons(
+    [ "A", "B", "C", "D", "E" ]
+    , "D"
+    ,last => [ "A", "B", "C", "D", "E" ]
+    ,labels => "ABCDE" );
+
+BEGIN_TEXT
+\{ image( "imagename.png", width=>150, height=>150 \}
+
+Select the correct free body diagram for the uniform bar shown in the figure above. (More than one diagram may be technically correct; select the most appropriate diagram.) The bar has weight W and gravity acts downwards. 
+$BR A: \{ image( "imagename.png", width=>150, height=>150 \}
+$BR B: \{ image( "imagename.png", width=>150, height=>150 \}
+$BR C: \{ image( "imagename.png", width=>150, height=>150 \}
+$BR D: \{ image( "imagename.png", width=>150, height=>150 \}
+$BR E: \{ image( "imagename.png", width=>150, height=>150 \}
+$BR
+\{ $mc->buttons() \}
+
+END_TEXT
+
+$showPartialCorrectAnswers = 0;
+
+ANS( $mc->cmp() );
+
+ENDDOCUMENT();

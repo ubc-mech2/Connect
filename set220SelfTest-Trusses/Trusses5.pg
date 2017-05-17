@@ -1,0 +1,58 @@
+##DESCRIPTION
+## Preview Test: Self Test - Trusses
+##ENDDESCRIPTION
+
+## Problem5
+
+########################################################################
+
+DOCUMENT();      
+
+loadMacros(
+   "PGstandard.pl",     # Standard macros for PG language
+   "MathObjects.pl",
+   #"source.pl",        # allows code to be displayed on certain sites.
+   #"PGcourse.pl",      # Customization file for the course
+   "parserRadioButtons.pl",
+   "contextFraction.pl"
+);
+
+Context("Fraction");
+
+# Set up possible answers
+$mc = RadioButtons(
+[ "\( (-5.85i - 2.25j) kN \)", 
+"\( (-5.85i + 2.25j) kN \)", 
+"\( (5.85i - 2.25j) kN \)", 
+"\( (5.85i + 2.25j) kN \)", 
+"\( (-5.40i - 2.25j) kN \)",
+"\( (-5.40i + 2.25j) kN \)", 
+"\( (5.40i - 2.25j) kN \)", 
+"\( (5.40i + 2.25j) kN \)" ]
+    , "\( (-5.40i - 2.25j) kN \)" # correct answer
+    ,last => # indicate order of choices
+[ "\( (-5.85i - 2.25j) kN \)", 
+"\( (-5.85i + 2.25j) kN \)", 
+"\( (5.85i - 2.25j) kN \)", 
+"\( (5.85i + 2.25j) kN \)", 
+"\( (-5.40i - 2.25j) kN \)",
+"\( (-5.40i + 2.25j) kN \)", 
+"\( (5.40i - 2.25j) kN \)", 
+"\( (5.40i + 2.25j) kN \)" ]
+    ,labels => "ABCDE" );
+
+BEGIN_TEXT
+Continuing with Problem 3, what is the reaction that the structure imposes upon point C? (That is, what force does member BC exert on the ground?) Take \(x\) positive to the right and \(y\) positive upwards.
+$BR 
+\{ image( "imagename.png", width=>150, height=>150 ) \}
+$BR
+\{ $mc->buttons() \}
+
+
+END_TEXT
+
+$showPartialCorrectAnswers = 0;
+
+ANS( $mc->cmp() );
+
+ENDDOCUMENT();

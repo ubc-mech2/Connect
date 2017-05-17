@@ -1,0 +1,49 @@
+##DESCRIPTION
+## Preview Test: Self Test - Sketching functions
+##ENDDESCRIPTION
+
+## Problem3
+
+########################################################################
+
+DOCUMENT();      
+
+loadMacros(
+   "PGstandard.pl",     # Standard macros for PG language
+   "MathObjects.pl",
+   #"source.pl",        # allows code to be displayed on certain sites.
+   #"PGcourse.pl",      # Customization file for the course
+   "parserRadioButtons.pl",
+   "contextFraction.pl"
+);
+
+# Set up possible answers
+$mc = RadioButtons(
+[ "\( y = x - 2 \)", 
+"\( y = x + 2 \)", 
+"\( y = x^2 - 2 \)", 
+"\( y = x^2 + 2 \)", 
+"\( y = x^3 - 2 \)" ]
+    , "\( y = x^2 - 2 \)" # correct answer
+    ,last => # indicate order of choices
+[ "\( y = x - 2 \)", 
+"\( y = x + 2 \)", 
+"\( y = x^2 - 2 \)", 
+"\( y = x^2 + 2 \)", 
+"\( y = x^3 - 2 \)" ]
+    ,labels => "ABCDE" );
+
+BEGIN_TEXT
+What is the equation for the function shown? 
+$BR
+\{ image( "imagename.png", width=>150, height=>150 ) \}
+$BR
+\{ $mc->buttons() \}
+
+END_TEXT
+
+$showPartialCorrectAnswers = 0;
+
+ANS( $mc->cmp() );
+
+ENDDOCUMENT();

@@ -1,0 +1,53 @@
+##DESCRIPTION
+## 220 Self Test - Constraints
+##ENDDESCRIPTION
+
+## Problem10
+
+DOCUMENT();  
+
+loadMacros(
+"PGstandard.pl",
+"PGchoicemacros.pl",
+"PGcourse.pl",
+);
+
+TEXT(beginproblem());
+
+$mc = new_checkbox_multiple_choice();
+$mc -> qa (
+"Assume that the castle drawbridge shown can twist and flex slightly. When the drawbridge is fully lowered, which constraints are applied by the ramp? Assume that friction is negligible. (select all constraints that apply)",
+"Force in z$BR",
+"Moment about y$BR",
+);
+$mc -> extra(
+"Force in x$BR",
+"Force in y$BR",
+"Moment about x$BR",
+"Moment about z"
+);
+$mc -> makeLast(
+"Force in x$BR",
+"Force in y$BR",                
+"Force in z$BR",
+"Moment about x$BR",
+"Moment about y$BR",
+"Moment about z",
+);
+
+BEGIN_TEXT
+\{ $mc -> print_q() \}
+$BR 
+\{ image( "9.png", width=>150, height=>150 ) \}
+$BR
+\{ $mc -> print_a() \}
+
+END_TEXT
+
+install_problem_grader(~~&std_problem_grader);
+
+$showPartialCorrectAnswers = 0;
+
+ANS( checkbox_cmp( $mc->correct_ans() ) );
+
+ENDDOCUMENT();

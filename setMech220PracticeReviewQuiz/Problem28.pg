@@ -1,0 +1,49 @@
+##DESCRIPTION
+## Preview Test: Mech 220 Practice Review Quiz
+##ENDDESCRIPTION
+
+## Problem28
+
+########################################################################
+
+DOCUMENT();      
+
+loadMacros(
+   "PGstandard.pl",     # Standard macros for PG language
+   "MathObjects.pl",
+   #"source.pl",        # allows code to be displayed on certain sites.
+   #"PGcourse.pl",      # Customization file for the course
+   "parserRadioButtons.pl",
+   "contextFraction.pl",
+);
+
+$mc = RadioButtons(
+    [ "\( 0 m/s \)", 
+	"\( 1.5 m/s \)", 
+	"\( 2.5 m/s \)", 
+	"\( 3 m/s \)", 
+	"\( 4 m/s \)" ]
+       ,"\( 2.5 m/s \)",
+    last => [ "\( 0 m/s \)", 
+	"\( 1.5 m/s \)", 
+	"\( 2.5 m/s \)", 
+	"\( 3 m/s \)", 
+	"\( 4 m/s \)" ]
+         ,labels => "ABCDE" );
+
+BEGIN_TEXT
+The diagram below shows a ladder sliding down a wall. 
+$BR
+\{ image( "28.png", width=>150, height=>150 \}
+$BR
+The point D is at the midpoint of the ladder. The instantaneous velocity at A is \(4 m/s\). What is the instantaneous speed at D?
+$BR
+\{ $mc->buttons() \}
+
+END_TEXT
+
+$showPartialCorrectAnswers = 0;
+
+ANS( $mc->cmp() );
+
+ENDDOCUMENT();

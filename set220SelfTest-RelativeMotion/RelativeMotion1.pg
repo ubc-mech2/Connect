@@ -1,0 +1,52 @@
+##DESCRIPTION
+## Self Test - Relative Motion
+##ENDDESCRIPTION
+
+## Problem1
+
+########################################################################
+
+DOCUMENT();      
+
+loadMacros(
+   "PGstandard.pl",     # Standard macros for PG language
+   "MathObjects.pl",
+   #"source.pl",        # allows code to be displayed on certain sites.
+   #"PGcourse.pl",      # Customization file for the course
+   "parserRadioButtons.pl",
+   "contextFraction.pl"
+);
+
+#Set up multiple choice buttons
+$mc = RadioButtons(
+#Options
+[ "\( 1.020 rad/s \) clockwise", 
+"\( 1.020 rad/s \) counter-clockwise", 
+"\( 1.582 rad/s \) clockwise", 
+"\( 1.582 rad/s \) counter-clockwise", 
+"\( 3.69 rad/s \) clockwise",
+"\( 3.69 rad/s \) counter-clockwise" ]
+,"\( 3.69 rad/s \) clockwise" #This is the correct choice
+    ,last => #Display order
+[ "\( 1.020 rad/s \) clockwise", 
+"\( 1.020 rad/s \) counter-clockwise", 
+"\( 1.582 rad/s \) clockwise", 
+"\( 1.582 rad/s \) counter-clockwise", 
+"\( 3.69 rad/s \) clockwise",
+"\( 3.69 rad/s \) counter-clockwise" ]
+,labels => "ABCDEF" );
+
+BEGIN_TEXT
+Collar A moves with a constant velocity of \(900 mm/s\) to the right. At the instant when \(\theta = 30\) degrees, determine the angular velocity of rod AB.
+$BR
+\{ image( "imagename.png", width=>150, height=>150 ) \}
+$BR
+\{ $mc->buttons() \}
+
+END_TEXT
+
+$showPartialCorrectAnswers = 0;
+
+ANS( $mc->cmp() );
+
+ENDDOCUMENT();

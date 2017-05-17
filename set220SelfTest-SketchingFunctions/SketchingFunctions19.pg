@@ -1,0 +1,52 @@
+##DESCRIPTION
+## Preview Test: Self Test - Sketching functions
+##ENDDESCRIPTION
+
+## Problem19
+
+########################################################################
+
+DOCUMENT();      
+
+loadMacros(
+   "PGstandard.pl",     # Standard macros for PG language
+   "MathObjects.pl",
+   #"source.pl",        # allows code to be displayed on certain sites.
+   #"PGcourse.pl",      # Customization file for the course
+   "parserRadioButtons.pl",
+   "contextFraction.pl"
+);
+
+Context("Fraction");
+
+# Set up possible answers
+$mc = RadioButtons(
+[ "\( x^2 + y^2 = 1 \)", 
+"\( (x^2 + 1) + (y^2 - 1) = 1 \)", 
+"\( (x + 1)^2 + (y - 1)^2 = 1 \)", 
+"\( (x + 1)^2 + (y - 1)^2 = 3 \)", 
+"\( (x + 1)^2 + (y - 1)^2 = 9 \)" ]
+    , "\( (x + 1)^2 + (y - 1)^2 = 9 \)" # correct answer
+    ,last => # indicate order of choices
+[ "\( x^2 + y^2 = 1 \)", 
+"\( (x^2 + 1) + (y^2 - 1) = 1 \)", 
+"\( (x + 1)^2 + (y - 1)^2 = 1 \)", 
+"\( (x + 1)^2 + (y - 1)^2 = 3 \)", 
+"\( (x + 1)^2 + (y - 1)^2 = 9 \)" ]
+    ,labels => "ABCDE" );
+
+BEGIN_TEXT
+Which function is described by the plot below?
+$BR 
+\{ image( "imagename.png", width=>150, height=>150 ) \}
+$BR
+\{ $mc->buttons() \}
+
+
+END_TEXT
+
+$showPartialCorrectAnswers = 0;
+
+ANS( $mc->cmp() );
+
+ENDDOCUMENT();

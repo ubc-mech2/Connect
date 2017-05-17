@@ -1,0 +1,47 @@
+##DESCRIPTION
+## Preview Test: Self Test Free Body Diagrams 1
+##ENDDESCRIPTION
+
+## Problem2
+
+########################################################################
+
+DOCUMENT();      
+
+loadMacros(
+   "PGstandard.pl",     # Standard macros for PG language
+   "MathObjects.pl",
+   #"source.pl",        # allows code to be displayed on certain sites.
+   #"PGcourse.pl",      # Customization file for the course
+   "parserRadioButtons.pl",
+   "contextFraction.pl"
+);
+
+$mc = RadioButtons(
+    [ "\(404 N \)", 
+"\( 482 N \)", 
+"\( 575 N \)", 
+"\( 751 N \)", 
+"\( 981 N \)" ]
+    , "\( 575 N \)"
+    ,last => [ "\(404 N \)", 
+"\( 482 N \)", 
+"\( 575 N \)", 
+"\( 751 N \)", 
+"\( 981 N \)" ]
+    ,labels => "ABCDE" );
+
+BEGIN_TEXT
+Given \(\alpha\) = 40, \(\beta\) = 50, and \(m = 100kg\), what is the maximum vertical force that the wall-mounted ring at \(B\) must support?
+$BR
+\{ image( "1.png", width=>150, height=>150 \}
+$BR
+\{ $mc->buttons() \}
+
+END_TEXT
+
+$showPartialCorrectAnswers = 0;
+
+ANS( $mc->cmp() );
+
+ENDDOCUMENT();

@@ -1,0 +1,61 @@
+##DESCRIPTION
+## Preview Test: Self Test - Sketching functions
+##ENDDESCRIPTION
+
+## Problem9
+
+########################################################################
+
+DOCUMENT();      
+
+loadMacros(
+   "PGstandard.pl",     # Standard macros for PG language
+   "MathObjects.pl",
+   #"source.pl",        # allows code to be displayed on certain sites.
+   #"PGcourse.pl",      # Customization file for the course
+   "parserRadioButtons.pl",
+   "contextFraction.pl"
+);
+
+Context("Fraction");
+
+# Set up possible answers
+$mc = RadioButtons(
+[ "A", 
+"B", 
+"C", 
+"D", 
+"None of the above" ]
+    , "A" # correct answer
+    ,last => # indicate order of choices
+[ "A", 
+"B", 
+"C", 
+"D", 
+"None of the above" ]
+    ,labels => "ABCDE" );
+
+BEGIN_TEXT
+Which of the following charts represents the function \(y = \frac{x^3}{x^2+1}\)?
+$BR
+A: \{ image( "imagename.png", width=>150, height=>150 ) \}
+$BR
+$BR
+B: \{ image( "imagename.png", width=>150, height=>150 ) \}
+$BR
+$BR
+C: \{ image( "imagename.png", width=>150, height=>150 ) \}
+$BR
+$BR
+D: \{ image( "imagename.png", width=>150, height=>150 ) \}
+$BR$BR
+\{ $mc->buttons() \}
+
+
+END_TEXT
+
+$showPartialCorrectAnswers = 0;
+
+ANS( $mc->cmp() );
+
+ENDDOCUMENT();

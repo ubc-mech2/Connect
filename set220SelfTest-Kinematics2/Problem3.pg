@@ -1,0 +1,49 @@
+##DESCRIPTION
+## Preview Test: Self Test - Kinematics 2
+##ENDDESCRIPTION
+
+## Problem3
+
+########################################################################
+
+DOCUMENT();      
+
+loadMacros(
+   "PGstandard.pl",     # Standard macros for PG language
+   "MathObjects.pl",
+   #"source.pl",        # allows code to be displayed on certain sites.
+   #"PGcourse.pl",      # Customization file for the course
+   "parserRadioButtons.pl",
+   "contextFraction.pl"
+);
+
+$mc = RadioButtons(
+[ "\( 19.91 m \)", 
+"\( 155.9 m \)", 
+"\( 260 m \)", 
+"\( 1791 m \)", 
+"\( 3100 m \)",
+"\( 6200 m \)" ]
+    , "\( 3100 m \)"
+    ,last => 
+[ "\( 19.91 m \)", 
+"\( 155.9 m \)", 
+"\( 260 m \)", 
+"\( 1791 m \)", 
+"\( 3100 m \)",
+"\( 6200 m \)" ]
+    ,labels => "ABCDEF" );
+
+BEGIN_TEXT
+
+A projectile is fired from the edge of a \(150 m\) cliff. The initial projectile velocity is \(180 m/s\) and the angle is \(30\) degrees above horizontal. Find the horizontal distance from the launch point to where the projectile strikes the ground.
+$BR
+\{ $mc->buttons() \}
+
+END_TEXT
+
+$showPartialCorrectAnswers = 0;
+
+ANS( $mc->cmp() );
+
+ENDDOCUMENT();

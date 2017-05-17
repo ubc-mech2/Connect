@@ -1,0 +1,62 @@
+##DESCRIPTION
+## Preview Test: Self Test - Trusses
+##ENDDESCRIPTION
+
+## Problem8
+
+########################################################################
+
+DOCUMENT();      
+
+loadMacros(
+   "PGstandard.pl",     # Standard macros for PG language
+   "MathObjects.pl",
+   #"source.pl",        # allows code to be displayed on certain sites.
+   #"PGcourse.pl",      # Customization file for the course
+   "parserRadioButtons.pl",
+   "contextFraction.pl"
+);
+
+Context("Fraction");
+
+# Set up possible answers
+$mc = RadioButtons(
+[ "\( -80 kN \)", 
+"\( -51 kN \)", 
+"\( -48 kN \)", 
+"\( -45 kN \)", 
+"\( -19 kN \)",
+"\( 19 kN \)", 
+"\( 45 kN \)", 
+"\( 48 kN \)", 
+"\( 51 kN \)",
+"\( 80 kN \)", ]
+    , "\( 80 kN \)" # correct answer
+    ,last => # indicate order of choices
+[ "\( -80 kN \)", 
+"\( -51 kN \)", 
+"\( -48 kN \)", 
+"\( -45 kN \)", 
+"\( -19 kN \)",
+"\( 19 kN \)", 
+"\( 45 kN \)", 
+"\( 48 kN \)", 
+"\( 51 kN \)",
+"\( 80 kN \)", ]
+    ,labels => "ABCDE" );
+
+BEGIN_TEXT
+Find the force in member AC for the pin-jointed structure below. (by convention: positive indicates tension, negative indicates compression)
+$BR 
+\{ image( "imagename.png", width=>150, height=>150 ) \}
+$BR
+\{ $mc->buttons() \}
+
+
+END_TEXT
+
+$showPartialCorrectAnswers = 0;
+
+ANS( $mc->cmp() );
+
+ENDDOCUMENT();

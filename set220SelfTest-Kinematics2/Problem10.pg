@@ -1,0 +1,48 @@
+##DESCRIPTION
+## Preview Test: Self Test - Kinematics 2
+##ENDDESCRIPTION
+
+## Problem10
+
+########################################################################
+
+DOCUMENT();      
+
+loadMacros(
+   "PGstandard.pl",     # Standard macros for PG language
+   "MathObjects.pl",
+   #"source.pl",        # allows code to be displayed on certain sites.
+   #"PGcourse.pl",      # Customization file for the course
+   "parserRadioButtons.pl",
+   "contextFraction.pl"
+);
+$deg = "".sprintf("%c",0xb0);
+$mc = RadioButtons(
+[ "\( 1.945 m \)", 
+"\( 3.93 m \)", 
+"\( 5.94 m \)", 
+"\( 12.79 m \)", 
+"\( 25.8 m \)" ]
+    , "\( 12.79 m \)"
+    ,last => 
+[ "\( 1.945 m \)", 
+"\( 3.93 m \)", 
+"\( 5.94 m \)", 
+"\( 12.79 m \)", 
+"\( 25.8 m \)" ]
+    ,labels => "ABCDE" );
+
+BEGIN_TEXT
+A ball is projected from point A with a velocity \(v_0 = 10 m/s\). The launch angle is \(15\)$deg less than perpendicular to the incline, as shown. The incline is \(20\)$deg from horizontal. Knowing that the ball strikes the incline at \(B\), determine the range, \(R\), that the ball travels.
+$BR
+\{ image( "10.png", width=>150, height=>150' ) \}
+$BR
+\{ $mc->buttons() \}
+
+END_TEXT
+
+$showPartialCorrectAnswers = 0;
+
+ANS( $mc->cmp() );
+
+ENDDOCUMENT();

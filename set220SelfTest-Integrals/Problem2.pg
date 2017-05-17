@@ -1,0 +1,48 @@
+##DESCRIPTION
+## Preview Test: Self Test - Integrals
+##ENDDESCRIPTION
+
+## Problem2
+
+########################################################################
+
+DOCUMENT();      
+
+loadMacros(
+   "PGstandard.pl",     # Standard macros for PG language
+   "MathObjects.pl",
+   #"source.pl",        # allows code to be displayed on certain sites.
+   #"PGcourse.pl",      # Customization file for the course
+   "parserRadioButtons.pl",
+   "contextFraction.pl"
+);
+
+$mc = RadioButtons(
+[ "\( 10 \)", 
+"\( 28 \)", 
+"\( 30 \)", 
+"\( 48 \)", 
+"\( 50 \)",
+"\( 68 \)" ]
+    , "\( 28 \)"
+    ,last => 
+[ "\( 10 \)", 
+"\( 28 \)", 
+"\( 30 \)", 
+"\( 48 \)", 
+"\( 50 \)",
+"\( 68 \)" ]
+    ,labels => "ABCDEF" );
+
+BEGIN_TEXT
+What is the integral of \(y(x) = 8x^3 - 12x^2 + 14x\) evaluated between \(x = 0\) and \(x = 2\)?
+$BR
+\{ $mc->buttons() \}
+
+END_TEXT
+
+$showPartialCorrectAnswers = 0;
+
+ANS( $mc->cmp() );
+
+ENDDOCUMENT();

@@ -1,0 +1,54 @@
+##DESCRIPTION
+## Preview Test: Self Test - Sketching functions
+##ENDDESCRIPTION
+
+## Problem10
+
+########################################################################
+
+DOCUMENT();      
+
+loadMacros(
+   "PGstandard.pl",     # Standard macros for PG language
+   "MathObjects.pl",
+   #"source.pl",        # allows code to be displayed on certain sites.
+   #"PGcourse.pl",      # Customization file for the course
+   "parserRadioButtons.pl",
+   "contextFraction.pl"
+);
+
+Context("Fraction");
+
+# Set up possible answers
+$mc = RadioButtons(
+[ "\( y =0.5 \sin(2x - 1) + 1 \)", 
+"\( y = \sin(2x + 1) + 1 \)", 
+"\( y = 2 \sin(0.5x - 1) - 1 \)", 
+"\( y = 2 \cos(2x - 1) + 1 \)", 
+"\( y = 2 \cos(0.5x - 1) + 1 \)", 
+"none of the above" ]
+    , "\( y = 2 \cos(0.5x - 1) + 1 \)" # correct answer
+    ,last => # indicate order of choices
+[ "\( y =0.5 \sin(2x - 1) + 1 \)", 
+"\( y = \sin(2x + 1) + 1 \)", 
+"\( y = 2 \sin(0.5x - 1) - 1 \)", 
+"\( y = 2 \cos(2x - 1) + 1 \)", 
+"\( y = 2 \cos(0.5x - 1) + 1 \)", 
+"none of the above" ]
+    ,labels => "ABCDEF" );
+
+BEGIN_TEXT
+Which function is described by the plot below?
+$BR
+\{ image( "imagename.png", width=>150, height=>150 ) \}
+$BR
+\{ $mc->buttons() \}
+
+
+END_TEXT
+
+$showPartialCorrectAnswers = 0;
+
+ANS( $mc->cmp() );
+
+ENDDOCUMENT();

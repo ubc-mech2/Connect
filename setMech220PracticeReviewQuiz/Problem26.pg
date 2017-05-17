@@ -1,0 +1,58 @@
+##DESCRIPTION
+## Preview Test: Mech 220 Practice Review Quiz
+##ENDDESCRIPTION
+
+## Problem26
+
+########################################################################
+
+DOCUMENT();      
+
+loadMacros(
+   "PGstandard.pl",     # Standard macros for PG language
+   "MathObjects.pl",
+   #"source.pl",        # allows code to be displayed on certain sites.
+   #"PGcourse.pl",      # Customization file for the course
+   "parserRadioButtons.pl",
+   "contextFraction.pl",
+);
+
+Context("Vector");
+
+$v = ColumnVector(1, -1);
+
+$mc = RadioButtons(
+    [ "A", 
+	"B", 
+	"C", 
+	"D", 
+	"E" ]
+       ,"C",
+    last =>     [ "A", 
+	"B", 
+	"C", 
+	"D", 
+	"E" ]
+         ,labels => "ABCDE" );
+
+Context()->texStrings;
+BEGIN_TEXT
+\{ image( "26.png", width=>150, height=>150 \}
+$BR
+Consider the figure above. Force f is measured as \($v\) N in the u,v coordinate frame. What is Force f in the x,y coordinate frame?
+$BR
+
+A: \{ image( "26a.png", width=>150, height=>150 \} $BR
+B: \{ image( "26b.png", width=>150, height=>150 \} $BR
+C: \{ image( "26c.png", width=>150, height=>150 \} $BR
+D: \{ image( "26d.png", width=>150, height=>150 \} $BR
+E: \{ image( "26e.png", width=>150, height=>150 \} $BR
+\{ $mc->buttons() \}
+
+END_TEXT
+
+$showPartialCorrectAnswers = 0;
+
+ANS( $mc->cmp() );
+
+ENDDOCUMENT();

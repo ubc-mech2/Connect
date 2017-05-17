@@ -1,0 +1,37 @@
+##DESCRIPTION
+## Preview Test: Mech 220 Practice Review Quiz
+##ENDDESCRIPTION
+
+## Problem17
+
+########################################################################
+
+DOCUMENT();      
+
+loadMacros(
+   "PGstandard.pl",     # Standard macros for PG language
+   "MathObjects.pl",
+   #"source.pl",        # allows code to be displayed on certain sites.
+   #"PGcourse.pl",      # Customization file for the course
+   "parserRadioButtons.pl",
+);
+
+$mc = RadioButtons(
+    [ "\( -i \)", "\( -1 \)", "\( (1/\sqrt2)(1+i) \)", "\( (1-i) \)", "Does not exist" ]
+    , "\( (1/\sqrt2)(1+i) \)"
+    ,last => [ "\( -i \)", "\( -1 \)", "\( (1/\sqrt2)(1+i) \)", "\( (1-i) \)", "Does not exist" ]
+    ,labels => "ABCDE" );
+
+BEGIN_TEXT
+
+What is the square root of i? (That is, what is \( \sqrt i\)?)
+$BR
+\{ $mc->buttons() \}
+
+END_TEXT
+
+$showPartialCorrectAnswers = 0;
+
+ANS( $mc->cmp() );
+
+ENDDOCUMENT();

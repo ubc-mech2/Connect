@@ -1,0 +1,51 @@
+##DESCRIPTION
+## Preview Test: Self Test - Kinematics 2
+##ENDDESCRIPTION
+
+## Problem5
+
+########################################################################
+
+DOCUMENT();      
+
+loadMacros(
+   "PGstandard.pl",     # Standard macros for PG language
+   "MathObjects.pl",
+   #"source.pl",        # allows code to be displayed on certain sites.
+   #"PGcourse.pl",      # Customization file for the course
+   "parserRadioButtons.pl",
+   "contextFraction.pl"
+);
+
+$mc = RadioButtons(
+[ "\( (-0.449e_r + 0.270e_\theta) m/s \)", 
+"\( (0.449e_r - 0.270e_\theta) m/s \)", 
+"\( (0.270e_r - 0.449e_\theta) m/s \)", 
+"\( (-3.39e_r - 97.9e_\theta) m/s \)", 
+"\( (-3.39e_r + 97.9e_\theta) m/s \)", 
+"\( (3.39e_r + 97.9e_\theta) m/s \)" ]
+    , "\( (-0.449e_r + 0.270e_\theta) m/s \)"
+    ,last => 
+[ "\( (-0.449e_r + 0.270e_\theta) m/s \)", 
+"\( (0.449e_r - 0.270e_\theta) m/s \)", 
+"\( (0.270e_r - 0.449e_\theta) m/s \)", 
+"\( (-3.39e_r - 97.9e_\theta) m/s \)", 
+"\( (-3.39e_r + 97.9e_\theta) m/s \)", 
+"\( (3.39e_r + 97.9e_\theta) m/s \)" ]
+    ,labels => "ABCDEF" );
+
+BEGIN_TEXT
+
+The rotation of the \(0.9 m\) arm OA about O is defined by the relation \(\theta = 0.15t^2\), where \(\theta\) is expressed in radians and \(t\) in seconds. Collar B slides along the arm in such a way that its distance to O is \(r = 0.9 - 0.12t^2\), where \(r\) is expressed in meters and \(t\) in seconds. After the arm OA has rotated through 30 degrees, determine the total velocity of the collar.
+$BR
+\{ image( "imagename.png", width=>150, height=>150 ) \}
+$BR
+\{ $mc->buttons() \}
+
+END_TEXT
+
+$showPartialCorrectAnswers = 0;
+
+ANS( $mc->cmp() );
+
+ENDDOCUMENT();

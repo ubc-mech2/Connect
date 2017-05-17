@@ -1,0 +1,45 @@
+##DESCRIPTION
+## 220 Self Test - Coordinates
+##ENDDESCRIPTION
+
+## Problem2
+
+########################################################################
+
+DOCUMENT();      
+
+loadMacros(
+   "PGstandard.pl",     # Standard macros for PG language
+   "MathObjects.pl",
+   #"source.pl",        # allows code to be displayed on certain sites.
+   #"PGcourse.pl",      # Customization file for the course
+   "parserRadioButtons.pl",
+   "contextFraction.pl",
+);
+
+$mc = RadioButtons(
+    [ "\( (3, 63.4, 63.4) \)", 
+	"\( (2.24, 63.4, 63.4) \)", 
+	"\( (2.24, 63.4, -63.4) \)", 
+	"\( (2.24, 63.4, -2) \)", 
+	"\( (3, 63.4, 2) \)" ]
+       ,"\( (2.24, 63.4, -2) \)",
+    last => [ "\( (3, 63.4, 63.4) \)", 
+	"\( (2.24, 63.4, 63.4) \)", 
+	"\( (2.24, 63.4, -63.4) \)", 
+	"\( (2.24, 63.4, -2) \)", 
+	"\( (3, 63.4, 2) \)" ]
+         ,labels => "ABCDE" );
+
+BEGIN_TEXT
+Given the point \( (1, 2, -2) \) in x-y-z space, what is this point in cylindrical coordinates? (use angles in degrees)
+$BR
+\{ $mc->buttons() \}
+
+END_TEXT
+
+$showPartialCorrectAnswers = 0;
+
+ANS( $mc->cmp() );
+
+ENDDOCUMENT();

@@ -1,0 +1,47 @@
+##DESCRIPTION
+## 220 Self Test - Coordinates
+##ENDDESCRIPTION
+
+## Problem6
+
+########################################################################
+
+DOCUMENT();      
+
+loadMacros(
+   "PGstandard.pl",     # Standard macros for PG language
+   "MathObjects.pl",
+   #"source.pl",        # allows code to be displayed on certain sites.
+   #"PGcourse.pl",      # Customization file for the course
+   "parserRadioButtons.pl",
+   "contextFraction.pl",
+);
+
+$mc = RadioButtons(
+    [ "\( (0.058, 0.962) m \)", 
+	"\( (10.06, 2.96) m \)", 
+	"\( (10.53, 2.96) m \)", 
+	"\( (10.19, 5.16) m \)", 
+	"\( (0.058, 0.804) m \)" ]
+       ,"\( (10.06, 2.96) m \)",
+    last =>     [ "\( (0.058, 0.962) m \)", 
+	"\( (10.06, 2.96) m \)", 
+	"\( (10.53, 2.96) m \)", 
+	"\( (10.19, 5.16) m \)", 
+	"\( (0.058, 0.804) m \)" ]
+         ,labels => "ABCDE" );
+
+BEGIN_TEXT
+Following the previous problem, the position of the ball in the p-q coordinate system is \((1, 3)\) where distance is measured in feet. What is the position of the ball in the x-y coordinate system (measured in metres)?
+$BR
+\{ image( "5.png", width=>150, height=>150 ) \}
+$BR
+\{ $mc->buttons() \}
+
+END_TEXT
+
+$showPartialCorrectAnswers = 0;
+
+ANS( $mc->cmp() );
+
+ENDDOCUMENT();

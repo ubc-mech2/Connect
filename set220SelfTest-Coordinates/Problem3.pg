@@ -1,0 +1,45 @@
+##DESCRIPTION
+## 220 Self Test - Coordinates
+##ENDDESCRIPTION
+
+## Problem3
+
+########################################################################
+
+DOCUMENT();      
+
+loadMacros(
+   "PGstandard.pl",     # Standard macros for PG language
+   "MathObjects.pl",
+   #"source.pl",        # allows code to be displayed on certain sites.
+   #"PGcourse.pl",      # Customization file for the course
+   "parserRadioButtons.pl",
+   "contextFraction.pl",
+);
+
+$mc = RadioButtons(
+    [ "\( (0.45, 0.71, 0.54) \)", 
+	"\( (0.02, 0.00, 1.00) \)", 
+	"\( (0.54, 0.45, 0.71) \)", 
+	"\( (0.29, 0.45, 0.84) \)", 
+	"\( (0.45, 0.29, 0.84) \)" ]
+       ,"\( (0.45, 0.71, 0.54) \)",
+    last => [ "\( (0.45, 0.71, 0.54) \)", 
+	"\( (0.02, 0.00, 1.00) \)", 
+	"\( (0.54, 0.45, 0.71) \)", 
+	"\( (0.29, 0.45, 0.84) \)", 
+	"\( (0.45, 0.29, 0.84) \)" ]
+         ,labels => "ABCDE" );
+
+BEGIN_TEXT
+A point is given in spherical coordinates as \((1, 1, 1)\). What are the coordinates of the point in x-y-z coordinates? (use angles in radians)
+$BR
+\{ $mc->buttons() \}
+
+END_TEXT
+
+$showPartialCorrectAnswers = 0;
+
+ANS( $mc->cmp() );
+
+ENDDOCUMENT();

@@ -1,0 +1,42 @@
+##DESCRIPTION
+## Preview Test: Mech 220 Practice Review Quiz
+##ENDDESCRIPTION
+
+## Problem20
+
+########################################################################
+
+DOCUMENT();      
+
+loadMacros(
+   "PGstandard.pl",     # Standard macros for PG language
+   "MathObjects.pl",
+   #"source.pl",        # allows code to be displayed on certain sites.
+   #"PGcourse.pl",      # Customization file for the course
+   "parserRadioButtons.pl",
+);
+
+$mc = RadioButtons(
+    [ "A", "B", "C", "D", "E" ]
+    , "C"
+    ,last => [ "A", "B", "C", "D", "E" ]
+    ,labels => "ABCDE" );
+
+BEGIN_TEXT
+\{ image( "20.png", width=>150, height=>150\}
+$BR
+Select the correct free body diagrams for the two blocks shown in the figure above. (More than one diagram may be technically correct; select the most appropriate diagram.) The acceleration due to gravity is g acting in the direction shown. There is no air drag. The rope is inextensible (does not stretch) and has no mass.
+$BR \{ image( "20A.png", width=>150, height=>150\}
+$BR \{ image( "20B.png", width=>150, height=>150\}
+$BR \{ image( "20C.png", width=>150, height=>150\}
+$BR \{ image( "20D.png", width=>150, height=>150\}
+$BR \{ image( "20E.png", width=>150, height=>150\} $BR
+\{ $mc->buttons() \}
+
+END_TEXT
+
+$showPartialCorrectAnswers = 0;
+
+ANS( $mc->cmp() );
+
+ENDDOCUMENT();
