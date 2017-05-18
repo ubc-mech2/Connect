@@ -1,0 +1,49 @@
+##DESCRIPTION
+## 221 Prelab 1 Tensile Testing
+## Question Set 5 - 6
+##ENDDESCRIPTION
+
+## Problem2
+
+########################################################################
+
+DOCUMENT();      
+
+loadMacros(
+   "PGstandard.pl",     # Standard macros for PG language
+   "MathObjects.pl",
+   #"source.pl",        # allows code to be displayed on certain sites.
+   #"PGcourse.pl",      # Customization file for the course
+   "parserRadioButtons.pl",
+   "contextFraction.pl",
+);
+
+$mc = RadioButtons( # Set up possible options
+[
+"\( 24.2kN \)", 
+"\( 16.1kN \)", 
+"\( 13.3kN \)", 
+"\( 11.8kN \)" 
+]
+,"\( 13.3kN \)", # correct option
+last => # set up order in which options will be displayed
+[
+"\( 24.2kN \)", 
+"\( 16.1kN \)", 
+"\( 13.3kN \)", 
+"\( 11.8kN \)" 
+]
+,labels => "ABCD" );
+
+BEGIN_TEXT
+A test is carried out with two cylindrical specimens \(7mm\) in diameter. The first specimen has an elastic modulus of \(105GPa\) and the second has an elastic modulus of \(250GPa\). If the first specimen is subjected to \(5.6kN\) load, determine the load required for the second specimen in order to achieve equal strain in both of them.
+$BR
+\{ $mc->buttons() \}
+
+END_TEXT
+
+$showPartialCorrectAnswers = 0;
+
+ANS( $mc->cmp() );
+
+ENDDOCUMENT();

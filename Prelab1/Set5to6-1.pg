@@ -1,0 +1,49 @@
+##DESCRIPTION
+## 221 Prelab 1 Tensile Testing
+## Question Set 5 - 6
+##ENDDESCRIPTION
+
+## Problem1
+
+########################################################################
+
+DOCUMENT();      
+
+loadMacros(
+   "PGstandard.pl",     # Standard macros for PG language
+   "MathObjects.pl",
+   #"source.pl",        # allows code to be displayed on certain sites.
+   #"PGcourse.pl",      # Customization file for the course
+   "parserRadioButtons.pl",
+   "contextFraction.pl",
+);
+
+$mc = RadioButtons( # Set up possible options
+[
+"\( 1.74cm \)", 
+"\( 3.51cm \)", 
+"\( 5.20cm \)", 
+"\( 8.23cm \)" 
+]
+,"\( 5.20cm \)", # correct option
+last => # set up order in which options will be displayed
+[
+"\( 1.74cm \)", 
+"\( 3.51cm \)", 
+"\( 5.20cm \)", 
+"\( 8.23cm \)" 
+]
+,labels => "ABCD" );
+
+BEGIN_TEXT
+A cylindrical specimen \(5.81cm\) long stretches to \(8.23cm\) when subjected to \(34ksi\) stress. When another specimen of the same material but \(3.67cm\) long is subjected to \(34ksi\) stress what is its length?
+$BR
+\{ $mc->buttons() \}
+
+END_TEXT
+
+$showPartialCorrectAnswers = 0;
+
+ANS( $mc->cmp() );
+
+ENDDOCUMENT();
