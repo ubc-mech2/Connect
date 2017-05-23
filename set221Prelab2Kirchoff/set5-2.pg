@@ -1,0 +1,46 @@
+##DESCRIPTION
+## 221 Prelab 2 Kirchoff's Laws
+## Question Set 5
+##ENDDESCRIPTION
+
+## Problem7
+
+########################################################################
+
+DOCUMENT();     
+
+loadMacros(
+"PGstandard.pl",     # Standard macros for PG language
+   "MathObjects.pl",
+   "PGML.pl",
+   "parserPopUp.pl",
+   "parserMultiAnswer.pl",
+   #"source.pl",        # allows code to be displayed on certain sites.
+   #"PGcourse.pl",      # Customization file for the course
+);
+
+# Print problem number and point value (weight) for the problem
+TEXT(beginproblem());
+
+# Show which answers are correct and which ones are incorrect
+$showPartialCorrectAnswers = 1;
+
+Context("Numeric");
+Context()->flags->set(tolerance=> 0.03); # 3% tolerance
+
+$R = random(4, 5, 0.01);
+$answer = ((($R / ($R + 3.77185)) * 12) - 5) * 1000;
+
+Context()->texStrings;
+
+BEGIN_TEXT
+
+For the voltage divider shown, the input voltage, \(v_{in}\), is \(12 V\) and the desired output voltage, \(v_{out}\), is \(5 V\). If \(R = $R\) \(k\) \(ohms\), what is the error in the output voltage? That is, how much larger is the actual output voltage from the desired output of \(5 V\). Give your answer in millivolts, using negative to indicate that the actual output is smaller than the desired output.
+$PAR
+\{ ans_rule(35) \}
+
+END_TEXT
+
+ANS(num_cmp($answer)); # check student answer
+
+ENDDOCUMENT();        # This should be the last executable line in the problem.
