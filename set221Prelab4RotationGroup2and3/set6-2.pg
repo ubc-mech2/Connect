@@ -1,0 +1,55 @@
+##DESCRIPTION
+## 221 Prelab 4 Rotation Group 2 and 3
+## Question Set 6
+##ENDDESCRIPTION
+
+## Problem2
+
+#######################################################################
+
+DOCUMENT();      
+
+loadMacros(
+   "PGstandard.pl",     # Standard macros for PG language
+   "MathObjects.pl",
+   #"source.pl",        # allows code to be displayed on certain sites.
+   #"PGcourse.pl",      # Customization file for the course
+   "parserRadioButtons.pl",
+   "contextFraction.pl",
+);
+
+Context("Fraction");
+
+$mc = RadioButtons( # Set up possible options
+[
+"\(92 kg\)", 
+"\(70kg\)", 
+"\(68kg\)", 
+"\(84kg\)",
+"\(52kg\)",
+]
+,"\(52kg\)", # correct option
+last => # set up order in which options will be displayed
+[
+"\(92 kg\)", 
+"\(70kg\)", 
+"\(68kg\)", 
+"\(84kg\)",
+"\(52kg\)",
+]
+,labels => "ABCD" );
+
+BEGIN_TEXT		
+Water falling on a wheel generates a force of \(36N\) tangent to the wheel. Find the mass of the wheel if its inner radius is \(1.2m\), it is \(20cm\) thick (i.e. \(R_2 - R_1 = 20cm\)), and it is being accelerated at \(0.57 rad/s^2\).
+$PAR
+\{ image( "imagename.png", width=>150, height=>150 ) \}
+$PAR
+\{ $mc->buttons() \}
+
+END_TEXT
+
+$showPartialCorrectAnswers = 0;
+
+ANS( $mc->cmp() );
+
+ENDDOCUMENT();

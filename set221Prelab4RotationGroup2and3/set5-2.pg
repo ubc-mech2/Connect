@@ -1,0 +1,55 @@
+##DESCRIPTION
+## 221 Prelab 4 Rotation Group 2 and 3
+## Question Set 5
+##ENDDESCRIPTION
+
+## Problem2
+
+#######################################################################
+
+DOCUMENT();      
+
+loadMacros(
+   "PGstandard.pl",     # Standard macros for PG language
+   "MathObjects.pl",
+   #"source.pl",        # allows code to be displayed on certain sites.
+   #"PGcourse.pl",      # Customization file for the course
+   "parserRadioButtons.pl",
+   "contextFraction.pl",
+);
+
+Context("Fraction");
+
+$mc = RadioButtons( # Set up possible options
+[
+"\(12 N\)", 
+"\(9.5 N\)", 
+"\(7.8 N\)", 
+"\(3.4 N\)",
+"\(1.1 N\)",
+]
+,"\(7.8 N\)", # correct option
+last => # set up order in which options will be displayed
+[
+"\(12 N\)", 
+"\(9.5 N\)", 
+"\(7.8 N\)", 
+"\(3.4 N\)",
+"\(1.1 N\)",
+]
+,labels => "ABCD" );
+
+BEGIN_TEXT	
+A solid bar of length \(L = 0.5m\) and with \(W = 0.1m\) weighs \(2kg\). It also has two constant-thrust rockets attached on either end. Each rocket is small enough to be considered a point mass of \(0.25kg\). If the bar is initially at rest and in two seconds after the rockets are fired it achieves a rotation rate of \(1000rpm\), determine the thrust of each rocket.
+$PAR
+\{ image( "imagename.png", width=>150, height=>150 ) \}
+$PAR
+\{ $mc->buttons() \}
+
+END_TEXT
+
+$showPartialCorrectAnswers = 0;
+
+ANS( $mc->cmp() );
+
+ENDDOCUMENT();
