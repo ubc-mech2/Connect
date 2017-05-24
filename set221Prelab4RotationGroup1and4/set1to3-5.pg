@@ -1,0 +1,54 @@
+##DESCRIPTION
+## 221 Prelab 4 Rotation Group 1 and 4
+## Question Set 1 to 3
+##ENDDESCRIPTION
+
+## Problem5
+
+#######################################################################
+
+DOCUMENT();      
+
+loadMacros(
+   "PGstandard.pl",     # Standard macros for PG language
+   "MathObjects.pl",
+   #"source.pl",        # allows code to be displayed on certain sites.
+   #"PGcourse.pl",      # Customization file for the course
+   "parserRadioButtons.pl",
+   "contextFraction.pl",
+);
+
+Context("Fraction");
+
+$mc = RadioButtons( # Set up possible options
+[
+"hollow sphere with inside radius \(r_1\) and outside radius \(r_2\)", 
+"slender bar of length \(r_1\) and width \(r_2\)", 
+"hollow hemisphere with inside radius \(r_1\) and outside radius \(r_2\)", 
+"cylinder with inside radius \(r_1\) and outside radius \(r_2\)",
+"an ellipse with major axis \(r_2\) and minor axis \(r_1\)",
+]
+,"cylinder with inside radius \(r_1\) and outside radius \(r_2\)", # correct option
+last => # set up order in which options will be displayed
+[
+"hollow sphere with inside radius \(r_1\) and outside radius \(r_2\)", 
+"slender bar of length \(r_1\) and width \(r_2\)", 
+"hollow hemisphere with inside radius \(r_1\) and outside radius \(r_2\)", 
+"cylinder with inside radius \(r_1\) and outside radius \(r_2\)",
+"an ellipse with major axis \(r_2\) and minor axis \(r_1\)",
+]
+,labels => "ABCD" );
+
+BEGIN_TEXT
+Which physical shape has the following moment of inertia formula \(\frac{1}{2} m(r_2^2 + r_1^2)\)?
+$PAR
+
+\{ $mc->buttons() \}
+
+END_TEXT
+
+$showPartialCorrectAnswers = 0;
+
+ANS( $mc->cmp() );
+
+ENDDOCUMENT();

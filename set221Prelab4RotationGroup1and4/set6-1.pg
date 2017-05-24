@@ -1,0 +1,55 @@
+##DESCRIPTION
+## 221 Prelab 4 Rotation Group 1 and 4
+## Question Set 6
+##ENDDESCRIPTION
+
+## Problem1
+
+#######################################################################
+
+DOCUMENT();      
+
+loadMacros(
+   "PGstandard.pl",     # Standard macros for PG language
+   "MathObjects.pl",
+   #"source.pl",        # allows code to be displayed on certain sites.
+   #"PGcourse.pl",      # Customization file for the course
+   "parserRadioButtons.pl",
+   "contextFraction.pl",
+);
+
+Context("Fraction");
+
+$mc = RadioButtons( # Set up possible options
+[
+"\(R_1 = 1m, R_2 = 1.2m\)", 
+"\(R_1 = 1.3m, R_2 = 1.5m\)", 
+"\(R_1 = 0.8m, R_2 = 1m\)", 
+"\(R_1 = 0.5m, R_2 = 0.7m\)",
+"\(R_1 = 0.5m, R_2 = 0.6m\)",
+]
+,"\(R_1 = 1m, R_2 = 1.2m\)", # correct option
+last => # set up order in which options will be displayed
+[
+"\(R_1 = 1m, R_2 = 1.2m\)", 
+"\(R_1 = 1.3m, R_2 = 1.5m\)", 
+"\(R_1 = 0.8m, R_2 = 1m\)", 
+"\(R_1 = 0.5m, R_2 = 0.7m\)",
+"\(R_1 = 0.5m, R_2 = 0.6m\)",
+]
+,labels => "ABCD" );
+
+BEGIN_TEXT	
+Water falling on a wheel generates a force of \(28N\) tangent to the wheel. Referring to the figure, find \(R_1\) and \(R_2\) of the wheel if the wheel thickness (i.e. \(R_2 - R_1\)) is \(20cm\), its mass is \(70kg\) and it is being accelerated at \(0.39 rad/s^2\).
+$PAR
+\{ image( "imagename.png", width=>150, height=>150 ) \}
+$PAR
+\{ $mc->buttons() \}
+
+END_TEXT
+
+$showPartialCorrectAnswers = 0;
+
+ANS( $mc->cmp() );
+
+ENDDOCUMENT();

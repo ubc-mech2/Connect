@@ -1,0 +1,55 @@
+##DESCRIPTION
+## 221 Prelab 4 Rotation Group 1 and 4
+## Question Set 5
+##ENDDESCRIPTION
+
+## Problem1
+
+#######################################################################
+
+DOCUMENT();      
+
+loadMacros(
+   "PGstandard.pl",     # Standard macros for PG language
+   "MathObjects.pl",
+   #"source.pl",        # allows code to be displayed on certain sites.
+   #"PGcourse.pl",      # Customization file for the course
+   "parserRadioButtons.pl",
+   "contextFraction.pl",
+);
+
+Context("Fraction");
+
+$mc = RadioButtons( # Set up possible options
+[
+"\(1.45\) x \(10^3\) rpm", 
+"\(1.58\) x \(10^3\) rpm", 
+"\(1.63\) x \(10^3\) rpm", 
+"\(1.80\) x \(10^3\) rpm",
+"\(1.92\) x \(10^3\) rpm",
+]
+,"\(1.58\) x \(10^3\) rpm", # correct option
+last => # set up order in which options will be displayed
+[
+"\(1.45\) x \(10^3\) rpm", 
+"\(1.58\) x \(10^3\) rpm", 
+"\(1.63\) x \(10^3\) rpm", 
+"\(1.80\) x \(10^3\) rpm",
+"\(1.92\) x \(10^3\) rpm",
+]
+,labels => "ABCD" );
+
+BEGIN_TEXT
+A solid bar of length \(L = 0.3 m\) and with \(W = 0.08m\) weighs \(2kg\). It has two rockets attached on either end. Each rocket is small enough to be considered a point mass of \(0.25kg\). If each rocket is capable of producing \(15N\) of thrust for one second and the bar is initially at rest. What is the maximum rotation rate (in rpm) that the bar will achieve after one second? (Assume the rocket mass remains constant over time.)
+$PAR
+\{ image( "imagename.png", width=>150, height=>150 ) \}
+$PAR
+\{ $mc->buttons() \}
+
+END_TEXT
+
+$showPartialCorrectAnswers = 0;
+
+ANS( $mc->cmp() );
+
+ENDDOCUMENT();
