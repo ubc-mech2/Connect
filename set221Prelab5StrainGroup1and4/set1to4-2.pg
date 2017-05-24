@@ -1,0 +1,51 @@
+##DESCRIPTION
+## 221 Prelab 5 Strain Group 1 and 4
+## Question Set 1 to 4
+##ENDDESCRIPTION
+
+## Problem2
+
+#######################################################################
+
+DOCUMENT();      
+
+loadMacros(
+   "PGstandard.pl",     # Standard macros for PG language
+   "MathObjects.pl",
+   #"source.pl",        # allows code to be displayed on certain sites.
+   #"PGcourse.pl",      # Customization file for the course
+   "parserRadioButtons.pl",
+   "contextFraction.pl",
+);
+
+Context("Fraction");
+
+$mc = RadioButtons( # Set up possible options
+[
+"The average strain", 
+"The extension of the structure", 
+"The stress", 
+"Young's Modulus"
+]
+,"The extension of the structure", # correct option
+last => # set up order in which options will be displayed
+[
+"The average strain", 
+"The extension of the structure", 
+"The stress", 
+"Young's Modulus"
+]
+,labels => "ABCD" );
+
+BEGIN_TEXT			
+What is obtained when local strain is integrated over the length of the structure:
+$PAR
+\{ $mc->buttons() \}
+
+END_TEXT
+
+$showPartialCorrectAnswers = 0;
+
+ANS( $mc->cmp() );
+
+ENDDOCUMENT();

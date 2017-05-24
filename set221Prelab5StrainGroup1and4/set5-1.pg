@@ -1,0 +1,53 @@
+##DESCRIPTION
+## 221 Prelab 5 Strain Group 1 and 4
+## Question Set 5
+##ENDDESCRIPTION
+
+## Problem1
+
+#######################################################################
+
+DOCUMENT();      
+
+loadMacros(
+   "PGstandard.pl",     # Standard macros for PG language
+   "MathObjects.pl",
+   #"source.pl",        # allows code to be displayed on certain sites.
+   #"PGcourse.pl",      # Customization file for the course
+   "parserRadioButtons.pl",
+   "contextFraction.pl",
+);
+
+Context("Fraction");
+
+$mc = RadioButtons( # Set up possible options
+[
+"\((B)\sigma_{ave} = (C)\sigma_{ave}\)", 
+"\((A)\sigma_{max} = (C)\sigma_{max}\)", 
+"\((B)\sigma_{ave} = (A)\sigma_{ave}\)", 
+"\((A)\sigma_{min} = (B)\sigma_{ave}\)"
+]
+,"\((B)\sigma_{ave} = (C)\sigma_{ave}\)", # correct option
+last => # set up order in which options will be displayed
+[
+"\((B)\sigma_{ave} = (C)\sigma_{ave}\)", 
+"\((A)\sigma_{max} = (C)\sigma_{max}\)", 
+"\((B)\sigma_{ave} = (A)\sigma_{ave}\)", 
+"\((A)\sigma_{min} = (B)\sigma_{ave}\)"
+]
+,labels => "ABCD" );
+
+BEGIN_TEXT			
+The following figure represents stress distribution in samples of equal thickness and under equal loading. Diagram A shows stress distribution for a sample with a double fillet, B is stress in a straight bar at mid length, C is stress in a straight bar close to a point of applied load. Which of the statements that follow is always true? 
+$PAR
+\{ image( "imagename.png", width=>150, height=>150 ) \}
+$PAR
+\{ $mc->buttons() \}
+
+END_TEXT
+
+$showPartialCorrectAnswers = 0;
+
+ANS( $mc->cmp() );
+
+ENDDOCUMENT();
