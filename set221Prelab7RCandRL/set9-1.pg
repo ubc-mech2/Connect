@@ -1,0 +1,56 @@
+##DESCRIPTION
+## 221 Prelab 7 RC and RL
+## Question Set 9
+##ENDDESCRIPTION
+
+## Problem1
+
+#######################################################################
+
+DOCUMENT();      
+
+loadMacros(
+   "PGstandard.pl",     # Standard macros for PG language
+   "MathObjects.pl",
+   #"source.pl",        # allows code to be displayed on certain sites.
+   #"PGcourse.pl",      # Customization file for the course
+   "parserRadioButtons.pl",
+   "contextFraction.pl",
+);
+
+$mc = RadioButtons( # Set up possible options
+[
+"Across A-B", 
+"Across A-C", 
+"Across B-C", 
+"None of the combinations above will give a matching waveform"
+]
+,"Across A-B", # correct option
+last => # set up order in which options will be displayed
+[
+"Across A-B", 
+"Across A-C", 
+"Across B-C", 
+"None of the combinations above will give a matching waveform"
+]
+,labels => "ABCD" );
+
+BEGIN_TEXT	
+		
+For the circuit from the previous question, where should the voltage be measured so as to give a waveform with the same shape as that of the inductor current, \(i_L\)? 
+
+$PAR
+
+\{ image( "imagename.png", width=>150, height=>150 ) \}
+
+$PAR
+
+\{ $mc->buttons() \}
+
+END_TEXT
+
+$showPartialCorrectAnswers = 0;
+
+ANS( $mc->cmp() );
+
+ENDDOCUMENT();

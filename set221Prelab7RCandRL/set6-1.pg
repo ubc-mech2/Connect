@@ -1,0 +1,58 @@
+##DESCRIPTION
+## 221 Prelab 7 RC and RL
+## Question Set 6
+##ENDDESCRIPTION
+
+## Problem1
+
+#######################################################################
+
+DOCUMENT();      
+
+loadMacros(
+   "PGstandard.pl",     # Standard macros for PG language
+   "MathObjects.pl",
+   #"source.pl",        # allows code to be displayed on certain sites.
+   #"PGcourse.pl",      # Customization file for the course
+   "parserRadioButtons.pl",
+   "contextFraction.pl",
+);
+
+$mc = RadioButtons( # Set up possible options
+[
+"\(i_L = V/R\)", 
+"\(i_L = V/R e^{- (t-T) R/L}\)", 
+"\(i_L = V/R (1 - e^{- tR/L})\)", 
+"\(i_L = V/R (e^{- tR/L} - 1)\)",
+"\(i_L = V/R (1 - e ^{-(t-T)R /L})\)"
+]
+,"\(i_L = V/R e^{- (t-T) R/L}\)", # correct option
+last => # set up order in which options will be displayed
+[
+"\(i_L = V/R\)", 
+"\(i_L = V/R e^{- (t-T) R/L}\)", 
+"\(i_L = V/R (1 - e^{- tR/L})\)", 
+"\(i_L = V/R (e^{- tR/L} - 1)\)",
+"\(i_L = V/R (1 - e ^{-(t-T)R /L})\)"
+]
+,labels => "ABCD" );
+
+BEGIN_TEXT			
+	
+Following the previous question, now assume that time t = T, switch 1 is opened and switch 2 is closed. If T is very large, what is the current through the inductor as a function of time for t > T?
+
+$PAR
+
+\{ image( "imagename.png", width=>150, height=>150 ) \}
+
+$PAR
+
+\{ $mc->buttons() \}
+
+END_TEXT
+
+$showPartialCorrectAnswers = 0;
+
+ANS( $mc->cmp() );
+
+ENDDOCUMENT();

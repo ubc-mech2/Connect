@@ -1,0 +1,55 @@
+##DESCRIPTION
+## 221 Prelab 7 RC and RL
+## Question Set 2
+##ENDDESCRIPTION
+
+## Problem1
+
+#######################################################################
+
+DOCUMENT();      
+
+loadMacros(
+   "PGstandard.pl",     # Standard macros for PG language
+   "MathObjects.pl",
+   #"source.pl",        # allows code to be displayed on certain sites.
+   #"PGcourse.pl",      # Customization file for the course
+   "parserRadioButtons.pl",
+   "contextFraction.pl",
+);
+
+Context("Fraction");
+
+$mc = RadioButtons( # Set up possible options
+[
+"\(v_c = V\)", 
+"\(v_c = Ve^{-(t - T)/RC}\)", 
+"\(v_c = V (1 - e^{- t/RC})\)", 
+"\(v_c = V (e^{- t/RC} - 1)\)", 
+"\(v_c = V (1 - e ^{-(t-T) /RC})\)"
+]
+,"\(v_c = Ve^{-(t - T)/RC}\)", # correct option
+last => # set up order in which options will be displayed
+[
+"\(v_c = V\)", 
+"\(v_c = Ve^{-(t - T)/RC}\)", 
+"\(v_c = V (1 - e^{- t/RC})\)", 
+"\(v_c = V (e^{- t/RC} - 1)\)", 
+"\(v_c = V (1 - e ^{-(t-T) /RC})\)"
+]
+,labels => "ABCD" );
+
+BEGIN_TEXT							
+Following the previous question, now assume that time \(t = T\), switch 1 is opened and switch 2 is closed. If \(T\) is very large, what is the voltage across the capacitor as a function of time for \(t > T\)? (hint: start by writing KVL around the circuit.)
+$PAR
+\{ image( "imagename.png", width=>150, height=>150 ) \}
+$PAR
+\{ $mc->buttons() \}
+
+END_TEXT
+
+$showPartialCorrectAnswers = 0;
+
+ANS( $mc->cmp() );
+
+ENDDOCUMENT();

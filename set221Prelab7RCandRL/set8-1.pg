@@ -1,0 +1,48 @@
+##DESCRIPTION
+## 221 Prelab 7 RC and RL
+## Question Set 8
+##ENDDESCRIPTION
+
+## Problem1
+
+########################################################################
+
+DOCUMENT();     
+
+loadMacros(
+"PGstandard.pl",     # Standard macros for PG language
+   "MathObjects.pl",
+   "parserPopUp.pl",
+   "parserMultiAnswer.pl",
+   #"source.pl",        # allows code to be displayed on certain sites.
+   #"PGcourse.pl",      # Customization file for the course
+);
+
+# Show which answers are correct and which ones are incorrect
+$showPartialCorrectAnswers = 1;
+
+Context("Numeric");
+
+$L = random(0.4, 0.6, 0.01);
+$R = random(4, 5, 0.1);
+$V = random(2, 3, 0.1);
+$X = random(95, 99, 0.1);
+$numerator = $R * (-1000);
+$denominator = 2 * $L * ln((1-0.01*$X) / (1+0.01*$X));
+$answer = $numerator/$denominator;
+
+BEGIN_TEXT
+	
+If the voltage supply gives a square wave output from \(+$V\)\(V\) to \(-$V\)\(V\), what is the maximum output frequency such that the inductor current, \(i_L\), has enough time to reach \($X%\) of the target steady state current? Assume \(R = $R\) \(k\) \(ohms\), \(L = $L\) \(H\), and the frequency is measured in Hz based on the full square wave.
+
+$PAR
+\{ image( "imagename.png", width=>150, height=>150 ) \}
+$PAR
+
+\{ ans_rule(35) \}
+ 
+END_TEXT
+
+ANS(num_cmp($answer, reltol => 5)); # 5% tolerance
+
+ENDDOCUMENT();        # This should be the last executable line in the problem.

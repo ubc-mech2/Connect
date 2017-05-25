@@ -1,0 +1,55 @@
+##DESCRIPTION
+## 221 Prelab 7 RC and RL
+## Question Set 1
+##ENDDESCRIPTION
+
+## Problem2
+
+#######################################################################
+
+DOCUMENT();      
+
+loadMacros(
+   "PGstandard.pl",     # Standard macros for PG language
+   "MathObjects.pl",
+   #"source.pl",        # allows code to be displayed on certain sites.
+   #"PGcourse.pl",      # Customization file for the course
+   "parserRadioButtons.pl",
+   "contextFraction.pl",
+);
+
+Context("Fraction");
+
+$mc = RadioButtons( # Set up possible options
+[
+"\(v_c = V\)", 
+"\(v_c = Ve^{-t/RC}\)", 
+"\(v_c = V(1-e^{-t/RC})\)", 
+"\(v_c = V(e^{-t/RC}-1)\)", 
+"\(v_c = i_cR\)"
+]
+,"\(v_c = V(1-e^{-t/RC})\)", # correct option
+last => # set up order in which options will be displayed
+[
+"\(v_c = V\)", 
+"\(v_c = Ve^{-t/RC}\)", 
+"\(v_c = V(1-e^{-t/RC})\)", 
+"\(v_c = V(e^{-t/RC}-1)\)", 
+"\(v_c = i_cR\)"
+]
+,labels => "ABCD" );
+
+BEGIN_TEXT							
+The figure shows an \(RC\) circuit with a voltage source as its input, and with two switches to connect and disconnect the voltage. Both switches are initially open. The switch 1 is then closed at time \(t = 0\), connecting the battery to the \(RC\) circuit, while switch 2 remains open. What is the voltage across the capacitor as a function of time? (hint: start by writing KVL around the circuit.)
+$PAR
+\{ image( "imagename.png", width=>150, height=>150 ) \}
+$PAR
+\{ $mc->buttons() \}
+
+END_TEXT
+
+$showPartialCorrectAnswers = 0;
+
+ANS( $mc->cmp() );
+
+ENDDOCUMENT();
