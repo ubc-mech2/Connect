@@ -1,0 +1,53 @@
+##DESCRIPTION
+## 221 Prelab 5 Strain Group 2 and 3
+## Question Set 1 to 4
+##ENDDESCRIPTION
+
+## Problem1
+
+#######################################################################
+
+DOCUMENT();      
+
+loadMacros(
+   "PGstandard.pl",     # Standard macros for PG language
+   "MathObjects.pl",
+   #"source.pl",        # allows code to be displayed on certain sites.
+   #"PGcourse.pl",      # Customization file for the course
+   "parserRadioButtons.pl",
+   "contextFraction.pl",
+);
+
+Context("Fraction");
+
+$mc = RadioButtons( # Set up possible options
+[
+"A", 
+"B", 
+"C", 
+"D"
+]
+,"C", # correct option
+last => # set up order in which options will be displayed
+[
+"A", 
+"B", 
+"C", 
+"D"
+]
+,labels => "ABCD" );
+
+BEGIN_TEXT			
+When a load is applied to the sample shown below, at what point would you expect the highest local stress to occur?
+$PAR
+\{ image( "imagename.png", width=>150, height=>150 ) \}
+$PAR
+\{ $mc->buttons() \}
+
+END_TEXT
+
+$showPartialCorrectAnswers = 0;
+
+ANS( $mc->cmp() );
+
+ENDDOCUMENT();

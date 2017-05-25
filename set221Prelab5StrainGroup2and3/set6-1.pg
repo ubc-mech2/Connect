@@ -1,0 +1,51 @@
+##DESCRIPTION
+## 221 Prelab 5 Strain Group 2 and 3
+## Question Set 6
+##ENDDESCRIPTION
+
+## Problem1
+
+#######################################################################
+
+DOCUMENT();      
+
+loadMacros(
+   "PGstandard.pl",     # Standard macros for PG language
+   "MathObjects.pl",
+   #"source.pl",        # allows code to be displayed on certain sites.
+   #"PGcourse.pl",      # Customization file for the course
+   "parserRadioButtons.pl",
+   "contextFraction.pl",
+);
+
+Context("Fraction");
+
+$mc = RadioButtons( # Set up possible options
+[
+"\(40.4 kN\)", 
+"\(5.80 kN\)", 
+"\(64.0 kN\)", 
+"\(110. kN\)"
+]
+,"\(40.4 kN\)", # correct option
+last => # set up order in which options will be displayed
+[
+"\(40.4 kN\)", 
+"\(5.80 kN\)", 
+"\(64.0 kN\)", 
+"\(110. kN\)"
+]
+,labels => "ABCD" );
+
+BEGIN_TEXT			
+A copper rod of diameter \(25mm\) has a Young's modulus of \(120 GPa\). It supports an axial load that causes its length to change from \(730.0mm\) to \(729.5mm\). The axial load is :
+$PAR
+\{ $mc->buttons() \}
+
+END_TEXT
+
+$showPartialCorrectAnswers = 0;
+
+ANS( $mc->cmp() );
+
+ENDDOCUMENT();
