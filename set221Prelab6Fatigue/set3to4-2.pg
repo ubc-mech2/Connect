@@ -1,0 +1,53 @@
+##DESCRIPTION
+## 221 Prelab 6 Fatigue
+## Question Set 3 to 4
+##ENDDESCRIPTION
+
+## Problem2
+
+#######################################################################
+
+DOCUMENT();      
+
+loadMacros(
+   "PGstandard.pl",     # Standard macros for PG language
+   "MathObjects.pl",
+   #"source.pl",        # allows code to be displayed on certain sites.
+   #"PGcourse.pl",      # Customization file for the course
+   "parserRadioButtons.pl",
+   "contextFraction.pl",
+);
+
+Context("Fraction");
+
+$mc = RadioButtons( # Set up possible options
+[
+"Grainy, crystalline surface", 
+"Smooth, mirror-like surface", 
+"Ridged, banded surface", 
+"Rough, jagged surface",
+"Cup-and-cone shape"
+]
+,"Grainy, crystalline surface", # correct option
+last => # set up order in which options will be displayed
+[
+"Grainy, crystalline surface", 
+"Smooth, mirror-like surface", 
+"Ridged, banded surface", 
+"Rough, jagged surface",
+"Cup-and-cone shape"
+]
+,labels => "ABCD" );
+
+BEGIN_TEXT					
+The surface of a part that failed by brittle fracture is likely to have what type of appearance?
+$PAR
+\{ $mc->buttons() \}
+
+END_TEXT
+
+$showPartialCorrectAnswers = 0;
+
+ANS( $mc->cmp() );
+
+ENDDOCUMENT();

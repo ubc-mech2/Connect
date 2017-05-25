@@ -1,0 +1,55 @@
+##DESCRIPTION
+## 221 Prelab 6 Fatigue
+## Question Set 1 to 2
+##ENDDESCRIPTION
+
+## Problem5
+
+#######################################################################
+
+DOCUMENT();      
+
+loadMacros(
+   "PGstandard.pl",     # Standard macros for PG language
+   "MathObjects.pl",
+   #"source.pl",        # allows code to be displayed on certain sites.
+   #"PGcourse.pl",      # Customization file for the course
+   "parserRadioButtons.pl",
+   "contextFraction.pl",
+);
+
+Context("Fraction");
+
+$mc = RadioButtons( # Set up possible options
+[
+"Failure marks", 
+"Failure bands", 
+"Beach marks", 
+"Striations",
+"Crack propagation lines"
+]
+,"Striations", # correct option
+last => # set up order in which options will be displayed
+[
+"Failure marks", 
+"Failure bands", 
+"Beach marks", 
+"Striations",
+"Crack propagation lines"
+]
+,labels => "ABCD" );
+
+BEGIN_TEXT					
+The numerous thin lines running roughly left-to-right in the figure below are known as: 
+$PAR
+\{ image( "imagename.png", width=>150, height=>150 ) \}
+$PAR
+\{ $mc->buttons() \}
+
+END_TEXT
+
+$showPartialCorrectAnswers = 0;
+
+ANS( $mc->cmp() );
+
+ENDDOCUMENT();
