@@ -26,14 +26,7 @@ $mc = RadioButtons( # Set up possible options
 "stress and strain can be related to each other through the compliance constant" 
 ]
 ,"stress and strain can be used to generalize results to objects of different size", # correct option
-last => # set up order in which options will be displayed
-[
-"stress and strain have units that are better suited for engineering applications", 
-"stress and strain can be used to generalize results to objects of different size", 
-"stress and strain are independent of material properties", 
-"stress and strain can be related to each other through the compliance constant" 
-]
-,labels => "ABCD" );
+labels => "ABCD" );
 
 BEGIN_TEXT
 In what way is the stress and strain information more useful than applied force and elongation?
