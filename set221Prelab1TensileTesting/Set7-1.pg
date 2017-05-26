@@ -26,14 +26,7 @@ $mc = RadioButtons( # Set up possible options
 "Plain carbon steel" 
 ]
 ,"Tungsten", # correct option
-last => # set up order in which options will be displayed
-[
-"Magnesium", 
-"Tungsten", 
-"Titanium", 
-"Plain carbon steel" 
-]
-,labels => "ABCD" );
+labels => "ABCD" );
 
 BEGIN_TEXT	
 Identify the material based on stress-strain graph provided below.

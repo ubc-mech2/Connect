@@ -26,14 +26,7 @@ $mc = RadioButtons( # Set up possible options
 "maximum stress before permanent deformation begins" 
 ]
 ,"maximum stress that can be applied to the specimen", # correct option
-last => # set up order in which options will be displayed
-[
-"stress at which the material will fracture", 
-"stress at which material will elastically deform", 
-"maximum stress that can be applied to the specimen", 
-"maximum stress before permanent deformation begins" 
-]
-,labels => "ABCD" );
+labels => "ABCD" );
 
 BEGIN_TEXT
 What can be said about ultimate stress?

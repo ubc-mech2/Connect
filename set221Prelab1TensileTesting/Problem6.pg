@@ -26,14 +26,7 @@ $mc = RadioButtons( # Set up possible options
 "\( \sigma = \frac{F}{A_0} \)" 
 ]
 ,"\( \sigma = \frac{F}{A_0} \)", # correct option
-last => # set up order in which options will be displayed
-[
-"\( \sigma = \frac{A_0}{F} \)", 
-"\( \frac{\sigma}{\lambda} = \frac{F}{A_0} \)", 
-"\( \sigma = \frac{F_0}{F_uA} \)", 
-"\( \sigma = \frac{F}{A_0} \)" 
-]
-,labels => "ABCD" );
+labels => "ABCD" );
 
 BEGIN_TEXT
 Which of the following is the formula for engineering stress?

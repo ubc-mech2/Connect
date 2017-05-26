@@ -26,14 +26,7 @@ $mc = RadioButtons( # Set up possible options
 "Maximum stress divided by corresponding strain that characterizes maximum energy absorbed" 
 ]
 ,"Area under stress strain curve up to the failure point that characterized energy material absorbs", # correct option
-last => # set up order in which options will be displayed
-[
-"Area under stress strain curve up to the failure point that characterized energy material absorbs", 
-"Area under stress strain curve up to ultimate stress point that characterized energy material absorbs", 
-"Maximum slope of stress strain curve that characterizes rate at which energy is absorbed", 
-"Maximum stress divided by corresponding strain that characterizes maximum energy absorbed" 
-]
-,labels => "ABCD" );
+labels => "ABCD" );
 
 BEGIN_TEXT
 How can we define toughness of a material?

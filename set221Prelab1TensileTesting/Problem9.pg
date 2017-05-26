@@ -26,14 +26,7 @@ $mc = RadioButtons( # Set up possible options
 "fracture" 
 ]
 ,"permanent deformation of material", # correct option
-last => # set up order in which options will be displayed
-[
-"permanent deformation of material", 
-"elastic deformation of material", 
-"necking begins", 
-"fracture" 
-]
-,labels => "ABCD" );
+labels => "ABCD" );
 
 BEGIN_TEXT
 What happens when stress exceeds yield stress?

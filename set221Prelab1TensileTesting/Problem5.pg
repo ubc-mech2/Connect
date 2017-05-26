@@ -26,14 +26,7 @@ $mc = RadioButtons( # Set up possible options
 "ductility, cracking, fracture" 
 ]
 ,"yielding, ultimate stress, fracture", # correct option
-last => # set up order in which options will be displayed
-[
-"yielding, ultimate stress, fracture", 
-"elastic, plastic, fracture", 
-"yielding, necking, fracture", 
-"ductility, cracking, fracture" 
-]
-,labels => "ABCD" );
+labels => "ABCD" );
 
 BEGIN_TEXT
 What are the three important points on a stress-strain curve?

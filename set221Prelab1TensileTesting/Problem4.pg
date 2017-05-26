@@ -26,14 +26,7 @@ $mc = RadioButtons( # Set up possible options
 "Young's Modulus indicates the slope of a linear relationship between stress and strain" 
 ]
 ,"Young's Modulus indicates the slope of a linear relationship between stress and strain", # correct option
-last => # set up order in which options will be displayed
-[
-"Strain is exponentially proportional to stress through the yield constant", 
-"Stress is inversely proportional to strain", 
-"Elastic modulus indicates the degree of the polynomial relationship between strain and stress", 
-"Young's Modulus indicates the slope of a linear relationship between stress and strain" 
-]
-,labels => "ABCD" );
+labels => "ABCD" );
 
 BEGIN_TEXT
 What can be said about relationship between stress and strain for light loads?

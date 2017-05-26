@@ -26,14 +26,7 @@ $mc = RadioButtons( # Set up possible options
 "highly ductile material" 
 ]
 ,"highly ductile material", # correct option
-last => # set up order in which options will be displayed
-[
-"material has a high modulus of elasticity", 
-"high material toughness", 
-"material is weak", 
-"highly ductile material" 
-]
-,labels => "ABCD" );
+labels => "ABCD" );
 
 BEGIN_TEXT
 High percent elongation and percent area reduction indicate what?

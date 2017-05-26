@@ -26,14 +26,7 @@ $mc = RadioButtons( # Set up possible options
 "cup-cone fracture with little plastic deformation" 
 ]
 ,"significant plastic deformation and cup-cone fracture", # correct option
-last => # set up order in which options will be displayed
-[
-"little plastic deformation and a sharp fracture", 
-"significant plastic deformation and cup-cone fracture", 
-"significant necking prior to sharp fracture", 
-"cup-cone fracture with little plastic deformation" 
-]
-,labels => "ABCD" );
+labels => "ABCD" );
 
 BEGIN_TEXT
 How is the failure of a ductile material characterized?
