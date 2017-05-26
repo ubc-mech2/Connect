@@ -1,0 +1,42 @@
+##DESCRIPTION
+## 221 Prelab 8 Vibrations
+## Question Set 4 to 5
+##ENDDESCRIPTION
+
+## Problem3
+
+########################################################################
+
+DOCUMENT();     
+
+loadMacros(
+"PGstandard.pl",     # Standard macros for PG language
+   "MathObjects.pl",
+   "parserPopUp.pl",
+   "parserMultiAnswer.pl",
+   #"source.pl",        # allows code to be displayed on certain sites.
+   #"PGcourse.pl",      # Customization file for the course
+);
+
+# Show which answers are correct and which ones are incorrect
+$showPartialCorrectAnswers = 1;
+
+Context("Numeric");
+
+$k = random(100, 500, 1);
+$m = random(25, 30, 0.1);
+$answer = 2 * sqrt($k * $m);
+
+BEGIN_TEXT
+	
+A mass-spring-damper system has a mass of \($m\) \(kg\) and spring constant of \(k = $k\) \(N/m\). What value of \(c\) for the damper should be selected such that the system is critically damped?
+
+$PAR
+
+\(c = \) \{ ans_rule(35) \}
+ 
+END_TEXT
+
+ANS(num_cmp($answer, reltol => 5)); # 5% tolerance
+
+ENDDOCUMENT();        # This should be the last executable line in the problem.

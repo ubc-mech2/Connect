@@ -1,0 +1,43 @@
+##DESCRIPTION
+## 221 Prelab 8 Vibrations
+## Question Set 1 to 3
+##ENDDESCRIPTION
+
+## Problem10
+
+#######################################################################
+
+DOCUMENT();      
+
+loadMacros(
+   "PGstandard.pl",     # Standard macros for PG language
+   "MathObjects.pl",
+   #"source.pl",        # allows code to be displayed on certain sites.
+   #"PGcourse.pl",      # Customization file for the course
+   "parserRadioButtons.pl",
+   "contextFraction.pl",
+);
+
+$mc = RadioButtons( # Set up possible options
+[
+"the viscosity of the fluid and mass of the body", 
+"the damping constant of the system and speed of the body", 
+"the speed and mass of the body", 
+"the shape and speed of the body",
+"the viscosity of the fluid and shape of the body"
+]
+,"the damping constant of the system and speed of the body", # correct option
+labels => "ABCD" );
+
+BEGIN_TEXT								
+Viscous damping force acting on a vibrating body is directly proportional to:
+$PAR
+\{ $mc->buttons() \}
+
+END_TEXT
+
+$showPartialCorrectAnswers = 0;
+
+ANS( $mc->cmp() );
+
+ENDDOCUMENT();

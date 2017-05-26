@@ -1,0 +1,43 @@
+##DESCRIPTION
+## 221 Prelab 8 Vibrations
+## Question Set 4 to 5
+##ENDDESCRIPTION
+
+## Problem1
+
+########################################################################
+
+DOCUMENT();     
+
+loadMacros(
+"PGstandard.pl",     # Standard macros for PG language
+   "MathObjects.pl",
+   "parserPopUp.pl",
+   "parserMultiAnswer.pl",
+   #"source.pl",        # allows code to be displayed on certain sites.
+   #"PGcourse.pl",      # Customization file for the course
+);
+
+# Show which answers are correct and which ones are incorrect
+$showPartialCorrectAnswers = 1;
+
+Context("Numeric");
+
+$x = random(2, 3, 0.1);
+$y = random(1, 2, 0.1);
+$answer = (ln($x/$y)) / 2 / 3.1415;
+
+
+BEGIN_TEXT
+	
+A lightly damped system the measurement of two successive oscillations yields amplitudes of \($x\) and \($y\). What is the approximate damping ratio of this system?
+
+$PAR
+
+\{ ans_rule(35) \}
+ 
+END_TEXT
+
+ANS(num_cmp($answer, reltol => 5)); # 5% tolerance
+
+ENDDOCUMENT();        # This should be the last executable line in the problem.

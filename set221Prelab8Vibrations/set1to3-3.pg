@@ -1,0 +1,42 @@
+##DESCRIPTION
+## 221 Prelab 8 Vibrations
+## Question Set 1 to 3
+##ENDDESCRIPTION
+
+## Problem3
+
+#######################################################################
+
+DOCUMENT();      
+
+loadMacros(
+   "PGstandard.pl",     # Standard macros for PG language
+   "MathObjects.pl",
+   #"source.pl",        # allows code to be displayed on certain sites.
+   #"PGcourse.pl",      # Customization file for the course
+   "parserRadioButtons.pl",
+   "contextFraction.pl",
+);
+
+$mc = RadioButtons( # Set up possible options
+[
+"\( x = C\sin(\omega_nt + \phi) \)", 
+"\( x = \omega_n\sin(Cx + t) \)", 
+"\( x = C\sin(x + t) + D\cos(x + t)\)", 
+"\( x = A\sin(\omega_dt + C) + B\cos(\omega_dt + D) \)",
+]
+,"\( x = C\sin(\omega_nt + \phi) \)", # correct option
+labels => "ABCD" );
+
+BEGIN_TEXT							
+Which quantity in a vibrating system is equivalent to a spring constant divided by the mass?
+$PAR
+\{ $mc->buttons() \}
+
+END_TEXT
+
+$showPartialCorrectAnswers = 0;
+
+ANS( $mc->cmp() );
+
+ENDDOCUMENT();
