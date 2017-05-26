@@ -25,7 +25,6 @@ TEXT(beginproblem());
 $showPartialCorrectAnswers = 1;
 
 Context("Numeric");
-Context()->flags->set(tolerance=> 0.03); # 3% tolerance
 
 $A = random(2, 3, 0.01);
 $B = random(4, 5, 0.01);
@@ -38,12 +37,12 @@ BEGIN_TEXT
 
 For the circuit shown, if \(R1\) = \($A\) \(k\) \(ohms\), \(R2\) = \($B\) \(k\) \(ohms\), and \(R3\) = \($C\) \(k\) \(ohms\), what is the current, \(i\), in \(mA\)?
 $PAR
-\{ image( "imagename.png", width=>150, height=>150' ) \}
+\{ image( "imagename.png", width=>150, height=>150 ) \}
 $PAR
 \(i\) = \{ ans_rule(35) \} \(mA\)
  
 END_TEXT
 
-ANS(num_cmp($answer)); # check student answer
+ANS(num_cmp($answer, reltol => 3)); # 3% tolerance
 
 ENDDOCUMENT();        # This should be the last executable line in the problem.

@@ -39,9 +39,9 @@ last => # set up order in which options will be displayed
 
 BEGIN_TEXT
 For the circuit shown, how should the ammeter be connected to measure current \(i_3\), through resistor \(R_3\)? Assume one lead from the ammeter is connected to node "\(a\)".
-$BR
+$PAR
 \{ image( "imagename.png", width=>150, height=>150 ) \}
-$BR
+$PAR
 \{ $mc->buttons() \}
 
 END_TEXT
