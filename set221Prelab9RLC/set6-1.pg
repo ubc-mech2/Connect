@@ -1,0 +1,47 @@
+##DESCRIPTION
+## 221 Prelab 9 RLC
+## Question Set 6
+##ENDDESCRIPTION
+
+## Problem1
+
+#######################################################################
+
+DOCUMENT();      
+
+loadMacros(
+   "PGstandard.pl",     # Standard macros for PG language
+   "MathObjects.pl",
+   #"source.pl",        # allows code to be displayed on certain sites.
+   #"PGcourse.pl",      # Customization file for the course
+   "parserRadioButtons.pl",
+   "contextFraction.pl",
+);
+
+$mc = RadioButtons( # Set up possible options
+[
+"8 seconds", 
+"15 seconds", 
+"20 seconds", 
+"28 seconds",
+"> 90 seconds"
+]
+,"20 seconds", # correct option
+labels => "ABCD" );
+
+BEGIN_TEXT								
+Consider an RLC circuit with the under-damped response as shown in the figure. If the figure represents the output \(V_R\) versus \(t\) on an oscilloscope, what is the approximate time constant?
+$PAR
+
+\{ image( "imagename.png", width=>150, height=>150 ) \}
+$PAR
+
+\{ $mc->buttons() \}
+
+END_TEXT
+
+$showPartialCorrectAnswers = 0;
+
+ANS( $mc->cmp() );
+
+ENDDOCUMENT();
