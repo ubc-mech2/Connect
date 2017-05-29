@@ -30,7 +30,7 @@ $answer = $T * (exp($exponent));
 
 BEGIN_TEXT
 
-Imagine that Dr. Schajer is performing the climbing lab experiment and has just climbed to the top of the wall and is now suspended by the rope. Assume that the coefficient of friction italic \(mu = $u\) and Dr. Schajer weighs approximately \($T\) \(N\). What is the minimum required weight of the belayer, in Newtons?
+Imagine that Dr. Schajer is performing the climbing lab experiment and has just climbed to the top of the wall and is now suspended by the rope. Assume that the coefficient of friction italic \(\mu = $u\) and Dr. Schajer weighs approximately \($T\) \(N\). What is the minimum required weight of the belayer, in Newtons?
 
 $PAR
 
