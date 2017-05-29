@@ -1,0 +1,56 @@
+##DESCRIPTION
+## 221 Statistics 1
+## Question Set 7
+##ENDDESCRIPTION
+
+## Problem1
+
+#######################################################################
+
+DOCUMENT();      
+
+loadMacros(
+   "PGstandard.pl",     # Standard macros for PG language
+   "MathObjects.pl",
+   #"source.pl",        # allows code to be displayed on certain sites.
+   #"PGcourse.pl",      # Customization file for the course
+   "parserRadioButtons.pl",
+   "contextFraction.pl",
+);
+
+$mc = RadioButtons( # Set up possible options
+[
+"\(\Delta w < \pm 0.05m\)", 
+"\(\Delta w < \pm 0.1m\)", 
+"\(\Delta w < \pm 0.25m\)", 
+"\(\Delta w < \pm 0.5m\)", 
+"\(\Delta w < \pm 1.0m\)", 
+"\(\Delta w < \pm 2.5m\)", 
+]
+,"\(\Delta w < \pm 0.5m\)", # correct option
+last => # set up order in which options will be displayed
+[
+"\(\Delta w < \pm 0.05m\)", 
+"\(\Delta w < \pm 0.1m\)", 
+"\(\Delta w < \pm 0.25m\)", 
+"\(\Delta w < \pm 0.5m\)", 
+"\(\Delta w < \pm 1.0m\)", 
+"\(\Delta w < \pm 2.5m\)", 
+]
+,labels => "ABCD" );
+
+BEGIN_TEXT
+		
+A rectangular box has dimensions \(L = 10.0\pm 0.1m\), \(w = 5.0m \pm \Delta w\), and \(h = 1.0\pm 0.1m\). What is the maximum variation in \(w\) that could be permitted such that the variation in volume is mainly due to variation in \(h\)?
+
+$PAR
+
+\{ $mc->buttons() \}
+
+END_TEXT
+
+$showPartialCorrectAnswers = 0;
+
+ANS( $mc->cmp() );
+
+ENDDOCUMENT();

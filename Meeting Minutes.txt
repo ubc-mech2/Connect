@@ -1,0 +1,22 @@
+Overview of plan:
+
+1) Existing Connect problems -> Webwork problems 
+2) Make new problems -> graduate students - each take 3 engineering science courses for total of 6
+
+Taxonomy: how to organize problems 
+
+Create sandbox Webwork course 
+Google sheets to keep track of problem - code, images, testing, student feedback
+
+Fluid problems need to be redone - content and images  
+
+Code for each problem to help keep track of progress 
+
+Keywords system: course number, self test, overarching MECH 2, concepts 
+
+Name problems: UBCMECH2Fluids1, UBCMECH2Fluids2
+
+New 160 and convert current questions (600)
+
+Large integrated problems - midterms, finals?
+

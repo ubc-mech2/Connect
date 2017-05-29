@@ -1,0 +1,58 @@
+##DESCRIPTION
+## 221 Statistics 1
+## Question Set 4 to 5
+##ENDDESCRIPTION
+
+## Problem1
+
+#######################################################################
+
+DOCUMENT();      
+
+loadMacros(
+   "PGstandard.pl",     # Standard macros for PG language
+   "MathObjects.pl",
+   #"source.pl",        # allows code to be displayed on certain sites.
+   #"PGcourse.pl",      # Customization file for the course
+   "parserRadioButtons.pl",
+   "contextFraction.pl",
+);
+
+$mc = RadioButtons( # Set up possible options
+[
+"+/- 0.05 bar", 
+"+/- 0.1 bar", 
+"+/- 0.2 bar", 
+"+/- 0.5 bar",
+"+/- 1.0 bar"
+]
+,"+/- 0.2 bar", # correct option
+last => # set up order in which options will be displayed
+[
+"+/- 0.05 bar", 
+"+/- 0.1 bar", 
+"+/- 0.2 bar", 
+"+/- 0.5 bar",
+"+/- 1.0 bar"
+]
+,labels => "ABCD" );
+
+BEGIN_TEXT
+		
+What measurement error should be reported for the pressure gauge below (using the bar scale)?
+
+$PAR
+
+\{ image( "imagename.png", width=>150, height=>150 ) \}
+
+$PAR
+
+\{ $mc->buttons() \}
+
+END_TEXT
+
+$showPartialCorrectAnswers = 0;
+
+ANS( $mc->cmp() );
+
+ENDDOCUMENT();

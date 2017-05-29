@@ -1,0 +1,54 @@
+##DESCRIPTION
+## 221 Statistics 1
+## Question Set 3
+##ENDDESCRIPTION
+
+## Problem1
+
+#######################################################################
+
+DOCUMENT();      
+
+loadMacros(
+   "PGstandard.pl",     # Standard macros for PG language
+   "MathObjects.pl",
+   #"source.pl",        # allows code to be displayed on certain sites.
+   #"PGcourse.pl",      # Customization file for the course
+   "parserRadioButtons.pl",
+   "contextFraction.pl",
+);
+
+$mc = RadioButtons( # Set up possible options
+[
+"+/- 0.01 deg F", 
+"+/- 0.02 deg F", 
+"+/- 0.05 deg F", 
+"+/- 0.1 deg F",
+"+/- 0.5 deg F",
+]
+,"+/- 0.05 deg F", # correct option
+last => # set up order in which options will be displayed
+[
+"+/- 0.01 deg F", 
+"+/- 0.02 deg F", 
+"+/- 0.05 deg F", 
+"+/- 0.1 deg F",
+"+/- 0.5 deg F",
+]
+,labels => "ABCD" );
+
+BEGIN_TEXT
+		
+A digital thermometer reads 98.4 deg F. Without any further information from the manufacturer, what is the measurement error that should be reported for this device?
+
+$PAR
+
+\{ $mc->buttons() \}
+
+END_TEXT
+
+$showPartialCorrectAnswers = 0;
+
+ANS( $mc->cmp() );
+
+ENDDOCUMENT();

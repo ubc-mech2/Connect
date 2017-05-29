@@ -1,0 +1,54 @@
+##DESCRIPTION
+## 221 Statistics 1
+## Question Set 6
+##ENDDESCRIPTION
+
+## Problem4
+
+#######################################################################
+
+DOCUMENT();      
+
+loadMacros(
+   "PGstandard.pl",     # Standard macros for PG language
+   "MathObjects.pl",
+   #"source.pl",        # allows code to be displayed on certain sites.
+   #"PGcourse.pl",      # Customization file for the course
+   "parserRadioButtons.pl",
+   "contextFraction.pl",
+);
+
+$mc = RadioButtons( # Set up possible options
+[
+"\(3.24\) \(m^3\)", 
+"\(5.41\) \(m^3\)", 
+"\(7.5\) \(m^3\)", 
+"\(10.5\) \(m^3\)",
+"\(29.25\) \(m^3\)"
+]
+,"\(5.41\) \(m^3\)", # correct option
+last => # set up order in which options will be displayed
+[
+"\(3.24\) \(m^3\)", 
+"\(5.41\) \(m^3\)", 
+"\(7.5\) \(m^3\)", 
+"\(10.5\) \(m^3\)",
+"\(29.25\) \(m^3\)"
+]
+,labels => "ABCD" );
+
+BEGIN_TEXT
+		
+A rectangular box has dimensions \(L = 10.0\pm 0.1m\), \(w = 5.0 \pm0.2m\), and \(h = 1.0\pm0.1m\). What is the uncertainty in the box volume?
+
+$PAR
+
+\{ $mc->buttons() \}
+
+END_TEXT
+
+$showPartialCorrectAnswers = 0;
+
+ANS( $mc->cmp() );
+
+ENDDOCUMENT();

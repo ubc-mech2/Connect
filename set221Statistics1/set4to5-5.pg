@@ -1,0 +1,60 @@
+##DESCRIPTION
+## 221 Statistics 1
+## Question Set 4 to 5
+##ENDDESCRIPTION
+
+## Problem5
+
+#######################################################################
+
+DOCUMENT();      
+
+loadMacros(
+   "PGstandard.pl",     # Standard macros for PG language
+   "MathObjects.pl",
+   #"source.pl",        # allows code to be displayed on certain sites.
+   #"PGcourse.pl",      # Customization file for the course
+   "parserRadioButtons.pl",
+   "contextFraction.pl",
+);
+
+$mc = RadioButtons( # Set up possible options
+[
+"+/- 0.001 volt", 
+"+/- 0.002 volt", 
+"+/- 0.005 volt", 
+"+/- 0.01 volt",
+"+/- 0.02 volt",
+"+/- 0.05 volt"
+]
+,"+/- 0.005 volt", # correct option
+last => # set up order in which options will be displayed
+[
+"+/- 0.001 volt", 
+"+/- 0.002 volt", 
+"+/- 0.005 volt", 
+"+/- 0.01 volt",
+"+/- 0.02 volt",
+"+/- 0.05 volt"
+]
+,labels => "ABCD" );
+
+BEGIN_TEXT
+		
+What measurement error should be reported for the voltmeter below?
+
+$PAR
+
+\{ image( "imagename.png", width=>150, height=>150 ) \}
+
+$PAR
+
+\{ $mc->buttons() \}
+
+END_TEXT
+
+$showPartialCorrectAnswers = 0;
+
+ANS( $mc->cmp() );
+
+ENDDOCUMENT();

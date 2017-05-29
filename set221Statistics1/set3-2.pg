@@ -1,0 +1,56 @@
+##DESCRIPTION
+## 221 Statistics 1
+## Question Set 3
+##ENDDESCRIPTION
+
+## Problem2
+
+#######################################################################
+
+DOCUMENT();      
+
+loadMacros(
+   "PGstandard.pl",     # Standard macros for PG language
+   "MathObjects.pl",
+   #"source.pl",        # allows code to be displayed on certain sites.
+   #"PGcourse.pl",      # Customization file for the course
+   "parserRadioButtons.pl",
+   "contextFraction.pl",
+);
+
+$mc = RadioButtons( # Set up possible options
+[
+"+/- 1 psi", 
+"+/- 2 psi", 
+"+/- 5 psi", 
+"+/- 10 psi",
+"+/- 25 psi",
+"+/- 50 psi"
+]
+,"+/- 10 psi", # correct option
+last => # set up order in which options will be displayed
+[
+"+/- 1 psi", 
+"+/- 2 psi", 
+"+/- 5 psi", 
+"+/- 10 psi",
+"+/- 25 psi",
+"+/- 50 psi"
+]
+,labels => "ABCD" );
+
+BEGIN_TEXT
+	
+An analog pressure gauge reads from 0 to 100 psi. There are tick marks every 10 psi with the corresponding pressure written for 0, 50, and 100 psi. What is the measurement error that should be reported for this device?
+
+$PAR
+
+\{ $mc->buttons() \}
+
+END_TEXT
+
+$showPartialCorrectAnswers = 0;
+
+ANS( $mc->cmp() );
+
+ENDDOCUMENT();
