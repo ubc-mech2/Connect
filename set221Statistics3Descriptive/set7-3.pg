@@ -1,0 +1,62 @@
+##DESCRIPTION
+## 221 Statistics 3 Descriptive
+## Question Set 7
+##ENDDESCRIPTION
+
+## Problem3
+
+#######################################################################
+
+DOCUMENT();      
+
+loadMacros(
+   "PGstandard.pl",     # Standard macros for PG language
+   "MathObjects.pl",
+   #"source.pl",        # allows code to be displayed on certain sites.
+   #"PGcourse.pl",      # Customization file for the course
+   "parserRadioButtons.pl",
+   "contextFraction.pl",
+);
+
+$mc = RadioButtons( # Set up possible options
+[
+"mean - median - mode", 
+"mean - mode - median", 
+"median - mean - mode", 
+"median - mode - mean",
+"mode - mean - median", 
+"mode - median - mean",
+"all are the same"
+]
+,"all are the same", # correct option
+last => # set up order in which options will be displayed
+[
+"mean - median - mode", 
+"mean - mode - median", 
+"median - mean - mode", 
+"median - mode - mean",
+"mode - mean - median", 
+"mode - median - mean",
+"all are the same"
+]
+,labels => "ABCD" );
+
+BEGIN_TEXT
+	
+As part of a MECH 223 design project, you measure the following results. (They represent the time for your device to perform a particular action.) Rank the mean, median, and mode from largest to smallest.
+$PAR
+
+\{ image( "imagename.png", width=>150, height=>150 ) \}
+
+$PAR
+
+\{ $mc->buttons() \}
+
+END_TEXT
+
+$showPartialCorrectAnswers = 0;
+
+ANS( $mc->cmp() );
+
+ENDDOCUMENT();
+
