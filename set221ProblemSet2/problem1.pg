@@ -1,0 +1,45 @@
+##DESCRIPTION
+## 221 Problem Set 2
+##ENDDESCRIPTION
+
+## Problem1
+
+########################################################################
+
+DOCUMENT();     
+
+loadMacros(
+"PGstandard.pl",     # Standard macros for PG language
+   "MathObjects.pl",
+   "parserPopUp.pl",
+   "parserMultiAnswer.pl",
+   #"source.pl",        # allows code to be displayed on certain sites.
+   #"PGcourse.pl",      # Customization file for the course
+);
+
+# Show which answers are correct and which ones are incorrect
+$showPartialCorrectAnswers = 1;
+
+Context("Numeric");
+
+$V1 = random(100, 150, 0.1);
+$R1 = random(340, 350, 0.1);
+$R2 = random(340, 350, 0.1);
+$answer = (($V1 / ($R1 + 3*$R2) )**2) * $R1 * (10**(-3));
+
+BEGIN_TEXT
+
+Given \(R_1 = $R1\) \(kohm\), \(R_2 = $R2\) \(kohm\) and \(V_1 = $V1\) \(V\), compute the power (in Watts) absorbed by \(R_1\).
+$PAR
+
+\{ image( "imagename.png", width=>150, height=>150 ) \}
+
+$PAR
+
+\{ ans_rule(35) \}
+ 
+END_TEXT
+
+ANS(num_cmp($answer, reltol => 5)); # 5% tolerance
+
+ENDDOCUMENT();        # This should be the last executable line in the problem.

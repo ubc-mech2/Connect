@@ -1,0 +1,51 @@
+##DESCRIPTION
+## 221 Problem Set 2
+##ENDDESCRIPTION
+
+## Problem4
+
+########################################################################
+
+DOCUMENT();     
+
+loadMacros(
+"PGstandard.pl",     # Standard macros for PG language
+   "MathObjects.pl",
+   "parserPopUp.pl",
+   "parserMultiAnswer.pl",
+   #"source.pl",        # allows code to be displayed on certain sites.
+   #"PGcourse.pl",      # Customization file for the course
+);
+
+# Show which answers are correct and which ones are incorrect
+$showPartialCorrectAnswers = 1;
+
+Context("Numeric");
+
+$R1 = random(100, 150, 0.1);
+$R2 = random(90, 110, 0.1);
+$R3 = random(340, 350, 0.1);
+$R4 = random(340, 350, 0.1);
+$R5 = random(340, 350, 0.1);
+
+$fraction1 = ( 1 + ($R2 / $R1) ) / ( $R4 + $R5 );
+$fraction2 = ( $R1 + $R2 + $R3 ) / ( $R1 * $R3 );
+$answer = 6 * ( $fraction1 + $fraction2 ); 
+
+BEGIN_TEXT
+
+In the network shown, \(V_0 = 6\) \(V\), \(R_1=$R1\) \(ohm\), \(R_2=$R2\) \(ohm\), \(R_3=$R3\) \(ohm\), \(R_4=$R4\) \(ohm\), and \(R_5=$R5\) \(ohm\). 
+Find \(I_s\) (in Amperes).
+$PAR
+
+\{ image( "imagename.png", width=>150, height=>150 ) \}
+
+$PAR
+
+\{ ans_rule(35) \}
+ 
+END_TEXT
+
+ANS(num_cmp($answer, reltol => 5)); # 5% tolerance
+
+ENDDOCUMENT();        # This should be the last executable line in the problem.

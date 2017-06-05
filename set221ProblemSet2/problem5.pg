@@ -1,0 +1,56 @@
+##DESCRIPTION
+## 221 Problem Set 2
+##ENDDESCRIPTION
+
+## Problem5
+
+########################################################################
+
+DOCUMENT();      
+
+loadMacros(
+   "PGstandard.pl",     # Standard macros for PG language
+   "MathObjects.pl",
+   #"source.pl",        # allows code to be displayed on certain sites.
+   #"PGcourse.pl",      # Customization file for the course
+   "parserRadioButtons.pl",
+   "contextFraction.pl"
+);
+
+#Set up multiple choice buttons
+$mc = RadioButtons(
+#Options
+[ "None of the points shown", 
+"Point B", 
+"Point C", 
+"Point D", 
+"Point E", 
+"Point F", 
+"Point G" ]
+, "Point E" #This is the correct choice
+,last => #Display order
+[ "None of the points shown", 
+"Point B", 
+"Point C", 
+"Point D", 
+"Point E", 
+"Point F", 
+"Point G" ]
+,labels => "ABCDEF" );
+
+BEGIN_TEXT
+The ICZV of bar BC in the mechanism shown below is at:
+$PAR
+
+\{ image( "imagename.png", width=>150, height=>150 ) \}
+
+$PAR
+\{ $mc->buttons() \}
+
+END_TEXT
+
+$showPartialCorrectAnswers = 0;
+
+ANS( $mc->cmp() );
+
+ENDDOCUMENT();
