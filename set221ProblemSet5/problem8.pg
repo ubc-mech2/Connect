@@ -1,0 +1,41 @@
+##DESCRIPTION
+## 221 Problem Set 5
+##ENDDESCRIPTION
+
+## Problem8
+
+########################################################################
+
+DOCUMENT();     
+
+loadMacros(
+"PGstandard.pl",     # Standard macros for PG language
+   "MathObjects.pl",
+   "parserPopUp.pl",
+   "parserMultiAnswer.pl",
+   #"source.pl",        # allows code to be displayed on certain sites.
+   #"PGcourse.pl",      # Customization file for the course
+);
+
+# Show which answers are correct and which ones are incorrect
+$showPartialCorrectAnswers = 1;
+
+Context("Numeric");
+
+$temp = 650;
+$deg = "".sprintf("%c",0xb0);
+$answer = 0.109;
+
+BEGIN_TEXT
+
+From the previous problem, what grain diameter (in mm) would you predict after 200 min at \($temp\)$deg\(C\)?
+
+$PAR
+
+\{ ans_rule(35) \} 
+
+END_TEXT
+
+ANS(num_cmp($answer, reltol => 5)); # 5% tolerance
+
+ENDDOCUMENT();        # This should be the last executable line in the problem.

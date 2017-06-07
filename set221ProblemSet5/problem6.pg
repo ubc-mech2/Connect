@@ -1,0 +1,44 @@
+##DESCRIPTION
+## 221 Problem Set 5
+##ENDDESCRIPTION
+
+## Problem6
+
+########################################################################
+
+DOCUMENT();     
+
+loadMacros(
+"PGstandard.pl",     # Standard macros for PG language
+   "MathObjects.pl",
+   "parserPopUp.pl",
+   "parserMultiAnswer.pl",
+   #"source.pl",        # allows code to be displayed on certain sites.
+   #"PGcourse.pl",      # Customization file for the course
+);
+
+# Show which answers are correct and which ones are incorrect
+$showPartialCorrectAnswers = 1;
+
+Context("Numeric");
+
+$K = random(300, 1000, 1);
+$m = random(1, 100, 1);
+
+$answer = 2 * sqrt($K * $m);
+
+BEGIN_TEXT
+
+A spring-mass-damper system has a mass of \($m\) \(kg\) and stiffness of \($K\) \(N/m\). For what value of damping will the system return to equilibrium as fast as possible without oscillation?
+
+$PAR	
+\{ image( "imagename.png", width=>150, height=>150 ) \}
+$PAR
+
+\{ ans_rule(35) \} 
+
+END_TEXT
+
+ANS(num_cmp($answer, reltol => 5)); # 5% tolerance
+
+ENDDOCUMENT();        # This should be the last executable line in the problem.

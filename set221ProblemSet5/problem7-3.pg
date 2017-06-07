@@ -1,0 +1,48 @@
+##DESCRIPTION
+## 221 Problem Set 5
+##ENDDESCRIPTION
+
+## Problem7-3
+
+########################################################################
+
+DOCUMENT();     
+
+loadMacros(
+"PGstandard.pl",     # Standard macros for PG language
+   "MathObjects.pl",
+   "parserPopUp.pl",
+   "parserMultiAnswer.pl",
+   #"source.pl",        # allows code to be displayed on certain sites.
+   #"PGcourse.pl",      # Customization file for the course
+);
+
+# Show which answers are correct and which ones are incorrect
+$showPartialCorrectAnswers = 1;
+
+Context("Numeric");
+
+$c = 400;
+
+$answer = 3;
+
+BEGIN_TEXT
+
+A spring-mass-damper system has a mass of \(40\) \(kg\), stiffness of \(1000\) \(N/m\) and damping coefficient of \($c\) \(Ns/m\). The system is: $BR
+(1) overdamped $BR
+(2) underdamped $BR
+(3) critically damped $PAR
+
+(Enter the numeric index of the correct answer in the solution box)
+
+$PAR	
+\{ image( "imagename.png", width=>150, height=>150 ) \}
+$PAR
+
+\{ ans_rule(35) \} 
+
+END_TEXT
+
+ANS(num_cmp($answer, tol => 0)); # 0 tolerance
+
+ENDDOCUMENT();        # This should be the last executable line in the problem.
