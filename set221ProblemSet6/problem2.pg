@@ -1,0 +1,42 @@
+##DESCRIPTION
+## 221 Problem Set 6
+##ENDDESCRIPTION
+
+## Problem2
+
+########################################################################
+
+DOCUMENT();     
+
+loadMacros(
+"PGstandard.pl",     # Standard macros for PG language
+   "MathObjects.pl",
+   "parserPopUp.pl",
+   "parserMultiAnswer.pl",
+   #"source.pl",        # allows code to be displayed on certain sites.
+   #"PGcourse.pl",      # Customization file for the course
+);
+
+# Show which answers are correct and which ones are incorrect
+$showPartialCorrectAnswers = 1;
+
+Context("Numeric");
+
+$F = random(1, 3, 1);
+$K = random(900, 1100, 1);
+$m = random(1, 2, 1);
+$answer = $F / $K;
+
+BEGIN_TEXT
+
+A \($m\) \(kg\) mass connected to a horizontal spring of stiffness \($K\) \(N/m\) has a dry-sliding friction force, of \($F\) \(N\). Estimate the maximum possible final displacement of the system. Give the answer in meters.
+
+$PAR
+
+\{ ans_rule(35) \}
+ 
+END_TEXT
+
+ANS(num_cmp($answer, reltol => 5)); # 5% tolerance
+
+ENDDOCUMENT();        # This should be the last executable line in the problem.

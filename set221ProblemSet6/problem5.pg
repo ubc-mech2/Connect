@@ -1,0 +1,42 @@
+##DESCRIPTION
+## 221 Problem Set 6
+##ENDDESCRIPTION
+
+## Problem5
+
+########################################################################
+
+DOCUMENT();     
+
+loadMacros(
+"PGstandard.pl",     # Standard macros for PG language
+   "MathObjects.pl",
+   "parserPopUp.pl",
+   "parserMultiAnswer.pl",
+   #"source.pl",        # allows code to be displayed on certain sites.
+   #"PGcourse.pl",      # Customization file for the course
+);
+
+# Show which answers are correct and which ones are incorrect
+$showPartialCorrectAnswers = 1;
+
+Context("Numeric");
+
+$R = random(50, 500, 1);
+$C = random(50, 500, 1);
+
+$answer = 0.00000025 * $C * ($R**2);
+
+BEGIN_TEXT
+
+A series RLC circuit contains a resistor \(R = $R\) \(\Omega\) and a capacitor \(C = $C\) \(\mu F\). Select the value of the inductor (in Henries) so that the circuit is critically damped.
+
+$PAR
+
+\{ ans_rule(35) \}
+ 
+END_TEXT
+
+ANS(num_cmp($answer, reltol => 5)); # 5% tolerance
+
+ENDDOCUMENT();        # This should be the last executable line in the problem.
