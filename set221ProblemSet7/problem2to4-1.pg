@@ -1,0 +1,50 @@
+##DESCRIPTION
+## 221 Problem Set 7
+##ENDDESCRIPTION
+
+## Problem2to4-1
+
+#######################################################################
+
+DOCUMENT();      
+
+loadMacros(
+   "PGstandard.pl",     # Standard macros for PG language
+   "MathObjects.pl",
+   #"source.pl",        # allows code to be displayed on certain sites.
+   #"PGcourse.pl",      # Customization file for the course
+   "parserRadioButtons.pl",
+   "contextFraction.pl",
+);
+
+$mc = RadioButtons( # Set up possible options
+[
+"zero", 
+"m g", 
+"m \((l/2)\omega^2\)", 
+"None of the above."
+]
+,"zero", # correct option
+labels => "ABCD" );
+
+$deg = "".sprintf("%c",0xb0);
+
+BEGIN_TEXT
+	
+A rigid bar of length \(l\) is released from rest in the horizontal position \((\theta = 0)\). When \(\theta = 90$deg\), the horizontal component of the reaction at pin \(O\) is 
+
+$PAR
+
+\{ image( "imagename.png", width=>150, height=>150 ) \}
+
+$PAR
+
+\{ $mc->buttons() \}
+
+END_TEXT
+
+$showPartialCorrectAnswers = 0;
+
+ANS( $mc->cmp() );
+
+ENDDOCUMENT();

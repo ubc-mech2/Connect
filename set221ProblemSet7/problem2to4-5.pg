@@ -1,0 +1,45 @@
+##DESCRIPTION
+## 221 Problem Set 7
+##ENDDESCRIPTION
+
+## Problem2to4-5
+
+#######################################################################
+
+DOCUMENT();      
+
+loadMacros(
+   "PGstandard.pl",     # Standard macros for PG language
+   "MathObjects.pl",
+   #"source.pl",        # allows code to be displayed on certain sites.
+   #"PGcourse.pl",      # Customization file for the course
+   "parserRadioButtons.pl",
+   "contextFraction.pl",
+);
+
+$deg = "".sprintf("%c",0xb0);
+
+$mc = RadioButtons( # Set up possible options
+[
+"zero", 
+"tangent to the path of motion of G", 
+"directed from G toward the center of rotation", 
+"directed from the center of rotation toward G"
+]
+,"directed from G toward the center of rotation", # correct option
+labels => "ABCD" );
+
+BEGIN_TEXT
+	
+In rotational motion, the normal component of acceleration at the bodyâs center of gravity (G) is always
+$PAR
+
+\{ $mc->buttons() \}
+
+END_TEXT
+
+$showPartialCorrectAnswers = 0;
+
+ANS( $mc->cmp() );
+
+ENDDOCUMENT();

@@ -1,0 +1,50 @@
+##DESCRIPTION
+## 221 Problem Set 7
+##ENDDESCRIPTION
+
+## Problem2to4-2
+
+#######################################################################
+
+DOCUMENT();      
+
+loadMacros(
+   "PGstandard.pl",     # Standard macros for PG language
+   "MathObjects.pl",
+   #"source.pl",        # allows code to be displayed on certain sites.
+   #"PGcourse.pl",      # Customization file for the course
+   "parserRadioButtons.pl",
+   "contextFraction.pl",
+);
+
+$mc = RadioButtons( # Set up possible options
+[
+"\(I_g \alpha\)", 
+"\(I_o \alpha\)", 
+"\(m \alpha_g\)", 
+"\(m \alpha_o\)"
+]
+,"\(I_o \alpha\)", # correct option
+labels => "ABCD" );
+
+$deg = "".sprintf("%c",0xb0);
+
+BEGIN_TEXT
+	
+If a rigid body rotates about point \(O\), the sum of the moments of the external forces acting on the body about point \(O\) equals
+
+$PAR
+
+\{ image( "imagename.png", width=>150, height=>150 ) \}
+
+$PAR
+
+\{ $mc->buttons() \}
+
+END_TEXT
+
+$showPartialCorrectAnswers = 0;
+
+ANS( $mc->cmp() );
+
+ENDDOCUMENT();

@@ -1,0 +1,49 @@
+##DESCRIPTION
+## 221 Problem Set 7
+##ENDDESCRIPTION
+
+## Problem2to4-4
+
+#######################################################################
+
+DOCUMENT();      
+
+loadMacros(
+   "PGstandard.pl",     # Standard macros for PG language
+   "MathObjects.pl",
+   #"source.pl",        # allows code to be displayed on certain sites.
+   #"PGcourse.pl",      # Customization file for the course
+   "parserRadioButtons.pl",
+   "contextFraction.pl",
+);
+
+$deg = "".sprintf("%c",0xb0);
+
+$mc = RadioButtons( # Set up possible options
+[
+"\( \alpha_a = 4\alpha_b \)", 
+"\( \alpha_a = 3\alpha_b \)", 
+"\( \alpha_a = 12\alpha_b \)", 
+"\( \alpha_a = (3/4)\alpha_b \)"
+]
+,"\( \alpha_a = 3\alpha_b \)", # correct option
+labels => "ABCD" );
+
+BEGIN_TEXT
+	
+Two disks \(A\) and \(B\) of mass \(m_a = 1\) \(kg\) and \(m_b = 4\) \(kg\) are connected by a belt. If a couple \(M\) is applied to disk \(A\) and assuming no slipping, the angular acceleration are related by
+$PAR
+
+\{ image( "imagename.png", width=>150, height=>150 ) \}
+
+$PAR
+
+\{ $mc->buttons() \}
+
+END_TEXT
+
+$showPartialCorrectAnswers = 0;
+
+ANS( $mc->cmp() );
+
+ENDDOCUMENT();
