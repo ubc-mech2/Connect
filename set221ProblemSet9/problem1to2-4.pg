@@ -1,0 +1,49 @@
+\##DESCRIPTION
+## 221 Problem Set 9
+## Question Set 1 to 2
+##ENDDESCRIPTION
+
+## Problem4
+
+#######################################################################
+
+DOCUMENT();      
+
+loadMacros(
+   "PGstandard.pl",     # Standard macros for PG language
+   "MathObjects.pl",
+   #"source.pl",        # allows code to be displayed on certain sites.
+   #"PGcourse.pl",      # Customization file for the course
+   "parserRadioButtons.pl",
+   "contextFraction.pl",
+);
+
+$mc = RadioButtons( # Set up possible options
+[
+"\( m g (p/2) \)", 
+"\( m g L \)", 
+"\( m g (L/2) \)", 
+"\( -m g (L/2) \)"
+]
+,"\( m g (L/2) \)", # correct option
+labels => "ABCD" );
+
+BEGIN_TEXT
+	
+A slender bar of mass \(m\) and length \(L\) is released from rest in a horizontal position. The work done by its weight when it has rotated through \(90^{\circ}\) is 
+
+$PAR
+
+\{ image( "imagename.png", width=>150, height=>150 ) \}
+
+$PAR
+
+\{ $mc->buttons() \}
+
+END_TEXT
+
+$showPartialCorrectAnswers = 0;
+
+ANS( $mc->cmp() );
+
+ENDDOCUMENT();

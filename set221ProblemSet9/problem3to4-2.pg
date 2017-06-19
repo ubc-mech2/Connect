@@ -1,0 +1,49 @@
+\\##DESCRIPTION
+## 221 Problem Set 9
+## Question Set 3 to 4
+##ENDDESCRIPTION
+
+## Problem2
+
+#######################################################################
+
+DOCUMENT();      
+
+loadMacros(
+   "PGstandard.pl",     # Standard macros for PG language
+   "MathObjects.pl",
+   #"source.pl",        # allows code to be displayed on certain sites.
+   #"PGcourse.pl",      # Customization file for the course
+   "parserRadioButtons.pl",
+   "contextFraction.pl",
+);
+
+$mc = RadioButtons( # Set up possible options
+[
+"\( (1/2) (200)(1.2\pi)^2 + (20)9.81(1.2\pi \sin(30)) \)", 
+"\( - (1/2) (200) (1.2\pi)^2 - (20)9.81(1.2\pi \sin(30)) \)", 
+"\( (1/2) (200)(1.2\pi)^2 - (20)9.81(1.2\pi \sin(30)) \)", 
+"\( (1/2) (200)(1.2\pi)^2 \)"
+]
+,"\( (1/2) (200)(1.2\pi)^2 - (20)9.81(1.2\pi \sin(30)) \)", # correct option
+labels => "ABCD" );
+
+BEGIN_TEXT
+	
+At the instant shown, the spring is undeformed. Determine the change in potential energy if the \(20\) \(kg\) disk (\(k_g = 0.5\) \(m\)) rolls 2 revolutions without slipping. Note that the shown velocity vector refers to the translation of the centre of the wheel.
+
+$PAR
+
+\{ image( "imagename.png", width=>150, height=>150 ) \}
+
+$PAR
+
+\{ $mc->buttons() \}
+
+END_TEXT
+
+$showPartialCorrectAnswers = 0;
+
+ANS( $mc->cmp() );
+
+ENDDOCUMENT();

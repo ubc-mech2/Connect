@@ -1,0 +1,49 @@
+\##DESCRIPTION
+## 221 Problem Set 9
+## Question Set 1 to 2
+##ENDDESCRIPTION
+
+## Problem3
+
+#######################################################################
+
+DOCUMENT();      
+
+loadMacros(
+   "PGstandard.pl",     # Standard macros for PG language
+   "MathObjects.pl",
+   #"source.pl",        # allows code to be displayed on certain sites.
+   #"PGcourse.pl",      # Customization file for the course
+   "parserRadioButtons.pl",
+   "contextFraction.pl",
+);
+
+$mc = RadioButtons( # Set up possible options
+[
+"Sphere", 
+"Disk", 
+"The two are equal.", 
+"Cannot be determined."
+]
+,"Sphere", # correct option
+labels => "ABCD" );
+
+BEGIN_TEXT
+	
+A disk and a sphere, each of same mass \(m\) and radius \(r\), are released from rest. After 2 full turns down the inclined plane, which body has a larger angular velocity? Assume roll without slip. 
+
+$PAR
+
+\{ image( "imagename.png", width=>150, height=>150 ) \}
+
+$PAR
+
+\{ $mc->buttons() \}
+
+END_TEXT
+
+$showPartialCorrectAnswers = 0;
+
+ANS( $mc->cmp() );
+
+ENDDOCUMENT();

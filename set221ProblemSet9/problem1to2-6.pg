@@ -1,0 +1,45 @@
+\##DESCRIPTION
+## 221 Problem Set 9
+## Question Set 1 to 2
+##ENDDESCRIPTION
+
+## Problem6
+
+#######################################################################
+
+DOCUMENT();      
+
+loadMacros(
+   "PGstandard.pl",     # Standard macros for PG language
+   "MathObjects.pl",
+   #"source.pl",        # allows code to be displayed on certain sites.
+   #"PGcourse.pl",      # Customization file for the course
+   "parserRadioButtons.pl",
+   "contextFraction.pl",
+);
+
+$mc = RadioButtons( # Set up possible options
+[
+"constant", 
+"zero", 
+"equal to its rotational kinetic energy", 
+"Cannot be determined."
+]
+,"zero", # correct option
+labels => "ABCD" );
+
+BEGIN_TEXT
+	
+If a rigid body undergoes pure rotation about its center of gravity, its translational kinetic energy is _________ at all times.
+
+$PAR
+
+\{ $mc->buttons() \}
+
+END_TEXT
+
+$showPartialCorrectAnswers = 0;
+
+ANS( $mc->cmp() );
+
+ENDDOCUMENT();

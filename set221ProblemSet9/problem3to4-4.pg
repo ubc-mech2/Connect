@@ -1,0 +1,45 @@
+\\##DESCRIPTION
+## 221 Problem Set 9
+## Question Set 3 to 4
+##ENDDESCRIPTION
+
+## Problem4
+
+#######################################################################
+
+DOCUMENT();      
+
+loadMacros(
+   "PGstandard.pl",     # Standard macros for PG language
+   "MathObjects.pl",
+   #"source.pl",        # allows code to be displayed on certain sites.
+   #"PGcourse.pl",      # Customization file for the course
+   "parserRadioButtons.pl",
+   "contextFraction.pl",
+);
+
+$mc = RadioButtons( # Set up possible options
+[
+"translational motion and rotational motion", 
+"only rotational motion", 
+"only translational motion", 
+"the deformation of the body"
+]
+,"translational motion and rotational motion", # correct option
+labels => "ABCD" );
+
+BEGIN_TEXT
+	
+The kinetic energy of a rigid body consists of the kinetic energy due to __________.
+
+$PAR
+
+\{ $mc->buttons() \}
+
+END_TEXT
+
+$showPartialCorrectAnswers = 0;
+
+ANS( $mc->cmp() );
+
+ENDDOCUMENT();

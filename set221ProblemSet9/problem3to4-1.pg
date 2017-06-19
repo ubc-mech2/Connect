@@ -1,0 +1,53 @@
+\\##DESCRIPTION
+## 221 Problem Set 9
+## Question Set 3 to 4
+##ENDDESCRIPTION
+
+## Problem1
+
+#######################################################################
+
+DOCUMENT();      
+
+loadMacros(
+   "PGstandard.pl",     # Standard macros for PG language
+   "MathObjects.pl",
+   #"source.pl",        # allows code to be displayed on certain sites.
+   #"PGcourse.pl",      # Customization file for the course
+   "parserRadioButtons.pl",
+   "contextFraction.pl",
+);
+
+$mc = RadioButtons( # Set up possible options
+[
+"\( (1/2) (20)(3)^2 \)", 
+"\( (1/2) (20)(0.5^2)(10)^2 \)", 
+"Answer A + Answer B", 
+"None of the above"
+]
+,"Answer A + Answer B", # correct option
+last => # set up order in which options will be displayed
+[
+"\( (1/2) (20)(3)^2 \)", 
+"\( (1/2) (20)(0.5^2)(10)^2 \)", 
+"Answer A + Answer B", 
+"None of the above"
+]
+,
+labels => "ABCD" );
+
+BEGIN_TEXT
+	
+Determine the kinetic energy of the \(20\) \(kg\) disk (\(k_g = 0.5\) \(m\)) at the instant shown. Note that the shown velocity vector refers to the translation of the centre of the wheel.
+
+$PAR
+
+\{ $mc->buttons() \}
+
+END_TEXT
+
+$showPartialCorrectAnswers = 0;
+
+ANS( $mc->cmp() );
+
+ENDDOCUMENT();

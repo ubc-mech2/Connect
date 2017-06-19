@@ -1,0 +1,45 @@
+\##DESCRIPTION
+## 221 Problem Set 9
+## Question Set 1 to 2
+##ENDDESCRIPTION
+
+## Problem5
+
+#######################################################################
+
+DOCUMENT();      
+
+loadMacros(
+   "PGstandard.pl",     # Standard macros for PG language
+   "MathObjects.pl",
+   #"source.pl",        # allows code to be displayed on certain sites.
+   #"PGcourse.pl",      # Customization file for the course
+   "parserRadioButtons.pl",
+   "contextFraction.pl",
+);
+
+$mc = RadioButtons( # Set up possible options
+[
+"internal forces do not exist.", 
+"the forces act in equal but opposite collinear pairs.", 
+"the body is at rest initially.", 
+"the body can deform."
+]
+,"the forces act in equal but opposite collinear pairs.", # correct option
+labels => "ABCD" );
+
+BEGIN_TEXT
+	
+When calculating work done by forces, the work of an internal force does not have to be considered because
+
+$PAR
+
+\{ $mc->buttons() \}
+
+END_TEXT
+
+$showPartialCorrectAnswers = 0;
+
+ANS( $mc->cmp() );
+
+ENDDOCUMENT();
