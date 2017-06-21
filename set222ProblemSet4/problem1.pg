@@ -1,0 +1,48 @@
+##DESCRIPTION
+## 222 Problem Set 4
+##ENDDESCRIPTION
+
+## Problem1
+
+#######################################################################
+
+DOCUMENT();      
+
+loadMacros(
+   "PGstandard.pl",     # Standard macros for PG language
+   "MathObjects.pl",
+   #"source.pl",        # allows code to be displayed on certain sites.
+   #"PGcourse.pl",      # Customization file for the course
+   "parserRadioButtons.pl",
+   "contextFraction.pl",
+);
+
+$mc = RadioButtons( # Set up possible options
+[
+"\(100\) \(cm^2\)", 
+"\(10\) \(cm^2\)", 
+"\(2\) \(cm^2\)", 
+"\(75\) \(cm^2\)"
+]
+,"\(10\) \(cm^2\)", # correct option
+labels => "ABCD" );
+
+BEGIN_TEXT
+	
+Steam (\(3\) \(kg/s\)) enters a nozzle operating at steady-state with a pressure of \(40\) bars and temperature of \(400^{\circ}\) \(C\) and velocity of \(15\) \(m/s\) (point 1). At the exit, the pressure is \(16\) bars and the velocity is \(500\) \(m/s\) (point 2). Determine the exit area of the nozzle  
+
+$PAR
+
+\{ image( "imagename.png", width=>150, height=>150 ) \}
+
+$PAR
+
+\{ $mc->buttons() \}
+
+END_TEXT
+
+$showPartialCorrectAnswers = 0;
+
+ANS( $mc->cmp() );
+
+ENDDOCUMENT();

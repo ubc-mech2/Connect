@@ -1,0 +1,48 @@
+##DESCRIPTION
+## 222 Problem Set 4
+##ENDDESCRIPTION
+
+## Problem4
+
+#######################################################################
+
+DOCUMENT();      
+
+loadMacros(
+   "PGstandard.pl",     # Standard macros for PG language
+   "MathObjects.pl",
+   #"source.pl",        # allows code to be displayed on certain sites.
+   #"PGcourse.pl",      # Customization file for the course
+   "parserRadioButtons.pl",
+   "contextFraction.pl",
+);
+
+$mc = RadioButtons( # Set up possible options
+[
+"\(155\) \(kJ\)", 
+"\(-665\) \(kJ\)", 
+"\(665\) \(kJ\)", 
+"\(-155\) \(kJ\)"
+]
+,"\(665\) \(kJ\)", # correct option
+labels => "ABCD" );
+
+BEGIN_TEXT
+	
+Steam at a pressure of \(20\) \(bars\) and a temperature of \(400^{\circ}\) \(C\) is contained in a large tank. Connected to the tank through a valve is a turbine followed by a small initially evacuated vessel of \(0.5\) \(m^3\). The valve is opened and the vessel fills with steam until the pressure is \(20\) \(bars\) and the temperature is \(450^{\circ}\) \(C\). The valve is then closed. Assuming that the filling is adiabatic and kinetic and potential energy changes are negligible, determine the amount of work developed by the turbine, in \(kJ\).
+
+$PAR
+
+\{ image( "imagename.png", width=>150, height=>150 ) \}
+
+$PAR
+
+\{ $mc->buttons() \}
+
+END_TEXT
+
+$showPartialCorrectAnswers = 0;
+
+ANS( $mc->cmp() );
+
+ENDDOCUMENT();

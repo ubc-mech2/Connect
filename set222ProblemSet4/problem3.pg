@@ -1,0 +1,48 @@
+##DESCRIPTION
+## 222 Problem Set 4
+##ENDDESCRIPTION
+
+## Problem3
+
+#######################################################################
+
+DOCUMENT();      
+
+loadMacros(
+   "PGstandard.pl",     # Standard macros for PG language
+   "MathObjects.pl",
+   #"source.pl",        # allows code to be displayed on certain sites.
+   #"PGcourse.pl",      # Customization file for the course
+   "parserRadioButtons.pl",
+   "contextFraction.pl",
+);
+
+$mc = RadioButtons( # Set up possible options
+[
+"\(140.4\) \(kW\)", 
+"\(-50.8\) \(kW\)", 
+"\(-124.3\) \(kW\)", 
+"\(32.6\) \(kW\)"
+]
+,"\(-124.3\) \(kW\)", # correct option
+labels => "ABCD" );
+
+BEGIN_TEXT
+	
+Steam enters a turbine operating at steady-state with a mass flow rate of \(5000\) \(kg/h\). The turbine develops a power output of \(1100\) \(kW\). At the inlet, the pressure is \(80\) \(bars\) and the temperature is \(400^{\circ}\) \(C\) with a velocity of \(15\) \(m/s\). At the exit, the pressure is \(0.2\) \(bar\) and the quality is \(85%\), and the velocity is \(45\) \(m/s\). Calculate the rate of heat transfer between the turbine and surroundings.
+
+$PAR
+
+\{ image( "imagename.png", width=>150, height=>150 ) \}
+
+$PAR
+
+\{ $mc->buttons() \}
+
+END_TEXT
+
+$showPartialCorrectAnswers = 0;
+
+ANS( $mc->cmp() );
+
+ENDDOCUMENT();

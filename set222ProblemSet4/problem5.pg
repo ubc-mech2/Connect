@@ -1,0 +1,51 @@
+##DESCRIPTION
+## 222 Problem Set 4
+##ENDDESCRIPTION
+
+## Problem5
+
+#######################################################################
+
+DOCUMENT();      
+
+loadMacros(
+   "PGstandard.pl",     # Standard macros for PG language
+   "MathObjects.pl",
+   #"source.pl",        # allows code to be displayed on certain sites.
+   #"PGcourse.pl",      # Customization file for the course
+   "parserRadioButtons.pl",
+   "contextFraction.pl",
+);
+
+$mc = RadioButtons( # Set up possible options
+[
+"\(0.24\) \(m / sec\)", 
+"\(0.76\) \(m / sec\)", 
+"\(1.28\) \(m / sec\)", 
+"\(1.47\) \(m / sec\)",
+"\(1.68\) \(m / sec\)"
+]
+,"\(1.68\) \(m / sec\)", # correct option
+labels => "ABCD" );
+
+BEGIN_TEXT
+	
+A magnetic flow meter measures the mass flow rate at some location upstream in a pipe filled with water. The measured mass flow rate is \(10\) \(kg/sec\). Downstream of this location the velocity profile is measured, and is found to obey the relationship: $PAR
+
+\( u(r) = U_{max} (1 - \frac{r}{R})^{\frac{1}{5}} \)
+
+$PAR
+
+\{ image( "imagename.png", width=>150, height=>150 ) \}
+
+$PAR
+
+\{ $mc->buttons() \}
+
+END_TEXT
+
+$showPartialCorrectAnswers = 0;
+
+ANS( $mc->cmp() );
+
+ENDDOCUMENT();

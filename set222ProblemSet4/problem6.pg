@@ -1,0 +1,45 @@
+##DESCRIPTION
+## 222 Problem Set 4
+##ENDDESCRIPTION
+
+## Problem6
+
+#######################################################################
+
+DOCUMENT();      
+
+loadMacros(
+   "PGstandard.pl",     # Standard macros for PG language
+   "MathObjects.pl",
+   #"source.pl",        # allows code to be displayed on certain sites.
+   #"PGcourse.pl",      # Customization file for the course
+   "parserRadioButtons.pl",
+   "contextFraction.pl",
+);
+
+$mc = RadioButtons( # Set up possible options
+[
+"\(12.8\) \(N\)", 
+"\(13.2\) \(N\)", 
+"\(22.2\) \(N\)", 
+"\(31.8\) \(N\)",
+"\(101\) \(N\)"
+]
+,"\(13.2\) \(N\)", # correct option
+labels => "ABCD" );
+
+BEGIN_TEXT
+	
+For the non-uniform velocity profile in question 1, what is the momentum flux?
+
+$PAR
+
+\{ $mc->buttons() \}
+
+END_TEXT
+
+$showPartialCorrectAnswers = 0;
+
+ANS( $mc->cmp() );
+
+ENDDOCUMENT();

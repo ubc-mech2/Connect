@@ -1,0 +1,67 @@
+##DESCRIPTION
+## 222 Problem Set 4
+##ENDDESCRIPTION
+
+## Problem2
+
+#######################################################################
+
+DOCUMENT();      
+
+loadMacros(
+   "PGstandard.pl",     # Standard macros for PG language
+   "MathObjects.pl",
+   #"source.pl",        # allows code to be displayed on certain sites.
+   #"PGcourse.pl",      # Customization file for the course
+   "parserRadioButtons.pl",
+   "contextFraction.pl",
+);
+
+$mc = RadioButtons( # Set up possible options
+[
+"a", 
+"b", 
+"c", 
+"d"
+]
+,"c", # correct option
+last => # set up order in which options will be displayed
+[
+"a", 
+"b", 
+"c", 
+"d"
+]
+,labels => "ABCD" );
+
+BEGIN_TEXT
+	
+Which one of the following T-v diagrams represents the process in Problem 4.1?
+
+$PAR
+
+a) \{ image( "imagename.png", width=>150, height=>150 ) \}
+
+$PAR
+
+b) \{ image( "imagename.png", width=>150, height=>150 ) \}
+
+$PAR
+
+c) \{ image( "imagename.png", width=>150, height=>150 ) \}
+
+$PAR
+
+d) \{ image( "imagename.png", width=>150, height=>150 ) \}
+
+$PAR
+
+\{ $mc->buttons() \}
+
+END_TEXT
+
+$showPartialCorrectAnswers = 0;
+
+ANS( $mc->cmp() );
+
+ENDDOCUMENT();
