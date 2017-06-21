@@ -1,0 +1,44 @@
+##DESCRIPTION
+## 222 Problem Set 5
+##ENDDESCRIPTION
+
+## Problem6
+
+#######################################################################
+
+DOCUMENT();      
+
+loadMacros(
+   "PGstandard.pl",     # Standard macros for PG language
+   "MathObjects.pl",
+   #"source.pl",        # allows code to be displayed on certain sites.
+   #"PGcourse.pl",      # Customization file for the course
+   "parserRadioButtons.pl",
+   "contextFraction.pl",
+);
+
+$mc = RadioButtons( # Set up possible options
+[
+"\(12.4\)", 
+"\(19.6\)", 
+"\(4.0\)", 
+"\(6.2\)"
+]
+,"\(19.6\)", # correct option
+labels => "ABCD" );
+
+BEGIN_TEXT
+	
+In the previous question, what is the maximum possible COP for the heat pump?
+
+$PAR
+
+\{ $mc->buttons() \}
+
+END_TEXT
+
+$showPartialCorrectAnswers = 0;
+
+ANS( $mc->cmp() );
+
+ENDDOCUMENT();

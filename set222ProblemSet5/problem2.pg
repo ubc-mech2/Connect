@@ -1,0 +1,45 @@
+##DESCRIPTION
+## 222 Problem Set 5
+##ENDDESCRIPTION
+
+## Problem2
+
+#######################################################################
+
+DOCUMENT();      
+
+loadMacros(
+   "PGstandard.pl",     # Standard macros for PG language
+   "MathObjects.pl",
+   #"source.pl",        # allows code to be displayed on certain sites.
+   #"PGcourse.pl",      # Customization file for the course
+   "parserRadioButtons.pl",
+   "contextFraction.pl",
+);
+
+$mc = RadioButtons( # Set up possible options
+[
+"\(0.0135\) \(N\)", 
+"\(0.045\) \(N\)", 
+"\(0.15\) \(N\)", 
+"\(0.5\) \(N\)",
+"\(1.67\) \(N\)"
+]
+,"\(0.15\) \(N\)", # correct option
+labels => "ABCD" );
+
+BEGIN_TEXT
+	
+For the previous question, the drag force measured on the golf ball in the wind tunnel is \(0.15\) \(N\). What is the actual force on the real golf ball?
+
+$PAR
+
+\{ $mc->buttons() \}
+
+END_TEXT
+
+$showPartialCorrectAnswers = 0;
+
+ANS( $mc->cmp() );
+
+ENDDOCUMENT();

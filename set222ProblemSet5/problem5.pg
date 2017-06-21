@@ -1,0 +1,44 @@
+##DESCRIPTION
+## 222 Problem Set 5
+##ENDDESCRIPTION
+
+## Problem5
+
+#######################################################################
+
+DOCUMENT();      
+
+loadMacros(
+   "PGstandard.pl",     # Standard macros for PG language
+   "MathObjects.pl",
+   #"source.pl",        # allows code to be displayed on certain sites.
+   #"PGcourse.pl",      # Customization file for the course
+   "parserRadioButtons.pl",
+   "contextFraction.pl",
+);
+
+$mc = RadioButtons( # Set up possible options
+[
+"\(0.31\) \(kW\)", 
+"\(1.5\) \(kW\)", 
+"\(1.0\) \(kW\)", 
+"\(0.85\) \(kW\)"
+]
+,"\(0.31\) \(kW\)", # correct option
+labels => "ABCD" );
+
+BEGIN_TEXT
+	
+A building requires \(6\) \(kW\) of heat to maintain its temperature \(22^{\circ}\) \(C\) when outside is \(7^{\circ}\) \(C\). If a heat pump is used to supply this energy find the minimum theoretical rate of work input in \(kW\).
+
+$PAR
+
+\{ $mc->buttons() \}
+
+END_TEXT
+
+$showPartialCorrectAnswers = 0;
+
+ANS( $mc->cmp() );
+
+ENDDOCUMENT();

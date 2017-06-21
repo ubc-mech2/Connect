@@ -1,0 +1,57 @@
+##DESCRIPTION
+## 222 Problem Set 5
+##ENDDESCRIPTION
+
+## Problem1
+
+#######################################################################
+
+DOCUMENT();      
+
+loadMacros(
+   "PGstandard.pl",     # Standard macros for PG language
+   "MathObjects.pl",
+   #"source.pl",        # allows code to be displayed on certain sites.
+   #"PGcourse.pl",      # Customization file for the course
+   "parserRadioButtons.pl",
+   "contextFraction.pl",
+);
+
+$mc = RadioButtons( # Set up possible options
+[
+"\(1.28\) \(cm\), \(9000\) \(rpm\)", 
+"\(1.28\) \(cm\), \(2700\) \(rpm\)", 
+"\(4.27\) \(cm\), \(9000\) \(rpm\)", 
+"\(4.27\) \(cm\), \(30000\) \(rpm\)",
+"\(14.2\) \(cm\), \(810\) \(rpm\)", 
+"\(14.2\) \(cm\), \(2700\) \(rpm\)", 
+"\(14.2\) \(cm\), \(30000\) \(rpm\)"
+]
+,"\(14.2\) \(cm\), \(810\) \(rpm\)", # correct option
+labels => "ABCD" );
+
+BEGIN_TEXT
+	
+The fluid dynamic characteristics of a golf ball are to be tested in a wind tunnel using a model. Dimensional analysis tells us that the drag force \(F\) can be non-dimensionalized in terms of the air density \(\rho\) and viscosity \(\mu\), and the golf ball speed \(V\), diameter \(d\), and rotation speed \(\omega\). For practice, show that the non-dimensional relationship between these variables can be written as $PAR
+
+\( \frac{F}{\rho V^2 d^2} = f(\frac{\rho Vd}{\mu} , \frac{\omega d}{V}) \)
+
+$PAR
+
+A golf pro can hit a ball at \(250\) \(km/hour\) and \(\omega = 9000\) \(rpm\). A golf ball has a diameter of \(4.27\) \(cm\). If the wind tunnel used for testing has a top speed of \(75\) \(km/hour\), what combination of ball speed and diameter are required for proper scaling?
+
+$PAR
+
+\{ image( "imagename.png", width=>150, height=>150 ) \}
+
+$PAR
+
+\{ $mc->buttons() \}
+
+END_TEXT
+
+$showPartialCorrectAnswers = 0;
+
+ANS( $mc->cmp() );
+
+ENDDOCUMENT();

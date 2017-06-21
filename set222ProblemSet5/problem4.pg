@@ -1,0 +1,44 @@
+##DESCRIPTION
+## 222 Problem Set 5
+##ENDDESCRIPTION
+
+## Problem4
+
+#######################################################################
+
+DOCUMENT();      
+
+loadMacros(
+   "PGstandard.pl",     # Standard macros for PG language
+   "MathObjects.pl",
+   #"source.pl",        # allows code to be displayed on certain sites.
+   #"PGcourse.pl",      # Customization file for the course
+   "parserRadioButtons.pl",
+   "contextFraction.pl",
+);
+
+$mc = RadioButtons( # Set up possible options
+[
+"It is possible to build this machine", 
+"For the cycle presented above, the Carnot efficiency is higher than the actual efficiency", 
+"There is not enough information provided that can be concluded this cycle works", 
+"It is impossible to build such a power cycle"
+]
+,"It is impossible to build such a power cycle", # correct option
+labels => "ABCD" );
+
+BEGIN_TEXT
+	
+Analyze the claim in the previous question and tell which one of the following statements is valid for the cycle described above:
+
+$PAR
+
+\{ $mc->buttons() \}
+
+END_TEXT
+
+$showPartialCorrectAnswers = 0;
+
+ANS( $mc->cmp() );
+
+ENDDOCUMENT();
