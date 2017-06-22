@@ -1,0 +1,45 @@
+##DESCRIPTION
+## 222 Problem Set 6
+##ENDDESCRIPTION
+
+## Problem5
+
+#######################################################################
+
+DOCUMENT();      
+
+loadMacros(
+   "PGstandard.pl",     # Standard macros for PG language
+   "MathObjects.pl",
+   #"source.pl",        # allows code to be displayed on certain sites.
+   #"PGcourse.pl",      # Customization file for the course
+   "parserRadioButtons.pl",
+   "contextFraction.pl",
+);
+
+$mc = RadioButtons( # Set up possible options
+[
+"\(2785\) \(kJ/kg\)", 
+"\(-640.9\) \(kJ/kg\)", 
+"\(-2785\) \(kJ/kg\)", 
+"\(-2144.2\) \(kJ/kg\)"
+]
+,"\(-2144.2\) \(kJ/kg\)", # correct option
+last => # set up order in which options will be displayed
+labels => "ABCD" );
+
+BEGIN_TEXT
+	
+What is the heat transfer required in the previous problem?
+
+$PAR
+
+\{ $mc->buttons() \}
+
+END_TEXT
+
+$showPartialCorrectAnswers = 0;
+
+ANS( $mc->cmp() );
+
+ENDDOCUMENT();

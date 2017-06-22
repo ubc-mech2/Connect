@@ -1,0 +1,44 @@
+##DESCRIPTION
+## 222 Problem Set 6
+##ENDDESCRIPTION
+
+## Problem2
+
+#######################################################################
+
+DOCUMENT();      
+
+loadMacros(
+   "PGstandard.pl",     # Standard macros for PG language
+   "MathObjects.pl",
+   #"source.pl",        # allows code to be displayed on certain sites.
+   #"PGcourse.pl",      # Customization file for the course
+   "parserRadioButtons.pl",
+   "contextFraction.pl",
+);
+
+$mc = RadioButtons( # Set up possible options
+[
+"\(2257\)", 
+"\(2087.6\)", 
+"\(1918\)", 
+"\(2506.5\)"
+]
+,"\(2257\)", # correct option
+labels => "ABCD" );
+
+BEGIN_TEXT
+	
+In the previous problem, determine the heat transfer per unit mass in \(kJ/kg\).
+
+$PAR
+
+\{ $mc->buttons() \}
+
+END_TEXT
+
+$showPartialCorrectAnswers = 0;
+
+ANS( $mc->cmp() );
+
+ENDDOCUMENT();

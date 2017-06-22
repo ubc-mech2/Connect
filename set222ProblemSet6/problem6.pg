@@ -1,0 +1,45 @@
+##DESCRIPTION
+## 222 Problem Set 6
+##ENDDESCRIPTION
+
+## Problem6
+
+#######################################################################
+
+DOCUMENT();      
+
+loadMacros(
+   "PGstandard.pl",     # Standard macros for PG language
+   "MathObjects.pl",
+   #"source.pl",        # allows code to be displayed on certain sites.
+   #"PGcourse.pl",      # Customization file for the course
+   "parserRadioButtons.pl",
+   "contextFraction.pl",
+);
+
+$mc = RadioButtons( # Set up possible options
+[
+"\(5.0 \frac{kJ}{kg-K}\)", 
+"\(-5.0 \frac{kJ}{kg-K}\)", 
+"\(-6.9 \frac{kJ}{kg-K}\)", 
+"\(1.95 \frac{kJ}{kg-K}\)"
+]
+,"\(-5.0 \frac{kJ}{kg-K}\)", # correct option
+last => # set up order in which options will be displayed
+labels => "ABCD" );
+
+BEGIN_TEXT
+	
+What is the entropy change in the previous problem?
+
+$PAR
+
+\{ $mc->buttons() \}
+
+END_TEXT
+
+$showPartialCorrectAnswers = 0;
+
+ANS( $mc->cmp() );
+
+ENDDOCUMENT();

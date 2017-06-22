@@ -1,0 +1,63 @@
+##DESCRIPTION
+## 222 Problem Set 6
+##ENDDESCRIPTION
+
+## Problem4
+
+#######################################################################
+
+DOCUMENT();      
+
+loadMacros(
+   "PGstandard.pl",     # Standard macros for PG language
+   "MathObjects.pl",
+   #"source.pl",        # allows code to be displayed on certain sites.
+   #"PGcourse.pl",      # Customization file for the course
+   "parserRadioButtons.pl",
+   "contextFraction.pl",
+);
+
+$mc = RadioButtons( # Set up possible options
+[
+"a", 
+"b", 
+"c", 
+"d"
+]
+,"b", # correct option
+last => # set up order in which options will be displayed
+[
+"a", 
+"b", 
+"c", 
+"d"
+]
+,labels => "ABCD" );
+
+BEGIN_TEXT
+	
+Steam is contained in a rigid volume tank at \(1400\) \(kPa\) and \(300^{\circ}\) \(C\). Heat is transferred from the volume until the pressure is \(100\) \(kPa\). Which one of the following sketches presents the process more accurately on the T-s diagram?
+
+$PAR
+a) \{ image( "imagename.png", width=>150, height=>150 ) \}             
+
+$PAR
+b) \{ image( "imagename.png", width=>150, height=>150 ) \}
+
+$PAR
+c) \{ image( "imagename.png", width=>150, height=>150 ) \}
+
+$PAR
+d) \{ image( "imagename.png", width=>150, height=>150 ) \}
+
+$PAR
+
+\{ $mc->buttons() \}
+
+END_TEXT
+
+$showPartialCorrectAnswers = 0;
+
+ANS( $mc->cmp() );
+
+ENDDOCUMENT();

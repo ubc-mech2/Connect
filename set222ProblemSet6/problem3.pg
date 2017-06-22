@@ -1,0 +1,44 @@
+##DESCRIPTION
+## 222 Problem Set 6
+##ENDDESCRIPTION
+
+## Problem3
+
+#######################################################################
+
+DOCUMENT();      
+
+loadMacros(
+   "PGstandard.pl",     # Standard macros for PG language
+   "MathObjects.pl",
+   #"source.pl",        # allows code to be displayed on certain sites.
+   #"PGcourse.pl",      # Customization file for the course
+   "parserRadioButtons.pl",
+   "contextFraction.pl",
+);
+
+$mc = RadioButtons( # Set up possible options
+[
+"\(7.35\)", 
+"\(-7.35\)", 
+"\(-6.05\)", 
+"\(6.05\)"
+]
+,"\(6.05\)", # correct option
+labels => "ABCD" );
+
+BEGIN_TEXT
+	
+In the previous problem, determine the entropy change per unit mass in \(kJ/kg-K\).
+
+$PAR
+
+\{ $mc->buttons() \}
+
+END_TEXT
+
+$showPartialCorrectAnswers = 0;
+
+ANS( $mc->cmp() );
+
+ENDDOCUMENT();
