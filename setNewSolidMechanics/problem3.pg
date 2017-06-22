@@ -1,0 +1,101 @@
+##DESCRIPTION
+## Solid Mechanics
+## By: Bhaumik Patel, 96331153
+## Date: June 12, 2017
+## Keywords: 
+##ENDDESCRIPTION
+
+## Problem3
+
+########################################################################
+
+DOCUMENT();      
+
+loadMacros(
+   "PGstandard.pl",     # Standard macros for PG language
+   "MathObjects.pl",
+   #"source.pl",        # allows code to be displayed on certain sites.
+   #"PGcourse.pl",      # Customization file for the course
+   "parserRadioButtons.pl",
+   "contextFraction.pl",
+);
+
+Context("Fraction");
+
+$mc = RadioButtons( # Set up possible options
+[
+"\(418.05\) \(rpm\)", 
+"\(324.22\) \(rpm\)", 
+"\(375.66\) \(rpm\)", 
+]
+,"\(324.22\) \(rpm\)", # correct option
+last => # set up order in which options will be displayed
+labels => "ABCD" );
+
+BEGIN_TEXT
+
+A \(50\) \(mm\) diameter steel shaft with \(l = 1500\) \(mm\) is used to transmit \(50\) \(kW\) power between a motor and a pump. Find out the lowest speed of rotation at which \(\tau\) doesn't exceed \(60\) \(MPa\) and the angle of twist does not exceed \(\alpha\). Assume \(\delta = 80\) \(MPa\). 
+
+$PAR	
+\{ image( "imagename.png", width=>150, height=>150 ) \}
+$PAR
+
+\{ $mc->buttons() \}
+
+END_TEXT
+
+$showPartialCorrectAnswers = 0;
+
+ANS( $mc->cmp() );
+
+Context()->texStrings;
+
+BEGIN_SOLUTION 
+
+Given data: \(D = 50\) \(mm\) ; \(l = 1500\) \(mm\) $PAR
+
+\(P = 50\) \(kW = 50 \times 10^3\) \(watts\) $PAR
+
+\(\tau = 60\) \(MPa = 60 \times 10^6\) \(N/m^2\) $PAR
+
+\(\theta = 2' = \frac{2\pi}{180} = \) \(0.0349\) radians $PAR
+
+For strength;
+
+\(T = \frac{\pi}{16} \tau D^3 = \frac{\pi}{16} \times (60) \times (10^6) \times (50 \times 10^{-3})\) $PAR
+
+\(\therefore\) \(T = 1472.62\) \(Nm\) $PAR
+
+\(P = \frac{2\pi NT}{60}\) \(watt\) $PAR
+
+\(N = \frac{60P}{2\pi T} = \frac{60 \times 50 \times 10^3}{2\pi \times 1472.62} = 324.22\) $PAR
+
+\(\therefore N = 324.22\) \(rpm\) $PAR
+
+For stiffness;
+
+\(J = \frac{\pi}{32} D^4 = \frac{\pi}{32} \times (50)^4 = 613592.31 mm^4\) $PAR
+
+Now too stiffness $PAR
+
+\(\frac{T}{\tau} = \frac{G\theta}{l}\) $PAR
+
+\(T = \frac{G\theta \tau}{l} = \frac{80 \times 10^3 \times 0.0349 \times 613592.31}{2500}\) $PAR
+
+\(T = 1142.09\) \(Nm\) $PAR
+
+Power \(P = \frac{2\pi NT}{60}\) $PAR
+
+\(N = \frac{60P}{2 \pi \tau} = \frac{60 \times 50 \times 10^3}{2\pi \times 1142.09} = 418.05\) $PAR
+
+\(\therefore N = 418.05\) \(rpm\) $PAR
+
+Comparing (1) and (2) ; the lowest operating shaft speed is \(324.22\) \(rpm\).
+
+END_SOLUTION
+
+Context()->normalStrings;
+
+COMMENT('MathObject version.');
+
+ENDDOCUMENT();

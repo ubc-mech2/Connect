@@ -1,0 +1,114 @@
+##DESCRIPTION
+## Solid Mechanics
+## By: Bhaumik Patel, 96331153
+## Date: June 12, 2017
+## Keywords: 
+##ENDDESCRIPTION
+
+## Problem2
+
+########################################################################
+
+DOCUMENT();      
+
+loadMacros(
+   "PGstandard.pl",     # Standard macros for PG language
+   "MathObjects.pl",
+   #"source.pl",        # allows code to be displayed on certain sites.
+   #"PGcourse.pl",      # Customization file for the course
+   "parserRadioButtons.pl",
+   "contextFraction.pl",
+);
+
+Context("Fraction");
+
+$mc = RadioButtons( # Set up possible options
+[
+"\(75.23^{\circ}\)", 
+"\(60.59^{\circ}\)", 
+"\(73.87^{\circ}\)", 
+"\(71.30^{\circ}\)", 
+]
+,"\(73.87^{\circ}\)", # correct option
+last => # set up order in which options will be displayed
+labels => "ABCD" );
+
+BEGIN_TEXT
+
+A uniform ladder \(xy\) weighing \(200\) \(N\) and \(5\) \(m\) long is supported by vertical wall at top end \(y\) and by horizontal floor at bottom end \(x\). A man weighing \(600\) \(N\) is standing at the top position of the ladder. Determine the minimum angle \(\theta\) of ladder \(xy\) for stability condition. Consider \(\mu_w = \frac{1}{3}\) (wall)
+
+$PAR	
+\{ image( "imagename.png", width=>150, height=>150 ) \}
+$PAR
+
+\{ $mc->buttons() \}
+
+END_TEXT
+
+$showPartialCorrectAnswers = 0;
+
+ANS( $mc->cmp() );
+
+Context()->texStrings;
+
+BEGIN_SOLUTION 
+
+Given data: \(\mu_F = \frac{1}{4}\) ; \(\mu_w = \frac{1}{3}\) $PAR
+
+Form the force diagram; solving forces vertically $PAR
+
+\(\therefore\) \(R_F + F_w = 600 + 200\) $PAR
+
+\(\therefore\) \(R_F + \mu_w R_w = 800\) $PAR
+
+\(\therefore\) \(R_F + \frac{1}{3} R_w = 800\) $PAR
+
+For horizontal forces, $PAR
+
+\(R_w = F_f = \mu_F R_f \) $PAR
+
+\(\therefore\) \(R_w = \frac{1}{4} R_f\) $PAR
+
+Put this relation in equation (1) $PAR
+
+\(\therefore\) \(R_f + \frac{1}{3} \times \frac{1}{4} \times R_f = 800\) $PAR
+
+\(\therefore\) \(R_f (1 + \frac{1}{12}) = 800\) $PAR
+
+\(\therefore\) \(R_f = 738.46\) \(N\) $PAR
+
+Now, \( F_F = \mu_F R_F \) $PAR
+
+\( = \frac{1}{4} \times (738.46) = 184.61 \) $PAR
+
+\(\therefore\) \(F_F = 184.61\) \(N\) $PAR
+
+\( R_w = \frac{1}{4} R_f = \frac{1}{4} \times 738.46 = 184.61 N \) $PAR
+
+\(\therefore\) \(R_w = 184.61\) \(N\) $PAR
+
+\( F_w = \mu_w R_w \frac{1}{3} \times 184.61 = 61.53 N \) $PAR
+
+\(\therefore\) \(F_w = 61.53\) \(N\) $PAR
+
+Now, torquing moment at \(Q_x\); $PAR
+
+\(\therefore\) \(R_w \times (5\sin\theta) + F_w \times (5\cos\theta) = 600 \times (5\cos\theta) + 200 \times (2.5\cos\theta) \) $PAR
+
+Divide both sides with \(\cos\theta\) $PAR
+
+\(\therefore\) \(5R_w (5\tan\theta) + 5F_w = 5 \times 600 + 200 \times (2.5) \) $PAR
+
+\(\therefore\) \(5(184.61)\tan\theta + 5(61.53) = 3000 + 500 \) $PAR
+
+\(\therefore\) \(\tan\theta = 3.45 \) $PAR
+
+\(\therefore\) \(\theta = 73.87^{\circ} \) $PAR
+
+END_SOLUTION
+
+Context()->normalStrings;
+
+COMMENT('MathObject version.');
+
+ENDDOCUMENT();

@@ -1,0 +1,72 @@
+##DESCRIPTION
+## Solid Mechanics
+## By: Bhaumik Patel, 96331153
+## Date: June 12, 2017
+## Keywords: Force diagram, Lami's theorem 
+##ENDDESCRIPTION
+
+## Problem1
+
+########################################################################
+
+DOCUMENT();      
+
+loadMacros(
+   "PGstandard.pl",     # Standard macros for PG language
+   "MathObjects.pl",
+   #"source.pl",        # allows code to be displayed on certain sites.
+   #"PGcourse.pl",      # Customization file for the course
+   "parserRadioButtons.pl",
+   "contextFraction.pl",
+);
+
+Context("Fraction");
+
+$mc = RadioButtons( # Set up possible options
+[
+"\(R_z = 700\) \(N\), \(T_{xy} = 500\) \(N\)", 
+"\(R_z = 675\) \(N\), \(T_{xy} = 675\) \(N\)", 
+"\(R_z = 750\) \(N\), \(T_{xy} = 675\) \(N\)", 
+"\(R_z = 500\) \(N\), \(T_{xy} = 425\) \(N\)", 
+]
+,"\(R_z = 675\) \(N\), \(T_{xy} = 675\) \(N\)", # correct option
+last => # set up order in which options will be displayed
+labels => "ABCD" );
+
+BEGIN_TEXT
+
+A \(350\) \(mm\) diameter sphere, which weighs \(675\) \(N\) lies on a smooth inclined surface (tied with a rope) which is \(500\) \(mm\) long. Find the reaction at point of contact between sphere and surface, and tension in rope. [Note: Use FBD]
+
+$PAR	
+\{ image( "imagename.png", width=>150, height=>150 ) \}
+$PAR
+
+\{ $mc->buttons() \}
+
+END_TEXT
+
+$showPartialCorrectAnswers = 0;
+
+ANS( $mc->cmp() );
+
+Context()->texStrings;
+
+BEGIN_SOLUTION 
+
+Based on the FBD, we can apply Lami's theorem as following: $PAR
+
+\(\frac{T_{xy}}{\sin(\theta)}\) = \(\frac{R_z}{\sin(\theta_2)}\) = \(\frac{w}{\sin(\theta_3)}\)  $PAR
+
+\(\frac{T_{xy}}{\sin(120^{\circ})}\) = \(\frac{R_z}{\sin(120^{\circ})}\) = \(\frac{w}{\sin(120^{\circ})}\) $PAR
+
+\(\frac{T_{xy}}{\sin(120^{\circ})}\) = \(\frac{675}{\sin(120^{\circ})}\) \(\therefore\) \(T_{xy} = 675\) \(N\) $PAR
+
+\(\frac{R_z}{\sin(120^{\circ})}\) = \(\frac{675}{\sin(120^{\circ})}\) \(\therefore\) \(R_z = 675\) \(N\) $PAR
+
+END_SOLUTION
+
+Context()->normalStrings;
+
+COMMENT('MathObject version.');
+
+ENDDOCUMENT();
