@@ -20,3 +20,38 @@ New 160 and convert current questions (600)
 
 Large integrated problems - midterms, finals?
 
+June 23, 2017:
+
+All problem sets ported over from Connect
+
+Searchability: taxonomy and keywords in the header of problems
+3 tags put on each problem: subject, chapter, section - analogous to textbook
+
+Possibly Benny's job to go through textbook and determine keywords 
+
+1 or 2 common keywords in each problem 
+
+Investigate: webwork open library keyword search - how effective?
+
+Write problems first, solutions later if time permits 
+
+Put old problems into GitHub repo
+
+Fluids problems have to be rewritten - previously developed Fluids problems can be fixed up 
+
+Jenny's problems likely do not have to be redone - only images
+
+Circuit image building - ask Linares 
+
+Pulling problems to OPL to test - ask Sophie to prioritize graphics
+Fit into existing taxonomy and upload 
+Find a self test with very few images, make images, pull to OPL 
+
+Get in touch with person in charge of UBC GitHub webwork pulling 
+
+Taxonomy: subject, chapter, section, keywords, author, institution, language
+Email address? webwork@apsc.ubc.ca? 
+
+Try to get testing going ASAP
+
+Math - use already existing taxonomy 
