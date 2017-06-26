@@ -41,13 +41,9 @@ $mc = RadioButtons(
 "none of the above" ]
     , "\( \frac{1}{5}$M2 \)" #This is the correct choice
     ,last => #Display order
-[ "\( $M2 \)", 
-"\( \frac{1}{5}$M2 \)", 
-"\( $M \)", 
-"\( \frac{1}{5}$M \)", 
-"does not exist",
+["does not exist",
 "none of the above" ]
-    ,labels => "ABCDEF" );
+    ,labels => "ABCD" );
 
 BEGIN_TEXT
 What is the determinant of the matrix \($M\)?
