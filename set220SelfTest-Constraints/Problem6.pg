@@ -2,7 +2,16 @@
 ## 220 Self Test - Constraints
 ##ENDDESCRIPTION
 
+##KEYWORDS('constraints', 'select all', 'bracket', 'pipe')
+
+## DBsubject('220 Self Test')
+## DBchapter('Constraints')
+## DBsection('Systems')
+## Date('6/27/2017')
+## Institution('University of British Columbia')
 ## Problem6
+
+#####################################################################
 
 DOCUMENT();  
 
@@ -24,19 +33,12 @@ $mc -> qa (
 "Moment about y$BR",
 "Moment about z"
 );
-$mc -> makeLast(
-"Force in x$BR",
-"Force in y$BR",                
-"Force in z$BR",
-"Moment about x$BR",
-"Moment about y$BR",
-"Moment about z");
 
 BEGIN_TEXT
 \{ $mc -> print_q() \}
-$BR 
+$PAR 
 \{ image( "6.png", width=>150, height=>150 ) \}
-$BR
+$PAR
 \{ $mc -> print_a() \}
 
 END_TEXT

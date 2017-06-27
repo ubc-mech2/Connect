@@ -2,7 +2,16 @@
 ## 220 Self Test - Constraints
 ##ENDDESCRIPTION
 
+##KEYWORDS('constraints', 'select all', 'telescope', 'degrees of freedom')
+
+## DBsubject('220 Self Test')
+## DBchapter('Constraints')
+## DBsection('Systems')
+## Date('6/27/2017')
+## Institution('University of British Columbia')
 ## Problem11
+
+#####################################################################
 
 DOCUMENT();  
 
@@ -37,9 +46,9 @@ $mc -> makeLast(
 
 BEGIN_TEXT
 \{ $mc -> print_q() \}
-$BR 
+$PAR 
 \{ image( "9.png", width=>150, height=>150 ) \}
-$BR
+$PAR
 \{ $mc -> print_a() \}
 
 END_TEXT

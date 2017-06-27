@@ -2,7 +2,16 @@
 ## 220 Self Test - Constraints
 ##ENDDESCRIPTION
 
+##KEYWORDS('constraints', 'force', 'select all', 'block', 'pin')
+
+## DBsubject('220 Self Test')
+## DBchapter('Constraints')
+## DBsection('Systems')
+## Date('6/27/2017')
+## Institution('University of British Columbia')
 ## Problem2
+
+##################################################################
 
 DOCUMENT();  
 
@@ -16,7 +25,7 @@ TEXT(beginproblem());
 
 $mc = new_checkbox_multiple_choice();
 $mc -> qa (
-"The two light blue support rods are connected to the large block using a pin connection. Which of the following constraints are present between the block and the rod with the force P? (select all that apply)", 
+"The two light blue support rods are connected to the large block using a pin connection. Which of the following constraints are present between the block and the rod with the force \(P\)? (select all that apply)", 
 "Force in x$BR",
 "Force in y$BR",                
 "Force in z$BR",
@@ -26,18 +35,12 @@ $mc -> qa (
 $mc -> extra(
 "Moment about z",
 );
-$mc -> makeLast("Force in x$BR",
-"Force in y$BR",                
-"Force in z$BR",
-"Moment about x$BR",
-"Moment about y$BR",
-"Moment about z");
 
 BEGIN_TEXT
 \{ $mc -> print_q() \}
-$BR 
+$PAR 
 \{ image( "2.png", width=>150, height=>150 ) \}
-$BR
+$PAR
 \{ $mc -> print_a() \}
 
 END_TEXT

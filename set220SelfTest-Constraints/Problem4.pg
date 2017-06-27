@@ -2,7 +2,16 @@
 ## 220 Self Test - Constraints
 ##ENDDESCRIPTION
 
+##KEYWORDS('constraints', 'force', 'select all', 'block', 'ball and socket')
+
+## DBsubject('220 Self Test')
+## DBchapter('Constraints')
+## DBsection('Systems')
+## Date('6/27/2017')
+## Institution('University of British Columbia')
 ## Problem4
+
+#####################################################################
 
 DOCUMENT();  
 
@@ -16,7 +25,7 @@ TEXT(beginproblem());
 
 $mc = new_checkbox_multiple_choice();
 $mc -> qa (
-"Imagine the pin connection in the previous question was replaced by a ball-and-socket connection. Which of the following constraints are present between the block and the rod with the force P? (select all that apply)", 
+"Imagine the pin connection in the previous question was replaced by a ball-and-socket connection. Which of the following constraints are present between the block and the rod with the force \(P\)? (select all that apply)", 
 "Force in x$BR",
 "Force in y$BR",                
 "Force in z$BR"
@@ -26,16 +35,10 @@ $mc -> extra(
 "Moment about y$BR",
 "Moment about z",
 );
-$mc -> makeLast("Force in x$BR",
-"Force in y$BR",                
-"Force in z$BR",
-"Moment about x$BR",
-"Moment about y$BR",
-"Moment about z");
 
 BEGIN_TEXT
 \{ $mc -> print_q() \}
-$BR 
+$PAR 
 \{ image( "2.png", width=>150, height=>150 ) \}
 $BR
 \{ $mc -> print_a() \}
