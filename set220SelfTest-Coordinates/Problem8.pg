@@ -1,3 +1,18 @@
+##DESCRIPTION
+## 220 Self Test - Coordinates
+##ENDDESCRIPTION
+
+##KEYWORDS('coordinate', 'transformation', 'intersection')
+
+## DBsubject('220 Self Test')
+## DBchapter('Coordinates')
+## DBsection('Transformation')
+## Date('6/27/2017')
+## Institution('University of British Columbia')
+## Problem8
+
+########################################################################
+
 DOCUMENT();
 
 loadMacros(
@@ -28,26 +43,26 @@ Context()->texStrings;
  
 $mc = RadioButtons(
     [ "\($M1\) = \($MA\)\($M2\)+\($MA2\)",
-"\($M1\) = \($MB\)\($M2\)+\($MB2\)",
-"\($M1\) = \($MC\)\($M2\)+\($MB2\)",
-"\($M1\) = \($MD\)\($M2\)+\($MB2\)",
-"\($M1\) = \($ME\)\($M2\)" ]
-    , "\($M1\) = \($MC\)\($M2\)+\($MB2\)"
-    ,last => [ "\($M1\) = \($MA\)\($M2\)+\($MA2\)",
-"\($M1\) = \($MB\)\($M2\)+\($MB2\)",
-"\($M1\) = \($MC\)\($M2\)+\($MB2\)",
-"\($M1\) = \($MD\)\($M2\)+\($MB2\)",
-"\($M1\) = \($ME\)\($M2\)" ]
+"\($M1\) = \(100$MB\)\($M2\)+\($MB2\)",
+"\($M1\) = \(100$MC\)\($M2\)+\($MB2\)",
+"\($M1\) = \(100$MD\)\($M2\)+\($MB2\)",
+"\($M1\) = \(100$ME\)\($M2\)" ]
+    , "\($M1\) = \(100$MC\)\($M2\)+\($MB2\)"
     ,labels => "ABCDE" );
 
 BEGIN_TEXT
 
-What is the transformation between the x-y and u-v coordinate systems shown below? The u-v system uses measurements in centimetres and the x-y system uses measurements in metres. The intersection points on the u-v axes are shown (in units of centimetres). 
-$BR
+What is the transformation between the x-y and u-v coordinate systems shown below? The u-v system uses measurements in centimetres and the x-y system uses measurements in metres. The intersection points on the u-v axes are shown (in units of centimetres).
+ 
+$PAR
 \{ image( "8.png", width=>150, height=>150) \}
-$BR
+$PAR
 \{ $mc->buttons() \}
 
 END_TEXT
+
+$showPartialCorrectAnswers = 0;
+
+ANS( $mc->cmp() );
 
 ENDDOCUMENT();

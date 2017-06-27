@@ -2,6 +2,13 @@
 ## 220 Self Test - Coordinates
 ##ENDDESCRIPTION
 
+##KEYWORDS('coordinates', 'polar', 'point')
+
+## DBsubject('220 Self Test')
+## DBchapter('Coordinates')
+## DBsection('Polar')
+## Date('6/27/2017')
+## Institution('University of British Columbia')
 ## Problem1
 
 ########################################################################
@@ -23,17 +30,12 @@ $mc = RadioButtons(
 	"\( (3.61, -56.3) \)", 
 	"\( (3.61, 33.7) \)", 
 	"\( (3.61, -33.7) \)" ]
-       ,"\( (3.61, -56.3) \)",
-    last =>     [ "\( (56.3, 3.61) \)", 
-	"\( (3.61, 56.3) \)", 
-	"\( (3.61, -56.3) \)", 
-	"\( (3.61, 33.7) \)", 
-	"\( (3.61, -33.7) \)" ]
+       ,"\( (3.61, -56.3) \)"
          ,labels => "ABCDE" );
 
 BEGIN_TEXT
 Given the point \( (2,-3) \) in x-y space, what is this point in polar coordinates? (use angles in degrees)
-$BR
+$PAR
 \{ $mc->buttons() \}
 
 END_TEXT

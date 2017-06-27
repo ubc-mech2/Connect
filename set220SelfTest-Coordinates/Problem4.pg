@@ -2,6 +2,13 @@
 ## 220 Self Test - Coordinates
 ##ENDDESCRIPTION
 
+##KEYWORDS('coordinates', 'rotated', 'point')
+
+## DBsubject('220 Self Test')
+## DBchapter('Coordinates')
+## DBsection('Rotated')
+## Date('6/27/2017')
+## Institution('University of British Columbia')
 ## Problem4
 
 ########################################################################
@@ -23,17 +30,12 @@ $mc = RadioButtons(
 	"\( (0.87, 1.73) \)", 
 	"\( (1.87, 1.23) \)", 
 	"\( (-0.134, 2.23) \)" ]
-       ,"\( (-0.134, 2.23) \)",
-    last =>     [ "\( (2.23,0.134) \)", 
-	"\( (0.5,1) \)", 
-	"\( (0.87, 1.73) \)", 
-	"\( (1.87, 1.23) \)", 
-	"\( (-0.134, 2.23) \)" ]
-         ,labels => "ABCDE" );
+       ,"\( (-0.134, 2.23) \)"
+         ,labels => "ABCD" );
 
 BEGIN_TEXT
 The point \((1,2)\) is in the x-y coordinate system. The p-q coordinate system uses the same origin and scale as the x-y system but the p-axis is rotated 30 degrees clockwise from the x-axis. (Similarly, the q-axis is rotated 30 degrees clockwise from the y-axis.) What are the coordinates of the point in the p-q system?
-$BR
+$PAR
 \{ $mc->buttons() \}
 
 END_TEXT

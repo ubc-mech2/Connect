@@ -2,6 +2,13 @@
 ## 220 Self Test - Coordinates
 ##ENDDESCRIPTION
 
+##KEYWORDS('coordinates', 'spherical', 'point')
+
+## DBsubject('220 Self Test')
+## DBchapter('Coordinates')
+## DBsection('Spherical')
+## Date('6/27/2017')
+## Institution('University of British Columbia')
 ## Problem3
 
 ########################################################################
@@ -23,17 +30,12 @@ $mc = RadioButtons(
 	"\( (0.54, 0.45, 0.71) \)", 
 	"\( (0.29, 0.45, 0.84) \)", 
 	"\( (0.45, 0.29, 0.84) \)" ]
-       ,"\( (0.45, 0.71, 0.54) \)",
-    last => [ "\( (0.45, 0.71, 0.54) \)", 
-	"\( (0.02, 0.00, 1.00) \)", 
-	"\( (0.54, 0.45, 0.71) \)", 
-	"\( (0.29, 0.45, 0.84) \)", 
-	"\( (0.45, 0.29, 0.84) \)" ]
+       ,"\( (0.45, 0.71, 0.54) \)"
          ,labels => "ABCDE" );
 
 BEGIN_TEXT
 A point is given in spherical coordinates as \((1, 1, 1)\). What are the coordinates of the point in x-y-z coordinates? (use angles in radians)
-$BR
+$PAR
 \{ $mc->buttons() \}
 
 END_TEXT
