@@ -2,6 +2,13 @@
 ## Self Test - Linear Algebra 
 ##ENDDESCRIPTION
 
+##KEYWORDS('multiple choice', 'matrix', 'eigenvalues')
+
+## DBsubject('220 Self Test')
+## DBchapter('Linear Algebra')
+## DBsection('Eigenvalues')
+## Date('6/28/2017')
+## Institution('University of British Columbia')
 ## Problem4
 
 ########################################################################
@@ -25,14 +32,7 @@ $mc = RadioButtons(
 "\( 2, 3 \)", 
 "\( -2, 3 \)" ]
     , "\( -1, 1 \)"
-    ,last => 
-[ "\( -1, 1 \)", 
-"\( -2, 2 \)", 
-"\( -3, 3 \)", 
-"\( 1, 2 \)", 
-"\( 2, 3 \)", 
-"\( -2, 3 \)" ]
-    ,labels => "ABCDEF" );
+    ,labels => "ABCD" );
 
 Context("Matrix");
 Context()->texStrings;
@@ -40,7 +40,7 @@ $M = Matrix([2,3],[-1,-2]);
 
 BEGIN_TEXT
 What are the eigenvalues of the matrix \($M\)?
-$BR
+$PAR
 \{ $mc->buttons() \}
 
 END_TEXT

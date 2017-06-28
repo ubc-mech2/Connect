@@ -2,6 +2,13 @@
 ## Preview Test: Self Test - Linear Algebra 
 ##ENDDESCRIPTION
 
+##KEYWORDS('multiple choice', 'system', 'equations')
+
+## DBsubject('220 Self Test')
+## DBchapter('Linear Algebra')
+## DBsection('System of Equations')
+## Date('6/28/2017')
+## Institution('University of British Columbia')
 ## Problem2
 
 ########################################################################
@@ -26,22 +33,15 @@ $mc = RadioButtons(
 "\( x = -3, y = -2, z = 3 \)", 
 "there is no solution or infinitely many solutions" ]
     , "\( x = 1, y = -2, z = 3 \)"
-    ,last => 
-[ "\( x = 1, y = 6, z = -3 \)", 
-"\(x = -1, y = -6, z = 3 \)", 
-"\( x = -1, y = 2, z = -3 \)", 
-"\( x = 1, y = -2, z = 3 \)", 
-"\( x = 3, y = 2, z = -3 \)", 
-"\( x = -3, y = -2, z = 3 \)", 
-"there is no solution or infinitely many solutions" ]
-    ,labels => "ABCDEF" );
+    ,labels => "ABCD" );
 
 BEGIN_TEXT
-For the system of equations that follows, what are the values of \(x\), \(y\), and \(z\)? $BR
+For the system of equations that follows, what are the values of \(x\), \(y\), and \(z\)?
+$PAR
 \(x+y+z = 2\) $BR
 \(2x+2y-3z = -11\) $BR
 \(4x+2y-z = -3\)
-$BR
+$PAR
 \{ $mc->buttons() \}
 
 END_TEXT

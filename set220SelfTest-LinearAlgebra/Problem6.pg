@@ -2,7 +2,14 @@
 ## Self Test - Linear Algebra 
 ##ENDDESCRIPTION
 
-## Problem5
+##KEYWORDS('multiple choice', 'matrix', 'eigenvectors')
+
+## DBsubject('220 Self Test')
+## DBchapter('Linear Algebra')
+## DBsection('Eigenvectors')
+## Date('6/28/2017')
+## Institution('University of British Columbia')
+## Problem6
 
 ########################################################################
 
@@ -27,22 +34,15 @@ $mc = RadioButtons(
 "\( -3, 4, -5 \)", 
 "\( -6, 6 \)" ]
     , "\( 6, 9 \)" #This is the correct choice
-    ,last => #Display order
-[ "\( 6, 9 \)", 
-"\( 4, 5 \)", 
-"\( 6, 6 \)", 
-"\( -3, -6 \)", 
-"\( -3, 4, -5 \)", 
-"\( -6, 6 \)" ]
-    ,labels => "ABCDEF" );
+    ,labels => "ABCD" );
 
 Context("Matrix");
 Context()->texStrings;
 $M = Matrix([5, -2, 0],[-2,6, 2],[0,2,7]);
 
 BEGIN_TEXT
-One of the eigenvalues of the matrix \($M\) is 3. What are the other eigenvalues?
-$BR
+One of the eigenvalues of the matrix \($M\) is \(3\). What are the other eigenvalues?
+$PAR
 \{ $mc->buttons() \}
 
 END_TEXT
