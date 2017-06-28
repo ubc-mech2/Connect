@@ -2,6 +2,13 @@
 ## Self Test - Relative Motion
 ##ENDDESCRIPTION
 
+##KEYWORDS('multiple choice', 'collar', 'shaft', 'pin', 'rotating', 'degrees', 'freedom')
+
+## DBsubject('220 Self Test')
+## DBchapter('Relative Motion')
+## DBsection('Degrees of Freedom')
+## Date('6/28/2017')
+## Institution('University of British Columbia')
 ## Problem5
 
 ########################################################################
@@ -30,21 +37,13 @@ $mc = RadioButtons(
 "\( 8 \)" ]
 ,"\( 4 \)" #This is the correct choice
     ,last => #Display order
-[ "\( 1 \)", 
-"\( 2 \)", 
-"\( 3 \)", 
-"\( 4 \)", 
-"\( 5 \)",
-"\( 6 \)",
-"\( 7 \)",
-"\( 8 \)" ]
-,labels => "ABCDEF" );
+,labels => "ABCD" );
 
 BEGIN_TEXT
-Collar A slides along a shaft OD. Shaft OD has a pin connection at O and is rotating counter-clockwise with angular velocity omega. Link AB is connected to collar A with a pin joint. How many degrees of freedom does this system have relative to ground? (Note: OD is a cylindrical shaft and A is a cylindrical collar.)
-$BR
+Collar \(A\) slides along a shaft \(OD\). Shaft \(OD\) has a pin connection at \(O\) and is rotating counter-clockwise with angular velocity \(\omega\). Link \(AB\) is connected to collar \(A\) with a pin joint. How many degrees of freedom does this system have relative to ground? (Note: \(OD\) is a cylindrical shaft and \(A\) is a cylindrical collar.)
+$PAR
 \{ image( "imagename.png", width=>150, height=>150 ) \}
-$BR
+$PAR
 \{ $mc->buttons() \}
 
 END_TEXT

@@ -2,6 +2,13 @@
 ## Self Test - Relative Motion
 ##ENDDESCRIPTION
 
+##KEYWORDS('multiple choice', 'velocity', 'constant', 'angular', 'collar')
+
+## DBsubject('220 Self Test')
+## DBchapter('Relative Motion')
+## DBsection('Angular Velocity')
+## Date('6/28/2017')
+## Institution('University of British Columbia')
 ## Problem1
 
 ########################################################################
@@ -20,27 +27,21 @@ loadMacros(
 #Set up multiple choice buttons
 $mc = RadioButtons(
 #Options
-[ "\( 1.020 rad/s \) clockwise", 
-"\( 1.020 rad/s \) counter-clockwise", 
-"\( 1.582 rad/s \) clockwise", 
-"\( 1.582 rad/s \) counter-clockwise", 
-"\( 3.69 rad/s \) clockwise",
-"\( 3.69 rad/s \) counter-clockwise" ]
-,"\( 3.69 rad/s \) clockwise" #This is the correct choice
-    ,last => #Display order
-[ "\( 1.020 rad/s \) clockwise", 
-"\( 1.020 rad/s \) counter-clockwise", 
-"\( 1.582 rad/s \) clockwise", 
-"\( 1.582 rad/s \) counter-clockwise", 
-"\( 3.69 rad/s \) clockwise",
-"\( 3.69 rad/s \) counter-clockwise" ]
-,labels => "ABCDEF" );
+[ "\( 1.020\) \(rad/s \) clockwise", 
+"\( 1.020\) \( rad/s \) counter-clockwise", 
+"\( 1.582\) \( rad/s \) clockwise", 
+"\( 1.582\) \( rad/s \) counter-clockwise", 
+"\( 3.69\) \( rad/s \) clockwise",
+"\( 3.69\) \( rad/s \) counter-clockwise" ]
+,"\( 3.69\) \( rad/s \) clockwise" #This is the correct choice
+,labels => "ABCD" );
 
 BEGIN_TEXT
-Collar A moves with a constant velocity of \(900 mm/s\) to the right. At the instant when \(\theta = 30\) degrees, determine the angular velocity of rod AB.
-$BR
+
+Collar \(A\) moves with a constant velocity of \(900\) \(mm/s\) to the right. At the instant when \(\theta = 30\) degrees, determine the angular velocity of rod \(AB\).
+$PAR
 \{ image( "imagename.png", width=>150, height=>150 ) \}
-$BR
+$PAR
 \{ $mc->buttons() \}
 
 END_TEXT
