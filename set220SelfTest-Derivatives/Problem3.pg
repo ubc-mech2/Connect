@@ -2,6 +2,13 @@
 ## Preview Test: Self Test Derivatives
 ##ENDDESCRIPTION
 
+##KEYWORDS('multiple choice', 'dy', 'dx')
+
+## DBsubject('220 Self Test')
+## DBchapter('Derivatives')
+## DBsection('dy/dx')
+## Date('6/28/2017')
+## Institution('University of British Columbia')
 ## Problem3
 
 ########################################################################
@@ -24,18 +31,13 @@ $mc = RadioButtons(
 "\( 1288 \)", 
 "\( 3144 \)" ]
     , "\( 1288 \)"
-    ,last => [ "\( 3 \)", 
-"\( 13 \)", 
-"\( 393 \)", 
-"\( 1288 \)", 
-"\( 3144 \)" ]
-    ,labels => "ABCDE" );
+    ,labels => "ABCD" );
 
 Context("Fraction");
 
 BEGIN_TEXT
 If \(y = u^3 + u^2 + 1\) and \(u = 2x^2 - 1\), find \( \frac{dy}{dx}\) at \(x = 2\)
-$BR
+$PAR
 \{ $mc->buttons() \}
 
 END_TEXT

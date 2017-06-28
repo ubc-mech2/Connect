@@ -2,6 +2,13 @@
 ## Preview Test: Self Test Derivatives
 ##ENDDESCRIPTION
 
+##KEYWORDS('multiple choice', 'tangent', 'parallel', 'hyperbola')
+
+## DBsubject('220 Self Test')
+## DBchapter('Derivatives')
+## DBsection('Parallel')
+## Date('6/28/2017')
+## Institution('University of British Columbia')
 ## Problem2
 
 ########################################################################
@@ -24,17 +31,11 @@ $mc = RadioButtons(
 "At least two of the above",
  "None of the above" ]
     , "At least two of the above"
-    ,last => [ "\( (2, 6) \)", 
-"\( (-2, -6) \)", 
-"\( (2, -6) \)", 
-"\( (-2, 6) \)", 
-"At least two of the above",
- "None of the above" ]
-    ,labels => "ABCDEF" );
+    ,labels => "ABCD" );
 
 BEGIN_TEXT
 At what point(s) on the hyperbola \(xy = 12\) is the tangent line parallel to \(3x + y = 0\)?
-$BR
+$PAR
 \{ $mc->buttons() \}
 
 END_TEXT

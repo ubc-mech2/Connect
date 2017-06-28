@@ -2,6 +2,13 @@
 ## Preview Test: Self Test Derivatives
 ##ENDDESCRIPTION
 
+##KEYWORDS('multiple choice', 'df', 'dt')
+
+## DBsubject('220 Self Test')
+## DBchapter('Derivatives')
+## DBsection('df/dt')
+## Date('6/28/2017')
+## Institution('University of British Columbia')
 ## Problem6
 
 ########################################################################
@@ -24,18 +31,13 @@ $mc = RadioButtons(
 "\( 0.707 \)", 
 "\( 1.414 \)" ]
     , "\( -0.353 \)"
-    ,last => [ "\( -0.353 \)", 
-"\( 0.353 \)", 
-"\( 0.5 \)", 
-"\( 0.707 \)", 
-"\( 1.414 \)" ]
-    ,labels => "ABCDE" );
+    ,labels => "ABCD" );
 
 Context("Fraction");
 
 BEGIN_TEXT
 If \( f(t) = t^\frac{1}{2} (1 - t) \), find \(\frac{df}{dt}\) at \(t = 0.5\)
-$BR
+$PAR
 \{ $mc->buttons() \}
 
 END_TEXT

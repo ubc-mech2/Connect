@@ -2,6 +2,13 @@
 ## Preview Test: Self Test Derivatives
 ##ENDDESCRIPTION
 
+##KEYWORDS('multiple choice', 'polynomial', 'function', 'axis', 'tangent')
+
+## DBsubject('220 Self Test')
+## DBchapter('Derivatives')
+## DBsection('Polynomial Functions')
+## Date('6/28/2017')
+## Institution('University of British Columbia')
 ## Problem7
 
 ########################################################################
@@ -25,21 +32,15 @@ $mc = RadioButtons(
 "\( a = -2, b = -2, c = -2, d = 2 \)",
 "\( a = 2, b = -2, c = -2, d = 2 \)" ]
     , "\( a = 2, b = -5, c = 2, d = 2 \)"
-    ,last => [ "\( a = 2, b = 2, c = 2, d = 2 \)", 
-"\( a = 2, b = -2, c = 2, d = 2 \)", 
-"\( a = 5, b = -2, c = 2, d = 2 \)", 
-"\( a = 2, b = -5, c = 2, d = 2 \)", 
-"\( a = -2, b = -2, c = -2, d = 2 \)",
-"\( a = 2, b = -2, c = -2, d = 2 \)" ]
-    ,labels => "ABCDEF" );
+    ,labels => "ABCD" );
 
 Context("Fraction");
 
 BEGIN_TEXT
 Two polynomial functions are shown below. \(y_2\) crosses the x-axis at \(-1\) and the y-axis at \(+2\). The two functions are equal and are tangent at \(x = +1\). What are the values of \(a\), \(b\), \(c\), and \(d\)?
-$BR
+$PAR
 \{ image( "imagename.png", width=>150, height=>150 ) \}
-$BR
+$PAR
 \{ $mc->buttons() \}
 
 END_TEXT
