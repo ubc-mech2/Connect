@@ -2,6 +2,13 @@
 ## Preview Test: Self Test - Kinematics 2
 ##ENDDESCRIPTION
 
+##KEYWORDS('multiple choice', 'rocket', 'angle', 'speed', 'elevation')
+
+## DBsubject('220 Self Test')
+## DBchapter('Kinematics')
+## DBsection('Velocity')
+## Date('6/28/2017')
+## Institution('University of British Columbia')
 ## Problem9
 
 ########################################################################
@@ -16,25 +23,19 @@ loadMacros(
    "parserRadioButtons.pl",
    "contextFraction.pl"
 );
-$deg = "".sprintf("%c",0xb0);
+
 $mc = RadioButtons(
-[ "\( 151 m/s \)", 
-"\( 205 m/s \)", 
-"\( 306 m/s \)", 
-"\( 325 m/s \)", 
-"\( 341 m/s \)" ]
-    , "\( 306 m/s \)"
-    ,last => 
-[ "\( 151 m/s \)", 
-"\( 205 m/s \)", 
-"\( 306 m/s \)", 
-"\( 325 m/s \)", 
-"\( 341 m/s \)" ]
-    ,labels => "ABCDE" );
+[ "\( 151\) \( m/s \)", 
+"\( 205\) \( m/s \)", 
+"\( 306\) \( m/s \)", 
+"\( 325\) \( m/s \)", 
+"\( 341\) \( m/s \)" ]
+    , "\( 306\) \( m/s \)"
+    ,labels => "ABCD" );
 
 BEGIN_TEXT
-For the rocket in question 9, when the rocket is at point \(P\), the angle of elevation is \(\theta = 47.0\)$deg. At a time of \(0.5 s\) later, the angle is \(\theta = 48.0\)$deg. Knowing that \(b = 4 km\), determine approximately the speed of the rocket during the \(0.5\) second interval.
-$BR
+For the rocket in question 9, when the rocket is at point \(P\), the angle of elevation is \(\theta = 47.0^{\circ}\). At a time of \(0.5\) \(s\) later, the angle is \(\theta = 48.0^{\circ}\). Knowing that \(b = 4\) \(km\), determine approximately the speed of the rocket during the \(0.5\) second interval.
+$PAR
 \{ $mc->buttons() \}
 
 END_TEXT

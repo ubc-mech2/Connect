@@ -2,6 +2,13 @@
 ## Preview Test: Self Test - Kinematics 2
 ##ENDDESCRIPTION
 
+##KEYWORDS('multiple choice', 'rotation', 'arm', 'collar', 'velocity')
+
+## DBsubject('220 Self Test')
+## DBchapter('Kinematics')
+## DBsection('Rotation')
+## Date('6/28/2017')
+## Institution('University of British Columbia')
 ## Problem5
 
 ########################################################################
@@ -18,28 +25,21 @@ loadMacros(
 );
 
 $mc = RadioButtons(
-[ "\( (-0.449e_r + 0.270e_\theta) m/s \)", 
-"\( (0.449e_r - 0.270e_\theta) m/s \)", 
-"\( (0.270e_r - 0.449e_\theta) m/s \)", 
-"\( (-3.39e_r - 97.9e_\theta) m/s \)", 
-"\( (-3.39e_r + 97.9e_\theta) m/s \)", 
-"\( (3.39e_r + 97.9e_\theta) m/s \)" ]
-    , "\( (-0.449e_r + 0.270e_\theta) m/s \)"
-    ,last => 
-[ "\( (-0.449e_r + 0.270e_\theta) m/s \)", 
-"\( (0.449e_r - 0.270e_\theta) m/s \)", 
-"\( (0.270e_r - 0.449e_\theta) m/s \)", 
-"\( (-3.39e_r - 97.9e_\theta) m/s \)", 
-"\( (-3.39e_r + 97.9e_\theta) m/s \)", 
-"\( (3.39e_r + 97.9e_\theta) m/s \)" ]
-    ,labels => "ABCDEF" );
+[ "\( (-0.449e_r + 0.270e_\theta) \) \( m/s \)", 
+"\( (0.449e_r - 0.270e_\theta) \) \(m/s \)", 
+"\( (0.270e_r - 0.449e_\theta) \) \(m/s \)", 
+"\( (-3.39e_r - 97.9e_\theta) \) \(m/s \)", 
+"\( (-3.39e_r + 97.9e_\theta) \) \(m/s \)", 
+"\( (3.39e_r + 97.9e_\theta) \) \(m/s \)" ]
+    , "\( (-0.449e_r + 0.270e_\theta) \) \( m/s \)"
+    ,labels => "ABCD" );
 
 BEGIN_TEXT
 
-The rotation of the \(0.9 m\) arm OA about O is defined by the relation \(\theta = 0.15t^2\), where \(\theta\) is expressed in radians and \(t\) in seconds. Collar B slides along the arm in such a way that its distance to O is \(r = 0.9 - 0.12t^2\), where \(r\) is expressed in meters and \(t\) in seconds. After the arm OA has rotated through 30 degrees, determine the total velocity of the collar.
-$BR
+The rotation of the \(0.9 m\) arm \(OA\) about \(O\) is defined by the relation \(\theta = 0.15t^2\), where \(\theta\) is expressed in radians and \(t\) in seconds. Collar \(B\) slides along the arm in such a way that its distance to \(O\) is \(r = 0.9 - 0.12t^2\), where \(r\) is expressed in meters and \(t\) in seconds. After the arm \(OA\) has rotated through \(30\) degrees, determine the total velocity of the collar.
+$PAR
 \{ image( "imagename.png", width=>150, height=>150 ) \}
-$BR
+$PAR
 \{ $mc->buttons() \}
 
 END_TEXT

@@ -2,6 +2,13 @@
 ## Preview Test: Self Test - Kinematics 2
 ##ENDDESCRIPTION
 
+##KEYWORDS('multiple choice', 'rocket', 'vertically', 'velocity')
+
+## DBsubject('220 Self Test')
+## DBchapter('Kinematics')
+## DBsection('Velocity')
+## Date('6/28/2017')
+## Institution('University of British Columbia')
 ## Problem8
 
 ########################################################################
@@ -20,23 +27,16 @@ loadMacros(
 $mc = RadioButtons(
 [ "\( v = b \cos \theta \)", 
 "\( v = b \cos^2 \theta \)", 
-"\( v = b \cos^2 \theta d\theta/dt \)", 
+"\( v = b \cos^2 \theta \dot\theta \)", 
 "\( v = b \sec \theta \)", 
-"\( v = b \sec \theta d\theta/dt \)", 
-"\( v = b \sec^2 \theta d\theta/dt \)" ]
-    , "\( v = b \sec \theta d\theta/dt \)"
-    ,last => 
-[ "\( v = b \cos \theta \)", 
-"\( v = b \cos^2 \theta \)", 
-"\( v = b \cos^2 \theta d\theta/dt \)", 
-"\( v = b \sec \theta \)", 
-"\( v = b \sec \theta d\theta/dt \)", 
-"\( v = b \sec^2 \theta d\theta/dt \)" ]
-    ,labels => "ABCDEF" );
+"\( v = b \sec \theta \dot\theta \)", 
+"\( v = b \sec^2 \theta \dot\theta \)" ]
+    , "\( v = b \sec^2 \theta \dot\theta \)"
+    ,labels => "ABCD" );
 
 BEGIN_TEXT
 A rocket is fired vertically from a launch pad  \(B\). Its flight is tracked by radar from point \(A\). Determine the velocity of the rocket in terms of \(b\), \(\theta\), and \(d\theta/dt\).
-$BR
+$PAR
 \{ $mc->buttons() \}
 
 END_TEXT

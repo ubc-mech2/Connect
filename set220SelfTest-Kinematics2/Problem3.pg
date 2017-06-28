@@ -2,6 +2,13 @@
 ## Preview Test: Self Test - Kinematics 2
 ##ENDDESCRIPTION
 
+##KEYWORDS('multiple choice', 'projectile', 'angle', 'distance', 'velocity')
+
+## DBsubject('220 Self Test')
+## DBchapter('Kinematics')
+## DBsection('Distance')
+## Date('6/28/2017')
+## Institution('University of British Columbia')
 ## Problem3
 
 ########################################################################
@@ -18,26 +25,19 @@ loadMacros(
 );
 
 $mc = RadioButtons(
-[ "\( 19.91 m \)", 
-"\( 155.9 m \)", 
-"\( 260 m \)", 
-"\( 1791 m \)", 
-"\( 3100 m \)",
-"\( 6200 m \)" ]
-    , "\( 3100 m \)"
-    ,last => 
-[ "\( 19.91 m \)", 
-"\( 155.9 m \)", 
-"\( 260 m \)", 
-"\( 1791 m \)", 
-"\( 3100 m \)",
-"\( 6200 m \)" ]
-    ,labels => "ABCDEF" );
+[ "\( 19.91\) \(m \)", 
+"\( 155.9\) \(m \)", 
+"\( 260\) \(m \)", 
+"\( 1791\) \(m \)", 
+"\( 3100\) \(m \)",
+"\( 6200\) \(m \)" ]
+    , "\( 3100\) \(m \)"
+    ,labels => "ABCD" );
 
 BEGIN_TEXT
 
-A projectile is fired from the edge of a \(150 m\) cliff. The initial projectile velocity is \(180 m/s\) and the angle is \(30\) degrees above horizontal. Find the horizontal distance from the launch point to where the projectile strikes the ground.
-$BR
+A projectile is fired from the edge of a \(150\) \(m\) cliff. The initial projectile velocity is \(180\) \(m/s\) and the angle is \(30\) degrees above horizontal. Find the horizontal distance from the launch point to where the projectile strikes the ground.
+$PAR
 \{ $mc->buttons() \}
 
 END_TEXT
