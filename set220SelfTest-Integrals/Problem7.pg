@@ -2,6 +2,13 @@
 ## Preview Test: Self Test - Integrals
 ##ENDDESCRIPTION
 
+##KEYWORDS('multiple choice', 'solid', 'revolution', 'surface area')
+
+## DBsubject('220 Self Test')
+## DBchapter('Integrals')
+## DBsection('Solid of Revolution')
+## Date('6/28/2017')
+## Institution('University of British Columbia')
 ## Problem7
 
 ########################################################################
@@ -34,11 +41,11 @@ $mc = RadioButtons(
 "\( 3.89 \)", 
 "\( 4.08 \)",
 "\( 5.12 \)" ]
-    ,labels => "ABCDEF" );
+    ,labels => "ABCD" );
 
 BEGIN_TEXT
 What is the surface area of the curved sides of the solid of revolution from problem 5? (i.e. do not include the area of the upper surface)
-$BR
+$PAR
 \{ $mc->buttons() \}
 
 END_TEXT

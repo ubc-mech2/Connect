@@ -2,7 +2,14 @@
 ## Preview Test: Self Test - Integrals
 ##ENDDESCRIPTION
 
-## Problem2
+##KEYWORDS('multiple choice', 'integral', 'cos')
+
+## DBsubject('220 Self Test')
+## DBchapter('Integrals')
+## DBsection('Product Rule')
+## Date('6/28/2017')
+## Institution('University of British Columbia')
+## Problem3
 
 ########################################################################
 
@@ -25,18 +32,11 @@ $mc = RadioButtons(
 "\( x^2\sin(x) + C \)",
 "\( -x^2\sin(x) + C \)" ]
     , "\( x\sin(x) + cos(x) + C \)"
-    ,last => 
-[ "\( -x\sin(x) + C \)", 
-"\( x\sin(x) + C \)", 
-"\( x\sin(x) + cos(x) + C \)", 
-"\( x\sin(x) - cos(x) + C \)", 
-"\( x^2\sin(x) + C \)",
-"\( -x^2\sin(x) + C \)" ]
-    ,labels => "ABCDEF" );
+    ,labels => "ABCD" );
 
 BEGIN_TEXT
 What is the integral of \(y(x) = x\cos(x)\)?
-$BR
+$PAR
 \{ $mc->buttons() \}
 
 END_TEXT

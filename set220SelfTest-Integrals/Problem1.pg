@@ -2,6 +2,13 @@
 ## Preview Test: Self Test - Integrals
 ##ENDDESCRIPTION
 
+##KEYWORDS('multiple choice', 'integral', 'bounds')
+
+## DBsubject('220 Self Test')
+## DBchapter('Integrals')
+## DBsection('Bounds')
+## Date('6/28/2017')
+## Institution('University of British Columbia')
 ## Problem1
 
 ########################################################################
@@ -32,11 +39,11 @@ $mc = RadioButtons(
 "\( 4 \)", 
 "\( 5 \)",
 "\( 6 \)" ]
-    ,labels => "ABCDE" );
+    ,labels => "ABCD" );
 
 BEGIN_TEXT
 What is the integral of \(y(x) = 8x^3 - 12x^2 + 14x\) evaluated between \(x = 0\) and \(x = 1\)?
-$BR
+$PAR
 \{ $mc->buttons() \}
 
 END_TEXT
