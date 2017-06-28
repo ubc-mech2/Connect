@@ -2,7 +2,14 @@
 ## Preview Test: Self Test Free Body Diagrams 1
 ##ENDDESCRIPTION
 
-## Problem5
+##KEYWORDS('multiple choice', 'block', 'force', 'incline')
+
+## DBsubject('220 Self Test')
+## DBchapter('Free Body Diagrams 1')
+## DBsection('Incline')
+## Date('6/28/2017')
+## Institution('University of British Columbia')
+## Problem6
 
 ########################################################################
 
@@ -18,26 +25,20 @@ loadMacros(
 );
 
 $mc = RadioButtons(
-    [ "\( 52.5 N \)", 
-"\( 97.2 N \)", 
-"\( 124.7 N \)", 
-"\( 233 N \)", 
-"\( 304 N \)",
-"\( 337 N \)" ]
-    , "\( 52.5 N \)"
-    ,last => [ "\( 52.5 N \)", 
-"\( 97.2 N \)", 
-"\( 124.7 N \)", 
-"\( 233 N \)", 
-"\( 304 N \)",
-"\( 337 N \)" ]
-    ,labels => "ABCDEF" );
+    [ "\( 52.5\) \(N \)", 
+"\( 97.2\) \(N \)", 
+"\( 124.7\) \(N \)", 
+"\( 233\) \(N \)", 
+"\( 304\) \(N \)",
+"\( 337\) \(N \)" ]
+    , "\( 52.5\) \(N \)"
+    ,labels => "ABCD" );
 
 BEGIN_TEXT
 Considering the same system from Question 4 (\( \mu_s = 0.25\) and \( \mu_k = 0.20\)), determine the force \(P\) required to prevent the block from sliding down the incline.
-$BR
-\{ image( "4.png", width=>150, height=>150 \}
-$BR
+$PAR
+\{ image( "4.png", width=>150, height=>150) \}
+$PAR
 \{ $mc->buttons() \}
 
 END_TEXT

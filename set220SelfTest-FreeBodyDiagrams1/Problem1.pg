@@ -2,6 +2,13 @@
 ## Preview Test: Self Test Free Body Diagrams 1
 ##ENDDESCRIPTION
 
+##KEYWORDS('multiple choice', 'tension', 'cable')
+
+## DBsubject('220 Self Test')
+## DBchapter('Free Body Diagrams 1')
+## DBsection('Tension')
+## Date('6/28/2017')
+## Institution('University of British Columbia')
 ## Problem1
 
 ########################################################################
@@ -17,27 +24,20 @@ loadMacros(
    "contextFraction.pl"
 );
 
-$deg = "".sprintf("%c",0xb0); # symbol for degrees
-
 $mc = RadioButtons(
-    [ "\(7.17 N\)", 
-"\(56.2 N\)", 
-"\(70.4 N\)", 
-"\(81.6 N\)", 
-"\(98.1 N\)" ]
-    , "\(70.4 N\)"
-    ,last => [ "\(7.17 N\)", 
-"\(56.2 N\)", 
-"\(70.4 N\)", 
-"\(81.6 N\)", 
-"\(98.1 N\)" ]
-    ,labels => "ABCDE" );
+    [ "\(7.17\) \(N\)", 
+"\(56.2\) \(N\)", 
+"\(70.4\) \(N\)", 
+"\(81.6\) \(N\)", 
+"\(98.1\) \(N\)" ]
+    , "\(70.4\) \(N\)"
+    ,labels => "ABCD" );
 
 BEGIN_TEXT
-Given \(\alpha\) = 35, \(\beta\) = 45, and \(m = 10kg\), what is the tension in cable AC?
-$BR
-\{ image( "1.png", width=>150, height=>150 \}
-$BR
+Given \(\alpha = 35\), \(\beta = 45\), and \(m = 10\) \(kg\), what is the tension in cable \(AC\)?
+$PAR
+\{ image( "1.png", width=>150, height=>150) \}
+$PAR
 \{ $mc->buttons() \}
 
 END_TEXT

@@ -2,6 +2,13 @@
 ## Preview Test: Self Test Free Body Diagrams 1
 ##ENDDESCRIPTION
 
+##KEYWORDS('multiple choice', 'ring', 'force')
+
+## DBsubject('220 Self Test')
+## DBchapter('Free Body Diagrams 1')
+## DBsection('Tension')
+## Date('6/28/2017')
+## Institution('University of British Columbia')
 ## Problem2
 
 ########################################################################
@@ -18,24 +25,19 @@ loadMacros(
 );
 
 $mc = RadioButtons(
-    [ "\(404 N \)", 
-"\( 482 N \)", 
-"\( 575 N \)", 
-"\( 751 N \)", 
-"\( 981 N \)" ]
-    , "\( 575 N \)"
-    ,last => [ "\(404 N \)", 
-"\( 482 N \)", 
-"\( 575 N \)", 
-"\( 751 N \)", 
-"\( 981 N \)" ]
-    ,labels => "ABCDE" );
+    [ "\(404\) \(N \)", 
+"\( 482\) \(N \)", 
+"\( 575\) \(N \)", 
+"\( 751\) \(N \)", 
+"\( 981\) \(N \)" ]
+    , "\( 575\) \(N \)"
+    ,labels => "ABCD" );
 
 BEGIN_TEXT
-Given \(\alpha\) = 40, \(\beta\) = 50, and \(m = 100kg\), what is the maximum vertical force that the wall-mounted ring at \(B\) must support?
-$BR
-\{ image( "1.png", width=>150, height=>150 \}
-$BR
+Given \(\alpha = 40\), \(\beta = 50\), and \(m = 100\) \(kg\), what is the maximum vertical force that the wall-mounted ring at \(B\) must support?
+$PAR
+\{ image( "1.png", width=>150, height=>150) \}
+$PAR
 \{ $mc->buttons() \}
 
 END_TEXT
