@@ -2,7 +2,14 @@
 ## Preview Test: Self Test - Sketching functions
 ##ENDDESCRIPTION
 
-## Problem18
+##KEYWORDS('multiple choice', 'plot', 'function')
+
+## DBsubject('220 Self Test')
+## DBchapter('Sketching Functions')
+## DBsection('Equation')
+## Date('6/29/2017')
+## Institution('University of British Columbia')
+## Problem20
 
 ########################################################################
 
@@ -27,19 +34,13 @@ $mc = RadioButtons(
 "\( \frac{y^2}{4} - \frac{x^2}{1} = 1 \)", 
 "\( \frac{y^2}{4} - \frac{x^2}{4} = 1 \)" ]
     , "\( \frac{y^2}{4} - \frac{x^2}{4} = 1 \)" # correct answer
-    ,last => # indicate order of choices
-[ "\( \frac{x^2}{2} - \frac{y^2}{1} = 1 \)", 
-"\( \frac{x^2}{4} - \frac{y^2}{1} = 1 \)", 
-"\( \frac{x^2}{4} - \frac{y^2}{4} = 1 \)", 
-"\( \frac{y^2}{4} - \frac{x^2}{1} = 1 \)", 
-"\( \frac{y^2}{4} - \frac{x^2}{4} = 1 \)" ]
-    ,labels => "ABCDE" );
+    ,labels => "ABC" );
 
 BEGIN_TEXT
 Which function is described by the plot below?
-$BR 
+$PAR 
 \{ image( "imagename.png", width=>150, height=>150 ) \}
-$BR
+$PAR
 \{ $mc->buttons() \}
 
 

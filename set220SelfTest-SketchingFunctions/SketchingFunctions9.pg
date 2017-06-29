@@ -2,6 +2,13 @@
 ## Preview Test: Self Test - Sketching functions
 ##ENDDESCRIPTION
 
+##KEYWORDS('multiple choice', 'chart', 'function')
+
+## DBsubject('220 Self Test')
+## DBchapter('Sketching Functions')
+## DBsection('Equation')
+## Date('6/28/2017')
+## Institution('University of British Columbia')
 ## Problem9
 
 ########################################################################
@@ -33,22 +40,19 @@ $mc = RadioButtons(
 "C", 
 "D", 
 "None of the above" ]
-    ,labels => "ABCDE" );
+    ,labels => "ABC" );
 
 BEGIN_TEXT
 Which of the following charts represents the function \(y = \frac{x^3}{x^2+1}\)?
-$BR
+$PAR
 A: \{ image( "imagename.png", width=>150, height=>150 ) \}
-$BR
-$BR
+$PAR
 B: \{ image( "imagename.png", width=>150, height=>150 ) \}
-$BR
-$BR
+$PAR
 C: \{ image( "imagename.png", width=>150, height=>150 ) \}
-$BR
-$BR
+$PAR
 D: \{ image( "imagename.png", width=>150, height=>150 ) \}
-$BR$BR
+$PAR
 \{ $mc->buttons() \}
 
 

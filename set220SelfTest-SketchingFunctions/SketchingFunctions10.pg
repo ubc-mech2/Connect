@@ -2,6 +2,13 @@
 ## Preview Test: Self Test - Sketching functions
 ##ENDDESCRIPTION
 
+##KEYWORDS('multiple choice', 'plot', 'function')
+
+## DBsubject('220 Self Test')
+## DBchapter('Sketching Functions')
+## DBsection('Equation')
+## Date('6/29/2017')
+## Institution('University of British Columbia')
 ## Problem10
 
 ########################################################################
@@ -29,19 +36,15 @@ $mc = RadioButtons(
 "none of the above" ]
     , "\( y = 2 \cos(0.5x - 1) + 1 \)" # correct answer
     ,last => # indicate order of choices
-[ "\( y =0.5 \sin(2x - 1) + 1 \)", 
-"\( y = \sin(2x + 1) + 1 \)", 
-"\( y = 2 \sin(0.5x - 1) - 1 \)", 
-"\( y = 2 \cos(2x - 1) + 1 \)", 
-"\( y = 2 \cos(0.5x - 1) + 1 \)", 
+[
 "none of the above" ]
-    ,labels => "ABCDEF" );
+    ,labels => "ABC" );
 
 BEGIN_TEXT
 Which function is described by the plot below?
-$BR
+$PAR
 \{ image( "imagename.png", width=>150, height=>150 ) \}
-$BR
+$PAR
 \{ $mc->buttons() \}
 
 

@@ -2,7 +2,14 @@
 ## Preview Test: Self Test - Sketching functions
 ##ENDDESCRIPTION
 
-## Problem5
+##KEYWORDS('multiple choice', 'equation', 'function')
+
+## DBsubject('220 Self Test')
+## DBchapter('Sketching Functions')
+## DBsection('Equation')
+## Date('6/29/2017')
+## Institution('University of British Columbia')
+## Problem6
 
 ########################################################################
 
@@ -27,19 +34,13 @@ $mc = RadioButtons(
 "\( y = x^{\frac{1}{2}} \)", 
 "\( y = \frac{1}{x} \)" ]
     , "\( y = \frac{1}{x} \)" # correct answer
-    ,last => # indicate order of choices
-[ "\( y = e^x \)", 
-"\( y = ln(x) \)", 
-"\( y = x^2 \)", 
-"\( y = x^{\frac{1}{2}} \)", 
-"\( y = \frac{1}{x} \)" ]
-    ,labels => "ABCDE" );
+    ,labels => "ABC" );
 
 BEGIN_TEXT
 What is the equation for the function below?
-$BR
+$PAR
 \{ image( "imagename.png", width=>150, height=>150 ) \}
-$BR
+$PAR
 \{ $mc->buttons() \}
 
 END_TEXT

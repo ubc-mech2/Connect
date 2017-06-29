@@ -2,6 +2,13 @@
 ## Preview Test: Self Test - Sketching functions
 ##ENDDESCRIPTION
 
+##KEYWORDS('multiple choice', 'plot', 'function')
+
+## DBsubject('220 Self Test')
+## DBchapter('Sketching Functions')
+## DBsection('Equation')
+## Date('6/29/2017')
+## Institution('University of British Columbia')
 ## Problem18
 
 ########################################################################
@@ -27,19 +34,13 @@ $mc = RadioButtons(
 "\( \frac{x^2}{9} - \frac{y^2}{4} = 1 \)", 
 "\( \frac{x^2}{4} + \frac{y^2}{9} = 1 \)" ]
     , "\( \frac{x^2}{9} + \frac{y^2}{4} = 1 \)" # correct answer
-    ,last => # indicate order of choices
-[ "\( \frac{x^2}{3} + \frac{y^2}{2} = 1 \)", 
-"\( \frac{x^2}{3} - \frac{y^2}{2} = 1 \)", 
-"\( \frac{x^2}{9} + \frac{y^2}{4} = 1 \)", 
-"\( \frac{x^2}{9} - \frac{y^2}{4} = 1 \)", 
-"\( \frac{x^2}{4} + \frac{y^2}{9} = 1 \)" ]
-    ,labels => "ABCDE" );
+    ,labels => "ABC" );
 
 BEGIN_TEXT
 Which function is described by the plot below?
-$BR 
+$PAR 
 \{ image( "imagename.png", width=>150, height=>150 ) \}
-$BR
+$PAR
 \{ $mc->buttons() \}
 
 

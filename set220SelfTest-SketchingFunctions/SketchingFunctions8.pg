@@ -2,6 +2,13 @@
 ## Preview Test: Self Test - Sketching functions
 ##ENDDESCRIPTION
 
+##KEYWORDS('multiple choice', 'chart', 'function')
+
+## DBsubject('220 Self Test')
+## DBchapter('Sketching Functions')
+## DBsection('Equation')
+## Date('6/29/2017')
+## Institution('University of British Columbia')
 ## Problem8
 
 ########################################################################
@@ -29,19 +36,15 @@ $mc = RadioButtons(
 "None of the above" ]
     , "\( y = 5\frac{x^2 - 4x}{(x-5)^2} \)" # correct answer
     ,last => # indicate order of choices
-[ "\( y = \frac{x^2 - 4x}{(x-5)^2} \)", 
-"\( y = \frac{x^2 - 4x}{(x-5)} \)", 
-"\( y = 5\frac{x^2 - 4x}{(x+5)} \)", 
-"\( y = 5\frac{x^2 - 4x}{(x-5)} \)", 
-"\( y = 5\frac{x^2 - 4x}{(x-5)^2} \)",
+[
 "None of the above" ]
-    ,labels => "ABCDEF" );
+    ,labels => "ABC" );
 
 BEGIN_TEXT
 Which of the following functions represents the chart?
-$BR
+$PAR
 \{ image( "imagename.png", width=>150, height=>150 ) \}
-$BR
+$PAR
 \{ $mc->buttons() \}
 
 END_TEXT

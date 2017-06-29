@@ -2,6 +2,13 @@
 ## Preview Test: Self Test - Sketching functions
 ##ENDDESCRIPTION
 
+##KEYWORDS('multiple choice', 'plot', 'function')
+
+## DBsubject('220 Self Test')
+## DBchapter('Sketching Functions')
+## DBsection('Equation')
+## Date('6/29/2017')
+## Institution('University of British Columbia')
 ## Problem11
 
 ########################################################################
@@ -27,17 +34,13 @@ $mc = RadioButtons(
 "\( y = \frac{x^2}{\sqrt{x-2}} \)", 
 "\( y = \frac{x^3}{x+2} \)" ]
     , "\( y = \frac{x^2}{\sqrt{x+2}} \)" # correct answer
-    ,last => # indicate order of choices
-[ "\( y = \frac{x^2}{x+2} \)", 
-"\( y = \frac{x^2}{x-2} \)", 
-"\( y = \frac{x^2}{\sqrt{x+2}} \)", 
-"\( y = \frac{x^2}{\sqrt{x-2}} \)", 
-"\( y = \frac{x^3}{x+2} \)" ]
-    ,labels => "ABCDE" );
+    ,labels => "ABC" );
 
 BEGIN_TEXT
 Which function is described by the plot below?
-$BR 
+$PAR
+\{ image( "imagename.png" ) \}
+$PAR 
 \{ $mc->buttons() \}
 
 

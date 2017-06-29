@@ -2,6 +2,13 @@
 ## Preview Test: Self Test - Sketching functions
 ##ENDDESCRIPTION
 
+##KEYWORDS('multiple choice', 'plot', 'function')
+
+## DBsubject('220 Self Test')
+## DBchapter('Sketching Functions')
+## DBsection('Equation')
+## Date('6/29/2017')
+## Institution('University of British Columbia')
 ## Problem19
 
 ########################################################################
@@ -27,19 +34,13 @@ $mc = RadioButtons(
 "\( (x + 1)^2 + (y - 1)^2 = 3 \)", 
 "\( (x + 1)^2 + (y - 1)^2 = 9 \)" ]
     , "\( (x + 1)^2 + (y - 1)^2 = 9 \)" # correct answer
-    ,last => # indicate order of choices
-[ "\( x^2 + y^2 = 1 \)", 
-"\( (x^2 + 1) + (y^2 - 1) = 1 \)", 
-"\( (x + 1)^2 + (y - 1)^2 = 1 \)", 
-"\( (x + 1)^2 + (y - 1)^2 = 3 \)", 
-"\( (x + 1)^2 + (y - 1)^2 = 9 \)" ]
-    ,labels => "ABCDE" );
+    ,labels => "ABC" );
 
 BEGIN_TEXT
 Which function is described by the plot below?
-$BR 
+$PAR 
 \{ image( "imagename.png", width=>150, height=>150 ) \}
-$BR
+$PAR
 \{ $mc->buttons() \}
 
 
