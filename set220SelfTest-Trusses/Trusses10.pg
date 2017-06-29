@@ -2,6 +2,13 @@
 ## Preview Test: Self Test - Trusses
 ##ENDDESCRIPTION
 
+##KEYWORDS('multiple choice', 'force', 'structure', 'member')
+
+## DBsubject('220 Self Test')
+## DBchapter('Trusses')
+## DBsection('Force')
+## Date('6/29/2017')
+## Institution('University of British Columbia')
 ## Problem10
 
 ########################################################################
@@ -21,35 +28,24 @@ Context("Fraction");
 
 # Set up possible answers
 $mc = RadioButtons(
-[ "\( -80 kN \)", 
-"\( -51 kN \)", 
-"\( -48 kN \)", 
-"\( -45 kN \)", 
-"\( -19 kN \)",
-"\( 19 kN \)", 
-"\( 45 kN \)", 
-"\( 48 kN \)", 
-"\( 51 kN \)",
-"\( 80 kN \)", ]
-    , "\( 45 kN \)" # correct answer
-    ,last => # indicate order of choices
-[ "\( -80 kN \)", 
-"\( -51 kN \)", 
-"\( -48 kN \)", 
-"\( -45 kN \)", 
-"\( -19 kN \)",
-"\( 19 kN \)", 
-"\( 45 kN \)", 
-"\( 48 kN \)", 
-"\( 51 kN \)",
-"\( 80 kN \)", ]
-    ,labels => "ABCDE" );
+[ "\( -80\) \( kN \)", 
+"\( -51\) \( kN \)", 
+"\( -48\) \( kN \)", 
+"\( -45\) \( kN \)", 
+"\( -19\) \( kN \)",
+"\( 19\) \( kN \)", 
+"\( 45\) \( kN \)", 
+"\( 48\) \( kN \)", 
+"\( 51\) \( kN \)",
+"\( 80\) \( kN \)", ]
+    , "\( 45\) \( kN \)" # correct answer
+    ,labels => "ABC" );
 
 BEGIN_TEXT
 Continuing with Question 8, find the force in member CE. (by convention: positive indicates tension, negative indicates compression)
-$BR 
+$PAR 
 \{ image( "imagename.png", width=>150, height=>150 ) \}
-$BR
+$PAR
 \{ $mc->buttons() \}
 
 

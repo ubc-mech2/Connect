@@ -2,6 +2,13 @@
 ## Preview Test: Self Test - Trusses
 ##ENDDESCRIPTION
 
+##KEYWORDS('multiple choice', 'force', 'structure', 'member', 'link', 'reaction')
+
+## DBsubject('220 Self Test')
+## DBchapter('Trusses')
+## DBsection('Force')
+## Date('6/29/2017')
+## Institution('University of British Columbia')
 ## Problem7
 
 ########################################################################
@@ -21,29 +28,21 @@ Context("Fraction");
 
 # Set up possible answers
 $mc = RadioButtons(
-[ "\( (-5.40i - 2.25j) kN \)", 
-"\( (-5.40i + 2.25j) kN \)", 
-"\( (5.40i - 7.2j) kN \)", 
-"\( (5.40i - 9.4j) kN \)", 
-"\( (-2.25j) kN \)",
-"\( (-7.2j) kN \)", 
-"\( (-9.4j) kN \)" ]
-    , "\( (-9.4j) kN \)" # correct answer
-    ,last => # indicate order of choices
-[ "\( (-5.40i - 2.25j) kN \)", 
-"\( (-5.40i + 2.25j) kN \)", 
-"\( (5.40i - 7.2j) kN \)", 
-"\( (5.40i - 9.4j) kN \)", 
-"\( (-2.25j) kN \)",
-"\( (-7.2j) kN \)", 
-"\( (-9.4j) kN \)" ]
-    ,labels => "ABCDE" );
+[ "\( (-5.40i - 2.25j)\) \( kN \)", 
+"\( (-5.40i + 2.25j)\) \( kN \)", 
+"\( (5.40i - 7.2j)\) \( kN \)", 
+"\( (5.40i - 9.4j)\) \( kN \)", 
+"\( (-2.25j)\) \( kN \)",
+"\( (-7.2j)\) \( kN \)", 
+"\( (-9.4j)\) \( kN \)" ]
+    , "\( (-9.4j)\) \( kN \)" # correct answer
+    ,labels => "ABC" );
 
 BEGIN_TEXT
-Now imagine a link AC is added to the structure in Problems 3, 4, and 5 and pin joint C is now free to translate. What is the force in member BC in this case? (by convention: positive indicates tension, negative indicates compression)
-$BR 
+Now imagine a link \(AC\) is added to the structure in Problems 3, 4, and 5 and pin joint \(C\) is now free to translate. What is the force in member \(BC\) in this case? (by convention: positive indicates tension, negative indicates compression)
+$PAR 
 \{ image( "imagename.png", width=>150, height=>150 ) \}
-$BR
+$PAR
 \{ $mc->buttons() \}
 
 

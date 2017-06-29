@@ -2,6 +2,13 @@
 ## Preview Test: Self Test - Trusses
 ##ENDDESCRIPTION
 
+##KEYWORDS('multiple choice', 'internal', 'force', 'structure', 'member')
+
+## DBsubject('220 Self Test')
+## DBchapter('Trusses')
+## DBsection('Internal Force')
+## Date('6/29/2017')
+## Institution('University of British Columbia')
 ## Problem2
 
 ########################################################################
@@ -21,31 +28,22 @@ Context("Fraction");
 
 # Set up possible answers
 $mc = RadioButtons(
-[ "\( -4.46 kN \)", 
-"\( -4.06 kN \)", 
-"\( -3.04 kN \)", 
-"\( -2.39 kN \)", 
-"\( 2.39 kN \)",
-"\( 3.04 kN \)", 
-"\( 4.06 kN \)", 
-"\( 4.46 kN \)" ]
-    , "\( -2.39 kN \)" # correct answer
-    ,last => # indicate order of choices
-[ "\( -4.46 kN \)", 
-"\( -4.06 kN \)", 
-"\( -3.04 kN \)", 
-"\( -2.39 kN \)", 
-"\( 2.39 kN \)",
-"\( 3.04 kN \)", 
-"\( 4.06 kN \)", 
-"\( 4.46 kN \)" ]
-    ,labels => "ABCDE" );
+[ "\( -4.46\) \( kN \)", 
+"\( -4.06\) \( kN \)", 
+"\( -3.04\) \( kN \)", 
+"\( -2.39\) \( kN \)", 
+"\( 2.39\) \( kN \)",
+"\( 3.04\) \( kN \)", 
+"\( 4.06\) \( kN \)", 
+"\( 4.46\) \( kN \)" ]
+    , "\( -2.39\) \( kN \)" # correct answer
+    ,labels => "ABC" );
 
 BEGIN_TEXT
-Continuing with Problem 1, what is the force in member AC? (by convention: positive indicates tension, negative indicates compression)
-$BR 
+Continuing with Problem 1, what is the force in member \(AC\)? (by convention: positive indicates tension, negative indicates compression)
+$PAR 
 \{ image( "imagename.png", width=>150, height=>150 ) \}
-$BR
+$PAR
 \{ $mc->buttons() \}
 
 

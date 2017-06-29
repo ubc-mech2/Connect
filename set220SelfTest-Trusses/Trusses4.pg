@@ -2,6 +2,13 @@
 ## Preview Test: Self Test - Trusses
 ##ENDDESCRIPTION
 
+##KEYWORDS('multiple choice', 'force', 'structure', 'member', 'compression')
+
+## DBsubject('220 Self Test')
+## DBchapter('Trusses')
+## DBsection('Force')
+## Date('6/29/2017')
+## Institution('University of British Columbia')
 ## Problem4
 
 ########################################################################
@@ -21,29 +28,21 @@ Context("Fraction");
 
 # Set up possible answers
 $mc = RadioButtons(
-[ "\( -9.00 kN \)", 
-"\( -5.85 kN \)", 
-"\( -5.40 kN \)", 
-"\( 0 kN \)", 
-"\( 5.40 kN \)",
-"\( 5.85 kN \)", 
-"\( 9.00 kN \)" ]
-    , "\( -5.85 kN \)" # correct answer
-    ,last => # indicate order of choices
-[ "\( -9.00 kN \)", 
-"\( -5.85 kN \)", 
-"\( -5.40 kN \)", 
-"\( 0 kN \)", 
-"\( 5.40 kN \)",
-"\( 5.85 kN \)", 
-"\( 9.00 kN \)" ]
-    ,labels => "ABCDE" );
+[ "\( -9.00\) \( kN \)", 
+"\( -5.85\) \( kN \)", 
+"\( -5.40\) \( kN \)", 
+"\( 0\) \( kN \)", 
+"\( 5.40\) \( kN \)",
+"\( 5.85\) \( kN \)", 
+"\( 9.00\) \( kN \)" ]
+    , "\( -5.85\) \( kN \)" # correct answer
+    ,labels => "ABC" );
 
 BEGIN_TEXT
-Continuing with Problem 3, what is the force in member BC? (by convention: positive indicates tension, negative indicates compression)
-$BR 
+Continuing with Problem 3, what is the force in member \(BC\)? (by convention: positive indicates tension, negative indicates compression)
+$PAR 
 \{ image( "imagename.png", width=>150, height=>150 ) \}
-$BR
+$PAR
 \{ $mc->buttons() \}
 
 
