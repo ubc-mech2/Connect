@@ -1,8 +1,15 @@
 ##DESCRIPTION
 ## 221 Prelab 1 Tensile Testing
-## Question Set 1 - 4
 ##ENDDESCRIPTION
 
+##KEYWORDS('multiple choice', 'ultimate', 'stress')
+
+## DBsubject('221 Prelab Quizzes')
+## DBchapter('Prelab 1)
+## DBsection('Tensile Testing')
+## Date('7/5/2017')
+## Institution('University of British Columbia')
+## Question Set 1 - 4
 ## Problem10
 
 ########################################################################
@@ -26,11 +33,11 @@ $mc = RadioButtons( # Set up possible options
 "maximum stress before permanent deformation begins" 
 ]
 ,"maximum stress that can be applied to the specimen", # correct option
-labels => "ABCD" );
+labels => "ABC" );
 
 BEGIN_TEXT
 What can be said about ultimate stress?
-$BR
+$PAR
 \{ $mc->buttons() \}
 
 END_TEXT

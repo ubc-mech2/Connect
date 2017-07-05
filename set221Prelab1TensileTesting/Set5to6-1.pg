@@ -1,8 +1,15 @@
 ##DESCRIPTION
 ## 221 Prelab 1 Tensile Testing
-## Question Set 5 - 6
 ##ENDDESCRIPTION
 
+##KEYWORDS('multiple choice', 'cylindrical', 'material')
+
+## DBsubject('221 Prelab Quizzes')
+## DBchapter('Prelab 1)
+## DBsection('Tensile Testing')
+## Date('7/5/2017')
+## Institution('University of British Columbia')
+## Question Set 5 - 6
 ## Problem1
 
 ########################################################################
@@ -20,24 +27,17 @@ loadMacros(
 
 $mc = RadioButtons( # Set up possible options
 [
-"\( 1.74cm \)", 
-"\( 3.51cm \)", 
-"\( 5.20cm \)", 
-"\( 8.23cm \)" 
+"\( 1.74\) \(cm \)", 
+"\( 3.51\) \(cm \)", 
+"\( 5.20\) \(cm \)", 
+"\( 8.23\) \(cm \)" 
 ]
-,"\( 5.20cm \)", # correct option
-last => # set up order in which options will be displayed
-[
-"\( 1.74cm \)", 
-"\( 3.51cm \)", 
-"\( 5.20cm \)", 
-"\( 8.23cm \)" 
-]
-,labels => "ABCD" );
+,"\( 5.20\) \(cm \)", # correct option
+labels => "ABC" );
 
 BEGIN_TEXT
-A cylindrical specimen \(5.81cm\) long stretches to \(8.23cm\) when subjected to \(34ksi\) stress. When another specimen of the same material but \(3.67cm\) long is subjected to \(34ksi\) stress what is its length?
-$BR
+A cylindrical specimen \(5.81\) \(cm\) long stretches to \(8.23\) \(cm\) when subjected to \(34\) \(ksi\) stress. When another specimen of the same material but \(3.67\) \(cm\) long is subjected to \(34\) \(ksi\) stress what is its length?
+$PAR
 \{ $mc->buttons() \}
 
 END_TEXT
