@@ -2,6 +2,13 @@
 ## Preview Test: Mech 220 Practice Review Quiz
 ##ENDDESCRIPTION
 
+##KEYWORDS('multiple choice', 'force', 'coordinate')
+
+## DBsubject('220 Self Test')
+## DBchapter('Practice Quiz')
+## DBsection('Coordinates')
+## Date('7/5/2017')
+## Institution('University of British Columbia')
 ## Problem26
 
 ########################################################################
@@ -33,20 +40,20 @@ $mc = RadioButtons(
 	"C", 
 	"D", 
 	"E" ]
-         ,labels => "ABCDE" );
+         ,labels => "ABC" );
 
 Context()->texStrings;
 BEGIN_TEXT
-\{ image( "26.png", width=>150, height=>150 \}
-$BR
-Consider the figure above. Force f is measured as \($v\) N in the u,v coordinate frame. What is Force f in the x,y coordinate frame?
-$BR
+\{ image( "26.png", width=>150, height=>150) \}
+$PAR
+Consider the figure above. Force \(f\) is measured as \($v\) N in the u,v coordinate frame. What is Force \(f\) in the x,y coordinate frame?
+$PAR
 
-A: \{ image( "26a.png", width=>150, height=>150 \} $BR
-B: \{ image( "26b.png", width=>150, height=>150 \} $BR
-C: \{ image( "26c.png", width=>150, height=>150 \} $BR
-D: \{ image( "26d.png", width=>150, height=>150 \} $BR
-E: \{ image( "26e.png", width=>150, height=>150 \} $BR
+A: \{ image( "26a.png", width=>150, height=>150) \} $PAR
+B: \{ image( "26b.png", width=>150, height=>150) \} $PAR
+C: \{ image( "26c.png", width=>150, height=>150) \} $PAR
+D: \{ image( "26d.png", width=>150, height=>150) \} $PAR
+E: \{ image( "26e.png", width=>150, height=>150) \} $PAR
 \{ $mc->buttons() \}
 
 END_TEXT

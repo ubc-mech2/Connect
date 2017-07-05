@@ -2,6 +2,13 @@
 ## Preview Test: Mech 220 Practice Review Quiz
 ##ENDDESCRIPTION
 
+##KEYWORDS('multiple choice', 'position', 'function', 'time', 'dropped', 'coordinate')
+
+## DBsubject('220 Self Test')
+## DBchapter('Practice Quiz')
+## DBsection('Kinematics')
+## Date('7/5/2017')
+## Institution('University of British Columbia')
 ## Problem15
 
 ########################################################################
@@ -20,13 +27,11 @@ $mc = RadioButtons(
     [ "\( p=[(500-(1/2)9.81t^2)j]m \)","\( p=[(50t)i + (500+25t-(1/2)9.81t^2)j]m \)","\( p=[(25\sqrt3t)i+(500+25t-(1/2)9.81t^2)j]m \)","\( p=[(25\sqrt3t)i+(500-(1/2)9.81t^2)j]m \)","\( p=[(25\sqrt3t)i +
  (500-25t-(1/2)9.81t^2)j]m \)" ]
     , "\( p=[(25\sqrt3t)i+(500+25t-(1/2)9.81t^2)j]m \)"
-    ,last =>  [ "\( p=[(500-(1/2)9.81t^2)j]m \)","\( p=[(50t)i + (500+25t-(1/2)9.81t^2)j]m \)","\( p=[(25\sqrt3t)i+(500+25t-(1/2)9.81t^2)j]m \)","\( p=[(25\sqrt3t)i+(500-(1/2)9.81t^2)j]m \)","\( p=[(25\sqrt3t)i +
- (500-25t-(1/2)9.81t^2)j]m \)" ]
-    ,labels => "ABCDE" );
+    ,labels => "ABC" );
 
 BEGIN_TEXT
 Referring again to Question 13, what is the position of the package as a function of time starting from the instant that the package is dropped, and with reference to a coordinate frame located directly below the plane on the ground (as shown)? 
-$BR
+$PAR
 \{ $mc->buttons() \}
 
 END_TEXT

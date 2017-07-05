@@ -2,6 +2,13 @@
 ## Preview Test: Mech 220 Practice Review Quiz
 ##ENDDESCRIPTION
 
+##KEYWORDS('multiple choice', 'coordinates', 'degrees', 'football')
+
+## DBsubject('220 Self Test')
+## DBchapter('Practice Quiz')
+## DBsection('Kinematics')
+## Date('7/5/2017')
+## Institution('University of British Columbia')
 ## Problem4
 
 ########################################################################
@@ -19,16 +26,14 @@ loadMacros(
 $mc = RadioButtons(
     [ "\((57.6, 31.0)\)", "\((56.5, 35.1)\)", "\((2.6, -1.5)\)", "\((81.0, 18.9)\)", "\((70.0, 6.5)\)" ]
     , "\((57.6, 31.0)\)",
-    last => [ "\((57.6, 31.0)\)", "\((56.5, 35.1)\)", "\((2.6, -1.5)\)", "\((81.0, 18.9)\)", "\((70.0, 6.5)\)" ]
-    ,
-    labels => "ABCDE" );
+    labels => "ABC" );
 
 BEGIN_TEXT
 
 A Canadian football field is exactly \(110\) yards long and \(65\) yards wide. A quarterback stands in the exact middle of field and faces directly towards the end zone in the right side of the diagram below. He then turns \(30\) degrees to the right and throws a ball with at a horizontal velocity of \(15\) yards per second. Neglecting air friction, what are the \(x\) and \(y\) coordinates (in yards) of the football \(0.2\) seconds after being released?
-$BR
-\{ image( "imagename.png", width=>150, height=>150 \}
-$BR
+$PAR
+\{ image( "imagename.png", width=>150, height=>150) \}
+$PAR
 \{ $mc->buttons() \}
 
 END_TEXT

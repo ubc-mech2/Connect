@@ -2,6 +2,13 @@
 ## Preview Test: Mech 220 Practice Review Quiz
 ##ENDDESCRIPTION
 
+##KEYWORDS('multiple choice', 'square', 'root')
+
+## DBsubject('220 Self Test')
+## DBchapter('Practice Quiz')
+## DBsection('Mathematics')
+## Date('7/5/2017')
+## Institution('University of British Columbia')
 ## Problem17
 
 ########################################################################
@@ -14,18 +21,20 @@ loadMacros(
    #"source.pl",        # allows code to be displayed on certain sites.
    #"PGcourse.pl",      # Customization file for the course
    "parserRadioButtons.pl",
+   "contextFraction.pl"
 );
 
+Context("Fraction");
+
 $mc = RadioButtons(
-    [ "\( -i \)", "\( -1 \)", "\( (1/\sqrt2)(1+i) \)", "\( (1-i) \)", "Does not exist" ]
-    , "\( (1/\sqrt2)(1+i) \)"
-    ,last => [ "\( -i \)", "\( -1 \)", "\( (1/\sqrt2)(1+i) \)", "\( (1-i) \)", "Does not exist" ]
-    ,labels => "ABCDE" );
+    [ "\( -i \)", "\( -1 \)", "\( \frac{1}{\sqrt2}(1+i) \)", "\( (1-i) \)", "Does not exist" ]
+    , "\( \frac{1}{\sqrt2}(1+i) \)"
+    ,labels => "ABC" );
 
 BEGIN_TEXT
 
 What is the square root of i? (That is, what is \( \sqrt i\)?)
-$BR
+$PAR
 \{ $mc->buttons() \}
 
 END_TEXT

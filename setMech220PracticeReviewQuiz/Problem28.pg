@@ -2,6 +2,13 @@
 ## Preview Test: Mech 220 Practice Review Quiz
 ##ENDDESCRIPTION
 
+##KEYWORDS('multiple choice', 'midpoint', 'ladder', 'instantaneous', 'speed', 'velocity')
+
+## DBsubject('220 Self Test')
+## DBchapter('Practice Quiz')
+## DBsection('Kinematics')
+## Date('7/5/2017')
+## Institution('University of British Columbia')
 ## Problem28
 
 ########################################################################
@@ -18,26 +25,21 @@ loadMacros(
 );
 
 $mc = RadioButtons(
-    [ "\( 0 m/s \)", 
-	"\( 1.5 m/s \)", 
-	"\( 2.5 m/s \)", 
-	"\( 3 m/s \)", 
-	"\( 4 m/s \)" ]
-       ,"\( 2.5 m/s \)",
-    last => [ "\( 0 m/s \)", 
-	"\( 1.5 m/s \)", 
-	"\( 2.5 m/s \)", 
-	"\( 3 m/s \)", 
-	"\( 4 m/s \)" ]
-         ,labels => "ABCDE" );
+    [ "\( 0\) \(m/s \)", 
+	"\( 1.5\) \(m/s \)", 
+	"\( 2.5\) \(m/s \)", 
+	"\( 3\) \(m/s \)", 
+	"\( 4\) \(m/s \)" ]
+       ,"\( 2.5\) \(m/s \)",
+         ,labels => "ABC" );
 
 BEGIN_TEXT
 The diagram below shows a ladder sliding down a wall. 
-$BR
-\{ image( "28.png", width=>150, height=>150 \}
-$BR
-The point D is at the midpoint of the ladder. The instantaneous velocity at A is \(4 m/s\). What is the instantaneous speed at D?
-$BR
+$PAR
+\{ image( "28.png", width=>150, height=>150) \}
+$PAR
+The point D is at the midpoint of the ladder. The instantaneous velocity at A is \(4\) \(m/s\). What is the instantaneous speed at D?
+$PAR
 \{ $mc->buttons() \}
 
 END_TEXT

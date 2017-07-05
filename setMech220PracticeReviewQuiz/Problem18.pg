@@ -2,7 +2,14 @@
 ## 220 Self Test - Constraints
 ##ENDDESCRIPTION
 
-## Problem1
+##KEYWORDS('multiple choice', 'vector', 'orthogonal')
+
+## DBsubject('220 Self Test')
+## DBchapter('Practice Quiz')
+## DBsection('Vectors')
+## Date('7/5/2017')
+## Institution('University of British Columbia')
+## Problem18
 
 ########################################################################
 
@@ -31,25 +38,25 @@ $mc = RadioButtons(
 	"D", 
 	"E",
         "F" ]
-         ,labels => "ABCDEF" );
+         ,labels => "ABC" );
 
 BEGIN_TEXT
-\{ image( "18.png", width=>150, height=>150 \}
-$BR
+\{ image( "18.png", width=>150, height=>150) \}
+$PAR
 From the list below, select the vector that is NOT orthogonal (perpendicular) to the vector shown above:
-$BR
-\{ image( "A.png", width=>150, height=>150 \}
-$BR
-\{ image( "B.png", width=>150, height=>150 \}
-$BR
-\{ image( "C.png", width=>150, height=>150 \}
-$BR
-\{ image( "D.png", width=>150, height=>150 \}
-$BR
-\{ image( "E.png", width=>150, height=>150 \}
-$BR
-\{ image( "\F.png", width=>150, height=>150 \}
-$BR
+$PAR
+A: \{ image( "A.png", width=>150, height=>150) \}
+$PAR
+B: \{ image( "B.png", width=>150, height=>150) \}
+$PAR
+C: \{ image( "C.png", width=>150, height=>150) \}
+$PAR
+D: \{ image( "D.png", width=>150, height=>150) \}
+$PAR
+E: \{ image( "E.png", width=>150, height=>150) \}
+$PAR
+F: \{ image( "\F.png", width=>150, height=>150) \}
+$PAR
 \{ $mc->buttons() \}
 
 END_TEXT

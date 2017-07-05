@@ -2,6 +2,13 @@
 ## Preview Test: Mech 220 Practice Review Quiz
 ##ENDDESCRIPTION
 
+##KEYWORDS('multiple choice', 'parabola', 'equation')
+
+## DBsubject('220 Self Test')
+## DBchapter('Practice Quiz')
+## DBsection('Equation of a Line')
+## Date('7/5/2017')
+## Institution('University of British Columbia')
 ## Problem23
 
 ########################################################################
@@ -26,18 +33,13 @@ $mc = RadioButtons(
 	"\( y = \frac{1}{\sqrt3}x^2 - \sqrt3x+4 \)", 
 	"\( y = \frac{2}{\sqrt3}x^2 - 2\sqrt3x+4 \)" ]
        ,"\( y = \frac{1}{2\sqrt3}x^2 - \sqrt3x+4 \)",
-    last => [ "\( y = \frac{1}{\sqrt3}x^2 + \sqrt3x+4 \)", 
-	"\( y = \frac{1}{2\sqrt3}x^2 - \sqrt3x+4 \)", 
-	"\( y = \frac{1}{2\sqrt3}x^2 + 2\sqrt3x+4 \)", 
-	"\( y = \frac{1}{\sqrt3}x^2 - \sqrt3x+4 \)", 
-	"\( y = \frac{2}{\sqrt3}x^2 - 2\sqrt3x+4 \)" ]
-         ,labels => "ABCDE" );
+         ,labels => "ABC" );
 
 BEGIN_TEXT
 What is the equation of the parabola shown below?
-$BR
-\{ image( "23.png", width=>150, height=>150 \}
-$BR
+$PAR
+\{ image( "23.png", width=>150, height=>150) \}
+$PAR
 \{ $mc->buttons() \}
 
 END_TEXT

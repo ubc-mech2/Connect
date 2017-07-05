@@ -2,6 +2,13 @@
 ## Preview Test: Mech 220 Practice Review Quiz
 ##ENDDESCRIPTION
 
+##KEYWORDS('multiple choice', 'plane', 'region', 'bounded', 'volume', 'solid', 'revolution')
+
+## DBsubject('220 Self Test')
+## DBchapter('Practice Quiz')
+## DBsection('Integrals')
+## Date('7/5/2017')
+## Institution('University of British Columbia')
 ## Problem27
 
 ########################################################################
@@ -26,16 +33,11 @@ $mc = RadioButtons(
 	"\( 2\pi/3 \)", 
 	"\( 3\pi/4 \)" ]
        ,"\( \pi/2 \)",
-    last => [ "\( \pi/4 \)", 
-	"\( \pi/3 \)", 
-	"\( \pi/2 \)", 
-	"\( 2\pi/3 \)", 
-	"\( 3\pi/4 \)" ]
-         ,labels => "ABCDE" );
+         ,labels => "ABC" );
 
 BEGIN_TEXT
-Let R be the plane region bounded by \(x = 0\), \(y = 0\), and \(y = 1 - x^2\). What is the volume of the solid obtained by revolving R about the y-axis?
-$BR
+Let \(R\) be the plane region bounded by \(x = 0\), \(y = 0\), and \(y = 1 - x^2\). What is the volume of the solid obtained by revolving \(R\) about the y-axis?
+$PAR
 
 \{ $mc->buttons() \}
 

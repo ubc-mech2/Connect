@@ -2,6 +2,13 @@
 ## Preview Test: Mech 220 Practice Review Quiz
 ##ENDDESCRIPTION
 
+##KEYWORDS('multiple choice', 'velocity', 'relative', 'ground')
+
+## DBsubject('220 Self Test')
+## DBchapter('Practice Quiz')
+## DBsection('Kinematics')
+## Date('7/5/2017')
+## Institution('University of British Columbia')
 ## Problem3
 
 ########################################################################
@@ -17,17 +24,16 @@ loadMacros(
 );
 
 $mc = RadioButtons(
-    [ "\(12.3 m/s\) at \(76\) degrees N of E", "\(12.3 m/s\) at \(14\) degrees W of N", "\(64.0 m/s\) at \(11\) degrees N of E", "\(58.0 m/s\) at \(20\) degrees N of E", "\(30.0 m/s\) due E" ]
-    ,"\(64.0 m/s\) at \(11\) degrees N of E",
-    last =>  [ "\(12.3 m/s\) at \(76\) degrees N of E", "\(12.3 m/s\) at \(14\) degrees W of N", "\(64.0 m/s\) at \(11\) degrees N of E", "\(58.0 m/s\) at \(20\) degrees N of E", "\(30.0 m/s\) due E" ]
-    ,labels => "ABCDE" );
+    [ "\(12.3\) \(m/s\) at \(76\) degrees N of E", "\(12.3\) \(m/s\) at \(14\) degrees W of N", "\(64.0\) \(m/s\) at \(11\) degrees N of E", "\(58.0\) \(m/s\) at \(20\) degrees N of E", "\(30.0\) \(m/s\) due E" ]
+    ,"\(64.0\) \(m/s\) at \(11\) degrees N of E"
+    ,labels => "ABC" );
 
 BEGIN_TEXT
 
-A railroad car travels at \(30 m/s\) due East, as shown in the image below. A softball pitcher stands on the top of the car and faces approximately East. She throws a ball horizontally at \(35 m/s\) relative to the car, at an angle of \(20\) degrees to the axis of the railroad car. What is the velocity of the ball relative to the ground?
-$BR
-\{ image( "imagename.png", width=>150, height=>150 \}
-$BR
+A railroad car travels at \(30\) \(m/s\) due East, as shown in the image below. A softball pitcher stands on the top of the car and faces approximately East. She throws a ball horizontally at \(35\) \(m/s\) relative to the car, at an angle of \(20\) degrees to the axis of the railroad car. What is the velocity of the ball relative to the ground?
+$PAR
+\{ image( "imagename.png", width=>150, height=>150 ) \}
+$PAR
 
 \{ $mc->buttons() \}
 

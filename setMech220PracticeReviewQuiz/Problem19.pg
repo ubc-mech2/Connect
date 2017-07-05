@@ -2,6 +2,13 @@
 ## Preview Test: Mech 220 Practice Review Quiz
 ##ENDDESCRIPTION
 
+##KEYWORDS('multiple choice', 'free', 'body', 'diagram', 'uniform', 'bar')
+
+## DBsubject('220 Self Test')
+## DBchapter('Practice Quiz')
+## DBsection('Kinematics')
+## Date('7/5/2017')
+## Institution('University of British Columbia')
 ## Problem19
 
 ########################################################################
@@ -20,18 +27,18 @@ $mc = RadioButtons(
     [ "A", "B", "C", "D", "E" ]
     , "D"
     ,last => [ "A", "B", "C", "D", "E" ]
-    ,labels => "ABCDE" );
+    ,labels => "ABC" );
 
 BEGIN_TEXT
-\{ image( "imagename.png", width=>150, height=>150 \}
+\{ image( "imagename.png", width=>150, height=>150) \} $PAR
 
 Select the correct free body diagram for the uniform bar shown in the figure above. (More than one diagram may be technically correct; select the most appropriate diagram.) The bar has weight W and gravity acts downwards. 
-$BR A: \{ image( "imagename.png", width=>150, height=>150 \}
-$BR B: \{ image( "imagename.png", width=>150, height=>150 \}
-$BR C: \{ image( "imagename.png", width=>150, height=>150 \}
-$BR D: \{ image( "imagename.png", width=>150, height=>150 \}
-$BR E: \{ image( "imagename.png", width=>150, height=>150 \}
-$BR
+$PAR A: \{ image( "imagename.png", width=>150, height=>150) \}
+$PAR B: \{ image( "imagename.png", width=>150, height=>150) \}
+$PAR C: \{ image( "imagename.png", width=>150, height=>150) \}
+$PAR D: \{ image( "imagename.png", width=>150, height=>150) \}
+$PAR E: \{ image( "imagename.png", width=>150, height=>150) \}
+$PAR
 \{ $mc->buttons() \}
 
 END_TEXT

@@ -2,6 +2,13 @@
 ## Preview Test: Mech 220 Practice Review Quiz
 ##ENDDESCRIPTION
 
+##KEYWORDS('multiple choice', 'matrix', 'inverse')
+
+## DBsubject('220 Self Test')
+## DBchapter('Practice Quiz')
+## DBsection('Matrices')
+## Date('7/5/2017')
+## Institution('University of British Columbia')
 ## Problem7
 
 ########################################################################
@@ -31,13 +38,13 @@ Context()->texStrings;
 $mc = RadioButtons(
     [ "\( $B \)", "\( $C \)", "\( $D \)", "\( $E \)", "None of the above"]
     , "\( $D \)"
-    ,last => [ "\( $B \)", "\( $C \)", "\( $D \)", "\( $E \)", "None of the above"]
-    ,labels => "ABCDE" );
+    ,last => [ "None of the above"]
+    ,labels => "ABC" );
 
 BEGIN_TEXT
 
-Consider the matrix \(A = $A\). What is \(A^-1\) (the inverse of A)?
-$BR
+Consider the matrix \(A = $A\). What is \(A^{-1}\) (the inverse of \(A\))?
+$PAR
 \{ $mc->buttons() \}
 
 END_TEXT

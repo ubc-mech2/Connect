@@ -2,6 +2,13 @@
 ## Preview Test: Mech 220 Practice Review Quiz
 ##ENDDESCRIPTION
 
+##KEYWORDS('multiple choice', 'dropped', 'angle', 'horizontal', 'speed', 'altitude', 'velocity', 'coordinate')
+
+## DBsubject('220 Self Test')
+## DBchapter('Practice Quiz')
+## DBsection('Kinematics')
+## Date('7/5/2017')
+## Institution('University of British Columbia')
 ## Problem14
 
 ########################################################################
@@ -17,14 +24,14 @@ loadMacros(
 );
 
 $mc = RadioButtons(
-    [ "\( (25\sqrt3i + 25j)m/s \)", "\( 0 m/s \)", "\( (50i)m/s \)", "\( (25\sqrt3i)m/s \)" ]
+    [ "\( (25\sqrt3i + 25j)m/s \)", "\( 0 m/s \)", "\( (50i)m/s \)", "\( (25\sqrt3i)m/s \)", "none of the above" ]
     , "\( (25\sqrt3i + 25j)m/s \)"
-    ,last => [ "\( (25\sqrt3i + 25j)m/s \)", "\( 0 m/s \)", "\( (50i)m/s \)", "\( (25\sqrt3i)m/s \)" ]
-    ,labels => "ABCD" );
+    ,last => [ "none of the above" ]
+    ,labels => "ABC" );
 
 BEGIN_TEXT
-Referring to Question 13, what is the velocity of the package at the instant it is dropped from the plane in the (x,y) coordinate frame? 
-$BR
+Referring to Question 13, what is the velocity of the package at the instant it is dropped from the plane in the \((x,y)\) coordinate frame? 
+$PAR
 \{ $mc->buttons() \}
 
 END_TEXT

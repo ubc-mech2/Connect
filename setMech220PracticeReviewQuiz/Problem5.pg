@@ -2,6 +2,13 @@
 ## Preview Test: Mech 220 Practice Review Quiz
 ##ENDDESCRIPTION
 
+##KEYWORDS('multiple choice', 'matrix', 'add')
+
+## DBsubject('220 Self Test')
+## DBchapter('Practice Quiz')
+## DBsection('Matrices')
+## Date('7/5/2017')
+## Institution('University of British Columbia')
 ## Problem5
 
 ########################################################################
@@ -29,15 +36,15 @@ $F = Matrix([[4,7],[-2,9]]);
 Context()->texStrings;
  
 $mc = RadioButtons(
-    [ "\( $C \)", "\( $D \)", "\( $E \)", "\( $F \)" ]
+    [ "\( $C \)", "\( $D \)", "\( $E \)", "\( $F \)", "none of the above" ]
     , "\( $D \)"
-    ,last => [ "\( $C \)", "\( $D \)", "\( $E \)", "\( $F \)" ]
-    ,labels => "ABCD" );
+    ,last => [ "none of the above" ]
+    ,labels => "ABC" );
 
 BEGIN_TEXT
 
-Consider the matrix \(A = $A\) and the matrix \(B = $B\). What is A+B?
-$BR
+Consider the matrix \(A = $A\) and the matrix \(B = $B\). What is \(A+B\)?
+$PAR
 \{ $mc->buttons() \}
 
 END_TEXT

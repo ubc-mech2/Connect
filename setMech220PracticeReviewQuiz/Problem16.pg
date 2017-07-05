@@ -2,6 +2,13 @@
 ## Preview Test: Mech 220 Practice Review Quiz
 ##ENDDESCRIPTION
 
+##KEYWORDS('multiple choice', 'block', 'speed', 'sticks', 'velocity', 'collision')
+
+## DBsubject('220 Self Test')
+## DBchapter('Practice Quiz')
+## DBsection('Kinematics')
+## Date('7/5/2017')
+## Institution('University of British Columbia')
 ## Problem16
 
 ########################################################################
@@ -17,17 +24,16 @@ loadMacros(
 );
 
 $mc = RadioButtons(
-    [ "\( 3.50 m/s \)", "\( 3.64 m/s \)", "\( 4.00 m/s \)", "\( 4.24 m/s \)", "\( 4.43 m/s \)" ]
-    , "\( 4.00 m/s \)"
-    ,last => [ "\( 3.50 m/s \)", "\( 3.64 m/s \)", "\( 4.00 m/s \)", "\( 4.24 m/s \)", "\( 4.43 m/s \)" ]
-    ,labels => "ABCDE" );
+    [ "\( 3.50\) \(m/s \)", "\( 3.64\) \(m/s \)", "\( 4.00\) \(m/s \)", "\( 4.24\) \(m/s \)", "\( 4.43\) \(m/s \)" ]
+    , "\( 4.00\) \(m/s \)"
+    ,labels => "ABC" );
 
 BEGIN_TEXT
 
-A block of mass \(M_1 = 2 kg\) slides along a frictionless surface with speed \(V_1 = 5 m/s\). It collides with and sticks to a separate slower block of mass \(M_2 = 1 kg\) moving with speed \(V_2 = 2 m/s\) in the same direction. What is the velocity of the two blocks (stuck-together) after the collision?
-$BR
+A block of mass \(M_1 = 2\) \(kg\) slides along a frictionless surface with speed \(V_1 = 5\) \(m/s\). It collides with and sticks to a separate slower block of mass \(M_2 = 1\) \(kg\) moving with speed \(V_2 = 2\) \(m/s\) in the same direction. What is the velocity of the two blocks (stuck-together) after the collision?
+$PAR
 \{ image( "imagename.png", width=>150, height=>150) \}
-$BR
+$PAR
 \{ $mc->buttons() \}
 
 END_TEXT

@@ -2,7 +2,14 @@
 ## Preview Test: Mech 220 Practice Review Quiz
 ##ENDDESCRIPTION
 
-## Problem23
+##KEYWORDS('multiple choice', 'area', 'curve', 'bounded')
+
+## DBsubject('220 Self Test')
+## DBchapter('Practice Quiz')
+## DBsection('Equation of a Line')
+## Date('7/5/2017')
+## Institution('University of British Columbia')
+## Problem25
 
 ########################################################################
 
@@ -24,16 +31,11 @@ $mc = RadioButtons(
 	"\( 37/6 \)", 
 	"\( 29/6 \)" ]
        ,"\( 125/6 \)",
-    last => [ "\( 125/6 \)", 
-	"\( 40/3 \)", 
-	"\( 185/6 \)", 
-	"\( 37/6 \)", 
-	"\( 29/6 \)" ]
-         ,labels => "ABCDE" );
+         ,labels => "ABC" );
 
 BEGIN_TEXT
 What is the area bounded by the curves \(y = -x^2\) and \(y = x - 6\)?
-$BR
+$PAR
 \{ $mc->buttons() \}
 
 END_TEXT
