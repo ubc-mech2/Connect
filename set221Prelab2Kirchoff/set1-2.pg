@@ -1,8 +1,15 @@
 ##DESCRIPTION
-## 221 Prelab 2 Kirchoff's Laws
-## Question Set 1
+## 221 Prelab 2 Kirchhoff's Laws
 ##ENDDESCRIPTION
 
+##KEYWORDS('calculated formula', 'circuit', 'current')
+
+## DBsubject('221 Prelab Quizzes')
+## DBchapter('Prelab 2)
+## DBsection('Kirchhoff's Laws')
+## Date('7/5/2017')
+## Institution('University of British Columbia')
+## Question Set 1
 ## Problem2
 
 ########################################################################
@@ -33,7 +40,7 @@ $answer = (10 * $A) / ($A + $B + $C);
 
 BEGIN_TEXT
 
-For the circuit shown, if \(R1\) = \($A\) \(k\) \(ohms\), \(R2\) = \($B\) \(k\) \(ohms\), and \(R3\) = \($C\) \(k\) \(ohms\), what is the current, \(i\), in \(mA\)?
+For the circuit shown, if \(R1\) = \($A\)\(k\) \(ohms\), \(R2\) = \($B\)\(k\) \(ohms\), and \(R3\) = \($C\)\(k\) \(ohms\), what is the current, \(i\), in \(mA\)?
 $PAR
 \{ image( "imagename.png", width=>150, height=>150 ) \}
 $PAR

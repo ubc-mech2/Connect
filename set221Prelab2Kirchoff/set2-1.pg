@@ -1,8 +1,15 @@
 ##DESCRIPTION
-## 221 Prelab 2 Kirchoff's laws
-## Question Set 2
+## 221 Prelab 2 Kirchhoff's Laws
 ##ENDDESCRIPTION
 
+##KEYWORDS('multiple choice', 'circuit', 'voltage')
+
+## DBsubject('221 Prelab Quizzes')
+## DBchapter('Prelab 2)
+## DBsection('Kirchhoff's Laws')
+## Date('7/5/2017')
+## Institution('University of British Columbia')
+## Question Set 2
 ## Problem1
 
 ########################################################################
@@ -27,21 +34,13 @@ $mc = RadioButtons( # Set up possible options
 "inline between nodes 2 and 3 (remove resistor \(R1\))"
 ]
 ,"across nodes 2 and 3", # correct option
-last => # set up order in which options will be displayed
-[
-"across nodes 2 and 4", 
-"across nodes 3 and 4", 
-"across nodes 2 and 3", 
-"inline between nodes 1 and 2 (remove the section of circuit between 1 and 2)",
-"inline between nodes 2 and 3 (remove resistor \(R1\))"
-]
-,labels => "ABCD" );
+labels => "ABC" );
 
 BEGIN_TEXT
 For the circuit shown, how should the voltmeter be connected to measure the voltage across resistor \(R1\)?
-$BR
+$PAR
 \{ image( "imagename.png", width=>150, height=>150 ) \}
-$BR
+$PAR
 \{ $mc->buttons() \}
 
 END_TEXT
