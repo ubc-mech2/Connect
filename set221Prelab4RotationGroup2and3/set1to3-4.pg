@@ -1,8 +1,15 @@
 ##DESCRIPTION
-## 221 Prelab 4 Rotation Group 2 and 3
-## Question Set 1 to 3
+## 221 Prelab 4 Rotation (Group 2&3)
 ##ENDDESCRIPTION
 
+##KEYWORDS('multiple choice', 'conservation', 'angular', 'momentum', 'inertia', 'rotating')
+
+## DBsubject('221 Prelab Quizzes')
+## DBchapter('Prelab 4)
+## DBsection('Rotation (Group 2&3)')
+## Date('7/5/2017')
+## Institution('University of British Columbia')
+## Question Set 1 - 3
 ## Problem4
 
 #######################################################################
@@ -29,15 +36,7 @@ $mc = RadioButtons( # Set up possible options
 "angular position will change proportionally to the change in the moment of inertia",
 ]
 ,"angular velocity will change with the inverse of the change to the moment of inertia", # correct option
-last => # set up order in which options will be displayed
-[
-"angular acceleration will change with the inverse of the change to the moment of inertia", 
-"angular acceleration will change proportionally to the change in the moment of inertia", 
-"angular velocity will change with the inverse of the change to the moment of inertia", 
-"angular velocity will change proportionally to the change in the moment of inertia",
-"angular position will change proportionally to the change in the moment of inertia",
-]
-,labels => "ABCD" );
+labels => "ABC" );
 
 BEGIN_TEXT
 According to conservation of angular momentum, if the moment of inertia of a rotating object is changed in the absence of an external torque, what will happen to the motion of the object?

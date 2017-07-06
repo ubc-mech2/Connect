@@ -1,8 +1,15 @@
 ##DESCRIPTION
-## 221 Prelab 4 Rotation Groups 2 and 3
-## Question Set 1 to 3
+## 221 Prelab 4 Rotation (Group 2&3)
 ##ENDDESCRIPTION
 
+##KEYWORDS('multiple answer', 'disc', 'motion')
+
+## DBsubject('221 Prelab Quizzes')
+## DBchapter('Prelab 4)
+## DBsection('Rotation (Group 2&3)')
+## Date('7/5/2017')
+## Institution('University of British Columbia')
+## Question Set 1 - 3
 ## Problem1
 
 #######################################################################
@@ -29,13 +36,6 @@ $mc -> qa (
 $mc -> extra(
 "Angular velocity magnitude of A will be equal to B$BR",
 "Angular velocity magnitude of B will be 3 times greater than A$BR",
-"Angular acceleration magnitude of A will be equal to B$BR",
-"Angular acceleration magnitude of B will be 3 times greater than A$BR",
-);
-$mc -> makeLast("Angular velocity magnitude of A will be 3 times greater than B$BR",
-"Angular velocity magnitude of A will be equal to B$BR",
-"Angular velocity magnitude of B will be 3 times greater than A$BR",
-"Angular acceleration magnitude of A will be 3 times greater than B$BR",  
 "Angular acceleration magnitude of A will be equal to B$BR",
 "Angular acceleration magnitude of B will be 3 times greater than A$BR",
 );

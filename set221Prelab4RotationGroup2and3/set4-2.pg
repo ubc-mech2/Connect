@@ -1,8 +1,15 @@
 ##DESCRIPTION
-## 221 Prelab 4 Rotation Group 2 and 3
-## Question Set 4
+## 221 Prelab 4 Rotation (Group 2&3)
 ##ENDDESCRIPTION
 
+##KEYWORDS('multiple choice', 'spinning', 'ring', 'angular', 'velocity')
+
+## DBsubject('221 Prelab Quizzes')
+## DBchapter('Prelab 4)
+## DBsection('Rotation (Group 2&3)')
+## Date('7/5/2017')
+## Institution('University of British Columbia')
+## Question Set 4
 ## Problem2
 
 #######################################################################
@@ -37,7 +44,7 @@ last => # set up order in which options will be displayed
 "D",
 "At least two of the above will result in an equally large increase",
 ]
-,labels => "ABCD" );
+,labels => "ABC" );
 
 BEGIN_TEXT
 The ring shown below is spinning with an axis of rotation directed out of the page and located at the centre of the ring. According to conservation of angular momentum, where should you move mass M in the diagram to increase angular velocity?

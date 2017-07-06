@@ -1,8 +1,15 @@
 ##DESCRIPTION
-## 221 Prelab 4 Rotation Group 2 and 3
-## Question Set 6
+## 221 Prelab 4 Rotation (Group 2&3)
 ##ENDDESCRIPTION
 
+##KEYWORDS('multiple choice', 'water', 'wheel', 'force', 'tangent', 'radius', 'mass')
+
+## DBsubject('221 Prelab Quizzes')
+## DBchapter('Prelab 4)
+## DBsection('Rotation (Group 2&3)')
+## Date('7/5/2017')
+## Institution('University of British Columbia')
+## Question Set 6
 ## Problem2
 
 #######################################################################
@@ -22,25 +29,17 @@ Context("Fraction");
 
 $mc = RadioButtons( # Set up possible options
 [
-"\(92 kg\)", 
-"\(70kg\)", 
-"\(68kg\)", 
-"\(84kg\)",
-"\(52kg\)",
+"\(92\) \(kg\)", 
+"\(70\) \(kg\)", 
+"\(68\) \(kg\)", 
+"\(84\) \(kg\)",
+"\(52\) \(kg\)",
 ]
-,"\(52kg\)", # correct option
-last => # set up order in which options will be displayed
-[
-"\(92 kg\)", 
-"\(70kg\)", 
-"\(68kg\)", 
-"\(84kg\)",
-"\(52kg\)",
-]
-,labels => "ABCD" );
+,"\(52\) \(kg\)", # correct option
+labels => "ABC" );
 
 BEGIN_TEXT		
-Water falling on a wheel generates a force of \(36N\) tangent to the wheel. Find the mass of the wheel if its inner radius is \(1.2m\), it is \(20cm\) thick (i.e. \(R_2 - R_1 = 20cm\)), and it is being accelerated at \(0.57 rad/s^2\).
+Water falling on a wheel generates a force of \(36\) \(N\) tangent to the wheel. Find the mass of the wheel if its inner radius is \(1.2\) \(m\), it is \(20\) \(cm\) thick (i.e. \(R_2 - R_1 = 20\) \(cm\)), and it is being accelerated at \(0.57\) \(rad/s^2\).
 $PAR
 \{ image( "imagename.png", width=>150, height=>150 ) \}
 $PAR
