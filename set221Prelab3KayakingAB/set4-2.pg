@@ -1,8 +1,15 @@
 ##DESCRIPTION
-## 221 Prelab 3 Kayaking Group AB
-## Question Set 4
+## 221 Prelab 3 Kayaking (Group A&B)
 ##ENDDESCRIPTION
 
+##KEYWORDS('calculated formula', 'kayak', 'tow', 'force')
+
+## DBsubject('221 Prelab Quizzes')
+## DBchapter('Prelab 3)
+## DBsection('Kayaking (Group A&B)')
+## Date('7/5/2017')
+## Institution('University of British Columbia')
+## Question Set 4
 ## Problem2
 
 ########################################################################
@@ -30,7 +37,7 @@ Context()->texStrings;
 
 BEGIN_TEXT
 
-While carrying out similar measurements to those you will make on the water, Professors Green and Schajer measured the following: When the single kayak was towed by the double kayak at a speed of \(1.1\) \(m/s\), the towline force was \(8.0\) \(N\). When the single kayak was towed at a speed of \(1.9\) \(m/s\), the towline force was \(26 N\). Assuming a simple model where \(F = KV^n\) where \(F\) is the towline force (equal to drag in this case), \(V\) is the velocity, and \(K\) and \(n\) are constants, find \(K\).
+While carrying out similar measurements to those you will make on the water, Professors Green and Schajer measured the following: When the single kayak was towed by the double kayak at a speed of \(1.1\) \(m/s\), the towline force was \(8.0\) \(N\). When the single kayak was towed at a speed of \(1.9\) \(m/s\), the towline force was \(26\) \(N\). Assuming a simple model where \(F = KV^n\) where \(F\) is the towline force (equal to drag in this case), \(V\) is the velocity, and \(K\) and \(n\) are constants, find \(K\).
 $PAR
 \(K\) = \{ ans_rule(35) \}
 

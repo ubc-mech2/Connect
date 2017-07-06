@@ -1,8 +1,15 @@
 ##DESCRIPTION
-## 221 Prelab 3 Kayaking Group AB
-## Question Set 1 to 3
+## 221 Prelab 3 Kayaking (Group A&B)
 ##ENDDESCRIPTION
 
+##KEYWORDS('multiple choice', 'kayaker', 'direction', 'drag')
+
+## DBsubject('221 Prelab Quizzes')
+## DBchapter('Prelab 3)
+## DBsection('Kayaking (Group A&B)')
+## Date('7/5/2017')
+## Institution('University of British Columbia')
+## Question Set 1 - 3
 ## Problem4
 
 #######################################################################
@@ -37,7 +44,7 @@ last => # set up order in which options will be displayed
 "+z",
 "-z" 
 ]
-,labels => "ABCD" );
+,labels => "ABC" );
 
 BEGIN_TEXT
 	
