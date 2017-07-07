@@ -1,8 +1,15 @@
 ##DESCRIPTION
-## 221 Prelab 5 Strain Group 1 and 4
-## Question Set 6
+## 221 Prelab 5 Strain (Group 1&4)
 ##ENDDESCRIPTION
 
+##KEYWORDS('multiple choice', 'rod', 'Young', 'modulus', 'axial', 'load')
+
+## DBsubject('221 Prelab Quizzes')
+## DBchapter('Prelab 5)
+## DBsection('Strain (Group 1&4)')
+## Date('7/6/2017')
+## Institution('University of British Columbia')
+## Question Set 6
 ## Problem1
 
 #######################################################################
@@ -22,23 +29,16 @@ Context("Fraction");
 
 $mc = RadioButtons( # Set up possible options
 [
-"\(40.4 kN\)", 
-"\(5.80 kN\)", 
-"\(64.0 kN\)", 
-"\(110. kN\)"
+"\(40.4\) \(kN\)", 
+"\(5.80\) \(kN\)", 
+"\(64.0\) \(kN\)", 
+"\(110.\) \(kN\)"
 ]
-,"\(40.4 kN\)", # correct option
-last => # set up order in which options will be displayed
-[
-"\(40.4 kN\)", 
-"\(5.80 kN\)", 
-"\(64.0 kN\)", 
-"\(110. kN\)"
-]
-,labels => "ABCD" );
+,"\(40.4\) \(kN\)", # correct option
+labels => "ABC" );
 
 BEGIN_TEXT			
-A copper rod of diameter \(25mm\) has a Young's modulus of \(120 GPa\). It supports an axial load that causes its length to change from \(730.0mm\) to \(729.5mm\). The axial load is :
+A copper rod of diameter \(25\) \(mm\) has a Young's modulus of \(120\) \(GPa\). It supports an axial load that causes its length to change from \(730.0\) \(mm\) to \(729.5\) \(mm\). The axial load is :
 $PAR
 \{ $mc->buttons() \}
 

@@ -1,8 +1,15 @@
 ##DESCRIPTION
-## 221 Prelab 5 Strain Group 1 and 4
-## Question Set 1 to 4
+## 221 Prelab 5 Strain (Group 1&4)
 ##ENDDESCRIPTION
 
+##KEYWORDS('multiple choice', 'material', 'stress', 'strain')
+
+## DBsubject('221 Prelab Quizzes')
+## DBchapter('Prelab 5)
+## DBsection('Strain (Group 1&4)')
+## Date('7/6/2017')
+## Institution('University of British Columbia')
+## Question Set 1 - 4
 ## Problem4
 
 #######################################################################
@@ -28,14 +35,7 @@ $mc = RadioButtons( # Set up possible options
 "slope of the stress versus strain curve will depend on material density"
 ]
 ,"stress and strain have a linear relationship for moderate loads", # correct option
-last => # set up order in which options will be displayed
-[
-"stress and strain have a linear relationship for moderate loads", 
-"stress equals strain times the Young's Modulus for any load", 
-"stress is inversely proportional to strain through toughness coefficient", 
-"slope of the stress versus strain curve will depend on material density"
-]
-,labels => "ABCD" );
+labels => "ABC" );
 
 BEGIN_TEXT			
 For a given material:

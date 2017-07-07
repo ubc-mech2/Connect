@@ -1,8 +1,15 @@
 ##DESCRIPTION
-## 221 Prelab 5 Strain Group 1 and 4
-## Question Set 6
+## 221 Prelab 5 Strain (Group 1&4)
 ##ENDDESCRIPTION
 
+##KEYWORDS('multiple choice', 'bar', 'Young', 'modulus', 'axial', 'load')
+
+## DBsubject('221 Prelab Quizzes')
+## DBchapter('Prelab 5)
+## DBsection('Strain (Group 1&4)')
+## Date('7/6/2017')
+## Institution('University of British Columbia')
+## Question Set 6
 ## Problem2
 
 #######################################################################
@@ -22,23 +29,16 @@ Context("Fraction");
 
 $mc = RadioButtons( # Set up possible options
 [
-"\(0.00400 in\)", 
-"\(0.00035 in\)", 
-"\(0.00123 in\)", 
-"\(0.00068 in\)"
+"\(0.00400\) \(in\)", 
+"\(0.00035\) \(in\)", 
+"\(0.00123\) \(in\)", 
+"\(0.00068\) \(in\)"
 ]
-,"\(0.00068 in\)", # correct option
-last => # set up order in which options will be displayed
-[
-"\(0.00400 in\)", 
-"\(0.00035 in\)", 
-"\(0.00123 in\)", 
-"\(0.00068 in\)"
-]
-,labels => "ABCD" );
+,"\(0.00068\) \(in\)", # correct option
+,labels => "ABC" );
 
 BEGIN_TEXT			
-A rectangular steel bar supports an axial load of \(1500lb\). The bar is \(2.74\)" wide, \(0.25\)" high, and \(9.0\)" long, and has a Young's modulus of \(29\) x \(10^6\) \(psi\). The resulting change in the length of the bar is :
+A rectangular steel bar supports an axial load of \(1500\) \(lb\). The bar is \(2.74\)" wide, \(0.25\)" high, and \(9.0\)" long, and has a Young's modulus of \(29 \times 10^6\) \(psi\). The resulting change in the length of the bar is :
 $PAR
 \{ $mc->buttons() \}
 
