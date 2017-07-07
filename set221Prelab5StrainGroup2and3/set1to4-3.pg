@@ -1,8 +1,15 @@
 ##DESCRIPTION
-## 221 Prelab 5 Strain Group 2 and 3
-## Question Set 1 to 4
+## 221 Prelab 5 Strain (Group 2&3)
 ##ENDDESCRIPTION
 
+##KEYWORDS('multiple choice', 'mechanical', 'stress', 'force')
+
+## DBsubject('221 Prelab Quizzes')
+## DBchapter('Prelab 5)
+## DBsection('Strain (Group 2&3)')
+## Date('7/6/2017')
+## Institution('University of British Columbia')
+## Question Set 1 - 4
 ## Problem3
 
 #######################################################################
@@ -28,14 +35,7 @@ $mc = RadioButtons( # Set up possible options
 "using stress simplifies the problem by taking into account the temperature and pressure of the surroundings"
 ]
 ,"using stress allows for comparison of different size components", # correct option
-last => # set up order in which options will be displayed
-[
-"stress is inversely proportional to strength", 
-"using stress allows for comparison of different size components", 
-"using stress allows for comparison of components made from different materials", 
-"using stress simplifies the problem by taking into account the temperature and pressure of the surroundings"
-]
-,labels => "ABCD" );
+labels => "ABC" );
 
 BEGIN_TEXT			
 When designing mechanical components, it is often more useful to speak in terms of stress rather than force because:

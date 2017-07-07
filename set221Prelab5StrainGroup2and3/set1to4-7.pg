@@ -1,8 +1,15 @@
 ##DESCRIPTION
-## 221 Prelab 5 Strain Group 2 and 3
-## Question Set 1 to 4
+## 221 Prelab 5 Strain (Group 2&3)
 ##ENDDESCRIPTION
 
+##KEYWORDS('multiple choice', 'strain', 'integrated', 'length')
+
+## DBsubject('221 Prelab Quizzes')
+## DBchapter('Prelab 5)
+## DBsection('Strain (Group 2&3)')
+## Date('7/6/2017')
+## Institution('University of British Columbia')
+## Question Set 1 - 4
 ## Problem7
 
 #######################################################################
@@ -28,14 +35,7 @@ $mc = RadioButtons( # Set up possible options
 "Young's Modulus"
 ]
 ,"The extension of the structure", # correct option
-last => # set up order in which options will be displayed
-[
-"The average strain", 
-"The extension of the structure", 
-"The stress", 
-"Young's Modulus"
-]
-,labels => "ABCD" );
+labels => "ABC" );
 
 BEGIN_TEXT			
 What is obtained when local strain is integrated over the length of the structure:

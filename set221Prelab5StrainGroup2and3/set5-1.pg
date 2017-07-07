@@ -1,8 +1,15 @@
 ##DESCRIPTION
-## 221 Prelab 5 Strain Group 2 and 3
-## Question Set 5
+## 221 Prelab 5 Strain (Group 2&3)
 ##ENDDESCRIPTION
 
+##KEYWORDS('multiple choice', 'stress', 'distribution', 'equal')
+
+## DBsubject('221 Prelab Quizzes')
+## DBchapter('Prelab 5)
+## DBsection('Strain (Group 2&3)')
+## Date('7/6/2017')
+## Institution('University of British Columbia')
+## Question Set 5
 ## Problem1
 
 #######################################################################
@@ -28,14 +35,7 @@ $mc = RadioButtons( # Set up possible options
 "\((A)\sigma_{min} = (B)\sigma_{ave}\)"
 ]
 ,"\((B)\sigma_{ave} = (C)\sigma_{ave}\)", # correct option
-last => # set up order in which options will be displayed
-[
-"\((B)\sigma_{ave} = (C)\sigma_{ave}\)", 
-"\((A)\sigma_{max} = (C)\sigma_{max}\)", 
-"\((B)\sigma_{ave} = (A)\sigma_{ave}\)", 
-"\((A)\sigma_{min} = (B)\sigma_{ave}\)"
-]
-,labels => "ABCD" );
+labels => "ABC" );
 
 BEGIN_TEXT			
 The following figure represents stress distribution in samples of equal thickness and under equal loading. Diagram A shows stress distribution for a sample with a double fillet, B is stress in a straight bar at mid length, C is stress in a straight bar close to a point of applied load. Which of the statements that follow is always true? 

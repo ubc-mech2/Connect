@@ -1,8 +1,15 @@
 ##DESCRIPTION
-## 221 Prelab 5 Strain Group 2 and 3
-## Question Set 1 to 4
+## 221 Prelab 5 Strain (Group 2&3)
 ##ENDDESCRIPTION
 
+##KEYWORDS('multiple choice', 'rods', 'tensile', 'strain')
+
+## DBsubject('221 Prelab Quizzes')
+## DBchapter('Prelab 5)
+## DBsection('Strain (Group 2&3)')
+## Date('7/6/2017')
+## Institution('University of British Columbia')
+## Question Set 1 - 4
 ## Problem2
 
 #######################################################################
@@ -28,14 +35,7 @@ $mc = RadioButtons( # Set up possible options
 "not enough information for conclusive answer"
 ]
 ,"not enough information for conclusive answer", # correct option
-last => # set up order in which options will be displayed
-[
-"B > A", 
-"A > B", 
-"B = A", 
-"not enough information for conclusive answer"
-]
-,labels => "ABCD" );
+labels => "ABC" );
 
 BEGIN_TEXT			
 Two rods A and B are made from the same material and support equal tensile load, but they have different cross-section shapes. If rod A is longer then rod B, which rod has higher strain?
