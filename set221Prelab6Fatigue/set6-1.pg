@@ -1,8 +1,15 @@
 ##DESCRIPTION
 ## 221 Prelab 6 Fatigue
-## Question Set 6
 ##ENDDESCRIPTION
 
+##KEYWORDS('multiple choice', 'diagram', 'application', 'material')
+
+## DBsubject('221 Prelab Quizzes')
+## DBchapter('Prelab 6)
+## DBsection('Fatigue')
+## Date('7/6/2017')
+## Institution('University of British Columbia')
+## Question Set 6
 ## Problem1
 
 #######################################################################
@@ -31,13 +38,9 @@ $mc = RadioButtons( # Set up possible options
 ,"It is not possible to select one of the materials from the information given", # correct option
 last => # set up order in which options will be displayed
 [
-"Material A", 
-"Material B", 
-"Material A and B would do equally well", 
-"Neither Material A nor B would satisfy requirements",
 "It is not possible to select one of the materials from the information given"
 ]
-,labels => "ABCD" );
+,labels => "ABC" );
 
 BEGIN_TEXT					
 Based on the S-N diagram shown below, which material would you select for an application where the part must last for at least of \(10^8\) cycles?

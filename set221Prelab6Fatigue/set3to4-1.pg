@@ -1,8 +1,15 @@
 ##DESCRIPTION
 ## 221 Prelab 6 Fatigue
-## Question Set 3 to 4
 ##ENDDESCRIPTION
 
+##KEYWORDS('multiple choice', 'ductile', 'brittle', 'transition')
+
+## DBsubject('221 Prelab Quizzes')
+## DBchapter('Prelab 6)
+## DBsection('Fatigue')
+## Date('7/6/2017')
+## Institution('University of British Columbia')
+## Question Set 3 - 4
 ## Problem1
 
 #######################################################################
@@ -31,13 +38,9 @@ $mc = RadioButtons( # Set up possible options
 ,"At least two of the above", # correct option
 last => # set up order in which options will be displayed
 [
-"Above the upper shelf energy", 
-"Below the lower shelf energy", 
-"Between the upper shelf and lower shelf energy", 
-"Below the upper shelf energy but above the lower shelf energy",
 "At least two of the above"
 ]
-,labels => "ABCD" );
+,labels => "ABC" );
 
 BEGIN_TEXT					
 The ductile-to-brittle transition has temperatures that correspond to conditions:

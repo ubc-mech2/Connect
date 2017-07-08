@@ -1,8 +1,15 @@
 ##DESCRIPTION
 ## 221 Prelab 6 Fatigue
-## Question Set 3 to 4
 ##ENDDESCRIPTION
 
+##KEYWORDS('multiple choice', 'fracture', 'impact', 'test')
+
+## DBsubject('221 Prelab Quizzes')
+## DBchapter('Prelab 6)
+## DBsection('Fatigue')
+## Date('7/6/2017')
+## Institution('University of British Columbia')
+## Question Set 3 - 4
 ## Problem4
 
 #######################################################################
@@ -29,15 +36,7 @@ $mc = RadioButtons( # Set up possible options
 "Cup-and-cone shape"
 ]
 ,"Grainy and crystalline", # correct option
-last => # set up order in which options will be displayed
-[
-"Grainy and crystalline", 
-"Smooth and mirror-like", 
-"Ridged and banded", 
-"Rough and jagged",
-"Cup-and-cone shape"
-]
-,labels => "ABCD" );
+labels => "ABC" );
 
 BEGIN_TEXT					
 At temperatures below those of the "lower shelf energy", a material in an impact test would be expected to have fracture surfaces that were

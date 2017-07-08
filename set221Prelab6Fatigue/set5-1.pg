@@ -1,8 +1,15 @@
 ##DESCRIPTION
 ## 221 Prelab 6 Fatigue
-## Question Set 5
 ##ENDDESCRIPTION
 
+##KEYWORDS('multiple choice', 'fatigue', 'limit', 'materials')
+
+## DBsubject('221 Prelab Quizzes')
+## DBchapter('Prelab 6)
+## DBsection('Fatigue')
+## Date('7/6/2017')
+## Institution('University of British Columbia')
+## Question Set 5
 ## Problem1
 
 #######################################################################
@@ -22,22 +29,14 @@ Context("Fraction");
 
 $mc = RadioButtons( # Set up possible options
 [
-"Material A = 225 KSI; Material B = 175 KSI", 
-"Material A = \(10^4\) cycles; Material B = \(9\) x \(10^3\) cycles", 
-"Material A = 115 KSI; Material B has no fatigue limit", 
-"Material A has no fatigue limit; Material B = \(9\) x \(10^8\) cycles",
-"Material A = 115 KSI; Material B = 40 KSI"
+"Material A = \(225\) \(KSI\); Material B = \(175\) \(KSI\)", 
+"Material A = \(10^4\) cycles; Material B = \(9 \times 10^3\) cycles", 
+"Material A = \(115\) \(KSI\); Material B has no fatigue limit", 
+"Material A has no fatigue limit; Material B = \(9 \times 10^8\) cycles",
+"Material A = \(115\) \(KSI\); Material B = \(40\) \(KSI\)"
 ]
-,"Material A = 115 KSI; Material B has no fatigue limit", # correct option
-last => # set up order in which options will be displayed
-[
-"Material A = 225 KSI; Material B = 175 KSI", 
-"Material A = \(10^4\) cycles; Material B = \(9\) x \(10^3\) cycles", 
-"Material A = 115 KSI; Material B has no fatigue limit", 
-"Material A has no fatigue limit; Material B = \(9\) x \(10^8\) cycles",
-"Material A = 115 KSI; Material B = 40 KSI"
-]
-,labels => "ABCD" );
+,"Material A = \(115\) \(KSI\); Material B has no fatigue limit", # correct option
+,labels => "ABC" );
 
 BEGIN_TEXT					
 What is the fatigue limit for the two materials shown in the S-N diagram below?

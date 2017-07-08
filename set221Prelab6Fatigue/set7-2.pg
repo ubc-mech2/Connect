@@ -1,8 +1,15 @@
 ##DESCRIPTION
 ## 221 Prelab 6 Fatigue
-## Question Set 7
 ##ENDDESCRIPTION
 
+##KEYWORDS('multiple choice', 'diagram', 'application', 'stress')
+
+## DBsubject('221 Prelab Quizzes')
+## DBchapter('Prelab 6)
+## DBsection('Fatigue')
+## Date('7/6/2017')
+## Institution('University of British Columbia')
+## Question Set 7
 ## Problem2
 
 #######################################################################
@@ -29,18 +36,10 @@ $mc = RadioButtons( # Set up possible options
 "It is not possible to select one of the materials from the information given"
 ]
 ,"Neither Material A nor B would satisfy requirements", # correct option
-last => # set up order in which options will be displayed
-[
-"Material A", 
-"Material B", 
-"Material A and B would do equally well", 
-"Neither Material A nor B would satisfy requirements",
-"It is not possible to select one of the materials from the information given"
-]
-,labels => "ABCD" );
+labels => "ABC" );
 
 BEGIN_TEXT								
-Based on the S-N diagram shown below, which material would you select for an application where there is a fluctuating stress of \(150 KSI\) and a requirement of infinite life?
+Based on the S-N diagram shown below, which material would you select for an application where there is a fluctuating stress of \(150\) \(KSI\) and a requirement of infinite life?
 $PAR
 \{ image( "imagename.png", width=>150, height=>150 ) \}
 $PAR
