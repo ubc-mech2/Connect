@@ -1,8 +1,15 @@
 ##DESCRIPTION
 ## 221 Prelab 7 RC and RL
-## Question Set 2
 ##ENDDESCRIPTION
 
+##KEYWORDS('multiple choice', 'RC', 'circuit', 'voltage', 'capacitor', 'KVL')
+
+## DBsubject('221 Prelab Quizzes')
+## DBchapter('Prelab 7)
+## DBsection('RC and RL')
+## Date('7/7/2017')
+## Institution('University of British Columbia')
+## Question Set 2
 ## Problem1
 
 #######################################################################
@@ -29,15 +36,7 @@ $mc = RadioButtons( # Set up possible options
 "\(v_c = V (1 - e ^{-(t-T) /RC})\)"
 ]
 ,"\(v_c = Ve^{-(t - T)/RC}\)", # correct option
-last => # set up order in which options will be displayed
-[
-"\(v_c = V\)", 
-"\(v_c = Ve^{-(t - T)/RC}\)", 
-"\(v_c = V (1 - e^{- t/RC})\)", 
-"\(v_c = V (e^{- t/RC} - 1)\)", 
-"\(v_c = V (1 - e ^{-(t-T) /RC})\)"
-]
-,labels => "ABCD" );
+labels => "ABC" );
 
 BEGIN_TEXT							
 Following the previous question, now assume that time \(t = T\), switch 1 is opened and switch 2 is closed. If \(T\) is very large, what is the voltage across the capacitor as a function of time for \(t > T\)? (hint: start by writing KVL around the circuit.)

@@ -1,8 +1,15 @@
 ##DESCRIPTION
 ## 221 Prelab 7 RC and RL
-## Question Set 5
 ##ENDDESCRIPTION
 
+##KEYWORDS('multiple choice', 'RL', 'circuit', 'voltage', 'capacitor', 'resistor')
+
+## DBsubject('221 Prelab Quizzes')
+## DBchapter('Prelab 7)
+## DBsection('RC and RL')
+## Date('7/7/2017')
+## Institution('University of British Columbia')
+## Question Set 5
 ## Problem1
 
 #######################################################################
@@ -27,15 +34,7 @@ $mc = RadioButtons( # Set up possible options
 "There is not enough information to determine \(v_R\)"
 ]
 ,"\(v_R = V\)", # correct option
-last => # set up order in which options will be displayed
-[
-"\(v_R = 0\)", 
-"\(v_R = V\)", 
-"\(v_R = V (R/L)\)", 
-"\(v_R = 2V\)",
-"There is not enough information to determine \(v_R\)"
-]
-,labels => "ABCD" );
+labels => "ABC" );
 
 BEGIN_TEXT			
 

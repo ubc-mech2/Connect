@@ -1,8 +1,15 @@
 ##DESCRIPTION
 ## 221 Prelab 7 RC and RL
-## Question Set 3
 ##ENDDESCRIPTION
 
+##KEYWORDS('calculated formula', 'RC', 'circuit', 'voltage', 'capacitor', 'time constant')
+
+## DBsubject('221 Prelab Quizzes')
+## DBchapter('Prelab 7)
+## DBsection('RC and RL')
+## Date('7/7/2017')
+## Institution('University of British Columbia')
+## Question Set 3
 ## Problem1
 
 ########################################################################
@@ -31,7 +38,7 @@ $answer = $R * $C;
 
 BEGIN_TEXT
 
-Now consider the new circuit shown below. The voltage supply \(Vs\) gives a square wave by switching between \(+V\) and \(-V\) every \(T\) seconds (note that "~" symbol denotes an alternating voltage). In each half cycle, the square wave can be considered as DC voltage with amplitude of \(+2V\) or \(-2V\). Therefore, half cycle of square wave must be long enough for the capacitor to get fully charged (or discharged). Note that the initial voltage across the capacitor is different in \(+2V\) case from the \(-2V\) case. Based on the above discussion, the new circuit behaves similarly to that from the previous questions. Determine the time constant for the circuit shown. The time constant is the time for the voltage across the capacitor to change by 63.2% (that is, 1 - 1/e) of the supply voltage change. Assume V varies between \(+/- $V\) volts, \(R = $R\) \(k\) \(ohms\), and \(C = $C\) micro Farads. Give your answer in milliseconds.
+Now consider the new circuit shown below. The voltage supply \(Vs\) gives a square wave by switching between \(+V\) and \(-V\) every \(T\) seconds (note that "~" symbol denotes an alternating voltage). In each half cycle, the square wave can be considered as DC voltage with amplitude of \(+2V\) or \(-2V\). Therefore, half cycle of square wave must be long enough for the capacitor to get fully charged (or discharged). Note that the initial voltage across the capacitor is different in \(+2V\) case from the \(-2V\) case. Based on the above discussion, the new circuit behaves similarly to that from the previous questions. Determine the time constant for the circuit shown. The time constant is the time for the voltage across the capacitor to change by 63.2% (that is, 1 - 1/e) of the supply voltage change. Assume \(V\) varies between \(+/- $V\) volts, \(R = $R\) \(k\) \(ohms\), and \(C = $C\) micro Farads. Give your answer in milliseconds.
 $PAR
 \{ image( "imagename.png", width=>150, height=>150 ) \}
 $PAR

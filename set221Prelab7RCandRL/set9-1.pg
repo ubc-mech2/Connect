@@ -1,8 +1,15 @@
 ##DESCRIPTION
 ## 221 Prelab 7 RC and RL
-## Question Set 9
 ##ENDDESCRIPTION
 
+##KEYWORDS('multiple choice', 'waveform', 'circuit', 'voltage', 'inductor')
+
+## DBsubject('221 Prelab Quizzes')
+## DBchapter('Prelab 7)
+## DBsection('RC and RL')
+## Date('7/7/2017')
+## Institution('University of British Columbia')
+## Question Set 9
 ## Problem1
 
 #######################################################################
@@ -26,14 +33,7 @@ $mc = RadioButtons( # Set up possible options
 "None of the combinations above will give a matching waveform"
 ]
 ,"Across A-B", # correct option
-last => # set up order in which options will be displayed
-[
-"Across A-B", 
-"Across A-C", 
-"Across B-C", 
-"None of the combinations above will give a matching waveform"
-]
-,labels => "ABCD" );
+labels => "ABC" );
 
 BEGIN_TEXT	
 		

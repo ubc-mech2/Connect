@@ -1,8 +1,15 @@
 ##DESCRIPTION
 ## 221 Prelab 7 RC and RL
-## Question Set 6
 ##ENDDESCRIPTION
 
+##KEYWORDS('multiple choice', 'RL', 'circuit', 'voltage', 'current', 'inductor')
+
+## DBsubject('221 Prelab Quizzes')
+## DBchapter('Prelab 7)
+## DBsection('RC and RL')
+## Date('7/7/2017')
+## Institution('University of British Columbia')
+## Question Set 6
 ## Problem1
 
 #######################################################################
@@ -27,15 +34,7 @@ $mc = RadioButtons( # Set up possible options
 "\(i_L = V/R (1 - e ^{-(t-T)R /L})\)"
 ]
 ,"\(i_L = V/R e^{- (t-T) R/L}\)", # correct option
-last => # set up order in which options will be displayed
-[
-"\(i_L = V/R\)", 
-"\(i_L = V/R e^{- (t-T) R/L}\)", 
-"\(i_L = V/R (1 - e^{- tR/L})\)", 
-"\(i_L = V/R (e^{- tR/L} - 1)\)",
-"\(i_L = V/R (1 - e ^{-(t-T)R /L})\)"
-]
-,labels => "ABCD" );
+labels => "ABC" );
 
 BEGIN_TEXT			
 	

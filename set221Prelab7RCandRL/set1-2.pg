@@ -1,8 +1,15 @@
 ##DESCRIPTION
 ## 221 Prelab 7 RC and RL
-## Question Set 1
 ##ENDDESCRIPTION
 
+##KEYWORDS('multiple choice', 'RC', 'circuit', 'voltage', 'capacitor')
+
+## DBsubject('221 Prelab Quizzes')
+## DBchapter('Prelab 7)
+## DBsection('RC and RL')
+## Date('7/7/2017')
+## Institution('University of British Columbia')
+## Question Set 1 
 ## Problem2
 
 #######################################################################
@@ -29,15 +36,7 @@ $mc = RadioButtons( # Set up possible options
 "\(v_c = i_cR\)"
 ]
 ,"\(v_c = V(1-e^{-t/RC})\)", # correct option
-last => # set up order in which options will be displayed
-[
-"\(v_c = V\)", 
-"\(v_c = Ve^{-t/RC}\)", 
-"\(v_c = V(1-e^{-t/RC})\)", 
-"\(v_c = V(e^{-t/RC}-1)\)", 
-"\(v_c = i_cR\)"
-]
-,labels => "ABCD" );
+labels => "ABC" );
 
 BEGIN_TEXT							
 The figure shows an \(RC\) circuit with a voltage source as its input, and with two switches to connect and disconnect the voltage. Both switches are initially open. The switch 1 is then closed at time \(t = 0\), connecting the battery to the \(RC\) circuit, while switch 2 remains open. What is the voltage across the capacitor as a function of time? (hint: start by writing KVL around the circuit.)
