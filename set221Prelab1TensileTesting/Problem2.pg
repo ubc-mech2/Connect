@@ -1,8 +1,15 @@
 ##DESCRIPTION
 ## 221 Prelab 1 Tensile Testing
-## Question Set 1 - 4
 ##ENDDESCRIPTION
 
+##KEYWORDS('multiple choice', 'stress', 'strain')
+
+## DBsubject('MECH 221')
+## DBchapter('Prelab Quizzes')
+## DBsection('Prelab 1 Tensile Testing')
+## Date('7/5/2017')
+## Institution('University of British Columbia')
+## Question Set 1 - 4
 ## Problem2
 
 ########################################################################
@@ -26,7 +33,7 @@ $mc = RadioButtons( # Set up possible options
 "stress and strain can be related to each other through the compliance constant" 
 ]
 ,"stress and strain can be used to generalize results to objects of different size", # correct option
-labels => "ABCD" );
+labels => "ABC" );
 
 BEGIN_TEXT
 In what way is the stress and strain information more useful than applied force and elongation?
