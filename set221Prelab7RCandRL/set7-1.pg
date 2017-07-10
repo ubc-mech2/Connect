@@ -4,9 +4,9 @@
 
 ##KEYWORDS('calculated formula', 'time constant', 'circuit', 'voltage', 'current', 'inductor')
 
-## DBsubject('221 Prelab Quizzes')
-## DBchapter('Prelab 7)
-## DBsection('RC and RL')
+## DBsubject('MECH 221')
+## DBchapter('Prelab Quizzes')
+## DBsection('Prelab 7 RC and RL')
 ## Date('7/7/2017')
 ## Institution('University of British Columbia')
 ## Question Set 7
@@ -36,7 +36,7 @@ $V = random(2, 3, 0.1);
 $answer = $V * 0 + ($L/$R);
 
 BEGIN_TEXT
-Now consider the new circuit shown below. The voltage supply \(Vs\) gives a square wave by switching between \(+$V\)V and \(-$V\)V every \(T\) seconds. Determine the time constant for the circuit shown. The time constant is the time for the current through the inductor to fall by 63.2% (that is, \(1 - 1/e\)). This is the same as the time for the voltage across the resistor to fall by 63.2% of the supply voltage change. Assume \(V\) varies between \(+/-$V\) volts, \(R = $R\) k ohms, and \(L = $L\) H. Give your answer in milliseconds.
+Now consider the new circuit shown below. The voltage supply \(Vs\) gives a square wave by switching between \(+$V\) \(V\) and \(-$V\) \(V\) every \(T\) seconds. Determine the time constant for the circuit shown. The time constant is the time for the current through the inductor to fall by 63.2% (that is, \(1 - 1/e\)). This is the same as the time for the voltage across the resistor to fall by 63.2% of the supply voltage change. Assume \(V\) varies between \(+/-$V\) volts, \(R = $R\) \(k\Omega\), and \(L = $L\) \(H\). Give your answer in milliseconds.
 
 $PAR
 \{ image( "imagename.png", width=>150, height=>150 ) \}

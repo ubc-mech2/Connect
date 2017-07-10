@@ -4,9 +4,9 @@
 
 ##KEYWORDS('calculated formula', 'frequency', 'circuit', 'voltage', 'inductor')
 
-## DBsubject('221 Prelab Quizzes')
-## DBchapter('Prelab 7)
-## DBsection('RC and RL')
+## DBsubject('MECH 221')
+## DBchapter('Prelab Quizzes')
+## DBsection('Prelab 7 RC and RL')
 ## Date('7/7/2017')
 ## Institution('University of British Columbia')
 ## Question Set 8
@@ -40,7 +40,7 @@ $answer = $numerator/$denominator;
 
 BEGIN_TEXT
 	
-If the voltage supply gives a square wave output from \(+$V\)\(V\) to \(-$V\)\(V\), what is the maximum output frequency such that the inductor current, \(i_L\), has enough time to reach \($X%\) of the target steady state current? Assume \(R = $R\) \(k\) \(ohms\), \(L = $L\) \(H\), and the frequency is measured in Hz based on the full square wave.
+If the voltage supply gives a square wave output from \(+$V\) \(V\) to \(-$V\) \(V\), what is the maximum output frequency such that the inductor current, \(i_L\), has enough time to reach \($X%\) of the target steady state current? Assume \(R = $R\) \(k\Omega\), \(L = $L\) \(H\), and the frequency is measured in Hz based on the full square wave.
 
 $PAR
 \{ image( "imagename.png", width=>150, height=>150 ) \}

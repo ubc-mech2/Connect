@@ -4,9 +4,9 @@
 
 ##KEYWORDS('multiple choice', 'RC', 'circuit', 'voltage', 'capacitor')
 
-## DBsubject('221 Prelab Quizzes')
-## DBchapter('Prelab 7)
-## DBsection('RC and RL')
+## DBsubject('MECH 221')
+## DBchapter('Prelab Quizzes')
+## DBsection('Prelab 7 RC and RL')
 ## Date('7/7/2017')
 ## Institution('University of British Columbia')
 ## Question Set 1 
@@ -43,7 +43,7 @@ last => # set up order in which options will be displayed
 ,labels => "ABC" );
 
 BEGIN_TEXT							
-The figure shows an \(RC\) circuit with a voltage source as its input, and with two switches to connect and disconnect the voltage. Both switches are initially open. The switch 1 is then closed at time \(t = 0\), connecting the battery to the \(RC\) circuit, while switch 2 remains open. After a very long time, what is the voltage across the capacitor?
+The figure shows an RC circuit with a voltage source as its input, and with two switches to connect and disconnect the voltage. Both switches are initially open. The switch 1 is then closed at time \(t = 0\), connecting the battery to the RC circuit, while switch 2 remains open. After a very long time, what is the voltage across the capacitor?
 $PAR
 \{ image( "imagename.png", width=>150, height=>150 ) \}
 $PAR

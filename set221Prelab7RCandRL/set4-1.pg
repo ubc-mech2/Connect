@@ -4,9 +4,9 @@
 
 ##KEYWORDS('calculated formula', 'RC', 'circuit', 'voltage', 'capacitor', 'frequency')
 
-## DBsubject('221 Prelab Quizzes')
-## DBchapter('Prelab 7)
-## DBsection('RC and RL')
+## DBsubject('MECH 221')
+## DBchapter('Prelab Quizzes')
+## DBsection('Prelab 7 RC and RL')
 ## Date('7/7/2017')
 ## Institution('University of British Columbia')
 ## Question Set 4
@@ -40,7 +40,7 @@ $part3 = ln($part2);
 $answer = 1 / ($part1 * $part3);
 
 BEGIN_TEXT
-If the voltage supply gives a square wave output from \(+$V\)\(V\) to \(-$V\)\(V\), determine the maximum frequency of the signal generator such that the capacitor voltage, \(v_c\), has enough time to reach \($X%\) of the maximum voltage \(+V\)? Assume \(R = $R\) k ohms, \(C = $C\) micro Farads and the frequency is measured in Hz based on the full square wave. (Remember that the capacitor voltage will be smaller than the supply voltage for both the positive and negative portions of the square wave.)
+If the voltage supply gives a square wave output from \(+$V\)\(V\) to \(-$V\)\(V\), determine the maximum frequency of the signal generator such that the capacitor voltage, \(v_c\), has enough time to reach \($X%\) of the maximum voltage \(+V\)? Assume \(R = $R\) \(k\Omega\), \(C = $C\) \(\mu F\) and the frequency is measured in Hz based on the full square wave. (Remember that the capacitor voltage will be smaller than the supply voltage for both the positive and negative portions of the square wave.)
 
 $PAR
 \{ image( "imagename.png", width=>150, height=>150 ) \}
