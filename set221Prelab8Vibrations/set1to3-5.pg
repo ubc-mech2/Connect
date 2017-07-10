@@ -1,8 +1,15 @@
 ##DESCRIPTION
 ## 221 Prelab 8 Vibrations
-## Question Set 1 to 3
 ##ENDDESCRIPTION
 
+##KEYWORDS('multiple choice', 'vibrating', 'system', 'damped')
+
+## DBsubject('221 Prelab Quizzes')
+## DBchapter('Prelab 8)
+## DBsection('Vibrations')
+## Date('7/10/2017')
+## Institution('University of British Columbia')
+## Question Set 1 to 3
 ## Problem5
 
 #######################################################################
@@ -27,7 +34,7 @@ $mc = RadioButtons( # Set up possible options
 "Damping factor"
 ]
 ,"Logarithmic decrement", # correct option
-labels => "ABCD" );
+labels => "ABC" );
 
 BEGIN_TEXT								
 In a damped vibrating system what can the following quantity represent \(\frac{2\pi\sigma}{\sqrt{1-\sigma^2}}\)

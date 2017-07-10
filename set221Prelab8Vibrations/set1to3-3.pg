@@ -1,8 +1,15 @@
 ##DESCRIPTION
 ## 221 Prelab 8 Vibrations
-## Question Set 1 to 3
 ##ENDDESCRIPTION
 
+##KEYWORDS('multiple choice', 'differential', 'vibration', 'damping')
+
+## DBsubject('221 Prelab Quizzes')
+## DBchapter('Prelab 8)
+## DBsection('Vibrations')
+## Date('7/10/2017')
+## Institution('University of British Columbia')
+## Question Set 1 to 3
 ## Problem3
 
 #######################################################################
@@ -26,7 +33,7 @@ $mc = RadioButtons( # Set up possible options
 "\( x = A\sin(\omega_dt + C) + B\cos(\omega_dt + D) \)",
 ]
 ,"\( x = C\sin(\omega_nt + \phi) \)", # correct option
-labels => "ABCD" );
+labels => "ABC" );
 
 BEGIN_TEXT							
 Which quantity in a vibrating system is equivalent to a spring constant divided by the mass?

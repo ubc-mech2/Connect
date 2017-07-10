@@ -1,8 +1,15 @@
 ##DESCRIPTION
 ## 221 Prelab 8 Vibrations
-## Question Set 1 to 3
 ##ENDDESCRIPTION
 
+##KEYWORDS('multiple choice', 'viscous', 'damping', 'force')
+
+## DBsubject('221 Prelab Quizzes')
+## DBchapter('Prelab 8)
+## DBsection('Vibrations')
+## Date('7/10/2017')
+## Institution('University of British Columbia')
+## Question Set 1 to 3
 ## Problem10
 
 #######################################################################
@@ -27,7 +34,7 @@ $mc = RadioButtons( # Set up possible options
 "the viscosity of the fluid and shape of the body"
 ]
 ,"the damping constant of the system and speed of the body", # correct option
-labels => "ABCD" );
+labels => "ABC" );
 
 BEGIN_TEXT								
 Viscous damping force acting on a vibrating body is directly proportional to:

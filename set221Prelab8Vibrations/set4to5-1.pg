@@ -1,8 +1,15 @@
 ##DESCRIPTION
 ## 221 Prelab 8 Vibrations
-## Question Set 4 to 5
 ##ENDDESCRIPTION
 
+##KEYWORDS('calculated formula', 'lightly', 'damping', 'ratio')
+
+## DBsubject('221 Prelab Quizzes')
+## DBchapter('Prelab 8)
+## DBsection('Vibrations')
+## Date('7/10/2017')
+## Institution('University of British Columbia')
+## Question Set 4 to 5
 ## Problem1
 
 ########################################################################
@@ -26,7 +33,6 @@ Context("Numeric");
 $x = random(2, 3, 0.1);
 $y = random(1, 2, 0.1);
 $answer = (ln($x/$y)) / 2 / 3.1415;
-
 
 BEGIN_TEXT
 	

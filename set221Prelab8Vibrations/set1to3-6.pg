@@ -1,8 +1,15 @@
 ##DESCRIPTION
 ## 221 Prelab 8 Vibrations
-## Question Set 1 to 3
 ##ENDDESCRIPTION
 
+##KEYWORDS('multiple choice', 'vibrating', 'system', 'damped')
+
+## DBsubject('221 Prelab Quizzes')
+## DBchapter('Prelab 8)
+## DBsection('Vibrations')
+## Date('7/10/2017')
+## Institution('University of British Columbia')
+## Question Set 1 to 3
 ## Problem6
 
 #######################################################################
@@ -26,7 +33,7 @@ $mc = RadioButtons( # Set up possible options
 "\( \omega_n \sqrt{1-c_c^2} \)"
 ]
 ,"\( \omega_n \sqrt{1-\sigma^2} \)", # correct option
-labels => "ABCD" );
+labels => "ABC" );
 
 BEGIN_TEXT								
 A damped vibrating system will oscillate at a frequency equal to:

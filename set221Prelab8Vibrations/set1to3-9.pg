@@ -1,8 +1,15 @@
 ##DESCRIPTION
 ## 221 Prelab 8 Vibrations
-## Question Set 1 to 3
 ##ENDDESCRIPTION
 
+##KEYWORDS('multiple choice', 'mechanical', 'systems', 'vibrating')
+
+## DBsubject('221 Prelab Quizzes')
+## DBchapter('Prelab 8)
+## DBsection('Vibrations')
+## Date('7/10/2017')
+## Institution('University of British Columbia')
+## Question Set 1 to 3
 ## Problem9
 
 #######################################################################
@@ -27,7 +34,7 @@ $mc = RadioButtons( # Set up possible options
 "potential field, energy loss"
 ]
 ,"potential field, inertia", # correct option
-labels => "ABCD" );
+labels => "ABC" );
 
 BEGIN_TEXT								
 All vibrating mechanical systems must have at least the following:
