@@ -1,8 +1,15 @@
 ##DESCRIPTION
 ## 221 Prelab 9 RLC
-## Question Set 5
 ##ENDDESCRIPTION
 
+##KEYWORDS('multiple choice', 'RLC', 'under', 'damped')
+
+## DBsubject('MECH 221')
+## DBchapter('Prelab Quizzes')
+## DBsection('Prelab 9 RLC')
+## Date('7/10/2017')
+## Institution('University of British Columbia')
+## Question Set 5
 ## Problem1
 
 #######################################################################
@@ -27,7 +34,7 @@ $mc = RadioButtons( # Set up possible options
 "Voltage and time at any two points (A, B, C, D or E)"
 ]
 ,"Voltage and time at any two points (A, B, C, D or E)", # correct option
-labels => "ABCD" );
+labels => "ABC" );
 
 BEGIN_TEXT								
 Consider an RLC circuit with the under-damped response as shown in the figure. The expression for the voltage across the resistor is given in Equation 2 in the lab manual. With \(C = 0\), notice that there are still four unknown parameters in the equation (\(\alpha\), \(\tau\), \(\omega\), and \(\phi\)). If the figure represents the output \(V_R\) versus \(t\) on an oscilloscope, what best describes the minimum number points on the response that should be measured to determine the unknown parameters in Equation 2?

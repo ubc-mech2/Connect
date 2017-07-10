@@ -1,8 +1,15 @@
 ##DESCRIPTION
 ## 221 Prelab 9 RLC
-## Question Set 1 to 2
 ##ENDDESCRIPTION
 
+##KEYWORDS('multiple choice', 'RLC', 'circuit', 'voltage', 'damped')
+
+## DBsubject('MECH 221')
+## DBchapter('Prelab Quizzes')
+## DBsection('Prelab 9 RLC')
+## Date('7/10/2017')
+## Institution('University of British Columbia')
+## Question Set 1 to 2
 ## Problem3
 
 #######################################################################
@@ -25,7 +32,7 @@ $mc = RadioButtons( # Set up possible options
 "under-damped"
 ]
 ,"under-damped", # correct option
-labels => "ABCD" );
+labels => "ABC" );
 
 BEGIN_TEXT	
 						
@@ -33,7 +40,7 @@ Consider the RLC circuit as shown in the figure. The voltage source is applied t
 $PAR
 \{ image( "imagename.png", width=>150, height=>150 ) \}
 $PAR
-If \(L = 0.51 H\), \(C = 0.8 micro F\), and \(R = 1.2 k\) \(ohms\), determine if the circuit is over-damped, critically damped, or under-damped:
+If \(L = 0.51\) \(H\), \(C = 0.8\) \(\mu F\), and \(R = 1.2\) \(k\Omega\), determine if the circuit is over-damped, critically damped, or under-damped:
 $PAR
 \{ $mc->buttons() \}
 

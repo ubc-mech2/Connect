@@ -1,8 +1,15 @@
 ##DESCRIPTION
 ## 221 Prelab 9 RLC
-## Question Set 7
 ##ENDDESCRIPTION
 
+##KEYWORDS('multiple choice', 'RLC', 'critically', 'damped')
+
+## DBsubject('MECH 221')
+## DBchapter('Prelab Quizzes')
+## DBsection('Prelab 9 RLC')
+## Date('7/10/2017')
+## Institution('University of British Columbia')
+## Question Set 7
 ## Problem1
 
 #######################################################################
@@ -30,7 +37,7 @@ $mc = RadioButtons( # Set up possible options
 labels => "ABCD" );
 
 BEGIN_TEXT								
-Consider an RLC circuit with the under-damped response as shown in the figure. If the figure represents the output \(V_R\) versus \(t\) on an oscilloscope, what is the approximate time constant?
+Consider an RLC circuit with the critically damped response as shown in the figure. The expression for the voltage across the resistor is given in Equation 3 in the lab manual. What is the relationship between the time constant, tau, in Equation 3 and the time where the voltage reaches a maximum, \(t_{max}\), in the figure? (Hint: start by solving for the time when \(V_R\) reaches a maximum.)
 $PAR
 
 \{ image( "imagename.png", width=>150, height=>150 ) \}

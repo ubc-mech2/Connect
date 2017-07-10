@@ -1,8 +1,15 @@
 ##DESCRIPTION
 ## 221 Prelab 9 RLC
-## Question Set 3
 ##ENDDESCRIPTION
 
+##KEYWORDS('multiple choice', 'RLC', 'setting', 'time')
+
+## DBsubject('MECH 221')
+## DBchapter('Prelab Quizzes')
+## DBsection('Prelab 9 RLC')
+## Date('7/10/2017')
+## Institution('University of British Columbia')
+## Question Set 3
 ## Problem1
 
 #######################################################################
@@ -26,14 +33,7 @@ $mc = RadioButtons( # Set up possible options
 "The system's settling time is 4 to 5 times the slow-decay time constant"
 ]
 ,"The system's settling time is 4 to 5 times the slow-decay time constant", # correct option
-last => # set up order in which options will be displayed
-[
-"The system's settling time is 1 to 2 times the fast-decay time constant", 
-"The system's settling time is 4 to 5 times the fast-decay time constant", 
-"The system's settling time is 1 to 2 times the slow-decay time constant",
-"The system's settling time is 4 to 5 times the slow-decay time constant"
-]
-,labels => "ABCD" );
+labels => "ABC" );
 
 BEGIN_TEXT	
 						

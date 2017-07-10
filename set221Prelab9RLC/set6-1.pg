@@ -1,8 +1,15 @@
 ##DESCRIPTION
 ## 221 Prelab 9 RLC
-## Question Set 6
 ##ENDDESCRIPTION
 
+##KEYWORDS('multiple choice', 'RLC', 'under', 'damped')
+
+## DBsubject('MECH 221')
+## DBchapter('Prelab Quizzes')
+## DBsection('Prelab 9 RLC')
+## Date('7/10/2017')
+## Institution('University of British Columbia')
+## Question Set 6
 ## Problem1
 
 #######################################################################
@@ -27,7 +34,7 @@ $mc = RadioButtons( # Set up possible options
 "> 90 seconds"
 ]
 ,"20 seconds", # correct option
-labels => "ABCD" );
+labels => "ABC" );
 
 BEGIN_TEXT								
 Consider an RLC circuit with the under-damped response as shown in the figure. If the figure represents the output \(V_R\) versus \(t\) on an oscilloscope, what is the approximate time constant?
