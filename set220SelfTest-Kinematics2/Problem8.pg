@@ -4,9 +4,9 @@
 
 ##KEYWORDS('multiple choice', 'rocket', 'vertically', 'velocity')
 
-## DBsubject('220 Self Test')
-## DBchapter('Kinematics')
-## DBsection('Velocity')
+## DBsubject('MECH 220')
+## DBchapter('Practice Quizzes')
+## DBsection('Kinematics 2')
 ## Date('6/28/2017')
 ## Institution('University of British Columbia')
 ## Problem8
@@ -32,7 +32,7 @@ $mc = RadioButtons(
 "\( v = b \sec \theta \dot\theta \)", 
 "\( v = b \sec^2 \theta \dot\theta \)" ]
     , "\( v = b \sec^2 \theta \dot\theta \)"
-    ,labels => "ABCD" );
+    ,labels => "ABC" );
 
 BEGIN_TEXT
 A rocket is fired vertically from a launch pad  \(B\). Its flight is tracked by radar from point \(A\). Determine the velocity of the rocket in terms of \(b\), \(\theta\), and \(d\theta/dt\).

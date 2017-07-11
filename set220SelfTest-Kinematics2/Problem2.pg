@@ -4,9 +4,9 @@
 
 ##KEYWORDS('multiple choice', 'cars', 'accelerates', 'speed', 'rate')
 
-## DBsubject('220 Self Test')
-## DBchapter('Kinematics')
-## DBsection('Speed')
+## DBsubject('MECH 220')
+## DBchapter('Practice Quizzes')
+## DBsection('Kinematics 2')
 ## Date('6/28/2017')
 ## Institution('University of British Columbia')
 ## Problem2
@@ -32,7 +32,7 @@ $mc = RadioButtons(
 "\( 130.1\) \(km/hr \)",
 "\( 174.6\) \(km/hr \)" ]
     , "\( 104.4\) \(km/hr \)"
-    ,labels => "ABCD" );
+    ,labels => "ABC" );
 
 BEGIN_TEXT
 

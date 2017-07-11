@@ -4,9 +4,9 @@
 
 ##KEYWORDS('multiple choice', 'ball', 'projected', 'velocity', 'incline', 'range')
 
-## DBsubject('220 Self Test')
-## DBchapter('Kinematics')
-## DBsection('Distance')
+## DBsubject('MECH 220')
+## DBchapter('Practice Quizzes')
+## DBsection('Kinematics 2')
 ## Date('6/28/2017')
 ## Institution('University of British Columbia')
 ## Problem10
@@ -31,7 +31,7 @@ $mc = RadioButtons(
 "\( 12.79\) \( m \)", 
 "\( 25.8\) \( m \)" ]
     , "\( 12.79\) \( m \)"
-    ,labels => "ABCD" );
+    ,labels => "ABC" );
 
 BEGIN_TEXT
 A ball is projected from point A with a velocity \(v_0 = 10\) \(m/s\). The launch angle is \(15^{\circ}\) less than perpendicular to the incline, as shown. The incline is \(20^{\circ}\) from horizontal. Knowing that the ball strikes the incline at \(B\), determine the range, \(R\), that the ball travels.

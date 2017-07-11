@@ -4,9 +4,9 @@
 
 ##KEYWORDS('multiple choice', 'rotation', 'arm', 'collar', 'velocity')
 
-## DBsubject('220 Self Test')
-## DBchapter('Kinematics')
-## DBsection('Rotation')
+## DBsubject('MECH 220')
+## DBchapter('Practice Quizzes')
+## DBsection('Kinematics 2')
 ## Date('6/28/2017')
 ## Institution('University of British Columbia')
 ## Problem5
@@ -32,7 +32,7 @@ $mc = RadioButtons(
 "\( (-3.39e_r + 97.9e_\theta) \) \(m/s \)", 
 "\( (3.39e_r + 97.9e_\theta) \) \(m/s \)" ]
     , "\( (-0.449e_r + 0.270e_\theta) \) \( m/s \)"
-    ,labels => "ABCD" );
+    ,labels => "ABC" );
 
 BEGIN_TEXT
 

@@ -4,9 +4,9 @@
 
 ##KEYWORDS('multiple choice', 'rest', 'accelerates', 'brakes', 'time')
 
-## DBsubject('220 Self Test')
-## DBchapter('Kinematics')
-## DBsection('Time')
+## DBsubject('MECH 220')
+## DBchapter('Practice Quizzes')
+## DBsection('Kinematics 2')
 ## Date('6/28/2017')
 ## Institution('University of British Columbia')
 ## Problem1
@@ -32,7 +32,7 @@ $mc = RadioButtons(
 "\( 36\) \(s \)",
 "\( 47\) \(s \)" ]
     , "\( 36\) \(s \)"
-    ,labels => "ABCD" );
+    ,labels => "ABC" );
 
 BEGIN_TEXT
 
