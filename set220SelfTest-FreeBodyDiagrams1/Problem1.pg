@@ -4,9 +4,9 @@
 
 ##KEYWORDS('multiple choice', 'tension', 'cable')
 
-## DBsubject('220 Self Test')
-## DBchapter('Free Body Diagrams 1')
-## DBsection('Tension')
+## DBsubject('MECH 220')
+## DBchapter('Practice Quizzes')
+## DBsection('Free Body Diagrams 1')
 ## Date('6/28/2017')
 ## Institution('University of British Columbia')
 ## Problem1
@@ -31,7 +31,7 @@ $mc = RadioButtons(
 "\(81.6\) \(N\)", 
 "\(98.1\) \(N\)" ]
     , "\(70.4\) \(N\)"
-    ,labels => "ABCD" );
+    ,labels => "ABC" );
 
 BEGIN_TEXT
 Given \(\alpha = 35\), \(\beta = 45\), and \(m = 10\) \(kg\), what is the tension in cable \(AC\)?

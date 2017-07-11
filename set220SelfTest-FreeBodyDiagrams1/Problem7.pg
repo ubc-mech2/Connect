@@ -4,9 +4,9 @@
 
 ##KEYWORDS('multiple choice', 'load', 'bracket', 'pipe', 'static', 'friction')
 
-## DBsubject('220 Self Test')
-## DBchapter('Free Body Diagrams 1')
-## DBsection('Load')
+## DBsubject('MECH 220')
+## DBchapter('Practice Quizzes')
+## DBsection('Free Body Diagrams 1')
 ## Date('6/28/2017')
 ## Institution('University of British Columbia')
 ## Problem7
@@ -31,7 +31,7 @@ $mc = RadioButtons(
 "\( 0.200\) \(m \)", 
 "\( 0.217\) \(m \)" ]
     , "\( 0.1667\) \(m \)"
-    ,labels => "ABCD" );
+    ,labels => "ABC" );
 
 BEGIN_TEXT
 The movable bracket shown may be placed at any height on the \(50\) \(mm\)-diameter pipe. If the coefficient of static friction between the pipe and bracket is \(0.30\), determine the minimum distance \(x\) at which the load \(P\) can be supported. Assume that the bracket is weightless.

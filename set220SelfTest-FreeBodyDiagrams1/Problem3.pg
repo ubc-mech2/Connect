@@ -4,9 +4,9 @@
 
 ##KEYWORDS('multiple choice', 'ring', 'force')
 
-## DBsubject('220 Self Test')
-## DBchapter('Free Body Diagrams 1')
-## DBsection('Tension')
+## DBsubject('MECH 220')
+## DBchapter('Practice Quizzes')
+## DBsection('Free Body Diagrams 1')
 ## Date('6/28/2017')
 ## Institution('University of British Columbia')
 ## Problem3
@@ -31,7 +31,7 @@ $mc = RadioButtons(
 "\( 751\) \(N \)", 
 "\( 981\) \(N \)" ]
     , "\( 482\) \(N \)"
-    ,labels => "ABCD" );
+    ,labels => "ABC" );
 
 BEGIN_TEXT
 Given the same parameters as in Question 2 (\(\alpha = 40\), \(\beta = 50\), and \(m = 100\) \(kg\)), what is the maximum horizontal force that the wall-mounted ring at \(B\) must support?
