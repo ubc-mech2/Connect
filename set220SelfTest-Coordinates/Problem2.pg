@@ -4,9 +4,9 @@
 
 ##KEYWORDS('coordinates', 'cylindrical', 'point')
 
-## DBsubject('220 Self Test')
-## DBchapter('Coordinates')
-## DBsection('Cylindrical')
+## DBsubject('MECH 220')
+## DBchapter('Practice Quizzes')
+## DBsection('Coordinates')
 ## Date('6/27/2017')
 ## Institution('University of British Columbia')
 ## Problem2
@@ -31,7 +31,7 @@ $mc = RadioButtons(
 	"\( (2.24, 63.4, -2) \)", 
 	"\( (3, 63.4, 2) \)" ]
        ,"\( (2.24, 63.4, -2) \)"
-         ,labels => "ABCD" );
+         ,labels => "ABC" );
 
 BEGIN_TEXT
 Given the point \( (1, 2, -2) \) in x-y-z space, what is this point in cylindrical coordinates? (use angles in degrees)

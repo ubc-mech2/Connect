@@ -4,9 +4,9 @@
 
 ##KEYWORDS('coordinate', 'transformation', 'intersection')
 
-## DBsubject('220 Self Test')
-## DBchapter('Coordinates')
-## DBsection('Transformation')
+## DBsubject('MECH 220')
+## DBchapter('Practice Quizzes')
+## DBsection('Coordinates')
 ## Date('6/27/2017')
 ## Institution('University of British Columbia')
 ## Problem8
@@ -48,7 +48,7 @@ $mc = RadioButtons(
 "\($M1\) = \(100$MD\)\($M2\)+\($MB2\)",
 "\($M1\) = \(100$ME\)\($M2\)" ]
     , "\($M1\) = \(100$MC\)\($M2\)+\($MB2\)"
-    ,labels => "ABCDE" );
+    ,labels => "ABC" );
 
 BEGIN_TEXT
 
