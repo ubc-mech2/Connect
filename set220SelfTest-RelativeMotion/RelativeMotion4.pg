@@ -4,9 +4,9 @@
 
 ##KEYWORDS('multiple choice', 'rigid', 'ball', 'socket', 'joint', 'rod', 'rod', 'acceleration')
 
-## DBsubject('220 Self Test')
-## DBchapter('Relative Motion')
-## DBsection('Angular Velocity')
+## DBsubject('MECH 220')
+## DBchapter('Practice Quizzes')
+## DBsection('Relative Motion')
 ## Date('6/28/2017')
 ## Institution('University of British Columbia')
 ## Problem4
@@ -34,7 +34,7 @@ $mc = RadioButtons(
 "\( (405i + 432j +324k)\) \( m/s^2 \)",
 "\( (-405i - 432j - 324k)\) \( m/s^2 \)" ]
 ,"\( (-405i - 432j - 324k)\) \( m/s^2 \)" #This is the correct choice
-,labels => "ABCD" );
+,labels => "ABC" );
 
 BEGIN_TEXT
 For the bent rod from Problem 3, what is the acceleration of corner \(B\)?

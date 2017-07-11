@@ -4,9 +4,9 @@
 
 ##KEYWORDS('multiple choice', 'collar', 'shaft', 'pin', 'rotating', 'degrees', 'freedom')
 
-## DBsubject('220 Self Test')
-## DBchapter('Relative Motion')
-## DBsection('Degrees of Freedom')
+## DBsubject('MECH 220')
+## DBchapter('Practice Quizzes')
+## DBsection('Relative Motion')
 ## Date('6/28/2017')
 ## Institution('University of British Columbia')
 ## Problem5
@@ -36,8 +36,15 @@ $mc = RadioButtons(
 "\( 7 \)",
 "\( 8 \)" ]
 ,"\( 4 \)" #This is the correct choice
-    ,last => #Display order
-,labels => "ABCD" );
+    ,last => [ "\( 1 \)", 
+"\( 2 \)", 
+"\( 3 \)", 
+"\( 4 \)", 
+"\( 5 \)",
+"\( 6 \)",
+"\( 7 \)",
+"\( 8 \)" ] #Display order
+,labels => "ABC" );
 
 BEGIN_TEXT
 Collar \(A\) slides along a shaft \(OD\). Shaft \(OD\) has a pin connection at \(O\) and is rotating counter-clockwise with angular velocity \(\omega\). Link \(AB\) is connected to collar \(A\) with a pin joint. How many degrees of freedom does this system have relative to ground? (Note: \(OD\) is a cylindrical shaft and \(A\) is a cylindrical collar.)

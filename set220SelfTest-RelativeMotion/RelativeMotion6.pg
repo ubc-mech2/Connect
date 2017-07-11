@@ -4,9 +4,9 @@
 
 ##KEYWORDS('multiple choice', 'collar', 'shaft', 'pin', 'rotating', 'velocity', 'radians')
 
-## DBsubject('220 Self Test')
-## DBchapter('Relative Motion')
-## DBsection('Velocity')
+## DBsubject('MECH 220')
+## DBchapter('Practice Quizzes')
+## DBsection('Relative Motion')
 ## Date('6/28/2017')
 ## Institution('University of British Columbia')
 ## Problem6
@@ -35,7 +35,7 @@ $mc = RadioButtons(
 "\( (1.00i - 3.20j)\) \( m/s \)",
 "\( (-1.85i - 3.34j)\) \( m/s \)" ]
 ,"\( (0.12i - 3.04j)\) \( m/s \)" #This is the correct choice
-,labels => "ABCD" );
+,labels => "ABC" );
 
 BEGIN_TEXT
 For the system in Problem 5, the location of collar \(A\) along \(OD\) is described by \(s\), and \(OD\) and \(AB\) are oriented to the horizontal by angles \(\alpha\) and \(\theta\) respectively, as shown. The length of \(OD\) is \(2\) \(m\). At the instant shown, \(s = 0.5\) \(m\) and is moving towards \(D\) at \(2\) \(m/s\), \(\alpha = 0.15\) radians, \(\theta = 0.25\) radians, and \(\omega = 5\) radians per second. If \(\theta\) is growing at a rate of \(2\) radians per second, what is the velocity of \(B\)?

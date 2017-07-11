@@ -4,9 +4,9 @@
 
 ##KEYWORDS('multiple choice', 'velocity', 'constant', 'angular', 'collar')
 
-## DBsubject('220 Self Test')
-## DBchapter('Relative Motion')
-## DBsection('Angular Velocity')
+## DBsubject('MECH 220')
+## DBchapter('Practice Quizzes')
+## DBsection('Relative Motion')
 ## Date('6/28/2017')
 ## Institution('University of British Columbia')
 ## Problem2
@@ -35,7 +35,7 @@ $mc = RadioButtons(
 "\( (-883i + 510j)\) \( mm/s \)" ]
 ,"\( (349i - 958j)\) \( mm/s \)" #This is the correct choice
     ,last => #Display order
-,labels => "ABCD" );
+,labels => "ABC" );
 
 BEGIN_TEXT
 Considering the linkage in Problem 1, what is the velocity of Collar \(B\)?
