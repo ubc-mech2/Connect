@@ -4,12 +4,13 @@
 
 ##KEYWORDS('multiple choice', 'friction', 'coefficient', 'slope', 'box')
 
-## DBsubject('220 Self Test')
-## DBchapter('Dynamics FBD')
-## DBsection('Friction')
+## DBsubject('MECH 220')
+## DBchapter('Practice Quizzes')
+## DBsection('Dynamics FBD')
 ## Date('6/28/2017')
 ## Institution('University of British Columbia')
 ## Problem1
+
 ########################################################################
 
 DOCUMENT();      
@@ -30,7 +31,7 @@ $mc = RadioButtons(
 "\(9.03\) \(m/s\) up slope", 
 "\(14.88\) \(m/s\) up slope" ]
     , "\(2.98\) \(m/s\) up slope"
-    ,labels => "ABCD" );
+    ,labels => "ABC" );
 
 BEGIN_TEXT
 A \(5 kg\) box is being pulled up a \(37^{\circ}\) slope by a rope parallel to the slope. If the coefficient of sliding friction is \(0.40\) and the tension in the rope is \(60\) \(N\), what is the acceleration of the block?

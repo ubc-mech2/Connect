@@ -4,9 +4,9 @@
 
 ##KEYWORDS('multiple choice', 'friction', 'coefficient', 'slope', 'box', 'static')
 
-## DBsubject('220 Self Test')
-## DBchapter('Dynamics FBD')
-## DBsection('Friction')
+## DBsubject('MECH 220')
+## DBchapter('Practice Quizzes')
+## DBsection('Dynamics FBD')
 ## Date('6/28/2017')
 ## Institution('University of British Columbia')
 ## Problem2
@@ -32,7 +32,7 @@ $mc = RadioButtons(
 "\(2.78\) \(m/s^2\) down slope",
 "\(5.90\) \(m/s^2\) down slope" ]
     , "\(2.78\) \(m/s^2\) down slope"
-    ,labels => "ABCD" );
+    ,labels => "ABC" );
 
 BEGIN_TEXT
 An \(80\) \(kg\) man is trying to pull a \(5\) \(kg\) box up a \(37^{\circ}\) slope. The coefficient of static friction between the box and the ground is \(0.45\) and the coefficient of sliding friction is \(0.40\). The man is wearing shoes with a coefficient of static friction of \(0.35\) to the ground and coefficient sliding friction of \(0.25\) to the ground. Assuming the force the man pulls with is limited only by friction with the ground, how will the box accelerate at the instant shown?
