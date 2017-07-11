@@ -4,9 +4,9 @@
 
 ##KEYWORDS('multiple choice', 'axis', 'solid', 'revolution', 'volume')
 
-## DBsubject('220 Self Test')
-## DBchapter('Integrals')
-## DBsection('Solid of Revolution')
+## DBsubject('MECH 220')
+## DBchapter('Practice Quizzes')
+## DBsection('Integrals')
 ## Date('6/28/2017')
 ## Institution('University of British Columbia')
 ## Problem5
@@ -41,7 +41,7 @@ $mc = RadioButtons(
 "\( \frac{\pi}{3} \)", 
 "\( \frac{\pi}{2} \)",
 "\( \pi \)" ]
-    ,labels => "ABCD" );
+    ,labels => "ABC" );
 
 BEGIN_TEXT
 A solid of revolution is defined by rotating the function \(y(x) = 4x^2\) for \(y < 1\) about the y-axis. What is the volume of the solid?

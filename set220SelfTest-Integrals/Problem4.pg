@@ -4,9 +4,9 @@
 
 ##KEYWORDS('multiple choice', 'area', 'bound', 'region')
 
-## DBsubject('220 Self Test')
-## DBchapter('Integrals')
-## DBsection('Bounds')
+## DBsubject('MECH 220')
+## DBchapter('Practice Quizzes')
+## DBsection('Integrals')
 ## Date('6/28/2017')
 ## Institution('University of British Columbia')
 ## Problem4
@@ -34,7 +34,7 @@ $mc = RadioButtons(
 "\( 2 \)",
 "\( 4 \)" ]
     , "\( \frac{1}{2} \)"
-    ,labels => "ABCD" );
+    ,labels => "ABC" );
 
 BEGIN_TEXT
 What is area of the region bounded by the x-axis and the curve \(y(x) = x(x - 1)(x - 2)\)?

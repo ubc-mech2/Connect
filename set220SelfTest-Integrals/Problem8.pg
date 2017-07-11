@@ -4,9 +4,9 @@
 
 ##KEYWORDS('multiple choice', 'solid', 'revolution', 'radius')
 
-## DBsubject('220 Self Test')
-## DBchapter('Integrals')
-## DBsection('Solid of Revolution')
+## DBsubject('MECH 220')
+## DBchapter('Practice Quizzes')
+## DBsection('Integrals')
 ## Date('6/28/2017')
 ## Institution('University of British Columbia')
 ## Problem8
@@ -34,7 +34,7 @@ $mc = RadioButtons(
 "\( 0.400 \)",
 "\( 0.500 \)" ]
     , "\( 0.333 \)"
-    ,labels => "ABCD" );
+    ,labels => "ABC" );
 
 BEGIN_TEXT
 What is the average radius of the solid of revolution from problem 5?
