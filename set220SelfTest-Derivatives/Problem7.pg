@@ -4,9 +4,9 @@
 
 ##KEYWORDS('multiple choice', 'polynomial', 'function', 'axis', 'tangent')
 
-## DBsubject('220 Self Test')
-## DBchapter('Derivatives')
-## DBsection('Polynomial Functions')
+## DBsubject('MECH 220')
+## DBchapter('Practice Quizzes')
+## DBsection('Derivatives')
 ## Date('6/28/2017')
 ## Institution('University of British Columbia')
 ## Problem7
@@ -32,7 +32,7 @@ $mc = RadioButtons(
 "\( a = -2, b = -2, c = -2, d = 2 \)",
 "\( a = 2, b = -2, c = -2, d = 2 \)" ]
     , "\( a = 2, b = -5, c = 2, d = 2 \)"
-    ,labels => "ABCD" );
+    ,labels => "ABC" );
 
 Context("Fraction");
 
