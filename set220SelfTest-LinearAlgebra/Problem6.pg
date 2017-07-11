@@ -4,9 +4,9 @@
 
 ##KEYWORDS('multiple choice', 'matrix', 'eigenvectors')
 
-## DBsubject('220 Self Test')
-## DBchapter('Linear Algebra')
-## DBsection('Eigenvectors')
+## DBsubject('MECH 220')
+## DBchapter('Practice Quizzes')
+## DBsection('Linear Algebra')
 ## Date('6/28/2017')
 ## Institution('University of British Columbia')
 ## Problem6
@@ -34,7 +34,7 @@ $mc = RadioButtons(
 "\( -3, 4, -5 \)", 
 "\( -6, 6 \)" ]
     , "\( 6, 9 \)" #This is the correct choice
-    ,labels => "ABCD" );
+    ,labels => "ABC" );
 
 Context("Matrix");
 Context()->texStrings;
