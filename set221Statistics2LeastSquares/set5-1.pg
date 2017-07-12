@@ -1,8 +1,15 @@
 ##DESCRIPTION
-## 221 Statistics 2 Least Squares
-## Question Set 5
+## 221 Statistics 2 - Least Squares
 ##ENDDESCRIPTION
 
+##KEYWORDS('multiple choice', 'derivative', 'sequence', 'steps')
+
+## DBsubject('MECH 221')
+## DBchapter('Statistics Quizzes')
+## DBsection('Statistics 2 - Least Squares')
+## Date('7/12/2017')
+## Institution('University of British Columbia')
+## Question Set 5
 ## Problem1
 
 #######################################################################
@@ -27,7 +34,7 @@ $mc = RadioButtons( # Set up possible options
 "Take the sum of the derivatives of the squares of the deviations ot the best fit line and set equal to zero"
 ]
 ,"Take the derivative of the sum of the squares of the deviations to the best fit line and set equal to zero", # correct option
-labels => "ABCD" );
+labels => "ABC" );
 
 BEGIN_TEXT
 	

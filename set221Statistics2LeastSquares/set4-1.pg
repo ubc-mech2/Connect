@@ -1,8 +1,15 @@
 ##DESCRIPTION
-## 221 Statistics 2 Least Squares
-## Question Set 4
+## 221 Statistics 2 - Least Squares
 ##ENDDESCRIPTION
 
+##KEYWORDS('multiple choice', 'sinusoidal', 'amplitude', 'deviation')
+
+## DBsubject('MECH 221')
+## DBchapter('Statistics Quizzes')
+## DBsection('Statistics 2 - Least Squares')
+## Date('7/12/2017')
+## Institution('University of British Columbia')
+## Question Set 4
 ## Problem1
 
 #######################################################################
@@ -28,7 +35,7 @@ $mc = RadioButtons( # Set up possible options
 "This cannot be done with least squares"
 ]
 ,"\( a_0 \sin(x_i) - y_i \)", # correct option
-labels => "ABCD" );
+labels => "ABC" );
 
 BEGIN_TEXT
 	

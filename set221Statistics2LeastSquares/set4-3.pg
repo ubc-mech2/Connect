@@ -1,8 +1,15 @@
 ##DESCRIPTION
-## 221 Statistics 2 Least Squares
-## Question Set 4
+## 221 Statistics 2 - Least Squares
 ##ENDDESCRIPTION
 
+##KEYWORDS('multiple choice', 'second order', 'polynomial', 'deviation')
+
+## DBsubject('MECH 221')
+## DBchapter('Statistics Quizzes')
+## DBsection('Statistics 2 - Least Squares')
+## Date('7/12/2017')
+## Institution('University of British Columbia')
+## Question Set 4
 ## Problem3
 
 #######################################################################
@@ -29,15 +36,7 @@ $mc = RadioButtons( # Set up possible options
 ]
 ,"\( a_0 + a_1 x_i + a_ 2 x_i^2 - y_i \)", # correct option
 last => # set up order in which options will be displayed
-[
-"\( a_0 + a_1 x_i \)", 
-"\( a_0 + a_1 x_i - y_i \)", 
-"\( a_0 + a_1 x_i + a_ 2 x_i^2 \)", 
-"\( a_0 + a_1 x_i + a_ 2 x_i^2 - y_i \)",
-"\( a_0 + a_1 x_i + a_ 2 x_i^2 - y_i = 0 \)",
-"This cannot be done with least squares"
-],
-labels => "ABCD" );
+labels => "ABC" );
 
 BEGIN_TEXT
 			
