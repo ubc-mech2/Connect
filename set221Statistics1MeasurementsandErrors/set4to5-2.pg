@@ -1,8 +1,15 @@
 ##DESCRIPTION
-## 221 Statistics 1
-## Question Set 4 to 5
+## 221 Statistics 1 - Measurements and Errors
 ##ENDDESCRIPTION
 
+##KEYWORDS('multiple choice', 'measurement', 'error')
+
+## DBsubject('MECH 221')
+## DBchapter('Statistics Quizzes')
+## DBsection('Statistics 1 - Measurements and Errors')
+## Date('7/12/2017')
+## Institution('University of British Columbia')
+## Question Set 4 to 5
 ## Problem2
 
 #######################################################################
@@ -20,22 +27,14 @@ loadMacros(
 
 $mc = RadioButtons( # Set up possible options
 [
-"+/- 0.5 psi", 
-"+/- 1 psi", 
-"+/- 2 psi", 
-"+/- 5 psi",
-"+/- 10 psi"
+"\(\pm\) 0.5 psi", 
+"\(\pm\) 1 psi", 
+"\(\pm\) 2 psi", 
+"\(\pm\) 5 psi",
+"\(\pm\) 10 psi"
 ]
-,"+/- 2 psi", # correct option
-last => # set up order in which options will be displayed
-[
-"+/- 0.5 psi", 
-"+/- 1 psi", 
-"+/- 2 psi", 
-"+/- 5 psi",
-"+/- 10 psi"
-]
-,labels => "ABCD" );
+,"\(\pm\) 2 psi", # correct option
+labels => "ABC" );
 
 BEGIN_TEXT
 		

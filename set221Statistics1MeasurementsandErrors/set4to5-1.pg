@@ -1,8 +1,15 @@
 ##DESCRIPTION
-## 221 Statistics 1
-## Question Set 4 to 5
+## 221 Statistics 1 - Measurements and Errors
 ##ENDDESCRIPTION
 
+##KEYWORDS('multiple choice', 'measurement', 'error')
+
+## DBsubject('MECH 221')
+## DBchapter('Statistics Quizzes')
+## DBsection('Statistics 1 - Measurements and Errors')
+## Date('7/12/2017')
+## Institution('University of British Columbia')
+## Question Set 4 to 5
 ## Problem1
 
 #######################################################################
@@ -20,22 +27,14 @@ loadMacros(
 
 $mc = RadioButtons( # Set up possible options
 [
-"+/- 0.05 bar", 
-"+/- 0.1 bar", 
-"+/- 0.2 bar", 
-"+/- 0.5 bar",
-"+/- 1.0 bar"
+"\(\pm\) 0.05 bar", 
+"\(\pm\) 0.1 bar", 
+"\(\pm\) 0.2 bar", 
+"\(\pm\) 0.5 bar",
+"\(\pm\) 1.0 bar"
 ]
-,"+/- 0.2 bar", # correct option
-last => # set up order in which options will be displayed
-[
-"+/- 0.05 bar", 
-"+/- 0.1 bar", 
-"+/- 0.2 bar", 
-"+/- 0.5 bar",
-"+/- 1.0 bar"
-]
-,labels => "ABCD" );
+,"\(\pm\) 0.2 bar", # correct option
+labels => "ABC" );
 
 BEGIN_TEXT
 		

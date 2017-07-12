@@ -1,8 +1,15 @@
 ##DESCRIPTION
-## 221 Statistics 1
-## Question Set 4 to 5
+## 221 Statistics 1 - Measurements and Errors
 ##ENDDESCRIPTION
 
+##KEYWORDS('multiple choice', 'measurement', 'error')
+
+## DBsubject('MECH 221')
+## DBchapter('Statistics Quizzes')
+## DBsection('Statistics 1 - Measurements and Errors')
+## Date('7/12/2017')
+## Institution('University of British Columbia')
+## Question Set 4 to 5
 ## Problem4
 
 #######################################################################
@@ -20,22 +27,14 @@ loadMacros(
 
 $mc = RadioButtons( # Set up possible options
 [
-"+/- 0.5 deg C", 
-"+/- 1 deg C", 
-"+/- 2 deg C", 
-"+/- 5 deg C",
-"+/- 10 deg C"
+"\(\pm\) 0.5 deg C", 
+"\(\pm\) 1 deg C", 
+"\(\pm\) 2 deg C", 
+"\(\pm\) 5 deg C",
+"\(\pm\) 10 deg C"
 ]
-,"+/- 2 deg C", # correct option
-last => # set up order in which options will be displayed
-[
-"+/- 0.5 deg C", 
-"+/- 1 deg C", 
-"+/- 2 deg C", 
-"+/- 5 deg C",
-"+/- 10 deg C"
-]
-,labels => "ABCD" );
+,"\(\pm\) 2 deg C", # correct option
+labels => "ABC" );
 
 BEGIN_TEXT
 		

@@ -1,8 +1,15 @@
 ##DESCRIPTION
-## 221 Statistics 1
-## Question Set 1
+## 221 Statistics 1 - Measurements and Errors
 ##ENDDESCRIPTION
 
+##KEYWORDS('multiple choice', 'distribution', 'measurements')
+
+## DBsubject('MECH 221')
+## DBchapter('Statistics Quizzes')
+## DBsection('Statistics 1 - Measurements and Errors')
+## Date('7/12/2017')
+## Institution('University of British Columbia')
+## Question Set 1
 ## Problem2
 
 #######################################################################
@@ -28,7 +35,7 @@ $mc = RadioButtons( # Set up possible options
 "it scales the distribution horizontally and vertically"
 ]
 ,"it scales the distribution horizontally and vertically", # correct option
-labels => "ABCD" );
+labels => "ABC" );
 
 BEGIN_TEXT	
 							
