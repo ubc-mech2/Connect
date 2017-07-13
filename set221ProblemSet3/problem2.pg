@@ -2,6 +2,13 @@
 ## 221 Problem Set 3
 ##ENDDESCRIPTION
 
+##KEYWORDS('calculated formula', 'network', 'current')
+
+## DBsubject('MECH 221')
+## DBchapter('Homework')
+## DBsection('221 Problem Set 3')
+## Date('7/13/2017')
+## Institution('University of British Columbia')
 ## Problem2
 
 ########################################################################
@@ -34,7 +41,7 @@ $answer = (($top / $middle) - 12) / $R2;
 
 BEGIN_TEXT
 
-In the network shown, \(V_{S1}=6V\), \(V_{S2}=12V\), \(R_1=$R1\) \(ohm\), \(R_2=$R2\) \(ohm\), \(R_3=$R3\) \(ohm\), and \(R_4=$R4\) \(ohm\). 
+In the network shown, \(V_{S1}=6\) \(V\), \(V_{S2}=12\) \(V\), \(R_1=$R1\) \(\Omega\), \(R_2=$R2\) \(\Omega\), \(R_3=$R3\) \(\Omega\), and \(R_4=$R4\) \(\Omega\). 
 $PAR
 Find \(I_0\) (in Amperes).
 

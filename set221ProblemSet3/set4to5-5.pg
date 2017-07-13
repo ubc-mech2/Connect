@@ -1,9 +1,15 @@
 ##DESCRIPTION
 ## 221 Problem Set 3
-## Question Set 4 to 5
 ##ENDDESCRIPTION
 
-## Problem5
+##KEYWORDS('multiple choice', 'collar', 'absolute', 'acceleration')
+
+## DBsubject('MECH 221')
+## DBchapter('Homework')
+## DBsection('221 Problem Set 3')
+## Date('7/13/2017')
+## Institution('University of British Columbia')
+## Problem4to5-5
 
 #######################################################################
 
@@ -31,7 +37,7 @@ $mc = RadioButtons( # Set up possible options
 "None of the above"
 ]
 ,"\( \dot \Omega_{BC} = -2\) \(rad/s^2\) \(k\) and \((a_{DIB})_{x'y'z'} = 1/2\) \(m/s^2\) \(i'\)", # correct option
-labels => "ABCD" );
+labels => "ABC" );
 
 BEGIN_TEXT
 	

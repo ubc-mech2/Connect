@@ -1,9 +1,15 @@
 ##DESCRIPTION
 ## 221 Problem Set 3
-## Question Set 4 to 5
 ##ENDDESCRIPTION
 
-## Problem2
+##KEYWORDS('multiple choice', 'theta', 'velocity', 'alpha')
+
+## DBsubject('MECH 221')
+## DBchapter('Homework')
+## DBsection('221 Problem Set 3')
+## Date('7/13/2017')
+## Institution('University of British Columbia')
+## Problem4to5-2
 
 #######################################################################
 
@@ -28,13 +34,11 @@ $mc = RadioButtons( # Set up possible options
 "\(173\) \(rad/s^2\)"
 ]
 ,"\(173\) \(rad/s^2\)", # correct option
-labels => "ABCD" );
-
-$deg = "".sprintf("%c",0xb0);
+labels => "ABC" );
 
 BEGIN_TEXT
 	
-The sliders shown below are confined to move in the horizontal and vertical slots. If the velocity, \(v_A\) is a constant \(10\) \(m/s\), determine the magnitude of the angular acceleration, \(\alpha\), when \(\theta = 30$deg\).
+The sliders shown below are confined to move in the horizontal and vertical slots. If the velocity, \(v_A\) is a constant \(10\) \(m/s\), determine the magnitude of the angular acceleration, \(\alpha\), when \(\theta = 30^{\circ}\).
 
 $PAR
 
