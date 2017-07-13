@@ -2,6 +2,13 @@
 ## 221 Problem Set 2
 ##ENDDESCRIPTION
 
+##KEYWORDS('calculated formula', 'resistor', 'power', 'absorbed', 'circuit')
+
+## DBsubject('MECH 221')
+## DBchapter('Homework')
+## DBsection('221 Problem Set 2')
+## Date('7/13/2017')
+## Institution('University of British Columbia')
 ## Problem1
 
 ########################################################################
@@ -29,7 +36,7 @@ $answer = (($V1 / ($R1 + 3*$R2) )**2) * $R1 * (10**(-3));
 
 BEGIN_TEXT
 
-Given \(R_1 = $R1\) \(kohm\), \(R_2 = $R2\) \(kohm\) and \(V_1 = $V1\) \(V\), compute the power (in Watts) absorbed by \(R_1\).
+Given \(R_1 = $R1\) \(k\Omega\), \(R_2 = $R2\) \(k\Omega\) and \(V_1 = $V1\) \(V\), compute the power (in Watts) absorbed by \(R_1\).
 $PAR
 
 \{ image( "imagename.png", width=>150, height=>150 ) \}

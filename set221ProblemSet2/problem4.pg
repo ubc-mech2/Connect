@@ -2,6 +2,13 @@
 ## 221 Problem Set 2
 ##ENDDESCRIPTION
 
+##KEYWORDS('calculated formula', 'network', 'resistance', 'circuit', 'current')
+
+## DBsubject('MECH 221')
+## DBchapter('Homework')
+## DBsection('221 Problem Set 2')
+## Date('7/13/2017')
+## Institution('University of British Columbia')
 ## Problem4
 
 ########################################################################
@@ -34,7 +41,7 @@ $answer = 6 * ( $fraction1 + $fraction2 );
 
 BEGIN_TEXT
 
-In the network shown, \(V_0 = 6\) \(V\), \(R_1=$R1\) \(ohm\), \(R_2=$R2\) \(ohm\), \(R_3=$R3\) \(ohm\), \(R_4=$R4\) \(ohm\), and \(R_5=$R5\) \(ohm\). 
+In the network shown, \(V_0 = 6\) \(V\), \(R_1=$R1\) \(\Omega\), \(R_2=$R2\) \(\Omega\), \(R_3=$R3\) \(\Omega\), \(R_4=$R4\) \(\Omega\), and \(R_5=$R5\) \(\Omega\). 
 Find \(I_s\) (in Amperes).
 $PAR
 

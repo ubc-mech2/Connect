@@ -2,6 +2,13 @@
 ## 221 Problem Set 2
 ##ENDDESCRIPTION
 
+##KEYWORDS('calculated formula', 'network', 'resistance', 'circuit')
+
+## DBsubject('MECH 221')
+## DBchapter('Homework')
+## DBsection('221 Problem Set 2')
+## Date('7/13/2017')
+## Institution('University of British Columbia')
 ## Problem3
 
 ########################################################################
@@ -36,8 +43,8 @@ $answer = $numerator / $denominator;
 
 BEGIN_TEXT
 
-In the network shown, \(R_1=$R1\) \(kohm\), \(R_2=$R2\) \(kohm\), \(R_3=$R3\) \(kohm\), \(R_4=$R4\) \(kohm\), and \(R_5=$R5\) \(kohm\).
-Compute \(R_{AB}\) (in \(kohm\)).
+In the network shown, \(R_1=$R1\) \(k\Omega\), \(R_2=$R2\) \(k\Omega\), \(R_3=$R3\) \(k\Omega\), \(R_4=$R4\) \(k\Omega\), and \(R_5=$R5\) \(k\Omega\).
+Compute \(R_{AB}\) (in \(k\Omega\)).
 $PAR
 
 \{ image( "imagename.png", width=>150, height=>150 ) \}

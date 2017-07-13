@@ -2,6 +2,13 @@
 ## 221 Problem Set 2
 ##ENDDESCRIPTION
 
+##KEYWORDS('multiple choice', 'unique', 'solution', 'IVP')
+
+## DBsubject('MECH 221')
+## DBchapter('Homework')
+## DBsection('221 Problem Set 2')
+## Date('7/13/2017')
+## Institution('University of British Columbia')
 ## Problem9
 
 #######################################################################
@@ -26,7 +33,7 @@ $mc = RadioButtons( # Set up possible options
 "-1.0563"
 ]
 ,"-0.1337", # correct option
-labels => "ABCD" );
+labels => "ABC" );
 
 BEGIN_TEXT
 	

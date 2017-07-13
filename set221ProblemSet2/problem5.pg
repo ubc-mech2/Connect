@@ -2,6 +2,13 @@
 ## 221 Problem Set 2
 ##ENDDESCRIPTION
 
+##KEYWORDS('multiple choice', 'bar', 'mechanism')
+
+## DBsubject('MECH 221')
+## DBchapter('Homework')
+## DBsection('221 Problem Set 2')
+## Date('7/13/2017')
+## Institution('University of British Columbia')
 ## Problem5
 
 ########################################################################
@@ -28,15 +35,7 @@ $mc = RadioButtons(
 "Point F", 
 "Point G" ]
 , "Point E" #This is the correct choice
-,last => #Display order
-[ "None of the points shown", 
-"Point B", 
-"Point C", 
-"Point D", 
-"Point E", 
-"Point F", 
-"Point G" ]
-,labels => "ABCDEF" );
+,labels => "ABC" );
 
 BEGIN_TEXT
 The ICZV of bar BC in the mechanism shown below is at:
