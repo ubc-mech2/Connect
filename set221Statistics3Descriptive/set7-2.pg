@@ -1,8 +1,15 @@
 ##DESCRIPTION
-## 221 Statistics 3 Descriptive
-## Question Set 7
+## 221 Statistics 3 - Descriptive
 ##ENDDESCRIPTION
 
+##KEYWORDS('multiple choice', 'range', 'variance')
+
+## DBsubject('MECH 221')
+## DBchapter('Statistics Quizzes')
+## DBsection('Statistics 3 - Descriptive')
+## Date('7/12/2017')
+## Institution('University of British Columbia')
+## Question Set 7
 ## Problem2
 
 #######################################################################
@@ -29,17 +36,7 @@ $mc = RadioButtons( # Set up possible options
 "all are the same"
 ]
 ,"range - standard deviation - variance", # correct option
-last => # set up order in which options will be displayed
-[
-"range - standard deviation - variance", 
-"range - variance - standard deviation", 
-"standard deviation - range - variance", 
-"standard deviation - variance - range",
-"variance - range - standard deviation", 
-"variance - standard deviation - range",
-"all are the same"
-]
-,labels => "ABCD" );
+,labels => "ABC" );
 
 BEGIN_TEXT
 	

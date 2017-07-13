@@ -1,8 +1,15 @@
 ##DESCRIPTION
-## 221 Statistics 3 Descriptive
-## Question Set 4
+## 221 Statistics 3 - Descriptive
 ##ENDDESCRIPTION
 
+##KEYWORDS('multiple choice', 'dispersion', 'outliers')
+
+## DBsubject('MECH 221')
+## DBchapter('Statistics Quizzes')
+## DBsection('Statistics 3 - Descriptive')
+## Date('7/12/2017')
+## Institution('University of British Columbia')
+## Question Set 4
 ## Problem1
 
 #######################################################################
@@ -28,7 +35,7 @@ $mc = RadioButtons( # Set up possible options
 "variance" 
 ]
 ,"range", # correct option
-labels => "ABCD" );
+labels => "ABC" );
 
 BEGIN_TEXT
 	

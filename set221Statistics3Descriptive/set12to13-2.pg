@@ -1,8 +1,15 @@
 ##DESCRIPTION
-## 221 Statistics 3 Descriptive
-## Question Set 12 to 13
+## 221 Statistics 3 - Descriptive
 ##ENDDESCRIPTION
 
+##KEYWORDS('multiple choice', 'measurements', 'probability', 'density', 'mode')
+
+## DBsubject('MECH 221')
+## DBchapter('Statistics Quizzes')
+## DBsection('Statistics 3 - Descriptive')
+## Date('7/12/2017')
+## Institution('University of British Columbia')
+## Question Set 12 to 13
 ## Problem2
 
 #######################################################################
@@ -28,16 +35,7 @@ $mc = RadioButtons( # Set up possible options
 "2.11"
 ]
 ,"1.73", # correct option
-last => # set up order in which options will be displayed
-[
-"1.43", 
-"1.60", 
-"1.62", 
-"1.73",
-"1.98",
-"2.11"
-]
-,labels => "ABCD" );
+labels => "ABC" );
 
 Context("Fraction");
 

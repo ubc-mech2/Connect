@@ -1,8 +1,15 @@
 ##DESCRIPTION
-## 221 Statistics 3 Descriptive
-## Question Set 4
+## 221 Statistics 3 - Descriptive
 ##ENDDESCRIPTION
 
+##KEYWORDS('multiple answer', 'dispersion', 'sample')
+
+## DBsubject('MECH 221')
+## DBchapter('Statistics Quizzes')
+## DBsection('Statistics 3 - Descriptive')
+## Date('7/12/2017')
+## Institution('University of British Columbia')
+## Question Set 4
 ## Problem2
 
 #######################################################################
@@ -21,7 +28,7 @@ $showPartialCorrectAnswers = 1;
 $mc = new_checkbox_multiple_choice();
 $mc -> 
 qa ( # question
-"Which of the following statements about Descriptive Statistics is/are FALSE? (select all that apply)", 
+"Which of the following is/are used to measure dispersion in a sample? (select all that apply)", 
 # correct answers
 "range$BR",
 "standard deviation$BR",                

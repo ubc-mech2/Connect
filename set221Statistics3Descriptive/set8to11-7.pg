@@ -1,8 +1,15 @@
 ##DESCRIPTION
-## 221 Statistics 3 Descriptive
-## Question Set 8 to 11
+## 221 Statistics 3 - Descriptive
 ##ENDDESCRIPTION
 
+##KEYWORDS('multiple choice', 'measurements', 'parameter', 'standard', 'deviation')
+
+## DBsubject('MECH 221')
+## DBchapter('Statistics Quizzes')
+## DBsection('Statistics 3 - Descriptive')
+## Date('7/12/2017')
+## Institution('University of British Columbia')
+## Question Set 8 to 11
 ## Problem7
 
 #######################################################################
@@ -28,16 +35,7 @@ $mc = RadioButtons( # Set up possible options
 "34%"
 ]
 ,"16%", # correct option
-last => # set up order in which options will be displayed
-[
-"5%", 
-"10%", 
-"16%", 
-"20%",
-"32%", 
-"34%"
-]
-,labels => "ABCD" );
+labels => "ABC" );
 
 BEGIN_TEXT
 	
