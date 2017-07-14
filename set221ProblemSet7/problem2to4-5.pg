@@ -2,6 +2,13 @@
 ## 221 Problem Set 7
 ##ENDDESCRIPTION
 
+##KEYWORDS('multiple choice', 'rotational', 'motion', 'acceleration')
+
+## DBsubject('MECH 221')
+## DBchapter('Homework')
+## DBsection('221 Problem Set 7')
+## Date('7/14/2017')
+## Institution('University of British Columbia')
 ## Problem2to4-5
 
 #######################################################################
@@ -17,8 +24,6 @@ loadMacros(
    "contextFraction.pl",
 );
 
-$deg = "".sprintf("%c",0xb0);
-
 $mc = RadioButtons( # Set up possible options
 [
 "zero", 
@@ -27,11 +32,11 @@ $mc = RadioButtons( # Set up possible options
 "directed from the center of rotation toward G"
 ]
 ,"directed from G toward the center of rotation", # correct option
-labels => "ABCD" );
+labels => "ABC" );
 
 BEGIN_TEXT
 	
-In rotational motion, the normal component of acceleration at the bodyâs center of gravity (G) is always
+In rotational motion, the normal component of acceleration at the body's center of gravity (G) is always
 $PAR
 
 \{ $mc->buttons() \}

@@ -2,6 +2,13 @@
 ## 221 Problem Set 7
 ##ENDDESCRIPTION
 
+##KEYWORDS('multiple choice', 'bars', 'length', 'reaction')
+
+## DBsubject('MECH 221')
+## DBchapter('Homework')
+## DBsection('221 Problem Set 7')
+## Date('7/14/2017')
+## Institution('University of British Columbia')
 ## Problem2to4-7
 
 #######################################################################
@@ -17,8 +24,6 @@ loadMacros(
    "contextFraction.pl",
 );
 
-$deg = "".sprintf("%c",0xb0);
-
 $mc = RadioButtons( # Set up possible options
 [
 "\(R_a = R_b\)", 
@@ -27,7 +32,7 @@ $mc = RadioButtons( # Set up possible options
 "None of the above"
 ]
 ,"\(R_a = R_b\)", # correct option
-labels => "ABCD" );
+labels => "ABC" );
 
 BEGIN_TEXT
 	

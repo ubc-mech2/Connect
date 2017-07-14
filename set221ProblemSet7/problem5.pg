@@ -2,6 +2,13 @@
 ## 221 Problem Set 7
 ##ENDDESCRIPTION
 
+##KEYWORDS('calculated formula', 'pressurized', 'strain', 'epsilon')
+
+## DBsubject('MECH 221')
+## DBchapter('Homework')
+## DBsection('221 Problem Set 7')
+## Date('7/14/2017')
+## Institution('University of British Columbia')
 ## Problem5
 
 ########################################################################
@@ -37,7 +44,6 @@ A cylindrical tank of outside diameter \(D = $D\) inches, and height \(H = $H\) 
 $PAR	
 \{ image( "imagename.png", width=>150, height=>150 ) \}
 $PAR
-
 
 \{ ans_rule(35) \}
  

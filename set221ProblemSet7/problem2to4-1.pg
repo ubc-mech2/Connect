@@ -2,6 +2,13 @@
 ## 221 Problem Set 7
 ##ENDDESCRIPTION
 
+##KEYWORDS('multiple choice', 'horizontal', 'component', 'reaction')
+
+## DBsubject('MECH 221')
+## DBchapter('Homework')
+## DBsection('221 Problem Set 7')
+## Date('7/14/2017')
+## Institution('University of British Columbia')
 ## Problem2to4-1
 
 #######################################################################
@@ -25,13 +32,11 @@ $mc = RadioButtons( # Set up possible options
 "None of the above."
 ]
 ,"zero", # correct option
-labels => "ABCD" );
-
-$deg = "".sprintf("%c",0xb0);
+labels => "ABC" );
 
 BEGIN_TEXT
 	
-A rigid bar of length \(l\) is released from rest in the horizontal position \((\theta = 0)\). When \(\theta = 90$deg\), the horizontal component of the reaction at pin \(O\) is 
+A rigid bar of length \(l\) is released from rest in the horizontal position \((\theta = 0)\). When \(\theta = 90^{\circ}\), the horizontal component of the reaction at pin \(O\) is 
 
 $PAR
 
