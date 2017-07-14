@@ -2,6 +2,13 @@
 ## 221 Problem Set 8
 ##ENDDESCRIPTION
 
+##KEYWORDS('calculated formula', 'stress', 'yield', 'safety', 'factor')
+
+## DBsubject('MECH 221')
+## DBchapter('Homework')
+## DBsection('221 Problem Set 8')
+## Date('7/14/2017')
+## Institution('University of British Columbia')
 ## Problem3
 
 ########################################################################
@@ -43,6 +50,10 @@ $answer = sqrt($numerator / $denominator);
 BEGIN_TEXT
 
 A machine component supports the stresses shown in the diagram. \(\sigma_x = $SX\) \(MPa\), \(\sigma_y = $SY\) \(MPa\), \(\sigma_z = $SZ\) \(MPa\) and \(\tau_{xy} = $TXY\) \(MPa\). The component is made of steel whose yield stress \(\sigma_Y = $SYIELD\) \(MPa\). The steel yields according to the Mises criterion. Calculate the safety factor \(SF\). 
+
+$PAR
+
+\{ image( "imagename.png", width=>150, height=>150 ) \}
 
 $PAR
 

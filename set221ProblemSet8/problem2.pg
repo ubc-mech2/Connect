@@ -2,6 +2,13 @@
 ## 221 Problem Set 8
 ##ENDDESCRIPTION
 
+##KEYWORDS('multiple choice', 'strain', 'fracture', 'yield', 'critical', 'flaw')
+
+## DBsubject('MECH 221')
+## DBchapter('Homework')
+## DBsection('221 Problem Set 8')
+## Date('7/14/2017')
+## Institution('University of British Columbia')
 ## Problem2
 
 ########################################################################
@@ -23,7 +30,7 @@ $mc = RadioButtons( # Set up possible options
 "No, the critical flaw is not subject to detection." 
 ]
 ,"Yes, the critical flaw is subject to detection", # correct option
-labels => "ABCD" );
+labels => "ABC" );
 
 BEGIN_TEXT
 	
