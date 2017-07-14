@@ -1,9 +1,15 @@
-\\##DESCRIPTION
+##DESCRIPTION
 ## 221 Problem Set 9
-## Question Set 3 to 4
 ##ENDDESCRIPTION
 
-## Problem4
+##KEYWORDS('multiple choice', 'motion', 'kinetic', 'energy')
+
+## DBsubject('MECH 221')
+## DBchapter('Homework')
+## DBsection('221 Problem Set 9')
+## Date('7/14/2017')
+## Institution('University of British Columbia')
+## Problem3to4-4
 
 #######################################################################
 
@@ -26,7 +32,7 @@ $mc = RadioButtons( # Set up possible options
 "the deformation of the body"
 ]
 ,"translational motion and rotational motion", # correct option
-labels => "ABCD" );
+labels => "ABC" );
 
 BEGIN_TEXT
 	

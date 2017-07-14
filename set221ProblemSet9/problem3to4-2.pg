@@ -1,9 +1,15 @@
-\\##DESCRIPTION
+##DESCRIPTION
 ## 221 Problem Set 9
-## Question Set 3 to 4
 ##ENDDESCRIPTION
 
-## Problem2
+##KEYWORDS('multiple choice', 'spring', 'potential', 'energy')
+
+## DBsubject('MECH 221')
+## DBchapter('Homework')
+## DBsection('221 Problem Set 9')
+## Date('7/14/2017')
+## Institution('University of British Columbia')
+## Problem3to4-2
 
 #######################################################################
 
@@ -26,7 +32,7 @@ $mc = RadioButtons( # Set up possible options
 "\( (1/2) (200)(1.2\pi)^2 \)"
 ]
 ,"\( (1/2) (200)(1.2\pi)^2 - (20)9.81(1.2\pi \sin(30)) \)", # correct option
-labels => "ABCD" );
+labels => "ABC" );
 
 BEGIN_TEXT
 	

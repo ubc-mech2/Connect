@@ -1,9 +1,15 @@
-\\##DESCRIPTION
+##DESCRIPTION
 ## 221 Problem Set 9
-## Question Set 3 to 4
 ##ENDDESCRIPTION
 
-## Problem1
+##KEYWORDS('multiple choice', 'translation', 'kinetic', 'energy')
+
+## DBsubject('MECH 221')
+## DBchapter('Homework')
+## DBsection('221 Problem Set 9')
+## Date('7/14/2017')
+## Institution('University of British Columbia')
+## Problem3to4-1
 
 #######################################################################
 
@@ -28,13 +34,10 @@ $mc = RadioButtons( # Set up possible options
 ,"Answer A + Answer B", # correct option
 last => # set up order in which options will be displayed
 [
-"\( (1/2) (20)(3)^2 \)", 
-"\( (1/2) (20)(0.5^2)(10)^2 \)", 
-"Answer A + Answer B", 
 "None of the above"
 ]
 ,
-labels => "ABCD" );
+labels => "ABC" );
 
 BEGIN_TEXT
 	

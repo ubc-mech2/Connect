@@ -1,9 +1,15 @@
-\##DESCRIPTION
+##DESCRIPTION
 ## 221 Problem Set 9
-## Question Set 1 to 2
 ##ENDDESCRIPTION
 
-## Problem5
+##KEYWORDS('multiple choice', 'work', 'internal', 'force')
+
+## DBsubject('MECH 221')
+## DBchapter('Homework')
+## DBsection('221 Problem Set 9')
+## Date('7/14/2017')
+## Institution('University of British Columbia')
+## Problem1to2-5
 
 #######################################################################
 
@@ -26,7 +32,7 @@ $mc = RadioButtons( # Set up possible options
 "the body can deform."
 ]
 ,"the forces act in equal but opposite collinear pairs.", # correct option
-labels => "ABCD" );
+labels => "ABC" );
 
 BEGIN_TEXT
 	
