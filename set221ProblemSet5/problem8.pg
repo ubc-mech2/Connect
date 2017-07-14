@@ -2,6 +2,13 @@
 ## 221 Problem Set 5
 ##ENDDESCRIPTION
 
+##KEYWORDS('calculated formula', 'spring', 'mass', 'damper', 'grain', 'diameter')
+
+## DBsubject('MECH 221')
+## DBchapter('Homework')
+## DBsection('221 Problem Set 5')
+## Date('7/14/2017')
+## Institution('University of British Columbia')
 ## Problem8
 
 ########################################################################
@@ -23,12 +30,11 @@ $showPartialCorrectAnswers = 1;
 Context("Numeric");
 
 $temp = 650;
-$deg = "".sprintf("%c",0xb0);
 $answer = 0.109;
 
 BEGIN_TEXT
 
-From the previous problem, what grain diameter (in mm) would you predict after 200 min at \($temp\)$deg\(C\)?
+From the previous problem, what grain diameter (in mm) would you predict after 200 min at \($temp^{\circ}C\)?
 
 $PAR
 

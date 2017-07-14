@@ -2,6 +2,13 @@
 ## 221 Problem Set 5
 ##ENDDESCRIPTION
 
+##KEYWORDS('calculated formula', 'spring', 'mass', 'damper', 'damping', 'coefficient')
+
+## DBsubject('MECH 221')
+## DBchapter('Homework')
+## DBsection('221 Problem Set 5')
+## Date('7/14/2017')
+## Institution('University of British Columbia')
 ## Problem7-2
 
 ########################################################################
@@ -30,7 +37,7 @@ $answer = 1;
 
 BEGIN_TEXT
 
-A spring-mass-damper system has a mass of \($m\) \(kg\), stiffness of \($K\) \(N/m\) and damping coefficient of \($c\) \(Ns/m\). The system is: $BR
+A spring-mass-damper system has a mass of \($m\) \(kg\), stiffness of \($K\) \(N/m\) and damping coefficient of \($c\) \(Ns/m\). The system is: $PAR
 (1) overdamped $BR
 (2) underdamped $BR
 (3) critically damped $PAR
