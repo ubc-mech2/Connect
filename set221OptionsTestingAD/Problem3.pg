@@ -1,0 +1,49 @@
+##DESCRIPTION
+## 221 Connect Options Testing AD
+##ENDDESCRIPTION
+
+##KEYWORDS('calculated formula', 'fatigue', 'failure')
+
+## DBsubject('MECH 221')
+## DBchapter('Homework')
+## DBsection('Connect Options Testing AD')
+## Date('7/14/2017')
+## Institution('University of British Columbia')
+## Problem3
+
+########################################################################
+
+DOCUMENT();     
+
+loadMacros(
+"PGstandard.pl",     # Standard macros for PG language
+   "MathObjects.pl",
+   "parserPopUp.pl",
+   "parserMultiAnswer.pl",
+   #"source.pl",        # allows code to be displayed on certain sites.
+   #"PGcourse.pl",      # Customization file for the course
+);
+
+# Show which answers are correct and which ones are incorrect
+$showPartialCorrectAnswers = 1;
+
+Context("Numeric");
+
+$F = random(50000, 80000, 1);
+$numerator = 4 * $F;
+$denominator = (pi * 310000000) / 2;
+$answer = sqrt($numerator / $denominator) * 1000;
+
+BEGIN_TEXT
+
+A cylindrical 1045 steel bar (see Figure below) is subjected to repeated compression-tension stress cycling along its axis. If the load amplitude is \($F\) \(N\), compute the minimum allowable bar diameter to ensure that fatigue failure will not occur. Assume a safety factor of 2.0. Give the answer in mm.
+
+$PAR
+
+\{ ans_rule(35) \}
+ 
+END_TEXT
+
+ANS(num_cmp($answer, reltol => 5)); # 5% tolerance
+
+ENDDOCUMENT();        # This should be the last executable line in the problem.

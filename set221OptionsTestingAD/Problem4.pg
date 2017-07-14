@@ -1,0 +1,53 @@
+##DESCRIPTION
+## 221 Connect Options Testing AD
+##ENDDESCRIPTION
+
+##KEYWORDS('calculated formula', 'shear', 'yield', 'stress')
+
+## DBsubject('MECH 221')
+## DBchapter('Homework')
+## DBsection('Connect Options Testing AD')
+## Date('7/14/2017')
+## Institution('University of British Columbia')
+## Problem4
+
+########################################################################
+
+DOCUMENT();     
+
+loadMacros(
+"PGstandard.pl",     # Standard macros for PG language
+   "MathObjects.pl",
+   "parserPopUp.pl",
+   "parserMultiAnswer.pl",
+   #"source.pl",        # allows code to be displayed on certain sites.
+   #"PGcourse.pl",      # Customization file for the course
+);
+
+# Show which answers are correct and which ones are incorrect
+$showPartialCorrectAnswers = 1;
+
+Context("Numeric");
+
+$L = random(12, 24, 1);
+$TauY = random(6000, 14000, 1);
+$hp = random(75, 125, 1);
+$rpm = random(1800, 3000, 1);
+
+$numerator = 16 * $hp;
+$denominator = 0.00001587 * $rpm * $TauY * pi;
+$answer = ($numerator / $denominator)**(1/3);
+
+BEGIN_TEXT
+
+A \($hp\) \(hp\) motor running at \($rpm\) \(rpm\) drives a water pump. The shaft joining the motor to the pump is \($L\) inches long and is made of steel, for which \(E = 30 \times 10^6\) \(psi\), \(v = 0.3\), and shear yield stress \(\tau_y = $TauY\) \(psi\). What is the minimum required diameter of the shaft? Give the answer in inches.
+
+$PAR
+
+\{ ans_rule(35) \}
+ 
+END_TEXT
+
+ANS(num_cmp($answer, reltol => 5)); # 5% tolerance
+
+ENDDOCUMENT();        # This should be the last executable line in the problem.

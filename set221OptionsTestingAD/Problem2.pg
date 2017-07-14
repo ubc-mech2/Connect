@@ -1,0 +1,53 @@
+##DESCRIPTION
+## 221 Connect Options Testing AD
+##ENDDESCRIPTION
+
+##KEYWORDS('multiple choice', 'random', 'measurement', 'error')
+
+## DBsubject('MECH 221')
+## DBchapter('Homework')
+## DBsection('Connect Options Testing AD')
+## Date('7/14/2017')
+## Institution('University of British Columbia')
+## Problem2
+
+#######################################################################
+
+DOCUMENT();      
+
+loadMacros(
+   "PGstandard.pl",     # Standard macros for PG language
+   "MathObjects.pl",
+   #"source.pl",        # allows code to be displayed on certain sites.
+   #"PGcourse.pl",      # Customization file for the course
+   "parserRadioButtons.pl",
+   "contextFraction.pl",
+);
+
+$mc = RadioButtons( # Set up possible options
+[
+"it shifts the distribution horizontally", 
+"it shifts the distribution vertically", 
+"it shifts the distribution both horizontally and vertically", 
+"it scales (stretches or compresses) the distribution horizontally",
+"it scales the distribution vertically",
+"it scales the distribution horizontally and vertically" 
+]
+,"it scales the distribution horizontally and vertically", # correct option
+labels => "ABC" );
+
+BEGIN_TEXT
+	
+How does a random-type measurement error affect a distribution of measurements?
+
+$PAR
+
+\{ $mc->buttons() \}
+
+END_TEXT
+
+$showPartialCorrectAnswers = 0;
+
+ANS( $mc->cmp() );
+
+ENDDOCUMENT();
