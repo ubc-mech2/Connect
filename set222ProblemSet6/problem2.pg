@@ -2,6 +2,13 @@
 ## 222 Problem Set 6
 ##ENDDESCRIPTION
 
+##KEYWORDS('multiple choice', 'heat', 'transfer', 'unit', 'mass')
+
+## DBsubject('MECH 222')
+## DBchapter('Homework')
+## DBsection('222 Problem Set 6')
+## Date('7/17/2017')
+## Institution('University of British Columbia')
 ## Problem2
 
 #######################################################################
@@ -25,7 +32,7 @@ $mc = RadioButtons( # Set up possible options
 "\(2506.5\)"
 ]
 ,"\(2257\)", # correct option
-labels => "ABCD" );
+labels => "ABC" );
 
 BEGIN_TEXT
 	

@@ -2,6 +2,13 @@
 ## 222 Problem Set 6
 ##ENDDESCRIPTION
 
+##KEYWORDS('multiple choice', 'work', 'piston', 'cylinder', 'saturated', 'vapor')
+
+## DBsubject('MECH 222')
+## DBchapter('Homework')
+## DBsection('222 Problem Set 6')
+## Date('7/17/2017')
+## Institution('University of British Columbia')
 ## Problem1
 
 #######################################################################
@@ -25,11 +32,11 @@ $mc = RadioButtons( # Set up possible options
 "\(-169.4\) \(kJ/kg\)"
 ]
 ,"\(169.4\) \(kJ/kg\)", # correct option
-labels => "ABCD" );
+labels => "ABC" );
 
 BEGIN_TEXT
 	
-Water initially a saturated liquid at \(100^{\circ}\) \(C\) is contained in a piston-cylinder assembly. The water undergoes a process to saturated vapor state. If the change of state is brought about by heating the water as it undergoes an internally reversible process at constant pressure and temperature, determine the work per unit mass in \(kJ/kg\).
+Water initially a saturated liquid at \(100^{\circ}\)\(C\) is contained in a piston-cylinder assembly. The water undergoes a process to saturated vapor state. If the change of state is brought about by heating the water as it undergoes an internally reversible process at constant pressure and temperature, determine the work per unit mass in \(kJ/kg\).
 
 $PAR
 

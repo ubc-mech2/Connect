@@ -2,6 +2,13 @@
 ## 222 Problem Set 6
 ##ENDDESCRIPTION
 
+##KEYWORDS('multiple choice', 'heat', 'transfer', 'pressure', 'steam')
+
+## DBsubject('MECH 222')
+## DBchapter('Homework')
+## DBsection('222 Problem Set 6')
+## Date('7/17/2017')
+## Institution('University of British Columbia')
 ## Problem4
 
 #######################################################################
@@ -32,11 +39,11 @@ last => # set up order in which options will be displayed
 "c", 
 "d"
 ]
-,labels => "ABCD" );
+,labels => "ABC" );
 
 BEGIN_TEXT
 	
-Steam is contained in a rigid volume tank at \(1400\) \(kPa\) and \(300^{\circ}\) \(C\). Heat is transferred from the volume until the pressure is \(100\) \(kPa\). Which one of the following sketches presents the process more accurately on the T-s diagram?
+Steam is contained in a rigid volume tank at \(1400\) \(kPa\) and \(300^{\circ}\)\(C\). Heat is transferred from the volume until the pressure is \(100\) \(kPa\). Which one of the following sketches presents the process more accurately on the T-s diagram?
 
 $PAR
 a) \{ image( "imagename.png", width=>150, height=>150 ) \}             
