@@ -2,6 +2,13 @@
 ## 222 Problem Set 5
 ##ENDDESCRIPTION
 
+##KEYWORDS('multiple choice', 'survey')
+
+## DBsubject('MECH 222')
+## DBchapter('Homework')
+## DBsection('222 Problem Set 5')
+## Date('7/17/2017')
+## Institution('University of British Columbia')
 ## Problem8
 
 #######################################################################
@@ -34,7 +41,7 @@ last => # set up order in which options will be displayed
 "1-2 hours",
 "> 2 hours"
 ]
-,labels => "ABCD" );
+,labels => "ABC" );
 
 BEGIN_TEXT
 	

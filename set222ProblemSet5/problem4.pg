@@ -2,6 +2,13 @@
 ## 222 Problem Set 5
 ##ENDDESCRIPTION
 
+##KEYWORDS('multiple choice', 'power', 'cycle')
+
+## DBsubject('MECH 222')
+## DBchapter('Homework')
+## DBsection('222 Problem Set 5')
+## Date('7/17/2017')
+## Institution('University of British Columbia')
 ## Problem4
 
 #######################################################################
@@ -25,7 +32,7 @@ $mc = RadioButtons( # Set up possible options
 "It is impossible to build such a power cycle"
 ]
 ,"It is impossible to build such a power cycle", # correct option
-labels => "ABCD" );
+labels => "ABC" );
 
 BEGIN_TEXT
 	

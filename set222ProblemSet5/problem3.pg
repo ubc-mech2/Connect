@@ -2,6 +2,13 @@
 ## 222 Problem Set 5
 ##ENDDESCRIPTION
 
+##KEYWORDS('multiple choice', 'thermal', 'efficiency', 'power', 'work')
+
+## DBsubject('MECH 222')
+## DBchapter('Homework')
+## DBsection('222 Problem Set 5')
+## Date('7/17/2017')
+## Institution('University of British Columbia')
 ## Problem3
 
 #######################################################################
@@ -25,11 +32,11 @@ $mc = RadioButtons( # Set up possible options
 "\(48.8%\)"
 ]
 ,"\(48.8%\)", # correct option
-labels => "ABCD" );
+labels => "ABC" );
 
 BEGIN_TEXT
 	
-An inventor claims to have developed a power cycle capable of delivering a net amount of work output of \(440\) \(kJ\) by heat transfer of \(900\) \(kJ\). The system works between a high temperature reservoir at \(500^{\circ}\) \(K\) and a low temperature reservoir at \(300^{\circ}\) \(K\). What is the thermal efficiency of this cycle?
+An inventor claims to have developed a power cycle capable of delivering a net amount of work output of \(440\) \(kJ\) by heat transfer of \(900\) \(kJ\). The system works between a high temperature reservoir at \(500^{\circ}\)\(K\) and a low temperature reservoir at \(300^{\circ}\)\(K\). What is the thermal efficiency of this cycle?
 
 $PAR
 
