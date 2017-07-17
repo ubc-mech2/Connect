@@ -1,15 +1,15 @@
 ##DESCRIPTION
-## 222 Problem Set 6
+## 222 Problem Set 2
 ##ENDDESCRIPTION
 
-##KEYWORDS('multiple choice', 'heat', 'transfer')
+##KEYWORDS('multiple choice', 'survey')
 
 ## DBsubject('MECH 222')
 ## DBchapter('Homework')
-## DBsection('222 Problem Set 6')
+## DBsection('222 Problem Set 2')
 ## Date('7/17/2017')
 ## Institution('University of British Columbia')
-## Problem5
+## Problem19
 
 #######################################################################
 
@@ -26,17 +26,26 @@ loadMacros(
 
 $mc = RadioButtons( # Set up possible options
 [
-"\(2785\) \(kJ/kg\)", 
-"\(-640.9\) \(kJ/kg\)", 
-"\(-2785\) \(kJ/kg\)", 
-"\(-2144.2\) \(kJ/kg\)"
+"Less than 2 hours", 
+"2-3 hours", 
+"3-4 hours", 
+"4-6 hours",
+"More than 6 hours"
 ]
-,"\(-2144.2\) \(kJ/kg\)", # correct option
-labels => "ABC" );
+,"Less than 2 hours", # correct option
+last => # set up order in which options will be displayed
+[
+"Less than 2 hours", 
+"2-3 hours", 
+"3-4 hours", 
+"4-6 hours",
+"More than 6 hours"
+]
+,labels => "ABC" );
 
 BEGIN_TEXT
 	
-What is the heat transfer required in the previous problem?
+Survey Question 4: (This question has no assigned point value, as there is no correct answer.) Last week, the total time I spent on both the computer lab Prelab and the computer lab activities (including time spent both inside and outside the lab) was approximately:
 
 $PAR
 

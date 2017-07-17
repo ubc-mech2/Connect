@@ -1,15 +1,15 @@
 ##DESCRIPTION
-## 222 Problem Set 6
+## 222 Problem Set 2
 ##ENDDESCRIPTION
 
-##KEYWORDS('multiple choice', 'heat', 'transfer')
+##KEYWORDS('multiple choice', 'volume', 'thermodynamic', 'process')
 
 ## DBsubject('MECH 222')
 ## DBchapter('Homework')
-## DBsection('222 Problem Set 6')
+## DBsection('222 Problem Set 2')
 ## Date('7/17/2017')
 ## Institution('University of British Columbia')
-## Problem5
+## Problem3
 
 #######################################################################
 
@@ -26,17 +26,17 @@ loadMacros(
 
 $mc = RadioButtons( # Set up possible options
 [
-"\(2785\) \(kJ/kg\)", 
-"\(-640.9\) \(kJ/kg\)", 
-"\(-2785\) \(kJ/kg\)", 
-"\(-2144.2\) \(kJ/kg\)"
+"\(2.12\) \(m^3\)", 
+"\(4.24\) \(m^3\)", 
+"\(0.85\) \(m^3\)", 
+"\(1.70\) \(m^3\)"
 ]
-,"\(-2144.2\) \(kJ/kg\)", # correct option
+,"\(4.24\) \(m^3\)", # correct option
 labels => "ABC" );
 
 BEGIN_TEXT
 	
-What is the heat transfer required in the previous problem?
+In the previous question, determine the volume at state 3
 
 $PAR
 

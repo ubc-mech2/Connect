@@ -1,15 +1,15 @@
 ##DESCRIPTION
-## 222 Problem Set 6
+## 222 Problem Set 2
 ##ENDDESCRIPTION
 
-##KEYWORDS('multiple choice', 'heat', 'transfer')
+##KEYWORDS('multiple choice', 'temperature', 'thermodynamic', 'process')
 
 ## DBsubject('MECH 222')
 ## DBchapter('Homework')
-## DBsection('222 Problem Set 6')
+## DBsection('222 Problem Set 2')
 ## Date('7/17/2017')
 ## Institution('University of British Columbia')
-## Problem5
+## Problem2
 
 #######################################################################
 
@@ -26,17 +26,17 @@ loadMacros(
 
 $mc = RadioButtons( # Set up possible options
 [
-"\(2785\) \(kJ/kg\)", 
-"\(-640.9\) \(kJ/kg\)", 
-"\(-2785\) \(kJ/kg\)", 
-"\(-2144.2\) \(kJ/kg\)"
+"\(120^{\circ}K\)", 
+"\(300^{\circ}K\)", 
+"\(750^{\circ}K\)", 
+"\(150^{\circ}K\)"
 ]
-,"\(-2144.2\) \(kJ/kg\)", # correct option
+,"\(750^{\circ}K\)", # correct option
 labels => "ABC" );
 
 BEGIN_TEXT
 	
-What is the heat transfer required in the previous problem?
+In the previous question, determine the temperature at state 2:
 
 $PAR
 

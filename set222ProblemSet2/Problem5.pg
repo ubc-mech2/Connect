@@ -1,12 +1,12 @@
 ##DESCRIPTION
-## 222 Problem Set 6
+## 222 Problem Set 2
 ##ENDDESCRIPTION
 
-##KEYWORDS('multiple choice', 'heat', 'transfer')
+##KEYWORDS('multiple choice', 'gas', 'volume')
 
 ## DBsubject('MECH 222')
 ## DBchapter('Homework')
-## DBsection('222 Problem Set 6')
+## DBsection('222 Problem Set 2')
 ## Date('7/17/2017')
 ## Institution('University of British Columbia')
 ## Problem5
@@ -26,17 +26,17 @@ loadMacros(
 
 $mc = RadioButtons( # Set up possible options
 [
-"\(2785\) \(kJ/kg\)", 
-"\(-640.9\) \(kJ/kg\)", 
-"\(-2785\) \(kJ/kg\)", 
-"\(-2144.2\) \(kJ/kg\)"
+"\(0.0296\) \(m^3/kg\), \(0.0251\) \(m^3/kg\)", 
+"\(0.0296\) \(m^3/kg\), \(0.0348\) \(m^3/kg\)", 
+"\(0.0164\) \(m^3/kg\), \(0.0140\) \(m^3/kg\)", 
+"\(0.0164\) \(m^3/kg\), \(0.0193\) \(m^3/kg\)"
 ]
-,"\(-2144.2\) \(kJ/kg\)", # correct option
+,"\(0.0296\) \(m^3/kg\), \(0.0251\) \(m^3/kg\)", # correct option
 labels => "ABC" );
 
 BEGIN_TEXT
 	
-What is the heat transfer required in the previous problem?
+A gas with molecular mass of \(26\) \(kg/kmol\) and critical point data of \(Pc = 6.0\) \(MPa\) and \(Tc = 308^{\circ}\) \(K\) exists at \(4\) \(MPa\) and \(370^{\circ}\) \(K\). Approximate the specific volume i) using Ideal gas model; ii) using the compressibility factor.
 
 $PAR
 

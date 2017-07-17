@@ -1,15 +1,15 @@
 ##DESCRIPTION
-## 222 Problem Set 6
+## 222 Problem Set 2
 ##ENDDESCRIPTION
 
-##KEYWORDS('multiple choice', 'heat', 'transfer')
+##KEYWORDS('multiple choice', 'initial', 'final', 'volume')
 
 ## DBsubject('MECH 222')
 ## DBchapter('Homework')
-## DBsection('222 Problem Set 6')
+## DBsection('222 Problem Set 2')
 ## Date('7/17/2017')
 ## Institution('University of British Columbia')
-## Problem5
+## Problem4
 
 #######################################################################
 
@@ -26,17 +26,17 @@ loadMacros(
 
 $mc = RadioButtons( # Set up possible options
 [
-"\(2785\) \(kJ/kg\)", 
-"\(-640.9\) \(kJ/kg\)", 
-"\(-2785\) \(kJ/kg\)", 
-"\(-2144.2\) \(kJ/kg\)"
+"\(V_i = 0.71\) \(m^3\), \(V_f = 0.74\) \(m^3\)", 
+"\(V_i = 52.6\) \(m^3\), \(V_f = 83.7\) \(m^3\)", 
+"\(V_i = 0.71 \times 10^{-3}\) \(m^3\), \(V_f = 0.74 \times 10^{-3}\) \(m^3\)", 
+"\(V_i = 0.0526\) \(m^3\), \(V_f = 0.0837\) \(m^3\)"
 ]
-,"\(-2144.2\) \(kJ/kg\)", # correct option
+,"\(V_i = 0.71\) \(m^3\), \(V_f = 0.74\) \(m^3\)", # correct option
 labels => "ABC" );
 
 BEGIN_TEXT
 	
-What is the heat transfer required in the previous problem?
+A spherical balloon contains \(1\) \(kg\) of air at \(0.120\) \(MPa\) and \(22^{\circ}C\). If the temperature of the air increases to \(35^{\circ}C\) and the pressure remain the same find the initial and final volume of the sphere.
 
 $PAR
 

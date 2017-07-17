@@ -1,0 +1,72 @@
+##DESCRIPTION
+## 222 Problem Set 2
+##ENDDESCRIPTION
+
+##KEYWORDS('multiple choice', 'thermodynamic', 'cycle', 'process', 'diagram')
+
+## DBsubject('MECH 222')
+## DBchapter('Homework')
+## DBsection('222 Problem Set 2')
+## Date('7/17/2017')
+## Institution('University of British Columbia')
+## Problem1
+
+#######################################################################
+
+DOCUMENT();      
+
+loadMacros(
+   "PGstandard.pl",     # Standard macros for PG language
+   "MathObjects.pl",
+   #"source.pl",        # allows code to be displayed on certain sites.
+   #"PGcourse.pl",      # Customization file for the course
+   "parserRadioButtons.pl",
+   "contextFraction.pl",
+);
+
+$mc = RadioButtons( # Set up possible options
+[
+"a", 
+"b", 
+"c", 
+"d"
+]
+,"b", # correct option
+last => # set up order in which options will be displayed
+[
+"a", 
+"b", 
+"c", 
+"d"
+]
+,labels => "ABC" );
+
+BEGIN_TEXT
+	
+Two kilogram of air undergoes a thermodynamic cycle consisting of three processes. Process 1-2: constant specific volume; Process 2-3: isothermal expansion; Process 3-1: isobaric compression. At state 1, the temperature is \(300^{\circ}K\) and the pressure is \(1\) \(atm\). At state 2, the pressure is \(2.5\) \(atm\). Assuming air behaves as an ideal gas: (The following two questions are also based on this statement.) $PAR
+
+Which one of the following P-v diagrams illustrates the cycle:
+
+$PAR
+a) \{ image( "imagename.png", width=>150, height=>150 ) \}             
+
+$PAR
+b) \{ image( "imagename.png", width=>150, height=>150 ) \}
+
+$PAR
+c) \{ image( "imagename.png", width=>150, height=>150 ) \}
+
+$PAR
+d) \{ image( "imagename.png", width=>150, height=>150 ) \}
+
+$PAR
+
+\{ $mc->buttons() \}
+
+END_TEXT
+
+$showPartialCorrectAnswers = 0;
+
+ANS( $mc->cmp() );
+
+ENDDOCUMENT();
