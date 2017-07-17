@@ -2,6 +2,13 @@
 ## 222 Problem Set 4
 ##ENDDESCRIPTION
 
+##KEYWORDS('multiple choice', 'rate', 'heat', 'transfer', 'turbine', 'flow')
+
+## DBsubject('MECH 222')
+## DBchapter('Homework')
+## DBsection('222 Problem Set 4')
+## Date('7/17/2017')
+## Institution('University of British Columbia')
 ## Problem3
 
 #######################################################################
@@ -25,11 +32,11 @@ $mc = RadioButtons( # Set up possible options
 "\(32.6\) \(kW\)"
 ]
 ,"\(-124.3\) \(kW\)", # correct option
-labels => "ABCD" );
+labels => "ABC" );
 
 BEGIN_TEXT
 	
-Steam enters a turbine operating at steady-state with a mass flow rate of \(5000\) \(kg/h\). The turbine develops a power output of \(1100\) \(kW\). At the inlet, the pressure is \(80\) \(bars\) and the temperature is \(400^{\circ}\) \(C\) with a velocity of \(15\) \(m/s\). At the exit, the pressure is \(0.2\) \(bar\) and the quality is \(85%\), and the velocity is \(45\) \(m/s\). Calculate the rate of heat transfer between the turbine and surroundings.
+Steam enters a turbine operating at steady-state with a mass flow rate of \(5000\) \(kg/h\). The turbine develops a power output of \(1100\) \(kW\). At the inlet, the pressure is \(80\) \(bars\) and the temperature is \(400^{\circ}\)\(C\) with a velocity of \(15\) \(m/s\). At the exit, the pressure is \(0.2\) \(bar\) and the quality is \(85%\), and the velocity is \(45\) \(m/s\). Calculate the rate of heat transfer between the turbine and surroundings.
 
 $PAR
 
