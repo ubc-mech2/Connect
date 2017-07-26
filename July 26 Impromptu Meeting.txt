@@ -1,0 +1,20 @@
+Subject, Chapter, Section do not make sense for other institutions
+
+Subject cannot be course name - depend on content
+
+Keywords: MECH 220, Practice Quizzes 
+
+Dropbox, Google Drive to store new problems from TAs
+
+Plan:
+
+Taxonomy for: calculus, linear algebra, circuits - match to subjects, chapters, and sections in OPL
+Use keywords: MECH 220, self test, subject area (eg. derivatives)
+
+Upload problem sets and 220 review quizzes to OPL, but not prelabs 
+Keep 220 review quiz together in one folder 
+
+Use taxonomy in MECH 2 proposal: put course, type, original set, and current set into keywords too,
+okay to have large number of keywords 
+
+Use Agnes as contact - spell name correct
