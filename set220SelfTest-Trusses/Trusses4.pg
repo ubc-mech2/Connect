@@ -4,8 +4,8 @@
 
 ##KEYWORDS('UBC', 'UBCEngineering', 'UBCMech2', 'Mech2', 'MECH 220', 'self test', '220STTrusses', 'trusses', 'multiple choice', 'force', 'structure', 'member', 'compression')
 
-## DBsubject('MECH 220')
-## DBchapter('Practice Quizzes')
+## DBsubject('Statics')
+## DBchapter('Structures')
 ## DBsection('Trusses')
 ## Date('6/29/2017')
 ## Institution('University of British Columbia')
