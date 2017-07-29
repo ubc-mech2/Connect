@@ -4,9 +4,9 @@
 
 ##KEYWORDS('constraints', 'select all', 'drawbridge', 'ramp')
 
-## DBsubject('MECH 220')
-## DBchapter('Practice Quizzes')
-## DBsection('Constraints')
+## DBsubject('Statics')
+## DBchapter('Equilibrium of a rigid body')
+## DBsection('Constraints and statical determinacy')
 ## Date('6/27/2017')
 ## Institution('University of British Columbia')
 ## Problem10
