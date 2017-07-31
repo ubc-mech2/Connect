@@ -38,7 +38,7 @@ BEGIN_TEXT
 
 The rotation of the \(0.9 m\) arm \(OA\) about \(O\) is defined by the relation \(\theta = 0.15t^2\), where \(\theta\) is expressed in radians and \(t\) in seconds. Collar \(B\) slides along the arm in such a way that its distance to \(O\) is \(r = 0.9 - 0.12t^2\), where \(r\) is expressed in meters and \(t\) in seconds. After the arm \(OA\) has rotated through \(30\) degrees, determine the total velocity of the collar.
 $PAR
-\{ image( "imagename.png", width=>150, height=>150 ) \}
+\{ image( "220Kinematics2-5.png", width=>400, height=>231 ) \}
 $PAR
 \{ $mc->buttons() \}
 

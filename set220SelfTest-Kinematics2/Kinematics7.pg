@@ -37,8 +37,6 @@ $mc = RadioButtons(
 BEGIN_TEXT
 For the rotating arm in problem 5, what is the total relative acceleration of collar \(B\) with respect to the arm?
 $PAR
-\{ image( "5.png", width=>150, height=>150 ) \}
-$PAR
 \{ $mc->buttons() \}
 
 END_TEXT
