@@ -9,7 +9,7 @@
 ## DBsection('Free Body Diagrams 1')
 ## Date('6/28/2017')
 ## Institution('University of British Columbia')
-## Problem6
+## Problem4
 
 ########################################################################
 
@@ -31,13 +31,13 @@ $mc = RadioButtons(
 "\( 233\) \(N \)", 
 "\( 304\) \(N \)",
 "\( 337\) \(N \)" ]
-    , "\( 52.5\) \(N \)"
+    , "\( 337\) \(N \)"
     ,labels => "ABC" );
 
 BEGIN_TEXT
-Considering the same system from Question 4 (\( \mu_s = 0.25\) and \( \mu_k = 0.20\)), determine the force \(P\) required to prevent the block from sliding down the incline.
+A support block is acted upon by two forces as shown. Knowing that the coefficients of friction between the block and the incline are \( \mu_s = 0.25\) and \( \mu_k = 0.20\), determine the force \(P\) required to start the block moving up the incline.
 $PAR
-\{ image( "4.png", width=>150, height=>150) \}
+\{ image( "220FBD-4-5-6.png", width=>350, height=>209) \}
 $PAR
 \{ $mc->buttons() \}
 

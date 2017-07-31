@@ -2,14 +2,14 @@
 ## Preview Test: Self Test Free Body Diagrams 1
 ##ENDDESCRIPTION
 
-##KEYWORDS('multiple choice', 'block', 'force', 'incline')
+##KEYWORDS('multiple choice', 'tension', 'cable')
 
 ## DBsubject('MECH 220')
 ## DBchapter('Practice Quizzes')
 ## DBsection('Free Body Diagrams 1')
 ## Date('6/28/2017')
 ## Institution('University of British Columbia')
-## Problem5
+## Problem1
 
 ########################################################################
 
@@ -25,19 +25,18 @@ loadMacros(
 );
 
 $mc = RadioButtons(
-    [ "\( 52.5\) \(N \)", 
-"\( 97.2\) \(N \)", 
-"\( 124.7\) \(N \)", 
-"\( 233\) \(N \)", 
-"\( 304\) \(N \)",
-"\( 337\) \(N \)" ]
-    , "\( 304\) \(N \)"
+    [ "\(7.17\) \(N\)", 
+"\(56.2\) \(N\)", 
+"\(70.4\) \(N\)", 
+"\(81.6\) \(N\)", 
+"\(98.1\) \(N\)" ]
+    , "\(70.4\) \(N\)"
     ,labels => "ABC" );
 
 BEGIN_TEXT
-Considering the same system from Question 4 (\( \mu_s = 0.25\) and \( \mu_k = 0.20\)), determine the force \(P\) required to keep the block moving up the incline assuming it is already moving.
+Given \(\alpha = 35\), \(\beta = 45\), and \(m = 10\) \(kg\), what is the tension in cable \(AC\)?
 $PAR
-\{ image( "4.png", width=>150, height=>150) \}
+\{ image( "220FBD-1-2-3.png", width=>350, height=>348) \}
 $PAR
 \{ $mc->buttons() \}
 

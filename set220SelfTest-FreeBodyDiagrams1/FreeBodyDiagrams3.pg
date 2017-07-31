@@ -9,7 +9,7 @@
 ## DBsection('Free Body Diagrams 1')
 ## Date('6/28/2017')
 ## Institution('University of British Columbia')
-## Problem2
+## Problem3
 
 ########################################################################
 
@@ -30,13 +30,13 @@ $mc = RadioButtons(
 "\( 575\) \(N \)", 
 "\( 751\) \(N \)", 
 "\( 981\) \(N \)" ]
-    , "\( 575\) \(N \)"
+    , "\( 482\) \(N \)"
     ,labels => "ABC" );
 
 BEGIN_TEXT
-Given \(\alpha = 40\), \(\beta = 50\), and \(m = 100\) \(kg\), what is the maximum vertical force that the wall-mounted ring at \(B\) must support?
+Given the same parameters as in Question 2 (\(\alpha = 40\), \(\beta = 50\), and \(m = 100\) \(kg\)), what is the maximum horizontal force that the wall-mounted ring at \(B\) must support?
 $PAR
-\{ image( "1.png", width=>150, height=>150) \}
+\{ image( "220FBD-1-2-3.png", width=>350, height=>348) \}
 $PAR
 \{ $mc->buttons() \}
 
