@@ -2,15 +2,15 @@
 ## 221 Prelab 2 Kirchhoff's Laws
 ##ENDDESCRIPTION
 
-##KEYWORDS('calculated formula', 'output', 'voltage', 'error')
+##KEYWORDS('calculated formula', 'circuit', 'current')
 
 ## DBsubject('MECH 221')
 ## DBchapter('Prelab Quizzes')
 ## DBsection('Prelab 2 Kirchhoff's Laws')
 ## Date('7/5/2017')
 ## Institution('University of British Columbia')
-## Question Set 5
-## Problem1
+## Question Set 1
+## Problem2
 
 ########################################################################
 
@@ -25,22 +25,27 @@ loadMacros(
    #"PGcourse.pl",      # Customization file for the course
 );
 
+# Print problem number and point value (weight) for the problem
+TEXT(beginproblem());
+
 # Show which answers are correct and which ones are incorrect
 $showPartialCorrectAnswers = 1;
 
 Context("Numeric");
 
-$R = random(4, 5, 0.01);
-$answer = ((($R / ($R + 6.58974)) * 12) - 5) * 1000;
-
-Context()->texStrings;
+$A = random(2, 3, 0.01);
+$B = random(4, 5, 0.01);
+$C = random(8, 9, 0.01);
+$answer = (10 * $A) / ($A + $B + $C);
 
 BEGIN_TEXT
 
-For the voltage divider shown, the input voltage, \(v_{in}\), is \(12\) \(V\) and the desired output voltage, \(v_{out}\), is \(5\) \(V\). If \(R = $R\) \(k\Omega\), what is the error in the output voltage? That is, how much larger is the actual output voltage from the desired output of \(5\) \(V\). Give your answer in millivolts, using negative to indicate that the actual output is smaller than the desired output.
+For the circuit shown, if \(R1\) = \($A\) \(k\Omega\), \(R2\) = \($B\) \(k\Omega\), and \(R3\) = \($C\) \(k\Omega\), what is the current, \(i\), in \(mA\)?
 $PAR
-\{ ans_rule(35) \}
-
+\{ image( "221Prelab2-1-2.png", width=>600, height=>174 ) \}
+$PAR
+\(i\) = \{ ans_rule(35) \} \(mA\)
+ 
 END_TEXT
 
 ANS(num_cmp($answer, reltol => 3)); # 3% tolerance

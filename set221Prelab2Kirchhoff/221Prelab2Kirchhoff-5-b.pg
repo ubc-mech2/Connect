@@ -40,6 +40,8 @@ BEGIN_TEXT
 
 For the voltage divider shown, the input voltage, \(v_{in}\), is \(12\) \(V\) and the desired output voltage, \(v_{out}\), is \(5\) \(V\). If \(R = $R\) \(k\Omega\), what is the error in the output voltage? That is, how much larger is the actual output voltage from the desired output of \(5\) \(V\). Give your answer in millivolts, using negative to indicate that the actual output is smaller than the desired output.
 $PAR
+\{ image( "221Prelab2-5-b.png", width=>350, height=>449 ) \}
+$PAR
 \{ ans_rule(35) \}
 
 END_TEXT
