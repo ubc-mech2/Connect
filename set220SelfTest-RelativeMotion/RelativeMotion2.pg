@@ -40,7 +40,7 @@ $mc = RadioButtons(
 BEGIN_TEXT
 Considering the linkage in Problem 1, what is the velocity of Collar \(B\)?
 $PAR
-\{ image( "imagename.png", width=>150, height=>150 ) \}
+\{ image( "220RelativeMotion-1-2.png", width=>400, height=>229 ) \}
 $PAR
 \{ $mc->buttons() \}
 
