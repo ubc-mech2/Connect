@@ -42,7 +42,7 @@ $mc = RadioButtons(
 BEGIN_TEXT
 Continuing with Problem 1, what is the force in member \(AC\)? (by convention: positive indicates tension, negative indicates compression)
 $PAR 
-\{ image( "imagename.png", width=>150, height=>150 ) \}
+\{ image( "220Trusses-1-2.png", width=>350, height=>242 ) \}
 $PAR
 \{ $mc->buttons() \}
 

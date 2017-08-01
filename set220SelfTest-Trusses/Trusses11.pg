@@ -44,7 +44,7 @@ $mc = RadioButtons(
 BEGIN_TEXT
 Continuing with Question 8, find the force in member BC. (by convention: positive indicates tension, negative indicates compression)
 $PAR 
-\{ image( "imagename.png", width=>150, height=>150 ) \}
+\{ image( "220Trusses-8-9-10-11.png", width=>400, height=>309 ) \}
 $PAR
 \{ $mc->buttons() \}
 
