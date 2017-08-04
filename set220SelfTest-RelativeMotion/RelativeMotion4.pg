@@ -39,7 +39,7 @@ $mc = RadioButtons(
 BEGIN_TEXT
 For the bent rod from Problem 3, what is the acceleration of corner \(B\)?
 $PAR
-\{ image( "220RelativeMotion-3-4.png", width=>400, height=>284 ) \}
+\{ image( "220RelativeMotion-3-4.png", width=>400, height=>316 ) \}
 $PAR
 \{ $mc->buttons() \}
 

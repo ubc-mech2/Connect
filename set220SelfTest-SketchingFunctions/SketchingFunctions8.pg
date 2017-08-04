@@ -43,7 +43,7 @@ $mc = RadioButtons(
 BEGIN_TEXT
 Which of the following functions represents the chart?
 $PAR
-\{ image( "220SketchingFunctions-8.png", width=>350, height=>341 ) \}
+\{ image( "220SketchingFunctions-8.png", width=>350, height=>377 ) \}
 $PAR
 \{ $mc->buttons() \}
 

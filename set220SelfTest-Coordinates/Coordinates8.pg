@@ -55,7 +55,7 @@ BEGIN_TEXT
 What is the transformation between the x-y and u-v coordinate systems shown below? The u-v system uses measurements in centimetres and the x-y system uses measurements in metres. The intersection points on the u-v axes are shown (in units of centimetres).
  
 $PAR
-\{ image( "220Coordinates-8.png", width=>242, height=>300 ) \}
+\{ image( "220Coordinates-8.png", width=>215, height=>300 ) \}
 $PAR
 \{ $mc->buttons() \}
 

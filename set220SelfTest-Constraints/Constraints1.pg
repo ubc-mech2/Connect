@@ -40,7 +40,7 @@ BEGIN_TEXT
 Which of the following is the most complete description of the constraints imposed on the system by the loop at \(A\)?
 
 $PAR
-\{ image( "220Constraints-1.png", height=>300, width=>292) \}
+\{ image( "220Constraints-1.png", height=>334, width=>300) \}
 $PAR
 \{ $mc->buttons() \}
 

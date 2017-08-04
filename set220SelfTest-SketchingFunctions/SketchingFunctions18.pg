@@ -39,7 +39,7 @@ $mc = RadioButtons(
 BEGIN_TEXT
 Which function is described by the plot below?
 $PAR 
-\{ image( "220SketchingFunctions-18.png", width=>450, height=>331 ) \}
+\{ image( "220SketchingFunctions-18.png", width=>450, height=>357 ) \}
 $PAR
 \{ $mc->buttons() \}
 

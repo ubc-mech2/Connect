@@ -40,7 +40,7 @@ BEGIN_TEXT
 
 Collar \(A\) moves with a constant velocity of \(900\) \(mm/s\) to the right. At the instant when \(\theta = 30\) degrees, determine the angular velocity of rod \(AB\).
 $PAR
-\{ image( "220RelativeMotion-1-2.png", width=>400, height=>229 ) \}
+\{ image( "220RelativeMotion-1-2.png", width=>400, height=>257 ) \}
 $PAR
 \{ $mc->buttons() \}
 

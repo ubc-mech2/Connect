@@ -39,7 +39,7 @@ $mc = RadioButtons(
 BEGIN_TEXT
 Consider a similar parabolic force distribution as from Problem 9 but in this case the constant \(w_0\) is unknown. What is known is that the supporting reaction force at the triangular pivot point is \(300\) \(N\). At what value of \(x_0\) should the \(200\) \(N\) force be positioned in order to keep the beam in balance?
 $PAR
-\{ image( "220Integrals-9-10.png", width=>450, height=>194 ) \}
+\{ image( "220Integrals-9-10.png", width=>450, height=>240 ) \}
 $PAR
 \{ $mc->buttons() \}
 

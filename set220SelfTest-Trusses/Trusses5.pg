@@ -42,7 +42,7 @@ $mc = RadioButtons(
 BEGIN_TEXT
 Continuing with Problem 3, what is the reaction that the structure imposes upon point \(C\)? (That is, what force does member \(BC\) exert on the ground?) Take \(x\) positive to the right and \(y\) positive upwards.
 $PAR 
-\{ image( "220Trusses-3-4-5.png", width=>450, height=>259 ) \}
+\{ image( "220Trusses-3-4-5.png", width=>450, height=>296 ) \}
 $PAR
 \{ $mc->buttons() \}
 

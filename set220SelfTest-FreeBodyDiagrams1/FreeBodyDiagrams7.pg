@@ -36,7 +36,7 @@ $mc = RadioButtons(
 BEGIN_TEXT
 The movable bracket shown may be placed at any height on the \(50\) \(mm\)-diameter pipe. If the coefficient of static friction between the pipe and bracket is \(0.30\), determine the minimum distance \(x\) at which the load \(P\) can be supported. Assume that the bracket is weightless.
 $PAR
-\{ image( "220FBD-7.png", width=>350, height=>310) \}
+\{ image( "220FBD-7.png", width=>350, height=>339) \}
 $PAR
 \{ $mc->buttons() \}
 

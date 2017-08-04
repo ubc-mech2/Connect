@@ -45,13 +45,13 @@ $mc = RadioButtons(
 BEGIN_TEXT
 Which of the following charts represents the function \(y = \frac{x^3}{x^2+1}\)?
 $PAR
-A: \{ image( "220SketchingFunctions-9-a.png", width=>300, height=>300 ) \}
+A: \{ image( "220SketchingFunctions-9-a.png", width=>300, height=>329 ) \}
 $PAR
-B: \{ image( "220SketchingFunctions-9-b.png", width=>300, height=>300 ) \}
+B: \{ image( "220SketchingFunctions-9-b.png", width=>300, height=>329 ) \}
 $PAR
-C: \{ image( "220SketchingFunctions-9-c.png", width=>300, height=>300 ) \}
+C: \{ image( "220SketchingFunctions-9-c.png", width=>300, height=>332 ) \}
 $PAR
-D: \{ image( "220SketchingFunctions-9-d.png", width=>300, height=>298 ) \}
+D: \{ image( "220SketchingFunctions-9-d.png", width=>300, height=>323 ) \}
 $PAR
 \{ $mc->buttons() \}
 

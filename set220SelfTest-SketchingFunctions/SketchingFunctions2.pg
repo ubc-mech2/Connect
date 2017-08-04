@@ -37,7 +37,7 @@ $mc = RadioButtons(
 BEGIN_TEXT
 What is the equation for the function shown? 
 $PAR
-\{ image( "220SketchingFunctions-2.png", width=>350, height=>346 ) \}
+\{ image( "220SketchingFunctions-2.png", width=>350, height=>390 ) \}
 $PAR
 \{ $mc->buttons() \}
 

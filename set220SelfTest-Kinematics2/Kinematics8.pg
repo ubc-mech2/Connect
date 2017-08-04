@@ -37,7 +37,7 @@ $mc = RadioButtons(
 BEGIN_TEXT
 A rocket is fired vertically from a launch pad  \(B\). Its flight is tracked by radar from point \(A\). Determine the velocity of the rocket in terms of \(b\), \(\theta\), and \(d\theta/dt\).
 $PAR
-\{ image( "220Kinematics2-8.png", width=>400, height=>293 ) \}
+\{ image( "220Kinematics2-8.png", width=>400, height=>321 ) \}
 $PAR
 \{ $mc->buttons() \}
 

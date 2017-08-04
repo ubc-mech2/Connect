@@ -38,7 +38,7 @@ BEGIN_TEXT
 $BR
 \{ $mc -> print_q() \}
 $PAR 
-\{ image( "220Constraints-6-7-8.png", width=>300, height=>215 ) \}
+\{ image( "220Constraints-6-7-8.png", width=>300, height=>242 ) \}
 $PAR
 \{ $mc -> print_a() \}
 

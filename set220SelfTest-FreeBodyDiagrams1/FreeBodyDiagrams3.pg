@@ -36,7 +36,7 @@ $mc = RadioButtons(
 BEGIN_TEXT
 Given the same parameters as in Question 2 (\(\alpha = 40\), \(\beta = 50\), and \(m = 100\) \(kg\)), what is the maximum horizontal force that the wall-mounted ring at \(B\) must support?
 $PAR
-\{ image( "220FBD-1-2-3.png", width=>350, height=>348) \}
+\{ image( "220FBD-1-2-3.png", width=>350, height=>362) \}
 $PAR
 \{ $mc->buttons() \}
 

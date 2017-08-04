@@ -37,7 +37,7 @@ $mc = RadioButtons(
 BEGIN_TEXT
 The function below is a power function, \(y = x^a + b\); what is the value of \(a\)?
 $PAR
-\{ image( "220SketchingFunctions-4.png", width=>350, height=>349 ) \}
+\{ image( "220SketchingFunctions-4.png", width=>350, height=>382 ) \}
 $PAR
 \{ $mc->buttons() \}
 

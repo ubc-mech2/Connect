@@ -36,7 +36,7 @@ $mc = RadioButtons(
 BEGIN_TEXT
 Given \(\alpha = 35\), \(\beta = 45\), and \(m = 10\) \(kg\), what is the tension in cable \(AC\)?
 $PAR
-\{ image( "220FBD-1-2-3.png", width=>350, height=>348) \}
+\{ image( "220FBD-1-2-3.png", width=>350, height=>362) \}
 $PAR
 \{ $mc->buttons() \}
 
