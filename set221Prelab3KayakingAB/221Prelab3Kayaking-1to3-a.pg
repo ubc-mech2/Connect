@@ -50,7 +50,7 @@ BEGIN_TEXT
 Consider the kayaker shown in the image. The x-axis points in the forward direction, the y-axis to the left of the kayaker, and the z-axis upwards. Which of the following best describes the direction of the force the water exerts on the kayak paddle at the instant shown? Assume the kayaker is paddling in the forward direction.
 $PAR
 
-\{ image( "imagename.png", width=>150, height=>150 ) \}
+\{ image( "221Prelab3-1to3.jpg", width=>246, height=>350 ) \}
 
 $PAR
 
