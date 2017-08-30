@@ -39,7 +39,7 @@ labels => "ABC" );
 BEGIN_TEXT
 For the circuit shown, how should the voltmeter be connected to measure the voltage across resistor \(R1\)?
 $PAR
-\{ image( "221Prelab2-1-2.png", width=>600, height=>174 ) \}
+\{ image( "221Prelab2-2.png", width=>450, height=>201 ) \}
 $PAR
 \{ $mc->buttons() \}
 
