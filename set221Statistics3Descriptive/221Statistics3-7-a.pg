@@ -2,7 +2,7 @@
 ## 221 Statistics 3 - Descriptive
 ##ENDDESCRIPTION
 
-##KEYWORDS('multiple choice', 'mean', 'median', 'mode')
+##KEYWORDS('multiple choice', 'distribution', 'grades')
 
 ## DBsubject('MECH 221')
 ## DBchapter('Statistics Quizzes')
@@ -10,7 +10,7 @@
 ## Date('7/12/2017')
 ## Institution('University of British Columbia')
 ## Question Set 7
-## Problem3
+## Problem1
 
 #######################################################################
 
@@ -35,15 +35,15 @@ $mc = RadioButtons( # Set up possible options
 "mode - median - mean",
 "all are the same"
 ]
-,"all are the same", # correct option
-,labels => "ABC" );
+,"mode - median - mean", # correct option
+labels => "ABC" );
 
 BEGIN_TEXT
 	
-As part of a MECH 223 design project, you measure the following results. (They represent the time for your device to perform a particular action.) Rank the mean, median, and mode from largest to smallest.
+The distribution of class grades out of 10 for an assignment are shown in the figure below. Rank the mean, median, and mode from largest to smallest.
 $PAR
 
-\{ image( "imagename.png", width=>150, height=>150 ) \}
+\{ image( "221Statistics3-7-a.jpg", width=>522, height=>287 ) \}
 
 $PAR
 

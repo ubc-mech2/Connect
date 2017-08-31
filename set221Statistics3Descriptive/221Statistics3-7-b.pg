@@ -43,7 +43,7 @@ BEGIN_TEXT
 As part of a MECH 223 design project, you measure the following results. (They represent the time for your device to perform a particular action.) Rank the range, standard deviation, and variance from largest to smallest.
 $PAR
 
-\{ image( "imagename.png", width=>150, height=>150 ) \}
+\{ image( "221Statistics3-7-b.jpg", width=>523, height=>269 ) \}
 
 $PAR
 
