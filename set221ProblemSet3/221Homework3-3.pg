@@ -42,7 +42,7 @@ BEGIN_TEXT
 In the network shown, \(V_{S1}=6\) \(V\), \(V_{S2}=$Vs2\) \(V\), \(R_1=$R1\) \(k\Omega\), \(R_2=$R2\) \(k\Omega\), \(R_3=$R3\) \(k\Omega\), and \(R_4=$R4\) \(k\Omega\). Find \(V_0\) (in Volts).
 
 $PAR	
-\{ image( "imagename.png", width=>150, height=>150 ) \}
+\{ image( "221Homework3-3.jpg", width=>433, height=>144 ) \}
 $PAR
 
 \{ ans_rule(35) \}

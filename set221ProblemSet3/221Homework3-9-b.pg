@@ -9,7 +9,7 @@
 ## DBsection('221 Problem Set 3')
 ## Date('7/13/2017')
 ## Institution('University of British Columbia')
-## Problem9-1
+## Problem9-2
 
 #######################################################################
 
@@ -38,8 +38,8 @@ $ml->ra_pop_up_list([
 #  Add correct questions and answers
 #
 $ml->qa(
-"Plane A", "\([2, 1, -1]\)",
-"Plane B", "\([0, 2, -1]\)",
+"Plane A", "\([1, -1, 0]\)",
+"Plane B", "\([1, 2, 2]\)",
 );
 $ml->choose(2);
 
@@ -47,7 +47,7 @@ Context()->texStrings;
 BEGIN_TEXT
 Determine the Miller Indices for the planes shown in the following unit cell:
 $PAR
-\{ image( "imagename.png", width=>150, height=>150 ) \}
+\{ image( "221Homework3-9-b.jpg", width=>500, height=>411 ) \}
 \{ ColumnMatchTable($ml, valign=>'TOP') \}
 END_TEXT
 Context()->normalStrings;

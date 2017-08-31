@@ -2,14 +2,14 @@
 ## 221 Problem Set 3
 ##ENDDESCRIPTION
 
-##KEYWORDS('matching', 'indices', 'directions', 'cubic')
+##KEYWORDS('matching', 'indices', 'Miller', 'cubic')
 
 ## DBsubject('MECH 221')
 ## DBchapter('Homework')
 ## DBsection('221 Problem Set 3')
 ## Date('7/13/2017')
 ## Institution('University of British Columbia')
-## Problem8-2
+## Problem9-3
 
 #######################################################################
 
@@ -32,25 +32,22 @@ $ml = new_match_list();
 $ml->rf_print_q(~~&pop_up_list_print_q);
 $ml->ra_pop_up_list([
 "No answer" => "?",
-"A" => "A", "B" => "B", "C" => "C", 
-"D" => "D"]);
+"A" => "A", "B" => "B"]);
 
 #
 #  Add correct questions and answers
 #
 $ml->qa(
-"Direction A", "\([-1, 1, 0]\)",
-"Direction B", "\([1, 2, 1]\)",
-"Direction C", "\([0, -1, -2]\)",
-"Direction D", "\([1, -2, 1]\)",
+"Plane A", "\([1, 1, -1]\)",
+"Plane B", "\([2, 3, 0]\)",
 );
-$ml->choose(4);
+$ml->choose(2);
 
 Context()->texStrings;
 BEGIN_TEXT
-Determine the indices for the directions shown in the following cubic unit cell. 
+Determine the Miller Indices for the planes shown in the following unit cell:
 $PAR
-\{ image( "imagename.png", width=>150, height=>150 ) \}
+\{ image( "221Homework3-9-c.jpg", width=>500, height=>413 ) \}
 \{ ColumnMatchTable($ml, valign=>'TOP') \}
 END_TEXT
 Context()->normalStrings;
@@ -59,10 +56,10 @@ Context()->normalStrings;
 #  Incremental grader
 #
 install_problem_grader(~~&custom_problem_grader_fluid);
-$ENV{'grader_numright'} = [1,2,3,4];
-$ENV{'grader_scores'} = [0,25,0.5,0.75,1];
+$ENV{'grader_numright'} = [1,2];
+$ENV{'grader_scores'} = [0.5,1];
 $ENV{'grader_message'} = "You can earn " .
-"25% partial credit for every correct answer.";
+"50% partial credit for 1 correct answer.";
 
 $showPartialCorrectAnswers = 0;
 

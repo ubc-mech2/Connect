@@ -9,7 +9,7 @@
 ## DBsection('221 Problem Set 3')
 ## Date('7/13/2017')
 ## Institution('University of British Columbia')
-## Problem8-1
+## Problem8-2
 
 #######################################################################
 
@@ -39,17 +39,18 @@ $ml->ra_pop_up_list([
 #  Add correct questions and answers
 #
 $ml->qa(
-"Direction A", "\([3, 3, -1]\)",
-"Direction B", "\([-4, 0, -3]\)",
-"Direction C", "\([-3, 6, 1]\)",
-"Direction D", "\([-1, 1, -1]\)",
+"Direction A", "\([-1, 1, 0]\)",
+"Direction B", "\([1, 2, 1]\)",
+"Direction C", "\([0, -1, -2]\)",
+"Direction D", "\([1, -2, 1]\)",
 );
 $ml->choose(4);
 
 Context()->texStrings;
 BEGIN_TEXT
-Determine the indices for the directions shown in the following cubic unit cell. $PAR
-\{ image( "imagename.png", width=>150, height=>150 ) \}
+Determine the indices for the directions shown in the following cubic unit cell. 
+$PAR
+\{ image( "221Homework3-8-b.jpg", width=>500, height=>415 ) \}
 \{ ColumnMatchTable($ml, valign=>'TOP') \}
 END_TEXT
 Context()->normalStrings;

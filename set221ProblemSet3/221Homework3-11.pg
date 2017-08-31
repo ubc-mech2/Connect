@@ -2,14 +2,14 @@
 ## 221 Problem Set 3
 ##ENDDESCRIPTION
 
-##KEYWORDS('calculating formula', 'stress', 'tension')
+##KEYWORDS('calculating formula', 'force', 'assembly')
 
 ## DBsubject('MECH 221')
 ## DBchapter('Homework')
 ## DBsection('221 Problem Set 3')
 ## Date('7/13/2017')
 ## Institution('University of British Columbia')
-## Problem10
+## Problem11
 
 ########################################################################
 
@@ -29,16 +29,20 @@ $showPartialCorrectAnswers = 1;
 
 Context("Numeric");
 
-$t = random(0.1, 0.2, 0.01);
-$w = random(0.75, 1.5, 0.01);
-$answer = 135.5 / ($w * $t);
+$Ab = random(80, 160, 1);
+$As = random(20, 40, 1);
+$L = random(120, 180, 1);
+
+$fraction1 = ($L - 1) / (200 * $As);
+$fraction2 = $L / (100 * $Ab);
+$answer = 1 / ($fraction1 + $fraction2);
 
 BEGIN_TEXT
 
-A rope under 120 lb tension passes through a winding machine as shown in the diagram. The link AC has a uniform rectangular cross section \(t = $t\) inches thick and \(w = $w\) inches wide. Determine the normal stress (in \(psi\)) in the central portion of the link. 
+A bolted assembly consists of a steel bolt A, a brass tube B and a nut C. The nut is turned so that it just secures the tube, and then is tightened one extra turn. Determine the resulting force \(F_s\) (in \(kN\)) in the steel bolt. The initial length of the tube is \(L = $L\) \(mm\), and the screw pitch is \(1\) \(mm\) (the nut moves \(1\) \(mm\) along the bolt for each turn). For the steel bolt, \(E_s = 200\) \(GPa\), \(A_s = $As\) \(mm^2\). For the brass tube, \(E_b = 100\) \(GPa\), \(A_b = $Ab\) \(mm^2\). 
 
 $PAR	
-\{ image( "imagename.png", width=>150, height=>150 ) \}
+\{ image( "221Homework3-11.jpg", width=>500, height=>335 ) \}
 $PAR
 
 \{ ans_rule(35) \}
