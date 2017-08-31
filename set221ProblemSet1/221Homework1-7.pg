@@ -2,14 +2,14 @@
 ## 221 Problem Set 1
 ##ENDDESCRIPTION
 
-##KEYWORDS('calculated formula', 'network', 'current')
+##KEYWORDS('calculated formula', 'network', 'source', 'power')
 
 ## DBsubject('MECH 221')
 ## DBchapter('Homework')
 ## DBsection('221 Problem Set 1')
 ## Date('7/13/2017')
 ## Institution('University of British Columbia')
-## Question Set 8
+## Question Set 7
 ## Problem1
 
 ########################################################################
@@ -30,18 +30,20 @@ $showPartialCorrectAnswers = 1;
 
 Context("Numeric");
 
-$IR1 = random(60, 65, 0.1);
-$IS2= random(0.12, 0.13, 0.001);
-$IS1 = random(0.12, 0.13, 0.001);
-$answer = 1000 * ($IR1 - $IS2) * (10**(-3));
+$Ib = random(60, 65, 0.1);
+$V1 = random(0.12, 0.13, 0.001);
+$V2 = random(0.12, 0.13, 0.001);
+$V3 = random(0.12, 0.13, 0.001);
+$Ia = random(0.12, 0.13, 0.001);
+$answer = $Ib * (($V1 + $V2) - $V3);
 
 BEGIN_TEXT
 	
-Given \(I_{S1} = $IS1\) \(mA\), \(I_{S2} = $IS2\) \(mA\), \(I_{R1} = $IR1\) \(mA\), find \(I_y\) (in \(mA\)) in the network shown.
+In the network shown, \(V_1 = $V1\) \(V\), \(V_2 = $V2\) \(V\), \(V_3 = $V3\) \(V\), \(V_{S2} = V_1+V_2\), \(I_a = $Ia\) \(A\), \(I_b = $Ib\) \(A\), and \(I_{S2} = I_a + I_b\). Compute the power supplied by the source \(V_{S1}\) (in Watts). Note that if the source is supplying power, you should enter a negative value.
 
 $PAR
 
-\{ image( "imagename.png", width=>150, height=>150 ) \}
+\{ image( "221Homework1-7.jpg", width=>350, height=>227 ) \}
 
 $PAR
 

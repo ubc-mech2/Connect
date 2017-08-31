@@ -2,14 +2,14 @@
 ## 221 Problem Set 1
 ##ENDDESCRIPTION
 
-##KEYWORDS('calculated formula', 'handle', 'stretched', 'tensile')
+##KEYWORDS('calculated formula', 'peg', 'rotation', 'direction')
 
 ## DBsubject('MECH 221')
 ## DBchapter('Homework')
 ## DBsection('221 Problem Set 1')
 ## Date('7/13/2017')
 ## Institution('University of British Columbia')
-## Question Set 3
+## Question Set 6
 ## Problem1
 
 ########################################################################
@@ -30,15 +30,19 @@ $showPartialCorrectAnswers = 1;
 
 Context("Numeric");
 
-$AB = random(650, 900, 1);
-$BC = random(800, 1200, 1);
-$BD = random(200, 300, 1);
-$F = random(80, 120, 1);
-$answer = 0.0001 * $F * $BC * (( ($AB + $BD) / $AB)**2) ;
+$L1 = random(60, 65, 0.1);
+$L2 = random(0.12, 0.13, 0.001);
+$theta = random(0.12, 0.13, 0.001);
+$vc = random(0.12, 0.13, 0.001);
+$answer = ($vc * sin( ($theta/180) * pi) ) / $L1;
 
 BEGIN_TEXT
 	
-An engineer pulls a control handle to operate a machine. The handle is attached at the upper end of a rigid shaft, at \(D\). The lower end of the shaft is pinned at \(A\). A nylon rope joins to the shaft at \(B\), and is secured at \(C\). In a separate test, it was found that the rope stretched by 1% when a tensile force of \(100\) \(N\) was applied. The engineer pulls with a force \(F = $F\) \(N\). How far does point D of the handle move (in \(mm\))? Dimensions \(AB = $AB\) \(mm\), \(BC = $BC\) \(mm\), and \(BD = $BD\) \(mm\).
+Consider the mechanism shown. \(AB\) is \($L1\) \(m\) long. \(BC\) is \($L2\) \(m\) long. The angle \(\theta\) is \($theta\) degrees. \(AB\) and \(BC\) are currently at an angle of 90 degrees. Peg \(C\) is constrained to move along the \(x\) direction. If peg \(C\) is moving with velocity \($vc\) \(m/s\) \(i\), find \(\omega_{AB}\) (in \(rad/s\)). Give a positive response to indicate the rotation direction is counter-clockwise, or a negative response to indicate clockwise rotation. 
+
+$PAR
+
+\{ image( "221Homework1-6-a.jpg", width=>400, height=>314 ) \}
 
 $PAR
 

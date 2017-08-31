@@ -2,14 +2,14 @@
 ## 221 Problem Set 1
 ##ENDDESCRIPTION
 
-##KEYWORDS('calculated formula', 'network', 'source', 'power')
+##KEYWORDS('calculated formula', 'Gear', 'rotation', 'direction')
 
 ## DBsubject('MECH 221')
 ## DBchapter('Homework')
 ## DBsection('221 Problem Set 1')
 ## Date('7/13/2017')
 ## Institution('University of British Columbia')
-## Question Set 7
+## Question Set 5
 ## Problem1
 
 ########################################################################
@@ -30,21 +30,18 @@ $showPartialCorrectAnswers = 1;
 
 Context("Numeric");
 
-$Ib = random(60, 65, 0.1);
-$V1 = random(0.12, 0.13, 0.001);
-$V2 = random(0.12, 0.13, 0.001);
-$V3 = random(0.12, 0.13, 0.001);
-$Ia = random(0.12, 0.13, 0.001);
-$answer = $Ib * (($V1 + $V2) - $V3);
+$rc = random(0.1, 0.3, 0.01);
+$rd = random(0.05, 0.1, 0.01);
+$wc = random(-5, 5, 0.1);
+$wcd = random(-5, 5, 0.1);
+$answer = (($rc + $rd) * $wcd - $rc * $wc) / ($rd);
 
 BEGIN_TEXT
 	
-In the network shown, \(V_1 = $V1\) \(V\), \(V_2 = $V2\) \(V\), \(V_3 = $V3\) \(V\), \(V_{S2} = V_1+V_2\), \(I_a = $Ia\) \(A\), \(I_b = $Ib\) \(A\), and \(I_{S2} = I_a + I_b\). Compute the power supplied by the source \(V_{S1}\) (in Watts). Note that if the source is supplying power, you should enter a negative value.
+Gear C has radius \($rc\) \(m\) and rotates with angular velocity \($wc k\) \(rad/s\). The connecting link rotates at angular velocity \($wcd k\) \(rad/s\). Gear D has radius \($rd\) \(m\). Find the angular velocity of gear D (in \(rad/s\)). Note that gear C is pinned to ground and gear D is a planetary gear. Give a positive response to indicate the rotation direction is counter-clockwise, or a negative response to indicate clockwise rotation.
 
 $PAR
-
-\{ image( "imagename.png", width=>150, height=>150 ) \}
-
+\{ image( "221Homework1-5.jpg", width=>380, height=>372 ) \}
 $PAR
 
 \{ ans_rule(35) \}

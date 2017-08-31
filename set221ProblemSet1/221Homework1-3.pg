@@ -2,14 +2,14 @@
 ## 221 Problem Set 1
 ##ENDDESCRIPTION
 
-##KEYWORDS('calculated formula', 'Gear', 'rotation', 'direction')
+##KEYWORDS('calculated formula', 'handle', 'stretched', 'tensile')
 
 ## DBsubject('MECH 221')
 ## DBchapter('Homework')
 ## DBsection('221 Problem Set 1')
 ## Date('7/13/2017')
 ## Institution('University of British Columbia')
-## Question Set 5
+## Question Set 3
 ## Problem1
 
 ########################################################################
@@ -30,16 +30,17 @@ $showPartialCorrectAnswers = 1;
 
 Context("Numeric");
 
-$rc = random(0.1, 0.3, 0.01);
-$rd = random(0.05, 0.1, 0.01);
-$wc = random(-5, 5, 0.1);
-$wcd = random(-5, 5, 0.1);
-$answer = (($rc + $rd) * $wcd - $rc * $wc) / ($rd);
+$AB = random(650, 900, 1);
+$BC = random(800, 1200, 1);
+$BD = random(200, 300, 1);
+$F = random(80, 120, 1);
+$answer = 0.0001 * $F * $BC * (( ($AB + $BD) / $AB)**2) ;
 
 BEGIN_TEXT
 	
-Gear C has radius \($rc\) \(m\) and rotates with angular velocity \($wc k\) \(rad/s\). The connecting link rotates at angular velocity \($wcd k\) \(rad/s\). Gear D has radius \($rd\) \(m\). Find the angular velocity of gear D (in \(rad/s\)). Note that gear C is pinned to ground and gear D is a planetary gear. Give a positive response to indicate the rotation direction is counter-clockwise, or a negative response to indicate clockwise rotation.
-
+An engineer pulls a control handle to operate a machine. The handle is attached at the upper end of a rigid shaft, at \(D\). The lower end of the shaft is pinned at \(A\). A nylon rope joins to the shaft at \(B\), and is secured at \(C\). In a separate test, it was found that the rope stretched by 1% when a tensile force of \(100\) \(N\) was applied. The engineer pulls with a force \(F = $F\) \(N\). How far does point \(D\) of the handle move (in \(mm\))? Dimensions \(AB = $AB\) \(mm\), \(BC = $BC\) \(mm\), and \(BD = $BD\) \(mm\).
+$PAR
+\{ image( "221Homework1-3.jpg", width=>400, height=>265 ) \}
 $PAR
 
 \{ ans_rule(35) \}
