@@ -41,7 +41,7 @@ BEGIN_TEXT
 The ICZV of bar BC in the mechanism shown below is at:
 $PAR
 
-\{ image( "imagename.png", width=>150, height=>150 ) \}
+\{ image( "221Homework2-5.jpg", width=>437, height=>444 ) \}
 
 $PAR
 \{ $mc->buttons() \}

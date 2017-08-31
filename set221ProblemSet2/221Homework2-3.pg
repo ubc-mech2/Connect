@@ -2,14 +2,14 @@
 ## 221 Problem Set 2
 ##ENDDESCRIPTION
 
-##KEYWORDS('calculated formula', 'current', 'network', 'resistance', 'circuit')
+##KEYWORDS('calculated formula', 'network', 'resistance', 'circuit')
 
 ## DBsubject('MECH 221')
 ## DBchapter('Homework')
 ## DBsection('221 Problem Set 2')
 ## Date('7/13/2017')
 ## Institution('University of British Columbia')
-## Problem2
+## Problem3
 
 ########################################################################
 
@@ -29,19 +29,25 @@ $showPartialCorrectAnswers = 1;
 
 Context("Numeric");
 
-$R1 = random(100, 150, 0.1);
-$R2 = random(90, 110, 0.1);
-$R3 = random(340, 350, 0.1);
-$R4 = random(340, 350, 0.1);
-$answer = ( $R2 * $R4 * 0.009 ) / ( ($R4 + $R3) * ($R1 + $R2) + $R1 * $R2 );
+$R1 = random(1, 10, 0.1);
+$R2 = random(1, 10, 0.1);
+$R3 = random(1, 10, 0.1);
+$R4 = random(1, 10, 0.1);
+$R5 = random(1, 10, 0.1);
+
+$fraction1 = $R1 * ($R2 + ( ($R3 * $R4) / ($R3 + $R4) ));
+$fraction2 = $R1 + $R2 + ( ($R3 * $R4) / ($R3 + $R4) );
+$numerator = $R5 * ($fraction1 / $fraction2);
+$denominator = $R5 + ($fraction1 / $fraction2);
+$answer = $numerator / $denominator; 
 
 BEGIN_TEXT
 
-In the network shown, \(R_1=$R1\) \(k\Omega\), \(R_2=$R2\) \(k\Omega\), \(R_3=$R3\) \(k\Omega\), \(R_4=$R4\) \(k\Omega\), and \(I_S= 9\) \(mA\). 
-Compute \(I_0\) (in Amperes).
+In the network shown, \(R_1=$R1\) \(k\Omega\), \(R_2=$R2\) \(k\Omega\), \(R_3=$R3\) \(k\Omega\), \(R_4=$R4\) \(k\Omega\), and \(R_5=$R5\) \(k\Omega\).
+Compute \(R_{AB}\) (in \(k\Omega\)).
 $PAR
 
-\{ image( "imagename.png", width=>150, height=>150 ) \}
+\{ image( "221Homework2-3.jpg", width=>347, height=>165 ) \}
 
 $PAR
 
