@@ -41,7 +41,7 @@ labels => "ABC" );
 BEGIN_TEXT	
 Water falling on a wheel generates a force of \(28\) \(N\) tangent to the wheel. Referring to the figure, find \(R_1\) and \(R_2\) of the wheel if the wheel thickness (i.e. \(R_2 - R_1\)) is \(20\) \(cm\), its mass is \(70\) \(kg\) and it is being accelerated at \(0.39\) \(rad/s^2\).
 $PAR
-\{ image( "imagename.png", width=>150, height=>150 ) \}
+\{ image( "221Prelab4-6.png", width=>350, height=>405 ) \}
 $PAR
 \{ $mc->buttons() \}
 

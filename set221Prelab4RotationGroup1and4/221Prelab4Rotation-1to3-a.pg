@@ -43,7 +43,9 @@ $mc -> extra(
 BEGIN_TEXT
 
 \{ $mc -> print_q() \}
-$BR
+$PAR
+\{ image( "221Prelab4-1to3-a.png", width=>350, height=>370 ) \}
+$PAR
 \{ $mc -> print_a() \}
 
 END_TEXT

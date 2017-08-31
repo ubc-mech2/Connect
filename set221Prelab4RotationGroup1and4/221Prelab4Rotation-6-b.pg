@@ -41,7 +41,7 @@ labels => "ABC" );
 BEGIN_TEXT		
 Water falling on a wheel generates a force of \(36\) \(N\) tangent to the wheel. Find the mass of the wheel if its inner radius is \(1.2\) \(m\), it is \(20\) \(cm\) thick (i.e. \(R_2 - R_1 = 20\) \(cm\)), and it is being accelerated at \(0.57\) \(rad/s^2\).
 $PAR
-\{ image( "imagename.png", width=>150, height=>150 ) \}
+\{ image( "221Prelab4-6.png", width=>350, height=>405 ) \}
 $PAR
 \{ $mc->buttons() \}
 
