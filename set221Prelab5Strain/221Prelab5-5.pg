@@ -40,7 +40,7 @@ labels => "ABC" );
 BEGIN_TEXT			
 The following figure represents stress distribution in samples of equal thickness and under equal loading. Diagram A shows stress distribution for a sample with a double fillet, B is stress in a straight bar at mid length, C is stress in a straight bar close to a point of applied load. Which of the statements that follow is always true? 
 $PAR
-\{ image( "221Prelab5-5-image.jpg", width=>150, height=>150 ) \}
+\{ image( "221Prelab5-5-image.jpg", width=>500, height=>200 ) \}
 $PAR
 \{ $mc->buttons() \}
 
