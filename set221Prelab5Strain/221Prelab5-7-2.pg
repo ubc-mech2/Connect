@@ -40,7 +40,7 @@ labels => "ABC" );
 BEGIN_TEXT			
 A plate of total width \(H = 150\) \(mm\) and thickness \(h = 60\) \(mm\) has two grooves of radius \(27\) \(mm\). The tensile force that can be supported before the maximum local stress reaches \(32\) \(MPa\) is:
 $PAR
-\{ image( "221Prelab5-7-2-image.jpg", width=>300, height=>200 ) \}
+\{ image( "221Prelab5-7-2-image.jpg", width=>500, height=>300 ) \}
 $PAR
 \{ $mc->buttons() \}
 
