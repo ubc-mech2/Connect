@@ -40,7 +40,7 @@ labels => "ABC" );
 BEGIN_TEXT			
 A plate of total width \(H = 5\)", thickness \(h = \frac{3}{8}\)", with filet of \(0.7\)" radius, supports a \(470\) \(lb\) load. The maximum local stress in the plate is: 
 $PAR
-\{ image( "221Prelab5-7-1-image.jpg", width=>150, height=>150 ) \}
+\{ image( "221Prelab5-7-1-image.jpg", width=>250, height=>250 ) \}
 $PAR
 \{ $mc->buttons() \}
 

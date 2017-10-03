@@ -1,5 +1,5 @@
 ##DESCRIPTION
-## 221 Prelab 5 Strain (Group 1&4)
+## 221 Prelab 5 Strain
 ##ENDDESCRIPTION
 
 ##KEYWORDS('multiple answer', 'load', 'local', 'stress')
@@ -47,7 +47,7 @@ last => # set up order in which options will be displayed
 BEGIN_TEXT			
 When a load is applied to the sample shown below, at what point would you expect the highest local stress to occur?
 $PAR
-\{ image( "221Prelab5-1-1-image.jpg", width=>150, height=>150 ) \}
+\{ image( "221Prelab5-1-1-image.jpg", width=>600, height=>200 ) \}
 $PAR
 \{ $mc->buttons() \}
 
