@@ -2,14 +2,14 @@
 ## 221 Prelab 5 Strain (Group 1&4)
 ##ENDDESCRIPTION
 
-##KEYWORDS('multiple choice', 'stress', 'distribution', 'equal')
+##KEYWORDS('multiple answer', 'load', 'local', 'stress')
 
 ## DBsubject('MECH 221')
 ## DBchapter('Prelab Quizzes')
-## DBsection('Prelab 5 Strain (Group 1&4)')
+## DBsection('Prelab 5 Strain')
 ## Date('7/6/2017')
 ## Institution('University of British Columbia')
-## Question Set 5
+## Question Set 1 - 4
 ## Problem1
 
 #######################################################################
@@ -29,18 +29,25 @@ Context("Fraction");
 
 $mc = RadioButtons( # Set up possible options
 [
-"\((B)\sigma_{ave} = (C)\sigma_{ave}\)", 
-"\((A)\sigma_{max} = (C)\sigma_{max}\)", 
-"\((B)\sigma_{ave} = (A)\sigma_{ave}\)", 
-"\((A)\sigma_{min} = (B)\sigma_{ave}\)"
+"A", 
+"B", 
+"C", 
+"D"
 ]
-,"\((B)\sigma_{ave} = (C)\sigma_{ave}\)", # correct option
-labels => "ABC" );
+,"C", # correct option
+last => # set up order in which options will be displayed
+[
+"A", 
+"B", 
+"C", 
+"D"
+]
+,labels => "ABC" );
 
 BEGIN_TEXT			
-The following figure represents stress distribution in samples of equal thickness and under equal loading. Diagram A shows stress distribution for a sample with a double fillet, B is stress in a straight bar at mid length, C is stress in a straight bar close to a point of applied load. Which of the statements that follow is always true? 
+When a load is applied to the sample shown below, at what point would you expect the highest local stress to occur?
 $PAR
-\{ image( "imagename.png", width=>150, height=>150 ) \}
+\{ image( "221Prelab5-1-1-image.jpg", width=>150, height=>150 ) \}
 $PAR
 \{ $mc->buttons() \}
 

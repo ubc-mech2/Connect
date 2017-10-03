@@ -1,16 +1,16 @@
 ##DESCRIPTION
-## 221 Prelab 5 Strain (Group 1&4)
+## 221 Prelab 5 Strain
 ##ENDDESCRIPTION
 
-##KEYWORDS('multiple choice', 'plate', 'stress', 'tensile', 'force')
+##KEYWORDS('multiple choice', 'plate', 'load', 'local', 'stress')
 
 ## DBsubject('MECH 221')
 ## DBchapter('Prelab Quizzes')
-## DBsection('Prelab 5 Strain (Group 1&4)')
+## DBsection('Prelab 5 Strain')
 ## Date('7/6/2017')
 ## Institution('University of British Columbia')
 ## Question Set 7
-## Problem2
+## Problem1
 
 #######################################################################
 
@@ -29,18 +29,18 @@ Context("Fraction");
 
 $mc = RadioButtons( # Set up possible options
 [
-"\(60\) \(kN\)", 
-"\(101.\) \(kN\)", 
-"\(92\) \(kN\)", 
-"\(78\) \(kN\)"
+"\(852\) \(psi\)", 
+"\(626\) \(psi\)", 
+"\(550\) \(psi\)", 
+"\(435\) \(psi\)"
 ]
-,"\(92\) \(kN\)", # correct option
+,"\(626\) \(psi\)", # correct option
 labels => "ABC" );
 
 BEGIN_TEXT			
-A plate of total width \(H = 150\) \(mm\) and thickness \(h = 60\) \(mm\) has two grooves of radius \(27\) \(mm\). The tensile force that can be supported before the maximum local stress reaches \(32\) \(MPa\) is:
+A plate of total width \(H = 5\)", thickness \(h = \frac{3}{8}\)", with filet of \(0.7\)" radius, supports a \(470\) \(lb\) load. The maximum local stress in the plate is: 
 $PAR
-\{ image( "imagename.png", width=>150, height=>150 ) \}
+\{ image( "221Prelab5-7-1-image.jpg", width=>150, height=>150 ) \}
 $PAR
 \{ $mc->buttons() \}
 
