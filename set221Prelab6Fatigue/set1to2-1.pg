@@ -41,7 +41,7 @@ labels => "ABC" );
 BEGIN_TEXT			
 For the shaft shown in the figure below, what is the best way to characterize the type of failure that the part experienced?
 $PAR
-\{ image( "imagename.png", width=>150, height=>150 ) \}
+\{ image( "221Prelab6-fatigueshaft.jpg", width=>150, height=>150 ) \}
 $PAR
 \{ $mc->buttons() \}
 

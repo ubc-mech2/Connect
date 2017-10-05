@@ -41,7 +41,7 @@ labels => "ABC" );
 BEGIN_TEXT					
 The numerous thin lines running roughly left-to-right in the figure below are known as: 
 $PAR
-\{ image( "imagename.png", width=>150, height=>150 ) \}
+\{ image( "221Prelab6-fatigueclose.jpg", width=>150, height=>150 ) \}
 $PAR
 \{ $mc->buttons() \}
 

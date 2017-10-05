@@ -45,7 +45,7 @@ last => # set up order in which options will be displayed
 BEGIN_TEXT					
 Based on the S-N diagram shown below, which material would you select for an application where the part must last for at least of \(10^8\) cycles?
 $PAR
-\{ image( "imagename.png", width=>150, height=>150 ) \}
+\{ image( "221Prelab6-sndiagram.jpg", width=>400, height=>250 ) \}
 $PAR
 \{ $mc->buttons() \}
 

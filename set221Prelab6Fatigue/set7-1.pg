@@ -41,7 +41,7 @@ labels => "ABC" );
 BEGIN_TEXT							
 Imagine the S-N diagram shown below was representative of a spinning shaft with a fluctuating stress of \(85\) \(KSI\). How much longer would the shaft last if it were made out of Material B compared to Material A?
 $PAR
-\{ image( "imagename.png", width=>150, height=>150 ) \}
+\{ image( "221Prelab6-sndiagram.jpg", width=>400, height=>250 ) \}
 $PAR
 \{ $mc->buttons() \}
 

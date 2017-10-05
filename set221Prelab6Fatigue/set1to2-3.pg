@@ -41,7 +41,7 @@ labels => "ABC" );
 BEGIN_TEXT				
 If you were to magnify the centre region of the failed shaft that is shown in the figure below, you would most likely see small horizontal lines known as: 
 $PAR
-\{ image( "imagename.png", width=>150, height=>150 ) \}
+\{ image( "221Prelab6-fatigueshaft.jpg", width=>150, height=>150 ) \}
 $PAR
 \{ $mc->buttons() \}
 

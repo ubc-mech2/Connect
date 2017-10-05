@@ -41,7 +41,7 @@ labels => "ABC" );
 BEGIN_TEXT				
 The horizontal bands evident in the cross-section of a failed part shown in the figure below are called: 
 $PAR
-\{ image( "imagename.png", width=>150, height=>150 ) \}
+\{ image( "221Prelab6-fatigueshaft.jpg", width=>150, height=>150 ) \}
 $PAR
 \{ $mc->buttons() \}
 
