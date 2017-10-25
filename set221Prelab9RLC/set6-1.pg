@@ -40,7 +40,7 @@ BEGIN_TEXT
 Consider an RLC circuit with the under-damped response as shown in the figure. If the figure represents the output \(V_R\) versus \(t\) on an oscilloscope, what is the approximate time constant?
 $PAR
 
-\{ image( "pl-ee3-img-02.jpg", width=>500 ) \}
+\{ image( "pl-ee3-img-02.jpg", width=>500, height=>400 ) \}
 $PAR
 
 \{ $mc->buttons() \}

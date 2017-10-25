@@ -40,7 +40,7 @@ BEGIN_TEXT
 Consider an RLC circuit with the under-damped response as shown in the figure. The expression for the voltage across the resistor is given in Equation 2 in the lab manual. With \(C = 0\), notice that there are still four unknown parameters in the equation (\(\alpha\), \(\tau\), \(\omega\), and \(\phi\)). If the figure represents the output \(V_R\) versus \(t\) on an oscilloscope, what best describes the minimum number points on the response that should be measured to determine the unknown parameters in Equation 2?
 $PAR
 
-\{ image( "pl-ee3-img-03.jpg", width=>500 ) \}
+\{ image( "pl-ee3-img-03.jpg", width=>500, height=>400 ) \}
 $PAR
 
 \{ $mc->buttons() \}
