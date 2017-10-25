@@ -14,7 +14,7 @@
 
 #######################################################################
 
-DOCUMENT();      
+DOCUMENT();
 
 loadMacros(
    "PGstandard.pl",     # Standard macros for PG language
@@ -27,18 +27,18 @@ loadMacros(
 
 $mc = RadioButtons( # Set up possible options
 [
-"over-damped", 
-"critically damped", 
+"over-damped",
+"critically damped",
 "under-damped"
 ]
 ,"under-damped", # correct option
 labels => "ABC" );
 
-BEGIN_TEXT	
-						
+BEGIN_TEXT
+
 Consider the RLC circuit as shown in the figure. The voltage source is applied to the circuit at time \(t = 0\) (for simplicity, imagine there is a switch, not shown, that closes at \(t = 0\)).
 $PAR
-\{ image( "imagename.png", width=>150, height=>150 ) \}
+\{ image( "pl-ee3-img-01.jpg", width=>300, height=>200 ) \}
 $PAR
 If \(L = 0.51\) \(H\), \(C = 0.8\) \(\mu F\), and \(R = 1.2\) \(k\Omega\), determine if the circuit is over-damped, critically damped, or under-damped:
 $PAR

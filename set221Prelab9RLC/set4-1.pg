@@ -14,7 +14,7 @@
 
 ########################################################################
 
-DOCUMENT();     
+DOCUMENT();
 
 loadMacros(
 "PGstandard.pl",     # Standard macros for PG language
@@ -38,8 +38,8 @@ BEGIN_TEXT
 
 Consider the RLC circuit as shown in the figure.
 
-$PAR	
-\{ image( "imagename.png", width=>150, height=>150 ) \}
+$PAR
+\{ image( "pl-ee3-img-01.jpg", width=>300, height=>200 ) \}
 $PAR
 
 If \(L = $L\) \(H\) and \(C = $C\) \(\mu F\), determine the value of \(R\) (in ohms) for which the circuit is critically damped.
@@ -47,7 +47,7 @@ If \(L = $L\) \(H\) and \(C = $C\) \(\mu F\), determine the value of \(R\) (in o
 $PAR
 
 \{ ans_rule(35) \}
- 
+
 END_TEXT
 
 ANS(num_cmp($answer, reltol => 5)); # 5% tolerance

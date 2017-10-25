@@ -14,7 +14,7 @@
 
 #######################################################################
 
-DOCUMENT();      
+DOCUMENT();
 
 loadMacros(
    "PGstandard.pl",     # Standard macros for PG language
@@ -27,20 +27,20 @@ loadMacros(
 
 $mc = RadioButtons( # Set up possible options
 [
-"8 seconds", 
-"15 seconds", 
-"20 seconds", 
+"8 seconds",
+"15 seconds",
+"20 seconds",
 "28 seconds",
 "> 90 seconds"
 ]
 ,"20 seconds", # correct option
 labels => "ABC" );
 
-BEGIN_TEXT								
+BEGIN_TEXT
 Consider an RLC circuit with the under-damped response as shown in the figure. If the figure represents the output \(V_R\) versus \(t\) on an oscilloscope, what is the approximate time constant?
 $PAR
 
-\{ image( "imagename.png", width=>150, height=>150 ) \}
+\{ image( "pl-ee3-img-02.jpg", width=>500 ) \}
 $PAR
 
 \{ $mc->buttons() \}
