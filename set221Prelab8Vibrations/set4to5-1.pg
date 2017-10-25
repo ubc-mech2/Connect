@@ -14,7 +14,7 @@
 
 ########################################################################
 
-DOCUMENT();     
+DOCUMENT();
 
 loadMacros(
 "PGstandard.pl",     # Standard macros for PG language
@@ -35,13 +35,13 @@ $y = random(1, 2, 0.1);
 $answer = (ln($x/$y)) / 2 / 3.1415;
 
 BEGIN_TEXT
-	
-A lightly damped system the measurement of two successive oscillations yields amplitudes of \($x\) and \($y\). What is the approximate damping ratio of this system?
+
+In a lightly damped system, the measurement of two successive oscillations yields amplitudes of \($x\) and \($y\). What is the approximate damping ratio of this system?
 
 $PAR
 
 \{ ans_rule(35) \}
- 
+
 END_TEXT
 
 ANS(num_cmp($answer, reltol => 5)); # 5% tolerance

@@ -14,7 +14,7 @@
 
 #######################################################################
 
-DOCUMENT();      
+DOCUMENT();
 
 loadMacros(
    "PGstandard.pl",     # Standard macros for PG language
@@ -27,17 +27,19 @@ loadMacros(
 
 $mc = RadioButtons( # Set up possible options
 [
-"Term 1: acceleration force, Term 2: equilibrium force, Term 3: spring damping force", 
-"Term 1: acceleration force, Term 2: coriolis force, Term 3: spring force", 
-"Term 1: acceleration force, Term 2: damping force, Term 3: spring force", 
+"Term 1: acceleration force, Term 2: equilibrium force, Term 3: spring damping force",
+"Term 1: acceleration force, Term 2: coriolis force, Term 3: spring force",
+"Term 1: acceleration force, Term 2: damping force, Term 3: spring force",
 "Term 1: gravitational force, Term 2: damping force, Term 3: spring damping force",
 "Term 1: gravitational force, Term 2: friction force, Term 3: spring force"
 ]
 ,"Term 1: acceleration force, Term 2: damping force, Term 3: spring force", # correct option
 labels => "ABC" );
 
-BEGIN_TEXT							
-The equation of motion for viscous-damped free vibrations is \(m\frac{d^2x}{dt} + c\frac{dx}{dt} + kx=0\). What does each term represent?
+BEGIN_TEXT
+The equation of motion for viscous-damped free vibrations is
+\[ m\frac{d^2x}{dt} + c\frac{dx}{dt} + kx=0 \]
+What does each term represent?
 $PAR
 \{ $mc->buttons() \}
 

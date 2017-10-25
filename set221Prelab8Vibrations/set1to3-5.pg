@@ -14,7 +14,7 @@
 
 #######################################################################
 
-DOCUMENT();      
+DOCUMENT();
 
 loadMacros(
    "PGstandard.pl",     # Standard macros for PG language
@@ -27,17 +27,17 @@ loadMacros(
 
 $mc = RadioButtons( # Set up possible options
 [
-"Damped time constant", 
-"Damped natural frequency", 
-"Logarithmic decrement", 
+"Damped time constant",
+"Damped natural frequency",
+"Logarithmic decrement",
 "Damping ratio",
 "Damping factor"
 ]
 ,"Logarithmic decrement", # correct option
 labels => "ABC" );
 
-BEGIN_TEXT								
-In a damped vibrating system what can the following quantity represent \(\frac{2\pi\sigma}{\sqrt{1-\sigma^2}}\)
+BEGIN_TEXT
+In a damped vibrating system, what can the quantity \( \displaystyle \frac{2\pi\sigma}{\sqrt{1-\sigma^2}}\) represent?
 $PAR
 \{ $mc->buttons() \}
 

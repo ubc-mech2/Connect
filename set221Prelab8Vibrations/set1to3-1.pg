@@ -14,7 +14,7 @@
 
 #######################################################################
 
-DOCUMENT();      
+DOCUMENT();
 
 loadMacros(
    "PGstandard.pl",     # Standard macros for PG language
@@ -27,17 +27,17 @@ loadMacros(
 
 $mc = RadioButtons( # Set up possible options
 [
-"damping constant squared is less then mass times the natural frequency", 
-"damping constant is greater then mass times the spring constant", 
-"damping constant equals to the mass times the spring constant", 
+"damping constant squared is less then mass times the natural frequency",
+"damping constant is greater then mass times the spring constant",
+"damping constant equals to the mass times the spring constant",
 "damping constant is twice the mass times the natural frequency",
 "the damped natural frequency equals the undamped natural frequency"
 ]
 ,"damping constant is twice the mass times the natural frequency", # correct option
 labels => "ABC" );
 
-BEGIN_TEXT							
-In order to create a critically dampened system the components must be chosen such that
+BEGIN_TEXT
+In order to create a critically damped system, the components must be chosen such that:
 $PAR
 \{ $mc->buttons() \}
 

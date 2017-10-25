@@ -14,7 +14,7 @@
 
 #######################################################################
 
-DOCUMENT();      
+DOCUMENT();
 
 loadMacros(
    "PGstandard.pl",     # Standard macros for PG language
@@ -27,16 +27,16 @@ loadMacros(
 
 $mc = RadioButtons( # Set up possible options
 [
-"Damped stiffness ratio", 
-"Damping ratio", 
-"Critical coefficient", 
+"Damped stiffness ratio",
+"Damping ratio",
+"Critical coefficient",
 "Damping frequency",
 "Damping factor"
 ]
 ,"Damping ratio", # correct option
 labels => "ABC" );
 
-BEGIN_TEXT								
+BEGIN_TEXT
 Ratio of the damping constant to the critical damping constant is called
 $PAR
 \{ $mc->buttons() \}

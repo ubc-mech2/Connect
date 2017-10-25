@@ -14,7 +14,7 @@
 
 #######################################################################
 
-DOCUMENT();      
+DOCUMENT();
 
 loadMacros(
    "PGstandard.pl",     # Standard macros for PG language
@@ -27,16 +27,16 @@ loadMacros(
 
 $mc = RadioButtons( # Set up possible options
 [
-"linearly", 
-"logarithmically", 
-"exponentially", 
+"linearly",
+"logarithmically",
+"exponentially",
 "hyperbolically",
 "sinusoidally"
 ]
 ,"exponentially", # correct option
 labels => "ABC" );
 
-BEGIN_TEXT								
+BEGIN_TEXT
 Amplitude of an underdamped free vibrating system decays
 $PAR
 \{ $mc->buttons() \}

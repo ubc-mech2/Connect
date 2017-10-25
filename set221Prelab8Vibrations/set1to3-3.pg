@@ -14,7 +14,7 @@
 
 #######################################################################
 
-DOCUMENT();      
+DOCUMENT();
 
 loadMacros(
    "PGstandard.pl",     # Standard macros for PG language
@@ -27,16 +27,17 @@ loadMacros(
 
 $mc = RadioButtons( # Set up possible options
 [
-"\( x = C\sin(\omega_nt + \phi) \)", 
-"\( x = \omega_n\sin(Cx + t) \)", 
-"\( x = C\sin(x + t) + D\cos(x + t)\)", 
-"\( x = A\sin(\omega_dt + C) + B\cos(\omega_dt + D) \)",
+"\( x(t) = C\sin(\omega_nt + \phi) \)",
+"\( x(t) = \omega_n\sin(Cx + t) \)",
+"\( x(t) = C\sin(x + t) + D\cos(x + t)\)",
+"\( x(t) = A\sin(\omega_dt + C) + B\cos(\omega_dt + D) \)",
 ]
-,"\( x = C\sin(\omega_nt + \phi) \)", # correct option
+,"\( x(t) = C\sin(\omega_nt + \phi) \)", # correct option
 labels => "ABC" );
 
-BEGIN_TEXT							
-Which quantity in a vibrating system is equivalent to a spring constant divided by the mass?
+BEGIN_TEXT
+
+Identify the correct general solution to the second order differential equation which describes free vibration with no damping.
 $PAR
 \{ $mc->buttons() \}
 
