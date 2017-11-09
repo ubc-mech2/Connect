@@ -32,7 +32,7 @@ Context("Numeric");
 
 $L = random(0.4, 0.6, 0.01);
 $C = random(0.6, 1, 0.01);
-$answer = 2 * ($L / $C) * (1000000**0.5);
+$answer = 2 * ($L *1000000 / $C)**0.5;
 
 BEGIN_TEXT
 
